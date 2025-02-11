@@ -1,0 +1,1974 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="assets/css/home.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/mystyle.css">
+  
+  
+  <!-- for mathjax support -->
+  
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: { equationNumbers: { autoNumber: "AMS" } },
+    //tex2jax: {inlineMath: [['$', '$'], ['\\(', '\\)']]}
+    //tex2jax: {inlineMath: [['\(', '\)'], ['\\(', '\\)']]}
+    tex2jax: {inlineMath: [['$', '$'], ['\\(', '\\)']]}
+    //tex2jax: {inlineMath: [['$', '$'], ['\(', '\)'], ['\\(', '\\)']]}
+  });
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+  
+    <script type="text/javascript"  src="//cdnjs.cloudflare.com/ajax/libs/jsxgraph/1.1.0/jsxgraphcore.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/jsxgraph/1.1.0/jsxgraph.css" />
+  
+  <script src="assets/js/coding.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!--<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>-->
+  <script src="assets/js/course.js"></script>
+  <script src="assets/js/prob.js"></script>
+</head>
+<body>
+  <!-- Top navigation bar from the main webpage. must be updated from page.html-->
+  <div class="topnav">
+  <a style="float:left;" href="index.html"><strong>Mathematics of Information</strong></a>
+  <a id="teaching" href="../teaching.html">Teaching</a>
+  <a id="group" href="../ips.html">Group</a>
+  <a id="pubs" href="../publications.html">Publications</a>
+  <a id="home" href="../index.html">Home</a> 
+  </div>
+  <nav>
+   <div class="sidenav">
+     <!--<a href="/">Home</a><br>
+	     <a href="/moi/">Course Index</a><hr>-->
+	   <!--<h3><div class="chapnav"> Mathematics of <br> Information</div></h3>-->
+     
+     
+     
+     <a href="/~ffh8x/moi/"><strong>Home</strong></a>
+     
+     
+     
+    
+     
+     
+     <a href="/~ffh8x/moi/introduction.html"><strong>0. Introduction</strong></a>
+     
+     
+     
+    
+     
+     
+     <span class="chapnav"><strong>1. Numbers, fields, and <br>representing information</strong></span>
+     <ul>
+      
+      
+      
+      <li><a href="/~ffh8x/moi/sets.html">Sets and set theory</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/numbers.html">Natural numbers, rationals</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/fields.html">Fields</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/reals.html">Real numbers</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/cardinality.html">Counting and cardinality</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/representation.html">Representing information</a></li>
+      
+      
+      
+    </ul>
+    
+    
+     
+     
+     <span class="chapnav"><strong>2. Probability &amp; information</strong></span>
+     <ul>
+      
+      
+      
+      <li><a href="/~ffh8x/moi/defining_information.html">Defining information</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/probability_basics.html">Basics of probability</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/distributions.html">Random variables, <br> distributions, independence</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/expectation.html">Expectation and Variance</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/conditional.html">Conditional probability</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/markov.html">Random sequences and <br> Markov chains</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/information_theory.html">Quantifying Information</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/compression.html">Data compression</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/communications.html">Mathematics of communications</a></li>
+      
+      
+      
+    </ul>
+    
+    
+     
+     
+     <span class="chapnav"><strong>3. Linear algebra, finite fields, <br>and error correction</strong></span>
+     <ul>
+      
+      
+      
+      <li><a href="/~ffh8x/moi/codes_graphs_algebra.html">Codes, graphs, and algebra</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/vectors.html">Vectors and spaces</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/fundamental_spaces.html">Fundamental spaces</a></li>
+      
+      
+      
+      
+      
+      <li><a class="active" style="color:#76bdd5" href="/~ffh8x/moi/ecc.html"><img class="emoji" title=":point_right:" alt=":point_right:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f449.png" height="20" width="20"> Linear codes</a></li>
+      
+      
+      
+    </ul>
+    
+    
+     
+     
+     <span class="chapnav"><strong>4. The frequency domain and <br>transmission of information</strong></span>
+     <ul>
+      
+      
+      <li class="chapnav">Complex numbers</li>
+      
+      
+      
+      <li class="chapnav">Frequency and spectrum</li>
+      
+      
+      
+      <li class="chapnav">Filteration and sampling</li>
+      
+      
+      
+      <li class="chapnav">Linear systems</li>
+      
+      
+      
+      <li class="chapnav">Frequency response</li>
+      
+      
+      
+      <li class="chapnav">Modulation</li>
+      
+      
+      
+      <li class="chapnav">Orthogonality</li>
+      
+      
+      
+      <li class="chapnav">Multiple-access communication</li>
+      
+      
+    </ul>
+    
+    
+     
+     
+     <span class="chapnav"><strong>5. Number theory and <br>information privacy</strong></span>
+     <ul>
+      
+      
+      <li class="chapnav">Encryption</li>
+      
+      
+      
+      <li class="chapnav">Number theory</li>
+      
+      
+      
+      <li class="chapnav">Public key cryptography</li>
+      
+      
+    </ul>
+    
+    
+     
+     
+     <span class="chapnav"><strong>6. Boolean algebra and <br>computation</strong></span>
+     <ul>
+      
+      
+      <li class="chapnav">Number systems and arithmetic</li>
+      
+      
+      
+      <li class="chapnav">Boolean algebra</li>
+      
+      
+      
+      <li class="chapnav">Logic design and computation</li>
+      
+      
+      
+      <li class="chapnav">
+      
+      
+    </ul>
+    
+    
+     
+     
+     <span class="chapnav"><strong>Appendix</strong></span>
+     <ul>
+      
+      
+      
+      <li><a href="/~ffh8x/moi/axiomatic.html">Axiomatic systems</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/index.html"><br></a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/index.html"><br></a></li>
+      
+      
+      
+    </ul>
+    
+    
+  </div>
+</nav>
+<div class="main">
+  <!-- variables for replacement -->
+  <h1 id="linear-algebra-linear-codes">Linear Algebra, Linear Codes</h1>
+<p>In this section we will introduce linear codes, a type of error-correcting codes based on linear algebra over finite fields with conceptual and computational nice properties. We will start by reviewing linear algebra over finite fields, and especially paying attention to the null space of matrices. We will then define linear codes in terms of the null space of <em>parity check</em> matrices or the column space of the <em>generator matrix</em>. We will discuss the error-correction capabilities of linear codes and show how decoding is performed. Finally, we will introduce some common and important linear codes.</p>
+
+<h2 id="linear-algebra-over-finite-fields">Linear algebra over finite fields</h2>
+
+<p>So far we have focused on vector spaces where the elements of vectors
+and matrices are real numbers. But digital codes live in discrete spaces. We need to work with vectors whose elements come from finite fields. The simplest case is binary vectors and matrices like:</p>
+
+\[A = \begin{pmatrix}
+\begin{matrix}
+1 &amp; 0 \\
+0 &amp; 0 \\
+1 &amp; 1 \\
+\end{matrix} &amp; \begin{matrix}
+0 &amp; 1 \\
+1 &amp; 1 \\
+0 &amp; 1 \\
+\end{matrix} \\
+\end{pmatrix},\qquad x = \left( 1,0,1,0 \right)\]
+
+<h3 id="matrix-algebra-over-finite-field">Matrix algebra over finite field</h3>
+
+<div class="exercise">
+	<button onclick="showSolution(this,'FFLin')" style="float:right;">Show Solution</button>
+    Consider $A$ and $x$ given  below. Computation is performed based on <a href="fields.html#bbf2">$\mathbb{F}_{2}$ rules</a>. Find $Ax$.
+
+<!-- {:.tabDefault}
+| $\oplus$ | 0 | 1 |
+|:---|:--|:--|
+|0|0|1|
+|1|1|0|
+ -->
+$$A = \begin{pmatrix}
+\begin{matrix}
+1 &amp; 0 \\
+0 &amp; 0 \\
+1 &amp; 1 \\
+\end{matrix} &amp; \begin{matrix}
+0 &amp; 1 \\
+1 &amp; 1 \\
+0 &amp; 1 \\
+\end{matrix} \\
+\end{pmatrix},\qquad x = \begin{pmatrix}
+1 \\
+0 \\
+1 \\
+0 \\
+\end{pmatrix}$$
+	<div id="FFLin" style="display:none;" class="solution">
+Recall: We can multiply this matrix by a vector x by expressing theresult as a linear combination of column vectors:
+
+
+\begin{align*}
+Ax &amp;= \begin{pmatrix}
+1 \\
+0 \\
+1 \\
+\end{pmatrix}x_{1} \oplus \begin{pmatrix}
+0 \\
+0 \\
+1 \\
+\end{pmatrix}x_{2} \oplus \begin{pmatrix}
+0 \\
+1 \\
+0 \\
+\end{pmatrix}x_{3} \oplus \begin{pmatrix}
+1 \\
+1 \\
+1 \\
+\end{pmatrix}x_{4} \\
+&amp;=
+\begin{pmatrix}
+1 \\
+0 \\
+1 \\
+\end{pmatrix} + \begin{pmatrix}
+0 \\
+1 \\
+0 \\
+\end{pmatrix} = \begin{pmatrix}
+1 \\
+1 \\
+1 \\
+\end{pmatrix}
+\end{align*}
+
+	</div>
+</div>
+<p><br></p>
+
+<div class="exercise">
+	<button onclick="showSolution(this,'FFLin2')" style="float:right;">Show Solution</button>
+	Find $By$ and $z^T B$ in $\mathbb F_3$, where
+	$$
+	B = \begin{pmatrix}1&amp;2&amp;0\\0&amp;2&amp;1\end{pmatrix}, \qquad y = \begin{pmatrix}1\\0\\1\end{pmatrix}, \qquad z = \begin{pmatrix}1\\2\end{pmatrix}.
+	$$
+	<div id="FFLin2" style="display:none;" class="solution">
+		\begin{align*}
+By &amp; =\begin{pmatrix}1\\
+0
+\end{pmatrix}\oplus\begin{pmatrix}0\\
+1
+\end{pmatrix}=\begin{pmatrix}1\\
+1
+\end{pmatrix}\\
+zB &amp; =\begin{pmatrix}1 &amp; 2\end{pmatrix}\begin{pmatrix}1&amp;2&amp;0\\0&amp;2&amp;1\end{pmatrix}=\begin{pmatrix}1 &amp; 2 &amp; 0\end{pmatrix}\oplus2\begin{pmatrix}0 &amp; 2 &amp; 1\end{pmatrix}=\begin{pmatrix}1 &amp; 2 &amp; 0\end{pmatrix}\oplus\begin{pmatrix}0 &amp; 1 &amp; 2\end{pmatrix}=\begin{pmatrix}1 &amp; 0 &amp; 2\end{pmatrix}
+\end{align*} 
+	</div>
+</div>
+<p><br></p>
+
+<div class="exercise">
+	In $\mathbb F_5$ compute $A\ominus B$ and $AB$, where 
+	$$A = \begin{pmatrix}1&amp;2\\3&amp;4\end{pmatrix},\qquad B = \begin{pmatrix}1&amp;3\\2&amp;4\end{pmatrix}.$$
+</div>
+<p><br></p>
+
+<h3 id="row-space-column-space-and-null-space">Row space, column space, and null space</h3>
+<p>The row space, column space, and null space in a finite field \(\mathbb F\) are defined in the same way as matrices over real numbers. In particular, the row space is the span of the rows of the matrix, i.e., the set of all linear combinations of the rows of the matrix, where the coefficients are also from \(\mathbb F\) and all computations are performed in \(\mathbb F\). For example, consider</p>
+
+\[A=\begin{pmatrix}1&amp;3&amp;4\\2&amp;2&amp;3\end{pmatrix}\]
+
+<p>in \(\mathbb F_5\). Then the following is a linear combination of the rows of \(A\):</p>
+
+\[\begin{pmatrix}3&amp;2\end{pmatrix} \begin{pmatrix}1&amp;3&amp;4\\2&amp;2&amp;3\end{pmatrix}=3\begin{pmatrix}1&amp;3&amp;4\end{pmatrix}\oplus 2\begin{pmatrix}2&amp;2&amp;3\end{pmatrix}=\begin{pmatrix}3&amp;4&amp;2\end{pmatrix}\oplus \begin{pmatrix}4&amp;4&amp;1\end{pmatrix}=\begin{pmatrix}2&amp;3&amp;3\end{pmatrix}\]
+
+<p>Note that multiplying a row vector from the left yields a linear combination of the rows and multiplying a column vector from the right yields a linear combination of the columns.</p>
+
+<p>We can find the fundamental spaces similar to real matrices. To find the <strong>row space</strong>, we start by multiplying the first row by a scalar to make the first element of the first row into 1. Then we add appropriate scaled versions of the first row to the other rows to make their first element 0. Then we move to the second element of the second row and so on.</p>
+
+<p>For example, a reduced basis for the row space of the matrix $B$</p>
+
+\[B = \begin{pmatrix}2&amp;3&amp;4\\2&amp;2&amp;3\end{pmatrix}\]
+
+<p>is obtained as</p>
+
+<div>
+\begin{equation}\label{eq:rowBasis}
+\begin{pmatrix}
+2 &amp; 3 &amp; 4\\
+2 &amp; 2 &amp; 3
+\end{pmatrix}\xrightarrow{R_{1}\to3R_{1}}
+\begin{pmatrix}
+\color{brown}{1} &amp; 4 &amp; 2\\
+2 &amp; 2 &amp; 3
+\end{pmatrix}\xrightarrow{R_{2}\to R_{2}+3R_{1}}
+\begin{pmatrix}
+\color{brown}{1} &amp; 4 &amp; 2\\
+\color{brown}{0 }&amp; 4 &amp; 4
+\end{pmatrix}\xrightarrow{R_{2}\to R_{2}/4}
+\begin{pmatrix}
+\color{brown}{1} &amp; 4 &amp; 2\\
+\color{brown}{0} &amp; \color{brown}{1} &amp; 1
+\end{pmatrix}\xrightarrow{R_{1}\to R_{1}+R_{2}}
+\begin{pmatrix}
+\color{brown}{1} &amp; \color{brown}{0} &amp; 3\\
+\color{brown}{0} &amp; \color{brown}{1} &amp; 1
+\end{pmatrix}
+\end{equation}
+</div>
+
+<p>where in the first step, we have replaced the first row by $3\times$ the first row. Note that part of the resulting matrix is the <span style="color:brown">identity matrix</span>. The rows of this matrix form a basis for the row spaces. So we can write the row space as</p>
+
+\[\left\{ \begin{pmatrix}x_1&amp;x_2&amp;3x_1+x_2\end{pmatrix}: x_1,x_2\in \mathbb F_4 \right\}.\]
+
+<p>Unlike the spaces of matrices with real elements, spaces of finite field matrices are, well, finite. The row space above has in fact 25 vectors in it. These are listed below, where for brevity we have dropped the parentheses and spaces:</p>
+
+\[000,011,022,033,044,\\
+103,114,120,131,142,\\
+201,212,223,234,240,\\
+304,310,321,332,343,\\
+402,413,424,430,441.\]
+
+<p>Now let us find the <strong>null space</strong> of this matrix. We can use the matrix obtained in \eqref{eq:rowBasis} to do so. But for our purpose, it is better to find a matrix which has the identity on its right side. To achieve this, we start from the last element of the last column and make it into a 1. Then we make the elements above this 1 into 0 and proceed backward:</p>
+
+\[\begin{pmatrix}
+2 &amp; 3 &amp; 4\\
+2 &amp; 2 &amp; 3
+\end{pmatrix}\xrightarrow{R_{2}\to2R_{2}}
+\begin{pmatrix}
+2 &amp; 3 &amp; 4\\
+4 &amp; 4 &amp; \color{brown}{1}
+\end{pmatrix}\xrightarrow{R_{1}\to R_{1}+R_{2}}
+\begin{pmatrix}
+1 &amp; 2 &amp; \color{brown}{0}\\
+4 &amp; 4 &amp; \color{brown}{1}
+\end{pmatrix}\xrightarrow{R_{1}\to3R_{1}}
+\begin{pmatrix}
+3 &amp; \color{brown}{1} &amp; \color{brown}{0}\\
+4 &amp; 4 &amp; \color{brown}{1}
+\end{pmatrix}\xrightarrow{R_{2}\to R_{1}+R_{2}}
+\begin{pmatrix}
+3 &amp; \color{brown}{1} &amp; \color{brown}{0}\\
+2 &amp; \color{brown}{0} &amp; \color{brown}{1}
+\end{pmatrix}\]
+
+<p>The elements of the null space then satisfy</p>
+
+\[\begin{pmatrix}
+3 &amp; \color{brown}{1} &amp; \color{brown}{0}\\
+2 &amp; \color{brown}{0} &amp; \color{brown}{1}
+\end{pmatrix}
+\begin{pmatrix}x_1\\\color{brown}{x_2}\\\color{brown}{x_3}\end{pmatrix}.\]
+
+<p>We can write the elements that correspond to the identity part of the matrix in terms of the other ones:</p>
+
+\[x_2 = -3x_1 = 2x_1\\
+x_3 = -2x_1 = 3x_1.\]
+
+<p>So the null space is</p>
+
+\[NS(B) = \left\{\begin{pmatrix}x_1\\2x_1\\3x_1\end{pmatrix}:x_1\in\mathbb F_5\right\}=\{000,123,241,314,432\}.\]
+
+<p>Finally, a generator for the null space is</p>
+
+\[G = \begin{pmatrix}1\\2\\3\end{pmatrix},\qquad NS(B) = \left\{G x_1: x_1 \in \mathbb F_5\right\}.\]
+
+<div class="exercise">
+	Find a basis for the null space and a generator matrix for each of the following matrices in $\mathbb F_5$:
+$$A=\begin{pmatrix}1&amp;3&amp;4\\2&amp;2&amp;3\end{pmatrix},\qquad B=\begin{pmatrix}1&amp;3&amp;4\\2&amp;1&amp;3\end{pmatrix}.$$
+</div>
+<p><br></p>
+
+<div class="exercise">
+	<button onclick="showSolution(this,'LinFF3')" style="float:right;">Show Solution</button>
+Find the null space of $$A = \begin{pmatrix}
+210010 \\
+211222 \\
+110001 \\
+\end{pmatrix}$$ in $\mathbb{F}_{3}$ (spaces between the elements are omitted in the matrix above). Also, find the generator matrix.
+	<div id="LinFF3" style="display:none;" class="solution">
+		$$\begin{pmatrix}
+210010 \\
+211222 \\
+110001 \\
+\end{pmatrix}\xrightarrow{R_{2} \rightarrow R_{2} + R_{3}}\begin{pmatrix}
+210010 \\
+021220 \\
+110001 \\
+\end{pmatrix}\xrightarrow{R_{2} \rightarrow 2R_{2}}\begin{pmatrix}
+210010 \\
+012110 \\
+110001 \\
+\end{pmatrix}$$
+
+$$\xrightarrow{R_{1} \rightarrow R_{1} + 2R_{2}}\begin{pmatrix}
+201200 \\
+012110 \\
+110001 \\
+\end{pmatrix}\xrightarrow{R_{1} \rightarrow 2R_{1}}\begin{pmatrix}
+102100 \\
+012110 \\
+110001 \\
+\end{pmatrix}\xrightarrow{R_{2} \rightarrow R_{2} + 2R_{1}}\begin{pmatrix}
+102100 \\
+210010 \\
+110001 \\
+\end{pmatrix}$$
+
+$$NS(A):\begin{pmatrix}
+x_{1} \\
+x_{2} \\
+x_{3} \\
+-x_{1} - 2x_{3} \\
+-2x_{1} - x_{2} \\
+-x_{1} - x_{2} \\
+\end{pmatrix} = \begin{pmatrix}
+1 \\
+0 \\
+0 \\
+-1 \\
+-2 \\
+-1 \\
+\end{pmatrix}x_{1} + \begin{pmatrix}
+0 \\
+1 \\
+0 \\
+0 \\
+-1 \\
+-1 \\
+\end{pmatrix}x_{2} + \begin{pmatrix}
+0 \\
+0 \\
+1 \\
+-2 \\
+0 \\
+0 \\
+\end{pmatrix}x_{3} = \begin{pmatrix}
+100 \\
+010 \\
+001 \\
+201 \\
+120 \\
+220 \\
+\end{pmatrix}\begin{pmatrix}
+x_{1} \\
+x_{2} \\
+x_{3} \\
+\end{pmatrix}$$
+	</div>
+</div>
+<p><br></p>
+
+<h2 id="linear-codes">Linear Codes</h2>
+
+<div style="float: right;">
+<table class="tabDefault" id="alincode">
+<tbody>
+<tr>
+<td><span><strong>Message</strong></span></td>
+<td><span><strong>Codeword</strong></span></td>
+</tr>
+<tr>
+<td><span style="color: #16a53f">000</span></td>
+<td>
+<span style="color: #16a53f">000</span><span style="color: #0b5ab2">000</span>
+</td>
+</tr>
+<tr>
+<td><span style="color: #16a53f">100</span></td>
+<td>
+<span style="color: #16a53f">100</span><span style="color: #0b5ab2">110</span>
+</td>
+</tr>
+<tr>
+<td><span style="color: #16a53f">010</span></td>
+<td>
+<span style="color: #16a53f">010</span><span style="color: #0b5ab2">101</span>
+</td>
+</tr>
+<tr>
+<td><span style="color: #16a53f">001</span></td>
+<td>
+<span style="color: #16a53f">001</span><span style="color: #0b5ab2">011</span>
+</td>
+</tr>
+<tr>
+<td><span style="color: #16a53f">110</span></td>
+<td>
+<span style="color: #16a53f">110</span><span style="color: #0b5ab2">011</span>
+</td>
+</tr>
+<tr>
+<td><span style="color: #16a53f">101</span></td>
+<td>
+<span style="color: #16a53f">101</span><span style="color: #0b5ab2">101</span>
+</td>
+</tr>
+<tr>
+<td><span style="color: #16a53f">011</span></td>
+<td>
+<span style="color: #16a53f">011</span><span style="color: #0b5ab2">110</span>
+</td>
+</tr>
+<tr>
+<td><span style="color: #16a53f">111</span></td>
+<td>
+<span style="color: #16a53f">111</span><span style="color: #0b5ab2">000</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="from-linear-equations-to-the-parity-check-matrix">From linear equations to the parity-check matrix</h3>
+
+<p>Recall the <em>binary</em> code constructed as follows:</p>
+
+<ul>
+  <li>Codeword: $\color{green}{x_{1}x_{2}x_{3}}\color{blue}{x_{4}x_{5}x_{6}}$</li>
+  <li>Information bits: $\color{green}{x_{1}x_{2}x_{3}}$</li>
+  <li>Parity bits: 
+\(\begin{cases}
+\color{blue}{x_{4}} = \color{green}{x_{1}} \oplus \color{green}{x_{2}} \\
+\color{blue}{x_{5}} = \color{green}{x_{1}} \oplus \color{green}{x_{3}} \\
+\color{blue}{x_{6}} = \color{green}{x_{2}} \oplus \color{green}{x_{3}} \\
+\end{cases}\)</li>
+</ul>
+
+<p>At the receiver, we check these three equations defining the parity bits. If they all hold, we declare that no error has occurred. But if at least one of these is not satisfied, we know an error has occurred. For example, suppose 101110 is received. Then</p>
+
+<p>$1 = 1\oplus 0$ ✅<br>
+$1 \neq 1\oplus 1$ ❌ <br>
+$0 \neq 0\oplus 1$ ❌</p>
+
+<p>So we know an error has occurred, but which bit is erroneous?</p>
+
+<p>Linear algebra will be helpful for answering this question.</p>
+
+<p>Note that the set of equations defining this code can be written as</p>
+
+\[\begin{cases}
+\color{green}{x_{1}} \oplus \color{green}{x_{2}} \oplus \color{blue}{x_{4}} = 0 \\
+\color{green}{x_{1}} \oplus \color{green}{x_{3}} \oplus \color{blue}{x_{5}} = 0 \\
+\color{green}{x_{2}} \oplus \color{green}{x_{3}} \oplus \color{blue}{x_{6}} = 0 \\
+\end{cases}\]
+
+<p>We can write these as a matrix equation:</p>
+
+\[\begin{cases}
+\color{green}{x_{1}} \oplus \color{green}{x_{2}} \oplus \color{blue}{x_{4}} = 0 \\
+\color{green}{x_{1}} \oplus \color{green}{x_{3}} \oplus \color{blue}{x_{5}} = 0 \\
+\color{green}{x_{2}} \oplus \color{green}{x_{3}} \oplus \color{blue}{x_{6}} = 0 \\
+\end{cases} \Longleftrightarrow 
+\begin{pmatrix}
+\color{green}{1} &amp; \color{green}{1} &amp; 0 &amp; \color{blue}{1} &amp; 0 &amp; 0 \\
+\color{green}{1} &amp; 0 &amp; \color{green}{1} &amp; 0 &amp; \color{blue}{1} &amp; 0 \\
+0 &amp; \color{green}{1} &amp; \color{green}{1} &amp; 0 &amp; 0 &amp; \color{blue}{1} \\
+\end{pmatrix}
+\begin{pmatrix}
+\color{green}{x_{1}} \\
+\color{green}{x_{2}} \\
+\begin{matrix}
+\color{green}{x_{3}} \\
+\color{blue}{x_{4}} \\
+\color{blue}{x_{5}} \\
+\color{blue}{x_{6}} \\
+\end{matrix} \\
+\end{pmatrix} = 0\]
+
+<p>We can thus define this code as the set of vectors $x$ such that $Hx = 0$, where</p>
+
+\[H = \begin{pmatrix}
+\color{green}{1} &amp; \color{green}{1} &amp; 0 &amp; \color{blue}{1} &amp; 0 &amp; 0 \\
+\color{green}{1} &amp; 0 &amp; \color{green}{1} &amp; 0 &amp; \color{blue}{1} &amp; 0 \\
+0 &amp; \color{green}{1} &amp; \color{green}{1} &amp; 0 &amp; 0 &amp; \color{blue}{1} \\
+\end{pmatrix}\]
+
+<p>$H$ is called a parity check matrix. The code defined by $H$ is the vectors in its <strong>null space</strong>.</p>
+
+<p>We can use $H$ to check the parity equations. For our previous example, in which 101110 was received,</p>
+
+\[H\begin{pmatrix}1\\0\\1\\1\\1\\0\end{pmatrix} = \begin{pmatrix}1\\1\\0 \end{pmatrix}\oplus \begin{pmatrix}0\\1\\1\end{pmatrix} \oplus \begin{pmatrix}1\\0\\0 \end{pmatrix}\oplus \begin{pmatrix}0\\1\\0\end{pmatrix} = \begin{pmatrix}0\\1\\1\end{pmatrix}.\]
+
+<p>Since the answer is not $\mathbf 0$, an error has occurred. We will see later how the matrix $H$ can help us find which bit is erroneous. But for the moment, let us more closely study the codes defined in this way, which are called linear codes.</p>
+
+<div class="highlight">
+A <strong>linear code</strong> is the set of vectors in the null space of a matrix $H$, called the parity check matrix. That is, for a matrix $H$, the code 
+$$C=\{x:Hx=0\}$$
+is a linear code.
+</div>
+
+<p><br></p>
+
+<p>Why are the codes defined based on the null space of a matrix called linear codes? Because they satisfy the linear properties:</p>
+<ul>
+  <li>
+    <p>If $x$ and $y$ are codewords, then $x\oplus y$ is also a code word.</p>
+
+\[Hx=0,Hy=0\Rightarrow H(x\oplus y) = Hx\oplus Hy = 0.\]
+  </li>
+  <li>
+    <p>If $x$ is a codeword, then $ax$ is also a codeword for any $a\in \mathbb F$.</p>
+
+\[H(ax) = aHx = \mathbf 0.\]
+  </li>
+</ul>
+
+<p><br></p>
+
+<p>The parity check matrix for the code is of the form
+$H = \left( \color{green}{A} \vert \color{blue}{I} \right)$ where</p>
+
+\[\color{green}{A} = \begin{pmatrix}
+\color{green}{1} &amp; \color{green}{1} &amp; 0 \\
+\color{green}{1} &amp; 0 &amp; \color{green}{1} \\
+0 &amp; \color{green}{1} &amp; \color{green}{ 1}\\
+\end{pmatrix} \text{ and } \color{blue}{I} = \begin{pmatrix}
+\color{blue}{1} &amp; 0 &amp; 0 \\
+0 &amp; \color{blue}{1} &amp; 0 \\
+0 &amp; 0 &amp; \color{blue}{1} \\
+\end{pmatrix}\]
+
+<p>In general this form makes finding the parity equations easy:</p>
+
+\[H = \left( {\color{green}{A}}_{\left( {\color{green}{n}} - {\color{green}{k}} \right) \times {\color{green}{k}}} \middle| 
+{\color{blue}{I}}_{\left( {\color{blue}{n}} - {\color{blue}{k}} \right) \times \left( {\color{blue}{n}} - {\color{blue}{k}} \right)} \right)\]
+
+<ul>
+  <li>$A$ is arbitrary and $I$ is the identity matrix</li>
+  <li>$n$ is the length of the code (6 above)</li>
+  <li>$k$ is the number of message bits (3 above)</li>
+  <li>$n - k$ is the number of parity bits (3 above)</li>
+</ul>
+
+<p>Unless otherwise stated, we assume the codes are binary and we work in $\mathbb F_2$.</p>
+
+<div class="exercise">
+	<button onclick="showSolution(this,'repCode')" style="float:right;">Show Solution</button>
+	
+Find the parity equations for the code defined by $H$,
+
+$$H = \begin{pmatrix}
+1 &amp; 1 &amp; 0&amp; 0&amp; 0\\
+1 &amp; 0&amp; 1 &amp;0 &amp; 0\\
+1 &amp; 0&amp; 0&amp; 1 &amp; 0\\
+1 &amp; 0&amp; 0&amp; 0&amp;  1\\
+\end{pmatrix}.$$
+Determine all the codewords.
+	<div id="repCode" style="display:none;" class="solution">
+The parity equations are: $x_{1} \oplus x_{2} = 0, x_{1} \oplus x_{3} = 0,x_{1} \oplus x_{4} = 0$. These mean that$x_{1} = x_{2} = x_{3} = x_{4}$. So the codewords are $0000$ and $1111$ This is the quadruple redundancy code!	</div>
+</div>
+<p><br></p>
+
+<div class="exercise">
+	<button onclick="showSolution(this,'epCode')" style="float:right;">Show Solution</button>
+Find the code defined by $H$
+$$H = \begin{pmatrix}
+1 &amp; 1 &amp; 1 &amp; 1 \\
+\end{pmatrix}.$$
+	<div id="epCode" style="display:none;" class="solution">
+     The parity equation is $x_1 \oplus x_2 \oplus x_3 \oplus x_4 =0$, or equivalently, $x_4 = x_1\oplus x_2\oplus x_3$. Hence, this is the even-parity code.
+	</div>
+</div>
+<p><br></p>
+
+<!-- $$\begin{pmatrix}
+x_1 \\
+x_2 \\
+x_3 \\
+x_1 \oplus x_2 \oplus x_3
+\end{pmatrix}
+\rightarrow
+G = \begin{pmatrix}
+1 & 0 & 0 \\
+0 & 1 & 0 \\
+0 & 0 & 1 \\
+1 & 1 & 1 \\
+\end{pmatrix}
+$$ -->
+
+<p>As demonstrated by the next example, the parity check matrix doesn’t need to be necessarily of the form $(A\vert I)$. If it is not, we can make it so using elementary row operations, which do not alter the null space.</p>
+
+<div class="exercise">
+	<button onclick="showSolution(this,'2mats')" style="float:right;">Show Solution</button>
+	Find and compare the codes (find all codewords) defined by $H_{1}$ and $H_{2}$? (Spaces are omitted.)
+$$H_{1} = \begin{pmatrix}
+1010 \\
+1101 \\
+\end{pmatrix},\qquad H_{2} = \begin{pmatrix}
+0111 \\
+1101 \\
+\end{pmatrix}$$
+	<div id="2mats" style="display:none;" class="solution">
+		Let us find the code corresponding to $H_1$. The parity equations are $x_3 = x_1, x_4 = x_1\oplus x_2$. The codewords are 
+	$$\{0000,0101,1011,1110\}.$$
+
+	To find the null space of $H_2$, let us find a basis for it since $H$ is not of the form $(A\vert I)$.
+	$$H_2\xrightarrow{R_1\to R_1\oplus R_2}H_1.$$ So the null spaces of $H_1$ and $H_2$ are the same. Thus they give the same code. 
+	</div>
+</div>
+<p><br>
+<br></p>
+
+<div class="exercise">
+Find the parity check equations and the codewords of the code defined by $$H = \begin{pmatrix}
+1 &amp; 1 &amp; 1 &amp; 1 \\
+0 &amp; 0 &amp; 1 &amp; 1 \\
+1 &amp; 0 &amp; 0 &amp; 1 \\
+\end{pmatrix}$$
+</div>
+
+<h3 id="the-generator-matrix-and-encoding">The generator matrix and encoding</h3>
+
+<p>Recall that a linear code is defined as the null space of a matrix $H$. We can also find a matrix $G$ such that the code is the column space of $G$. That is $G$ is a generator for the null space of $H$.</p>
+
+<p>Example: consider the code with message bits $x_1,x_2,x_3$ and parity bits $x_4,x_5,x_6$ with the parity check matrix $H$,</p>
+
+\[H = \begin{pmatrix}
+\color{green}{1} &amp; \color{green}{1} &amp; 0 &amp; \color{blue}{1} &amp; 0 &amp; 0 \\
+\color{green}{1} &amp; 0 &amp; \color{green}{1} &amp; 0 &amp; \color{blue}{1} &amp; 0 \\
+0 &amp; \color{green}{1} &amp; \color{green}{1} &amp; 0 &amp; 0 &amp; \color{blue}{1} \\
+\end{pmatrix} \Rightarrow \begin{cases}
+\color{green}{x_{1}} \oplus \color{green}{x_{2}} \oplus \color{blue}{x_{4}} = 0 \\
+\color{green}{x_{1}} \oplus \color{green}{x_{3}} \oplus \color{blue}{x_{5}} = 0 \\
+\color{green}{x_{2}} \oplus \color{green}{x_{3}} \oplus \color{blue}{x_{6}} = 0 \\
+\end{cases}\]
+
+<p>So the null space, i.e., the code, is the set of vectors of the form:</p>
+
+\[C = \left\{\ \begin{pmatrix}
+\color{green}{x_{1}} \\
+\color{green}{x_{2}} \\
+\color{green}{x_{3}} \\
+\color{blue}{x_{1}} + \color{blue}{x_{2}} \\
+\color{blue}{x_{1}} + \color{blue}{x_{3}} \\
+\color{blue}{x_{2}} + \color{blue}{x_{3}} \\
+\end{pmatrix} 
+: x_1,x_2,x_3\in \mathbb F_2\right\}.\]
+
+<p>But note that</p>
+
+\[\begin{pmatrix}
+\color{green}{x_{1}} \\
+\color{green}{x_{2}} \\
+\color{green}{x_{3}} \\
+\color{blue}{x_{1}} + \color{blue}{x_{2}} \\
+\color{blue}{x_{1}} + \color{blue}{x_{3}} \\
+\color{blue}{x_{2}} + \color{blue}{x_{3}} \\
+\end{pmatrix} 
+= 
+\begin{pmatrix}
+1 \\
+0 \\
+0 \\
+1 \\
+1 \\
+0 \\
+\end{pmatrix}x_{1} \oplus \begin{pmatrix}
+0 \\
+1 \\
+0 \\
+1 \\
+0 \\
+1 \\
+\end{pmatrix}x_{2} \oplus \begin{pmatrix}
+0 \\
+0 \\
+1 \\
+0 \\
+1 \\
+1 \\
+\end{pmatrix}x_{3} = \begin{pmatrix}
+1 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 1 \\
+1 &amp; 1 &amp; 0 \\
+1 &amp; 0 &amp; 1 \\
+0 &amp; 1 &amp; 1 \\
+\end{pmatrix}\begin{pmatrix}
+x_{1} \\
+x_{2} \\
+x_{3} \\
+\end{pmatrix}.\]
+
+<p>If we define $G$ as</p>
+
+\[G = \begin{pmatrix}
+\color{blue}{1} &amp; 0 &amp; 0 \\
+0 &amp; \color{blue}{1} &amp; 0 \\
+0 &amp; 0 &amp; \color{blue}{1} \\
+\color{green}{1} &amp; \color{green}{1} &amp; 0 \\
+\color{green}{1} &amp; 0 &amp; \color{green}{1} \\
+0 &amp; \color{green}{1} &amp; \color{green}{1} \\
+\end{pmatrix},\]
+
+<p>Then</p>
+
+\[C = \left\{G\begin{pmatrix}
+x_{1} \\
+x_{2} \\
+x_{3} \\
+\end{pmatrix}: x_1,x_2,x_3\right\}.\]
+
+<p>In fact, for every set of message bits $x_1,x_2,x_3$, the corresponding codeword is given by $Gx$. For example,</p>
+
+\[G\begin{pmatrix}
+1 \\
+1 \\
+0 \\
+\end{pmatrix} = \begin{pmatrix}
+1 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 1 \\
+1 &amp; 1 &amp; 0 \\
+1 &amp; 0 &amp; 1 \\
+0 &amp; 1 &amp; 1 \\
+\end{pmatrix}\begin{pmatrix}
+1 \\
+1 \\
+0 \\
+\end{pmatrix} = \begin{pmatrix}
+1 \\
+0 \\
+0 \\
+1 \\
+1 \\
+0 \\
+\end{pmatrix} \oplus \begin{pmatrix}
+0 \\
+1 \\
+0 \\
+1 \\
+0 \\
+1 \\
+\end{pmatrix} = \begin{pmatrix}
+1 \\
+1 \\
+0 \\
+0 \\
+1 \\
+1 \\
+\end{pmatrix}\]
+
+<div class="exercise">
+Find $HG$ for the previous example.
+</div>
+<p><br></p>
+
+<div class="exercise">
+<button onclick="showSolution(this,'genmat')" style="float:right;">Show Solution</button>
+Find the generator matrix and then all codewords for
+$$H = \begin{pmatrix}
+0111 \\
+1101 \\
+\end{pmatrix}$$
+
+<div id="genmat" style="display:none;" class="solution">
+Subtracting second row from the first row: $$\begin{pmatrix}
+1010 \\
+1101 \\
+\end{pmatrix} \Rightarrow \begin{cases}
+x_{3} = x_{1} \\
+x_{4} = x_{1} + x_{2} \\
+\end{cases}$$
+The null space: $$\begin{pmatrix}
+x_{1} \\
+x_{2} \\
+x_{1} \\
+x_{1} + x_{2} \\
+\end{pmatrix} = \begin{pmatrix}
+1 \\
+0 \\
+1 \\
+1 \\
+\end{pmatrix}x_{1} + \begin{pmatrix}
+0 \\
+1 \\
+0 \\
+1 \\
+\end{pmatrix}x_{2} \Rightarrow G = \begin{pmatrix}
+10 \\
+01 \\
+10 \\
+11 \\
+\end{pmatrix}$$
+
+
+$$G\begin{pmatrix}
+0 \\
+0 \\
+\end{pmatrix} = \begin{pmatrix}
+0 \\
+0 \\
+0 \\
+0 \\
+\end{pmatrix}, G\begin{pmatrix}
+1 \\
+0 \\
+\end{pmatrix} = \begin{pmatrix}
+1 \\
+0 \\
+1 \\
+1 \\
+\end{pmatrix},G\begin{pmatrix}
+0 \\
+1 \\
+\end{pmatrix} = \begin{pmatrix}
+0 \\
+1 \\
+0 \\
+1 \\
+\end{pmatrix}, G \begin{pmatrix}
+1 \\
+1 \\
+\end{pmatrix} = \begin{pmatrix}
+1 \\
+1 \\
+1 \\
+0 \\
+\end{pmatrix}.$$
+
+</div>
+</div>
+
+<h4 id="a-linear-code-over-mathbbf_3">A linear code over $\mathbb{F}_{3}$</h4>
+<p>Let $H$ be the parity check matrix of a code in $\mathbb F_3$,</p>
+
+\[H = \begin{pmatrix}
+1 &amp; 1 &amp; 1 &amp; 0 \\
+1 &amp; 2 &amp; 0 &amp; 1 \\
+\end{pmatrix}.\]
+
+<p>The null space:</p>
+
+\[\begin{pmatrix}
+1 &amp; 1 &amp; 1 &amp; 0 \\
+1 &amp; 2 &amp; 0 &amp; 1 \\
+\end{pmatrix} \rightarrow \begin{pmatrix}
+x_{1} \\
+x_{2} \\
+-x_{1} - x_{2} \\
+-x_{1} - 2x_{2} \\
+\end{pmatrix} = \begin{pmatrix}
+x_{1} \\
+x_{2} \\
+2x_{1} + 2x_{2} \\
+2x_{1} + x_{2} \\
+\end{pmatrix} = \begin{pmatrix}
+\begin{matrix}
+1 \\
+0 \\
+2 \\
+2 \\
+\end{matrix} &amp; \begin{matrix}
+0 \\
+1 \\
+2 \\
+1 \\
+\end{matrix} \\
+\end{pmatrix}\begin{pmatrix}
+x_{1} \\
+x_{2} \\
+\end{pmatrix} \Rightarrow G = \begin{pmatrix}
+\begin{matrix}
+1 \\
+0 \\
+2 \\
+2 \\
+\end{matrix} &amp; \begin{matrix}
+0 \\
+1 \\
+2 \\
+1 \\
+\end{matrix} \\
+\end{pmatrix}\]
+
+<p>Example codeword = \(G\begin{pmatrix}
+1 \\
+2 \\
+\end{pmatrix} = \begin{pmatrix}
+1 \\
+2 \\
+0 \\
+1 \\
+\end{pmatrix}\)</p>
+
+<div class="highlight">
+  <h3 id="properties-of-linear-codes">Properties of linear codes</h3>
+
+  <ol>
+	<li>$x$ is a codeword if and only if $Hx = 0$</li>
+<li> If $H$ is of the systematic form 
+
+$$H_{(n-k)\times n} = \left( {\color{green}{A}}_{\left( {\color{green}{n}} - {\color{green}{k}} \right) \times {\color{green}{k}}} \middle| 
+{\color{blue}{I}}_{\left( {\color{blue}{n}} - {\color{blue}{k}} \right) \times \left( {\color{blue}{n}} - {\color{blue}{k}} \right)} \right),$$
+
+then the codewords look like
+
+$$x = \color{green}{\underset{message}{\underbrace{x_{1}\cdots x_{k}}}}\color{blue}{\underset{parity}{\underbrace{x_{k + 1}\cdots x_{n}}}},$$
+
+where $n$ is the length of the code and $k$ is the number of its message bits. $k$ is also called the dimension of the code as it is the dimension of the null space.
+</li>
+<li> When $H$ has the systematic form above, we can find a generator matrix $G$,
+$$G_{n\times k} = \left(\begin{array}{c}
+I_{k}\\
+-A_{\left(n-k\right)\times k}
+\end{array}\right)$$
+and encoding can be performed by
+$$\begin{pmatrix}\color{green}{x_1\\\vdots\\x_k}\\\color{blue}{x_{k+1}\\\vdots\\ x_n}\end{pmatrix} = G \begin{pmatrix}\color{green}{x_1\\ \vdots \\ x_k}\end{pmatrix}.$$</li>
+<li> Linear codes can be defined over any finite field (not limited to
+$\mathbb{F}_{2}$)</li>
+<li> Linearity: if $x$ and $y$ are codewords, then $ax$, $x + y$, and $x - y$ are also codewords</li>
+</ol>
+</div>
+
+<p>When $H$ is not in systematic form, if it is of size $\left( n - k \right) \times n$ and has $n - k$
+linearly independent rows, then there are $k$ message bits and
+$n - k$ parity bits, each resulting from one row of $H$.</p>
+
+<h2 id="error-correction-and-decoding-of-linear-codes">Error-correction and decoding of linear codes</h2>
+
+<h3 id="hamming-distance-and-hamming-weight">Hamming distance and Hamming weight</h3>
+
+<p>Recall: <em>Hamming distance</em> is the number of positions in which two
+codewords are different \(d_{H}\left( \mathbf{1}0\mathbf{0}11,\mathbf{0}0\mathbf{1}11 \right) = 2\).</p>
+
+<p>Definition: <em>Hamming weight</em> of a codeword is the number of its nonzero
+elements \(w_{H}\left( 10011 \right) = 3\).</p>
+
+<p>What is the relationship between the two? $d_{H}\left( x, y \right) = w_{H}\left( x - y \right)$. Note that for binary $x - y = x \oplus y$.</p>
+
+<div class="exercise">
+<button onclick="showSolution(this,'hamd')" style="float:right;">Show Solution</button>
+Find $d_{H}\left( 10011,00111 \right)$.
+<div id="hamd" style="display:none;" class="solution">
+$$d_{H}\left( 10011,00111 \right) = w_{H}\left( x - y \right) = w_{H}\left( x \oplus y \right) = w_{H}\left( 10100 \right) = 2$$
+</div>
+</div>
+
+<h3 id="minimum-distance-of-linear-codes">Minimum distance of linear codes</h3>
+
+<p>Recall: The minimum distance of a code is the smallest distance between
+two codewords</p>
+
+<p>Do we need to compute the distance between every pair of codewords? No!</p>
+
+<p>Claim: The minimum distance of a linear code is the smallest weight of a
+codeword</p>
+
+<ul>
+  <li>Suppose $x,y$ have the smallest distance</li>
+  <li>$d_{H}\left( x,y \right) = w_{H}(x - y)$</li>
+  <li>But $z = x - y$ is a codeword</li>
+</ul>
+
+<div class="exercise">
+	<button onclick="showSolution(this,'minDist')" style="float:right;">Show Solution</button>
+	What is the minimum distance of the code given by $H$,
+	$$
+	H_{1} = \begin{pmatrix}
+	1010 \\
+	1101 \\
+	\end{pmatrix}.
+	$$
+	<div id="minDist" style="display:none;" class="solution">
+		The generator matrix is 
+		$$
+		G = 
+		\begin{pmatrix}1&amp;0\\
+		0&amp;1\\
+		1&amp;0\\
+		1&amp;1
+		\end{pmatrix}.
+		$$
+		So the codewords are $\{0000,1011,0101,1110\}$. The smallest weight of a nonzero codeword is 2, which is also the minimum Hamming distance.
+	</div>
+</div>
+<p><br></p>
+
+<div class="exercise">
+  <p>What is the minimum distance of the <a href="#alincode">code discussed before</a> with $H$ as shown below?</p>
+
+\[H = \begin{pmatrix}
+1 &amp; 1 &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\
+1 &amp; 0 &amp; 1 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 1 &amp; 1 &amp; 0 &amp; 0 &amp; 1 \\
+\end{pmatrix}\]
+
+</div>
+
+<p>What does our previous claim mean in terms of the parity check matrix $H$? The smallest weight of a codeword is the smallest number $d$ such that there are $d$ columns in $H$ whose linear combination is 0.</p>
+
+<p>For the matrix $H$ of the previous exercise:</p>
+<ul>
+  <li>No column is 0 $\Rightarrow d &gt; 1$</li>
+  <li>No two column add to $0 \Rightarrow d &gt; 2$</li>
+  <li>Adding columns 1, 2, and 3 gives 0 $\Rightarrow d = 3$.</li>
+  <li>There are 3 linearly dependant columns.</li>
+</ul>
+
+<p>What is the relationship between minimum distance and rank of $H$?</p>
+<ul>
+  <li>If the rank is $r$, there are $r$ linearly independent columns</li>
+  <li>If the minimum distance is $d$, every $d - 1$ columns are linearly
+independent</li>
+  <li>Hence, $r \geq d - 1$ and so $d\le r+1$.</li>
+</ul>
+
+<p>For the previous exercise, min distance is 3 and rank is also 3.</p>
+
+<p>If the parity check matrix has dimensions $(n-k)\times n$, i.e., there are $n-k$ parity bits, then its rank is at most $n-k$ (why?). Hence, we find the following bound on the minimum distance of code:</p>
+
+<div class="highlight">
+	<strong>The Singleton bound</strong>: The minimum distance of linear code satisfies $d\le n-k+1$.
+</div>
+
+<p><br></p>
+
+<div class="exercise">
+Verify that for the matrix of the previous exercise, the Singleton bound is satisfied.
+</div>
+<p><br></p>
+
+<h3 id="decoding-and-error-correction">Decoding and error correction</h3>
+
+<p>Suppose we receive a word $y$ at the receiver (or read it from a flash
+drive). We know that there may have been errors. Assuming that the
+number of errors are less than half of the minimum distance, we should
+be able to correct them and find the transmitted codeword $x$. But how? This is the decoding problem.</p>
+
+<p>It will be helpful to think of errors as adding a vector $e$ to $x$. The output is $y = x + e$.</p>
+
+<div style="float: right;"><img src="/~ffh8x/moi/assets/img/xery.png" width="250px"></div>
+<p>Example:</p>
+<ul>
+  <li>$x$ = 10001001</li>
+  <li>$e$ = 000<span style="color: red;">1</span>0000</li>
+  <li>$y$ = 10011001</li>
+</ul>
+
+<p>The number of errors equals to the weight of $e$.</p>
+
+<p>At the receiver, we only know $y$ but don’t know what $e$ and $x$ are.</p>
+
+<h4 id="parity-check-equations">Parity check equations</h4>
+
+<p>The parity check equations are key to finding whether or not there are any errors and finding them. As an example, consider the code defined by the following parity check matrix:</p>
+
+<div>
+	\begin{equation}\label{eq:H}
+	H = \begin{pmatrix}
+1 &amp; 1 &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\
+1 &amp; 0 &amp; 1 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 1 &amp; 1 &amp; 0 &amp; 0 &amp; 1 \\
+\end{pmatrix}.
+\end{equation}
+</div>
+
+<p>We receive $y = \text{101011}$. Is there any error? If so, what was sent?</p>
+
+<p>We know that if there are no errors, then $y$ is equal to $x$ and satisfies the parity equations. So we check to see if the parity equations are satisfied for $y$:</p>
+
+<ul>
+  <li>$y_{1} + y_{2} + y_{4} = 1 + 0 + 0 = 1 \neq 0$ ❌</li>
+  <li>$y_{1} + y_{3} + y_{5} = 1 + 1 + 1 = 1 \neq 0$ ❌</li>
+  <li>$y_{2} + y_{3} + y_{6} = 0 + 1 + 1 = 0$ ✅</li>
+</ul>
+
+<p>This indicates that there was at least one error. But which bit(s) is/are incorrect?</p>
+
+<p>Recall that each row of the parity check matrix  corresponds to one parity equation. We can check all parity equations with matrix algebra by finding $s = Hy$. This is called the <em>syndrome</em>.</p>
+
+\[s = Hy =  \begin{pmatrix}
+1 &amp; 1 &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\
+1 &amp; 0 &amp; 1 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 1 &amp; 1 &amp; 0 &amp; 0 &amp; 1 \\
+\end{pmatrix}\begin{pmatrix}
+1 \\
+0 \\
+1 \\
+0 \\
+1 \\
+1 \\
+\end{pmatrix} = \begin{pmatrix}
+1 \\
+1 \\
+0 \\
+\end{pmatrix} + \begin{pmatrix}
+0 \\
+1 \\
+1 \\
+\end{pmatrix} + \begin{pmatrix}
+0 \\
+1 \\
+0 \\
+\end{pmatrix} + \begin{pmatrix}
+0 \\
+0 \\
+1 \\
+\end{pmatrix} = \begin{pmatrix}
+1 \\
+1 \\
+0 \\
+\end{pmatrix}\]
+
+<p>The first and second elements are nonzero, indicating first and second equations are not satisfied.</p>
+
+<p>So if the syndrome is nonzero, we know that there are errors. But the syndrome can also help us to find which bits are incorrect. Recall that $y=x+e$. So</p>
+
+\[s = Hy = H\left( x + e \right) = Hx + He = He.\]
+
+<p>We thus have the equation $s=He$.</p>
+
+<div class="highlight">
+So to find the error, we need to solve the equation
+
+$$s = He,$$
+
+for $e$. (Note that we can compute $s$ using $s=Hy$.)
+
+
+</div>
+
+<p>If we can solve this equation, we can find $e$ and thus $x$.</p>
+
+<p>For this example, we must solve this equation for $e$</p>
+
+\[He = s \Rightarrow \begin{pmatrix}
+1 &amp; 1 &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\
+1 &amp; 0 &amp; 1 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 1 &amp; 1 &amp; 0 &amp; 0 &amp; 1 \\
+\end{pmatrix}e = \begin{pmatrix}
+1 \\
+1 \\
+0 \\
+\end{pmatrix}\]
+
+<p>But how can we solve this equation? Is there a unique solution? To find out how to solve this, let’s first see a couple of examples with known $e$.</p>
+
+<div class="exercise">
+	<button onclick="showSolution(this,'synsolve')" style="float:right;">Show Solution</button>
+	Find $s = He$ for the following values of $e$: 
+	<ul>
+	 	<li>$e_1 = 010000.$</li>
+	 	<li>$e_2 = 000100.$</li>
+	 	<li>$e_3 = 010001.$</li>
+	 </ul> 
+	<div id="synsolve" style="display:none;" class="solution">
+	\begin{align*}	
+He_1 &amp;= \begin{pmatrix}
+1 &amp; \color{brown}{1} &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\
+1 &amp; \color{brown}{0} &amp; 1 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; \color{brown}{1} &amp; 1 &amp; 0 &amp; 0 &amp; 1 \\
+\end{pmatrix}\begin{pmatrix}
+0 \\
+\color{brown}{1} \\
+0 \\
+0 \\
+0 \\
+0 \\
+\end{pmatrix} = \begin{pmatrix}
+\color{brown}{1} \\
+\color{brown}{0} \\
+\color{brown}{1} \\
+\end{pmatrix}
+\\
+\\
+He_2 &amp;= \begin{pmatrix}
+1 &amp; 1 &amp; 0 &amp; \color{green}{1} &amp; 0 &amp; 0 \\
+1 &amp; 0 &amp; 1 &amp; \color{green}{0} &amp; 1 &amp; 0 \\
+0 &amp; 1 &amp; 1 &amp; \color{green}{0} &amp; 0 &amp; 1 \\
+\end{pmatrix}\begin{pmatrix}
+0 \\
+0 \\
+0 \\
+\color{green}{1} \\
+0 \\
+0 \\
+\end{pmatrix} = \begin{pmatrix}
+\color{green}{1} \\
+\color{green}{0} \\
+\color{green}{0} \\
+\end{pmatrix}\\
+\\
+\\
+He_3 &amp;= \begin{pmatrix}
+1 &amp; \color{blue}{1} &amp; 0 &amp; 1 &amp; 0 &amp; \color{red}{0} \\
+1 &amp; \color{blue}{0} &amp; 1 &amp; 0 &amp; 1 &amp; \color{red}{0} \\
+0 &amp; \color{blue}{1} &amp; 1 &amp; 0 &amp; 0 &amp; \color{red}{1} \\
+\end{pmatrix}\begin{pmatrix}
+0 \\
+\color{blue}{1} \\
+0 \\
+0 \\
+0 \\
+\color{red}{1} \\
+\end{pmatrix} = \begin{pmatrix}
+\color{blue}{1} \\
+\color{blue}{0} \\
+\color{blue}{1} \\
+\end{pmatrix}+\begin{pmatrix}
+\color{red}{0} \\
+\color{red}{0} \\
+\color{red}{1} \\
+\end{pmatrix}=\begin{pmatrix}
+1 \\
+0 \\
+0 \\
+\end{pmatrix}
+%\\
+%\\
+%He_4&amp;=\begin{pmatrix}
+%1 &amp; 1 &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\
+%1 &amp; 0 &amp; 1 &amp; 0 &amp; 1 &amp; 0 \\
+%0 &amp; 1 &amp; 1 &amp; 0 &amp; 0 &amp; 1 \\
+%\end{pmatrix}\begin{pmatrix}
+%0 \\
+%1 \\
+%1 \\
+%0 \\
+%1 \\
+%0 \\
+%\end{pmatrix} = \begin{pmatrix}
+%1 \\
+%0 \\
+%1 \\
+%\end{pmatrix} + \begin{pmatrix}
+%0 \\
+%1 \\
+%1 \\
+%\end{pmatrix} + \begin{pmatrix}
+%0 \\
+%1 \\
+%0 \\
+%\end{pmatrix} = \begin{pmatrix}
+%1 \\
+%0 \\
+%0 \\
+%\end{pmatrix}
+
+	  \end{align*}
+	</div>
+</div>
+<p><br></p>
+
+<p>Based on the previous exercise, we make the following observations:</p>
+<ul>
+  <li>The syndrome is equal to the sum of the columns of $H$ where the errors occurred.</li>
+  <li>Multiple error vectors, perhaps with different number of errors in each, can lead to the same syndrome.</li>
+</ul>
+
+<p>Back to the equation:</p>
+
+\[\begin{pmatrix}
+1 &amp; 1 &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\
+1 &amp; 0 &amp; 1 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 1 &amp; 1 &amp; 0 &amp; 0 &amp; 1 \\
+\end{pmatrix}e = \begin{pmatrix}
+1 \\
+1 \\
+0 \\
+\end{pmatrix}\]
+
+<p>The obvious solution is $e=100000$, indicating an error in the first bit: $x = y - e = 101011 - 100000 = 001011$.</p>
+
+<p>There are other solutions, but they all indicate more than one error:
+011000, 000110,…. For example, if $x = 110011$ and $e = 011000$, then $y = 101011$ and
+we get the same syndrome. If the probability of error is small, $e = 100000$ is more likely
+than $e = 011000$.</p>
+
+<div class="exercise">
+	<button onclick="showSolution(this,'errProb')" style="float:right;">Show Solution</button>
+	Assume that the probability of a given bit being flipped is $q$. (Note previously, we used $e$ to denote the probability of a bit flip. For obvious reasons, now we use $q$.) 
+	<ol>
+	<li> What is the probability of the following error vectors? 
+	<ul>
+		<li>$e_1 = 100000$</li>
+		<li>$e_2 = 011000$</li>
+		<li>$e_3 = 000110$</li>
+	</ul>
+</li>
+	<li>If the probability $q$ of bit flip errors is small, we can use the approximation $1-q \simeq 1$. Using this approximation find the probability of each error vector.</li>
+	<li>Let $q=10^{-6}$ and find the numerical values of the probabilities of the error vectors, both using the exact expressions and the approximations. </li>
+	</ol>
+	<div id="errProb" style="display:none;" class="solution">
+		<ol>
+		<li>For $e_1$, the first bit must be erroneous but the others are correct. The probability of this event is 
+		$$P(e_1) = q\times (1-q)\times \dotsm\times (1-q) = q (1-q)^5.$$
+		For $e_2$, the probability is 
+	    $$P(e_2) = (1-q)\times q\times q \times (1-q) \times \dotsm \times (1-q) = q^2 (1-q)^{4}.$$
+	    The answer for $e_3$ is also 
+	    $$P(e_3) = q^2(1-q)^{4}.$$
+	</li>
+	<li>Using the approximation, 
+	\begin{align*}
+ 	P(e_1)&amp; \simeq q, \\
+    P(e_2)&amp; \simeq q^2,\\
+    P(e_3)&amp; \simeq q^2.
+\end{align*}
+Note that for small values of $q$, $q^2$ is much smaller than $q$.
+</li>
+<li>
+	The  values using the exact expressions are given first and then the approximate values. All values are accurate to 6 decimal places.
+	\begin{align*}
+ 	P(e_1)&amp; = 0.999995×10^{-6}\simeq 10^{-6}, \\
+    P(e_2)&amp; = 0.999996\times 10^{-12} \simeq 10^{-12},\\
+    P(e_3)&amp; = 0.999996\times 10^{-12} \simeq 10^{-12}.
+\end{align*}
+We make two observations. First, our approximations are quite accurate. But the more important observation is that it only one bit flip is about a million times more likely than a two errors. So we are justified in choosing the error vector with a single bit flip.
+</li>
+</ol>
+	</div>
+</div>
+<p><br></p>
+
+<p>Example: Same $H$ but with $y =$100110.</p>
+
+<p>The syndrome is</p>
+
+\[s = \begin{pmatrix}
+1&amp;1&amp;0&amp;1&amp;0&amp;0 \\
+1&amp;0&amp;1&amp;0&amp;1&amp;0 \\
+0&amp;1&amp;1&amp;0&amp;0&amp;1 \\
+\end{pmatrix}y = \begin{pmatrix}
+0 \\
+0 \\
+0 \\
+\end{pmatrix}\Rightarrow\begin{pmatrix}
+1&amp;1&amp;0&amp;1&amp;0&amp;0 \\
+1&amp;0&amp;1&amp;0&amp;1&amp;0 \\
+0&amp;1&amp;1&amp;0&amp;0&amp;1 \\
+\end{pmatrix}e = \begin{pmatrix}
+0 \\
+0 \\
+0 \\
+\end{pmatrix}.\]
+
+<p>We declare no error, since $e = 000000$ is a solution.
+Could there be an undetected error? Yes, for example, if $x = \text{01111}\text{0}$ and $e = 111000$, then $y = 100110$ and $s = Hy = 0$. But if the probability of error is small, $e = 111000$ is far more unlikely than $e = 000000$.</p>
+
+<div class="highlight">
+  <p>Syndrome decoding summary:</p>
+
+  <ol>
+    <li>Compute $s = Hy$</li>
+    <li>If $s = 0$, declare no error!</li>
+    <li>If $s \neq 0$, solve $He = s$ for $e$. There will be many possible solutions; we find the one with the smallest weight (smallest number of errors, most likely case).</li>
+    <li>Find $x = y \ominus e$</li>
+  </ol>
+
+</div>
+<p><br></p>
+
+<div class="exercise">
+	<button onclick="showSolution(this,'decoding')" style="float:right;">Show Solution</button>
+	Consider the code given by the check matrix $H$,
+	$$H = \begin{pmatrix}
+1 &amp; 1 &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\
+1 &amp; 0 &amp; 1 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 1 &amp; 1 &amp; 0 &amp; 0 &amp; 1 \\
+\end{pmatrix}.$$ Find the input $x$ for each of the following received bit sequences. If multiple error vectors with the same weight are possible, finding one is sufficient.
+	<ul>
+		<li>$y_1 = 100110$.</li>
+		<li>$y_2 = 110111$</li>
+		<li>$y_3 = 100001$</li>
+		<li>$y_4 = 001010$</li>
+	</ul>
+	<div id="decoding" style="display:none;" class="solution">
+		\begin{align*}
+			s_1 &amp;= Hy_1 = \begin{pmatrix}0\\0\\0\end{pmatrix},\\
+			s_2 &amp;= Hy_2 = \begin{pmatrix}1\\0\\0\end{pmatrix},\\
+			s_3 &amp;= Hy_3 = \begin{pmatrix}1\\1\\1\end{pmatrix}.
+		\end{align*}
+		$s_1$ indicates no errors. So $x_1 = y_1$.<br>
+		$s_2$ is equal to the fourth column of $H$. So $e=000100$ is the most likely choice (only a single error). $x_2 = y \ominus e=y \oplus e = 100101$.<br>
+		$s_3$ is not equal to any column. So a single error is not possible. There are multiple error vectors with two errors, including $e=010010$, in which case $x_3 = y_3\oplus 010010 = 110011$.<br>
+		The last case is left to you.
+	</div>
+</div>
+<p><br></p>
+<div class="exercise">
+	In this exercise, we will simulate the encoding and decoding process. 
+	<ol>
+<li> Pick a sequence of three bits as a message to be transmitted. Let these bits be denoted by $x_1x_2x_3$.</li>
+<li> Encode the message $x_1x_2x_3$ using the generator matrix given below:
+$$x = \begin{pmatrix}
+x_{1} \\
+x_{2} \\
+x_{3} \\
+x_{4} \\
+x_{5} \\
+x_{6} \\
+\end{pmatrix} = G\begin{pmatrix}
+x_{1} \\
+x_{2} \\
+x_{3} \\
+\end{pmatrix},\qquad G = \begin{pmatrix}
+1 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 1 \\
+1 &amp; 1 &amp; 0 \\
+1 &amp; 0 &amp; 1 \\
+0 &amp; 1 &amp; 1 \\
+\end{pmatrix}$$
+Call the resulting codeword $x$.
+</li>
+<li> 
+Assume $x$ is transmitted through a noisy channel. Pick three different error vectors with
+<ul>
+	<li>$e_1$, with 1 error</li>
+	<li>$e_2$, with 2 errors</li>
+	<li>$e_3$, with 3 errors</li>
+</ul>
+(The error vectors are your choice, as long as they have the current number of errors.)
+Find the three channel outputs and call them $y_1$, $y_2$, and $y_3$.
+</li>
+<li> Using the provided parity check matrix, decode $y_1,y_2,y_3$, assuming the smallest number of errors that give the received word.
+$$H = \begin{pmatrix}
+1 &amp; 1 &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\
+1 &amp; 0 &amp; 1 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 1 &amp; 1 &amp; 0 &amp; 0 &amp; 1 \\
+\end{pmatrix}$$ In which cases was the decoding successful?</li>
+</ol>
+</div>
+
+<h2 id="correcting-1-error-hamming-codes">Correcting 1 error: Hamming Codes</h2>
+
+<p>Suppose our goal is to correct 1 error. What property should the parity check matrix have? We require minimum distance of 3, which means no two vectors should be linearly dependent. For binary, there is an easier way to express this condition. Note that we must always be able to solve the equation</p>
+
+\[s=He\]
+
+<p>as long as $e$ has at most a single 1. Remember that if only the $j$th position in $e$ is 1, then $He$ is equal to the $j$th column of $H$. To be able to find $j$, <em>the columns of</em> $H$ <em>must be distinct (and nonzero)</em>. The columns must be non-zero to be able to distinguish no error from 1 error.</p>
+
+<p>Let’s construct such a parity check matrix when there are three parity bits ($H$ has three rows). There are 7 columns with 3 bits in them. So $H$ must have these 7 columns. We arrange them in the systematic form.</p>
+
+\[H = \begin{pmatrix}
+1 &amp; 1 &amp; 0 &amp; 1 &amp; 1 &amp; 0 &amp; 0 \\
+1 &amp; 0 &amp; 1 &amp; 1 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 1 &amp; 1 &amp; 1 &amp; 0 &amp; 0 &amp; 1 \\
+\end{pmatrix}\]
+
+<p>What is the minimum distance?</p>
+<ul>
+  <li>$d \geq 3$, since it can correct any single error</li>
+  <li>$d \leq 3$, since $x = 1110000$ is a Codeword</li>
+  <li>Hence, $d = 3$</li>
+</ul>
+
+<p>What are the parity check equations?</p>
+<div>\begin{align*}
+x_5 &amp;= x_1\oplus x_2 \oplus x_4 \\
+x_6 &amp;= x_1\oplus x_3 \oplus x_4 \\
+x_7 &amp;= x_2\oplus x_3 \oplus x_4.
+  \end{align*}</div>
+
+<p>This is the [7,4,3]-Hamming code ( )it has length $n = 7$, it has $k = 4$ message bits, and its minimum distance is $d = 3$). There are other Hamming codes based on the same idea as we will see. We sometimes drop the minimum distance from this notation.</p>
+
+<p>Possible codewords of the [7,4]-Hamming code are:</p>
+
+<pre>
+0000000 0001111 0110110 1011010
+1000110 1100011 0101010 1101100
+0100101 1010101 0011100 1110000
+0010011 1001001 0111001 1111111
+</pre>
+
+<!--We can view the codewords as $d_{1}d_{2}d_{3}d_{4}p_{1}p_{2}p_{3}$
+where $d_{i}$ are information bits and $p_{i}$ are parity bits.
+
+<div style="float: right;"><img src="/~ffh8x/moi/assets/img/codevn.png" width="200px"></div>
+The diagram shows their relationships.-->
+
+<div class="exercise">
+<table class="tabDefault"> 
+<p>Choose a message from the table below and find the corresponding keyword. </p>
+	<thead>    <tr> <th>Message</th> <th>Bits</th>
+<th></th>
+<th>Message</th> <th>Bits</th>
+</tr>
+</thead>
+	<tbody>
+		<tr>
+<td><span style="font-size:30px;">🐙</span></td>
+<td>0000000</td> <td></td>
+<td><span style="font-size:30px;">🐘</span></td>
+<td>0001111</td>
+</tr>
+		<tr>
+<td><span style="font-size:30px;">🐉</span></td>
+<td>0010011</td> <td></td>
+<td><span style="font-size:30px;">🐋</span></td>
+<td>0011100</td>
+</tr>
+		<tr>
+<td><span style="font-size:30px;">🐒</span></td>
+<td>0100101</td> <td></td>
+<td><span style="font-size:30px;">🐕</span></td>
+<td>0101010</td>
+</tr>
+		<tr>
+<td><span style="font-size:30px;">🐧</span></td>
+<td>0110110</td> <td></td>
+<td><span style="font-size:30px;">🦁</span></td>
+<td>0111001</td>
+</tr>
+		<tr>
+<td><span style="font-size:30px;">🦏</span></td>
+<td>1000110</td> <td></td>
+<td><span style="font-size:30px;">🦒</span></td>
+<td>1001001</td>
+</tr>
+		<tr>
+<td><span style="font-size:30px;">🦓</span></td>
+<td>1010101</td> <td></td>
+<td><span style="font-size:30px;">🦖</span></td>
+<td>1011010</td>
+</tr>
+		<tr>
+<td><span style="font-size:30px;">🦅</span></td>
+<td>1100011</td> <td></td>
+<td><span style="font-size:30px;">🦋</span></td>
+<td>1101100</td>
+</tr>
+		<tr>
+<td><span style="font-size:30px;">🦉</span></td>
+<td>1110000</td> <td></td>
+<td><span style="font-size:30px;">🐥</span></td>
+<td>1111111</td>
+</tr>
+	</tbody>
+</table>
+<p>Alter the keyword by applying 1 error, 2 errors, and 3 errors to produce three received vectors. Enter the received vectors below and click the "Decode" button, to correct the errors using a decoder that can correct at most one error. In which cases was the error detected and in which cases it wasn't?</p>
+<input type="text" id="recStr" value="0000000">
+<button onclick="decode()">Decode</button>
+<p id="decodedBits"></p>
+
+
+<script>
+function decode(){
+  var recStr = document.getElementById("recStr").value;
+  errIndx_correctedBits = decodeHamming(recStr);
+  var correctedBits = errIndx_correctedBits[1].toString().replace(/,/g,'');
+  var recmsg = "??";
+  var corrmsg = "??";
+  for (let i=0; i<HCS.length; ++i){
+    if (HCS[i]==recStr){
+      corrmsg = recmsg = "<span style='font-size:30px;'>&#"+msgs[i]+";</span>";
+      break;
+    }
+    if (HCS[i]==correctedBits){
+      corrmsg = "<span style='font-size:30px;'>&#"+msgs[i]+";</span>";
+    }
+  }
+  document.getElementById("decodedBits").innerHTML =
+     "<table> <thead><tr><th></th><th>Bits</th><th>Message</th></tr> </thead><tr>    <th>Received </th>    <td>"+recStr+"</td><td>"+recmsg+"</td>  </tr>  <tr>    <th>Corrected</th>    <td>"+correctedBits+"</td><td>"+corrmsg+"</td>   </tr></table>"
+}
+</script>  
+
+<script>
+var myTable = "";
+myTable = "<table>  <thead>    <tr> <th>Message</th> <th>Bits</th></tr></thead><tbody>";
+msgs = ["128025","128024","128009","128011","128018","128021","128039","129409","129423","129426","129427","129430","129413","129419","129417","128037"];
+for (let i = 0; i<msgs.length; ++i){
+  myTable += "<tr><td><span style='font-size:30px;'>&#" + msgs[i] + ";</span></td><td>" + HCS[i] + "</td></tr>";
+}
+myTable +=  "</tfoot></table>";
+
+document.getElementById("HammingCode").innerHTML = myTable;
+</script>
+
+</div>
+
+<p>We can extend the idea of the $[7,4]$-Hamming code to design longer codes if we use more parity bits. If we have $r$ parity bits, i.e., $H$ has $r$ rows, then there are $2^r-1$ possible nonzero columns. So we can construct a parity check matrix with $2^r-1$ columns and $r$ rows. So the length of the code is $n=2^r-1$ bits. Among these, $r$ are parity bits and the rest are message bits. This results in the $[2^r-1,2^r-r-1]$-Hamming code. This code still has minimum distance 3.</p>
+
+<p>Example: [15,11,3]-Hamming code:</p>
+
+\[H = \begin{pmatrix}
+1 &amp; 1 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 1 &amp; 1 &amp; 0 &amp; 1 &amp; 1 &amp; 0 &amp; 0 &amp; 0 \\
+1 &amp; 0 &amp; 0 &amp; 1 &amp; 1 &amp; 0 &amp; 1 &amp; 1 &amp; 0 &amp; 1 &amp; 1 &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 1 &amp; 0 &amp; 1 &amp; 1 &amp; 0 &amp; 1 &amp; 1 &amp; 1 &amp; 0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 &amp; 1 &amp; 1 &amp; 0 &amp; 1 &amp; 1 &amp; 1 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 1 \\
+\end{pmatrix}\]
+
+<p>Let’s consider which code is better, the $[7,4]$-Hamming code or the $[15,11]$-Hamming code? The two main properties of codes are the code rate and the error-correction capability.</p>
+
+<p><em>Code rate</em>: The code rates for these codes are \(\frac47=0.57$ and $\frac{11}{15}=0.73.\) So the $[15,11]$-Hamming code has a higher rate (less overhead), which is better.</p>
+
+<p><em>Error-correction</em>: They are both guaranteed to correct up to 1 error. So it may seem that overall the $[15,11]$-code is better. But this code is also longer, increasing the probability of more than 1 error. To see this, suppose the probability of a single bit flip is $q=10^{-6}$. What is the probability of at least 2 errors in a codeword for each of the codes? For the $[7,4]$ code, the probability of at least 2 errors is</p>
+
+\[1-\left((1-q)^7+\binom71(1-q)^6q\right)=1-(1-q)^6(1+6q)=2.09999\times 10^{-11}\]
+
+<p>and for the $[15,11]$-code</p>
+
+\[1-\left((1-q)^{15}+\binom{15}1(1-q)^{14}q\right)=1-(1-q)^{14}(1+14q)=1.04999\times 10^{-10}.\]
+
+<p>So the longer code is 5 times as likely to suffer from an undetected error. There is no clear winner; which one we choose depends on the application.</p>
+
+<h2 id="correcting-multiple-errors">Correcting multiple errors</h2>
+
+<p>How can we  correct multiple errors with a linear code?</p>
+
+<p>For two errors, we need minimum distance of 5. So every set of 4 columns must be linearly independent. An example of such a parity check matrix is</p>
+
+\[H = \begin{pmatrix}
+1 &amp; 1 &amp; 0 &amp; 0 &amp; 0 \\
+1 &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\
+1 &amp; 0 &amp; 0 &amp; 1 &amp; 0 \\
+1 &amp; 0 &amp; 0 &amp; 0 &amp; 1 \\
+\end{pmatrix}\]
+
+<p>But the rate is very small: $\frac15$. Codes with better rates can be obtained based on finite fields of size $2^{m}$, $m&gt;1$, which have more complex structures. An example is given below. (This is a BCH code.)</p>
+
+\[H = \begin{pmatrix}
+1&amp;0&amp;0&amp;0&amp;1&amp;0&amp;0&amp;1&amp;1&amp;0&amp;1&amp;0&amp;1&amp;1&amp;1 \\
+0&amp;1&amp;0&amp;0&amp;1&amp;1&amp;0&amp;1&amp;0&amp;1&amp;1&amp;1&amp;1&amp;0&amp;0 \\
+0&amp;0&amp;1&amp;0&amp;0&amp;1&amp;1&amp;0&amp;1&amp;0&amp;1&amp;1&amp;1&amp;1&amp;0 \\
+0&amp;0&amp;0&amp;1&amp;0&amp;0&amp;1&amp;1&amp;0&amp;1&amp;0&amp;1&amp;1&amp;1&amp;1 \\
+1&amp;0&amp;0&amp;0&amp;1&amp;1&amp;0&amp;0&amp;0&amp;1&amp;1&amp;0&amp;0&amp;0&amp;1 \\
+0&amp;0&amp;0&amp;1&amp;1&amp;0&amp;0&amp;0&amp;1&amp;1&amp;0&amp;0&amp;0&amp;1&amp;1 \\
+0&amp;0&amp;1&amp;0&amp;1&amp;0&amp;0&amp;1&amp;0&amp;1&amp;0&amp;0&amp;1&amp;0&amp;1 \\
+0&amp;1&amp;1&amp;1&amp;1&amp;0&amp;1&amp;1&amp;1&amp;1&amp;0&amp;1&amp;1&amp;1&amp;1 \\
+\end{pmatrix}\]
+
+<h3 id="mds-codes">MDS codes</h3>
+
+<p>Let us consider first how codes can be used for data storage to protect against hard drive failure. Suppose that we have a code with length $n$, with $k$ information bits, and with minimum Hamming distance $d$. We can put one bit from each codeword on each hard drive. For example, suppose the code is defined by</p>
+
+\[\color{blue}{x_4} = \color{green}{x_1}\oplus \color{green}{x_2} \oplus \color{green}{x_3},\]
+
+<p>where $n=4,k=3$ and $x_1x_2x_3$ are message bits and $x_4$ is the only parity bit. We can write $x_1$ on drive 1, $x_2$ on drive 2 and so on, and do the same for the next codeword:</p>
+
+<p>Drive 1: $\color{green}{1000101001}\dotsc$</p>
+
+<p>Drive 2: $\color{green}{1001010100}\dotsc$</p>
+
+<p>Drive 3: $\color{green}{0111101110}\dotsc$</p>
+
+<p>Drive 4: $\color{blue}{0110010011}\dotsc$</p>
+
+<p>For example, the first bit on drive 4 is the parity bit for the first bits on the other drives. In this way, if any single drive fails, we can reconstruct its data. Note that hard drive failures are erasures since data is lost and we know which bits are affected (as opposed to substitution errors). For example, if the second drive fails, we can recover its data using</p>
+
+\[x_2 = x_1+x_3+x_4.\]
+
+<p><strong>MDS Codes</strong>: Recall that for a code of length $n$ and dimension $k$, the Singleton bound says</p>
+
+\[d \leq n - k + 1.\]
+
+<p>Codes that achieve the Singleton bound are called <em>maximum distance separable</em> (MDS). That is for MDS codes,</p>
+
+\[d = n - k + 1.\]
+
+<p>These codes are very common in data storage. Recall that if the minimum distance is $d$, then we can correct $d-1$ erasure errors. For MDS codes, we can correct $n-k$ erasures.
+So, if we have $k$ hard drives worth of data to store, we can use an MDS code and write the data on $n$ drives, where $n&gt;k$. Then even if some drives fail, as long as $k$ are still operational, we can recover our data! A well-known family of MDS codes are <em>Reed-Solomon</em> codes.</p>
+
+<!--<div style="float: center;"><img src="/~ffh8x/moi/assets/img/hddkd.png" width="1000px"></div>-->
+
+<h3 id="back-to-the-data-center">Back to the data center</h3>
+
+<p>Let’s look at some of the ways we could protect data stored in a data center, like the Facebook data center we mentioned in the beginning of this chapter:</p>
+<ol>
+  <li>Replication with two copies (triple redundancy).</li>
+  <li>Single Parity: group hard drives into sets of 6 drives. Add a 7th drive that stores the parity bits. If any drive is lost, we can recover its data.</li>
+  <li>[7,4]-Hamming code. If up to two drives from the set of 7 drives are lost, we can recover the data.</li>
+  <li>Reed-Solomon code: $k$ data drives and $r$ parity drives. Data can be recovered from <em>any</em> $k$ drives.</li>
+</ol>
+
+<p>In the Facebook warehouse, frequently accessed data is protected by
+replication and less frequently accessed data uses Reed-Solomon with
+$k = 10,r = 4$.</p>
+<ul>
+  <li>40% more storage used</li>
+  <li>Out of a group of 14 drives, if any 4 fail, we won’t lose any data.</li>
+</ul>
+
+<div class="exercise">
+	<button onclick="showSolution(this,'fb')" style="float:right;">Show Solution</button>
+	Compare the single parity code above, the $[n=7,k=4]$-Hamming code, and the Reed-Solomon code with $n=14,k=10$.
+	<div id="fb" style="display:none;" class="solution">
+		Hint: If you have 14 drives how much data can you store using each code? How many drive failures can you recover from?
+	</div>
+</div>
+<p><br></p>
+
+<!--
+
+<div style="float: right;"><img src="/~ffh8x/moi/assets/img/codevn.png" width="200px"></div>
+This Venn diagram portrays the possible error states of four bits $d_1$,
+$d_2$, $d_3$, and $d_4$, using three "parity" checks with check digits
+$p_1$, $p_2$, and $p_3$.
+
+Image credit: Colin M. L. Burnett/Wikipedia -->
+
+<footer>
+  <br><br>
+  <center>
+    <hr>
+  © Farzad Farnoud, 2020</center>
+</footer>
+</div>
+<!-- Default Statcounter code for MoI
+http://www.ece.virginia.edu/~ffh8x/moi/ -->
+<script type="text/javascript">
+var sc_project=12471818; 
+var sc_invisible=1; 
+var sc_security="62b9c6a1"; 
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
+<noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/12471818/0/62b9c6a1/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of Statcounter Code -->
+</body>
+</html>

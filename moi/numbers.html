@@ -1,0 +1,608 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="assets/css/home.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/mystyle.css">
+  
+  
+  <!-- for mathjax support -->
+  
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: { equationNumbers: { autoNumber: "AMS" } },
+    //tex2jax: {inlineMath: [['$', '$'], ['\\(', '\\)']]}
+    //tex2jax: {inlineMath: [['\(', '\)'], ['\\(', '\\)']]}
+    tex2jax: {inlineMath: [['$', '$'], ['\\(', '\\)']]}
+    //tex2jax: {inlineMath: [['$', '$'], ['\(', '\)'], ['\\(', '\\)']]}
+  });
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+  
+    <script type="text/javascript"  src="//cdnjs.cloudflare.com/ajax/libs/jsxgraph/1.1.0/jsxgraphcore.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/jsxgraph/1.1.0/jsxgraph.css" />
+  
+  <script src="assets/js/coding.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!--<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>-->
+  <script src="assets/js/course.js"></script>
+  <script src="assets/js/prob.js"></script>
+</head>
+<body>
+  <!-- Top navigation bar from the main webpage. must be updated from page.html-->
+  <div class="topnav">
+  <a style="float:left;" href="index.html"><strong>Mathematics of Information</strong></a>
+  <a id="teaching" href="../teaching.html">Teaching</a>
+  <a id="group" href="../ips.html">Group</a>
+  <a id="pubs" href="../publications.html">Publications</a>
+  <a id="home" href="../index.html">Home</a> 
+  </div>
+  <nav>
+   <div class="sidenav">
+     <!--<a href="/">Home</a><br>
+	     <a href="/moi/">Course Index</a><hr>-->
+	   <!--<h3><div class="chapnav"> Mathematics of <br> Information</div></h3>-->
+     
+     
+     
+     <a href="/~ffh8x/moi/"><strong>Home</strong></a>
+     
+     
+     
+    
+     
+     
+     <a href="/~ffh8x/moi/introduction.html"><strong>0. Introduction</strong></a>
+     
+     
+     
+    
+     
+     
+     <span class="chapnav"><strong>1. Numbers, fields, and <br>representing information</strong></span>
+     <ul>
+      
+      
+      
+      <li><a href="/~ffh8x/moi/sets.html">Sets and set theory</a></li>
+      
+      
+      
+      
+      
+      <li><a class="active" style="color:#76bdd5" href="/~ffh8x/moi/numbers.html"><img class="emoji" title=":point_right:" alt=":point_right:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f449.png" height="20" width="20"> Natural numbers, rationals</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/fields.html">Fields</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/reals.html">Real numbers</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/cardinality.html">Counting and cardinality</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/representation.html">Representing information</a></li>
+      
+      
+      
+    </ul>
+    
+    
+     
+     
+     <span class="chapnav"><strong>2. Probability &amp; information</strong></span>
+     <ul>
+      
+      
+      
+      <li><a href="/~ffh8x/moi/defining_information.html">Defining information</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/probability_basics.html">Basics of probability</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/distributions.html">Random variables, <br> distributions, independence</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/expectation.html">Expectation and Variance</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/conditional.html">Conditional probability</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/markov.html">Random sequences and <br> Markov chains</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/information_theory.html">Quantifying Information</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/compression.html">Data compression</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/communications.html">Mathematics of communications</a></li>
+      
+      
+      
+    </ul>
+    
+    
+     
+     
+     <span class="chapnav"><strong>3. Linear algebra, finite fields, <br>and error correction</strong></span>
+     <ul>
+      
+      
+      
+      <li><a href="/~ffh8x/moi/codes_graphs_algebra.html">Codes, graphs, and algebra</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/vectors.html">Vectors and spaces</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/fundamental_spaces.html">Fundamental spaces</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/ecc.html">Linear codes</a></li>
+      
+      
+      
+    </ul>
+    
+    
+     
+     
+     <span class="chapnav"><strong>4. The frequency domain and <br>transmission of information</strong></span>
+     <ul>
+      
+      
+      <li class="chapnav">Complex numbers</li>
+      
+      
+      
+      <li class="chapnav">Frequency and spectrum</li>
+      
+      
+      
+      <li class="chapnav">Filteration and sampling</li>
+      
+      
+      
+      <li class="chapnav">Linear systems</li>
+      
+      
+      
+      <li class="chapnav">Frequency response</li>
+      
+      
+      
+      <li class="chapnav">Modulation</li>
+      
+      
+      
+      <li class="chapnav">Orthogonality</li>
+      
+      
+      
+      <li class="chapnav">Multiple-access communication</li>
+      
+      
+    </ul>
+    
+    
+     
+     
+     <span class="chapnav"><strong>5. Number theory and <br>information privacy</strong></span>
+     <ul>
+      
+      
+      <li class="chapnav">Encryption</li>
+      
+      
+      
+      <li class="chapnav">Number theory</li>
+      
+      
+      
+      <li class="chapnav">Public key cryptography</li>
+      
+      
+    </ul>
+    
+    
+     
+     
+     <span class="chapnav"><strong>6. Boolean algebra and <br>computation</strong></span>
+     <ul>
+      
+      
+      <li class="chapnav">Number systems and arithmetic</li>
+      
+      
+      
+      <li class="chapnav">Boolean algebra</li>
+      
+      
+      
+      <li class="chapnav">Logic design and computation</li>
+      
+      
+      
+      <li class="chapnav">
+      
+      
+    </ul>
+    
+    
+     
+     
+     <span class="chapnav"><strong>Appendix</strong></span>
+     <ul>
+      
+      
+      
+      <li><a href="/~ffh8x/moi/axiomatic.html">Axiomatic systems</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/index.html"><br></a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/index.html"><br></a></li>
+      
+      
+      
+    </ul>
+    
+    
+  </div>
+</nav>
+<div class="main">
+  <!-- variables for replacement -->
+  <h1 id="natural-numbers-integers-and-rationals">Natural numbers, integers, and rationals</h1>
+
+<!--<table border="0" cellspacing="5" cellpadding="5" width="250" bgcolor="#b5cc82">
+<tbody style="border:none;">
+<tr>
+<td style="text-align: rleft; border:none;">
+<pre>God made the integers, all else is the work of man.</pre>
+<pre>                                              -Kronecker</pre>
+</td>
+</tr>
+</tbody>
+</table>-->
+
+<p>A set, on its own, is not particularly useful. If we equip sets with operations, such as + and ×, we will have more useful objects. In this section, we will start from natural numbers and progressively create more powerful objects. Our goal is to construct fields, where you can add, multiply, subtract, divide, take limits and solve polynomial equations.</p>
+
+<p>We are already familiar with many of the sets that we will discuss below, such as natural numbers. But we may not really know how they are constructed as mathematical objects. We may also not know why some very natural properties are true. For example, why \((x+y)+z = x + (y+z)\) is true? Perhaps we can show it is true for specific numbers, but what convinces us that this holds for all \(x,y,z\)?</p>
+
+<p>For parts of this section, we will take an axiomatic approach. If you are not familiar with axiomatic mathematical systems, please review this <a href="axiomatic.html">note</a>. Learning about sets we are already familiar with in this way gives us a mathematical understanding that helps us learn about unfamiliar ones. For example, we will see that in a certain sense \(-1\) is just as “<em>imaginary</em>” as \(\sqrt{-1}\). It will also provide a good opportunity to become more comfortable with axiomatic systems, abstract mathematical objects, and practice proof techniques</p>
+
+<p><em>So let us forget what we know about numbers and build everything from the ground up.</em></p>
+
+<h2 id="natural-numbers">Natural Numbers</h2>
+
+<div class="highlight"> 
+The set of natural numbers \(\mathbb N\) is a set with the following properties:
+<ul>
+  <li> 0 is a natural number</li>
+  <li> Each natural number \(a\) has a <em>successor</em>, which is also a natural number,  denoted by \(a^{\to}\)</li>
+  <li> 0 is not the successor of any natural number</li>
+  <li> No two distinct natural numbers have the same successor</li>
+  <li>(<em>Principle of induction</em>): If a property 
+    <ul>
+      <li>is satisfied for 0, and </li>
+      <li>assuming it is satisfied for \(n\), it can be shown that it is satisfied for \(n^{\to}\), </li>
+    </ul>
+then the property is satisfied for all natural numbers.</li>
+</ul>
+</div>
+
+<p>The above statements can be <em>proven</em> in axiomatic set theory. But here, we will <em>assume</em> the existence of \(\mathbb N\) with the above properties. So these will be our <em>axioms</em>. This is OK since these axioms match our intuition well, and they are more relevant to our discussions on computation and communications than set-theoretic proofs.</p>
+
+<p>We can represent the set of natural numbers as</p>
+
+\[\mathbb N = \{0,0^{\to},0^{\to\to},\dotsc\}.\]
+
+<p>But this becomes cumbersome. So we denote the successor of 0 as 1. The successor of 1 as 2. And so on. Then, we can represent the set of natural numbers in its familiar form</p>
+
+\[\mathbb N = \{0,1,2,3,4,5,6,\dotsc\}.\]
+
+<p>It can be shown (using induction <img class="emoji" title=":trophy:" alt=":trophy:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f3c6.png" height="20" width="20">) that for any number \(a\neq 0\), there is a unique number $b$ whose successor is \(a\), i.e., \(b^\to = a\). Then \(b\) is called the <em>predecessor</em> of $a$ and denoted \(a^{\leftarrow}\). Clearly, \(\left(a^\to\right)^\leftarrow=a\).</p>
+
+<h3 id="addition">Addition</h3>
+<p>Now we are ready to define <strong>addition</strong> for two natural numbers as repeated succession:</p>
+<ol>
+  <li>\(a+0 = a\) : Adding 0 does not change the number.</li>
+  <li>\(a+b^\to = \left(a + b\right)^{\to}\): Having found the sum of \(a\) and \(b\), we can find the sum of \(a\) and \(b^\to\).</li>
+</ol>
+
+<div class="exercise"> Using the definition of addition, find \(3+2\).<button onclick="showSolution(this,'3+2')" style="float:right;">Show Solution</button>
+</div>
+<div class="solution">
+
+<div id="3+2" style="display:none;">
+We can start by finding $3+0$ using the first part of the definition of addition and then build up to $3+2$ using the second property:
+\begin{align*}
+3+0 &amp; = 3 \\
+3+1 &amp; = 3 + 0^\to = (3+0)^\to = 3^\to = 4\\
+3+2 &amp; = 3+1^\to = \left(3+1\right)^{\to}=4^{\to}=5.
+\end{align*}
+</div>
+</div>
+
+<p></p>
+
+<p>Of course, we already knew the answer, but we now have a concrete proof for it, only using the properties of natural numbers and the definition of addition.</p>
+<p></p>
+
+<div class="exercise"> Prove that for \(a,b\in\mathbb N,b\neq 0\), we have \(a+b=\left(a+b^{\leftarrow}\right)^\to\) and \(\left(a+b\right)^{\leftarrow}=a+b^{\leftarrow}\).<button onclick="showSolution(this,'backAndForth')" style="float:right;">Show Solution</button>
+</div>
+<div class="solution">
+
+<div id="backAndForth" style="display:none;">
+Since $b\neq 0$, then $b^\leftarrow$ exists. From the second part of the definition of addition, by replacing $b$ with $b^\leftarrow$, we have $a+(b^\leftarrow)^\to = (a+b^\leftarrow)^\to$. Hence, $a+b = (a+b^\leftarrow)^\to$. The second statement follows immediately.
+</div>
+</div>
+
+<p>Addition has the following  properties, which follow from its definition:</p>
+<ol>
+  <li>
+<strong>Closure Property</strong>: The result of the addition of any two natural numbers is a natural number. We say that the set of natural numbers is <em>closed under addition</em>.</li>
+  <li>
+<strong>Additive Identity</strong>: There is a unique number, namely \(0\), such that \(x+0=x\) for any \(x\in\mathbb N\).</li>
+  <li>
+<strong>Commutative Property</strong>: For any \(x,y\in\mathbb N\), we have \(x+y = y+x\).</li>
+  <li>
+<strong>Associative Property</strong>: For any \(x,y,z\in\mathbb N\), we have \((x+y)+z = x+(y+z)\).</li>
+</ol>
+
+<p>We can prove these properties using the definition of addition and the axioms of natural numbers, especially induction, as shown in the following example.</p>
+<div class="exercise"> <img class="emoji" title=":trophy:" alt=":trophy:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f3c6.png" height="20" width="20"> Prove the associative property.<button onclick="showSolution(this,'commutative')" style="float:right;">Show Solution</button>
+</div>
+<div class="solution">
+
+<div id="commutative" style="display:none;">
+Let \(x,y,z\in\mathbb N\). For \(z=0\), the property follows from the definition of addition. We now show that if it holds for \(z\), i.e.,
+\[
+(x+y)+z = x + (y+z),
+\]
+it also holds for \(z^\to\), i.e.,
+\[
+(x+y)+z^\to = x + (y+z^\to).
+\]
+We have 
+\begin{align*}
+\left(x+y\right)+z^{\to} &amp; =\left(\left(x+y\right)+z\right)^{\to}\\
+ &amp; =\left(x+\left(y+z\right)\right)^{\to},\\
+x+\left(y+z^{\to}\right) &amp; =x+\left(y+z\right)^{\to}\\
+ &amp; =\left(x+\left(y+z\right)\right)^{\to}.
+\end{align*}
+It then follows from the principle of induction that the property holds for all natural values of \(z\).
+</div>
+</div>
+
+<p>For natural numbers \(a,b\), we say that \(b &lt; a\) if and only if there is a nonzero natural number \(c\) such that \(b+c = a\).</p>
+
+<h3 id="multiplication">Multiplication</h3>
+
+<p>We define multiplication as follows:</p>
+<ul>
+  <li>\(a\times 0 = 0\): Multiplying any natural number by 0 results in 0.</li>
+  <li>\(a\times b^\to = a\times b + a\): Having found the product of \(a\) and \(b\), we can find the product of \(a\) and \(b^\to\).</li>
+</ul>
+
+<p>Multiplication has the following  properties, which follow from its definition:</p>
+
+<ol start="5">
+  <li>
+<strong>Closure Property</strong>: The result of the multiplying any two natural numbers is a natural number. We say that the set of natural numbers is <em>closed under multiplication</em>.</li>
+  <li>
+<strong>Multiplicative Identity</strong>: There is a unique number, namely \(1\), such that \(x\times 1=x\) for any \(x\in\mathbb N\).</li>
+  <li>
+<strong>Commutative Property</strong>: For any \(x,y\in\mathbb N\), we have \(x\times y = y\times x\).</li>
+  <li>
+<strong>Associative Property</strong>: For any \(x,y,z\in\mathbb N\), we have \((x\times y)\times z = x\times (y\times z)\).</li>
+</ol>
+
+<p>In addition, multiplication and addition have the following property:</p>
+
+<ol start="9">
+  <li>
+<strong>Distributive property</strong> of multiplication over addition: \(a\times(b+c) = a\times b + a\times c\).</li>
+</ol>
+
+<div class="exercise">
+  Prove that 1 is the multiplicative identity, i.e., \(x\times 1 = x\).
+  <button onclick="showSolution(this,'mustID')" style="float:right;">Show Solution</button>
+
+  <div id="mustID" style="display:none;" class="solution">
+    \begin{align*}
+    x\times 1 = x \times 0^\to  = x\times 0 + x = 0+x = x.
+    \end{align*}
+  </div>
+</div>
+<p><br></p>
+
+<h3 id="whats-missing-from-natural-numbers">What’s missing from natural numbers?</h3>
+<p>The set of natural numbers has some significant deficiencies. The most immediate is that we cannot always solve even a simple equation of the form \(x+a=b\) for \(x\). For example, the solution to \(x+3=0\) does not exist in the world of natural numbers.</p>
+
+<!-- If we can ask "what is $$a+b$$?" it is reasonable to also ask "what is the number that, if added to $$a$$, results in $$b$$?". For this purpose, we define the following operation over natural numbers, which we call _subtraction_:
+* For $$a,b\in\mathbb N$$, $$a-b$$ is the solution to the equation $$b+x=a$$, where $$x$$ is the unknown.
+
+The problem that we will face then is that $$\mathbb N$$ _is not closed under subtraction_. That is the result of subtraction is not guarnateed to be a natural number. For example, 0-3 does not exist. In other words, the solution to $$x+3=0$$ does not exist in our world.-->
+
+<h2 id="integers">Integers</h2>
+
+<p>If the solution to \(x+3=0\) does not exist, we define it into existence while no one’s looking! <img class="emoji" title=":eyes:" alt=":eyes:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f440.png" height="20" width="20"></p>
+
+<p><strong>Negative numbers</strong>: For a \(𝑎∈ℕ\) let’s call the solution to \(𝑥+𝑎=0\) as \(-a\). Further, if \(a\neq 0\), \(a\) is called a positive number while \(-a\) is called a negative number. 0 is neither positive nor negative.</p>
+
+<p>This leads to the set of integers:</p>
+
+\[ℤ=\{\dotsc,−3,−2,−1, 0, 1, 2, 3, \dotsc\}\]
+
+<p>Since \(a+(-a)=0\), we call −𝑎 the <strong>additive inverse</strong> of 𝑎.</p>
+
+<p>Of course, to fully take advantage of integers, we need to extend \(+,\times\) to negative numbers. We skip the details, but it can be done in a rigorous and consistent manner similar to our definition of addition and multiplication for natural numbers. We can also define subtraction, but this is simply defined in terms of addition.</p>
+
+<p>Hence, in the set of integers, we can perform the following operations:</p>
+
+<ul>
+  <li>Addition +</li>
+  <li>Multiplication ×</li>
+  <li>Subtraction − :
+    <ul>
+      <li>\(𝑎−𝑏=𝑎+(−𝑏)\).</li>
+    </ul>
+  </li>
+</ul>
+
+<p>The properties of addition and multiplication stated above for natural numbers also hold for integers. In addition, each element has an additive inverse.</p>
+
+<p>Note that the sign “\(-\)” has two meanings: it can be used to indicate the additive inverse and used to indicate subtraction. Subtraction is essentially a shorthand defined in terms of the additive inverse, rather than a separate operation. So this dual use does not cause confusion. But technically the meaning of “\(-\)” is different in \(-b\) and in \(a-b\).</p>
+
+<p>Things are getting better, since we can solve \(x+a=b\) for any integer \(a,b\) by using <em>additive inverses</em>:</p>
+
+\[x+a = b \iff x+a+(-a) = b+(-a) \iff x = b-a\]
+
+<p>Here, we have used the additive inverse of \(a\) to eliminate \(+a\). It is critical to note that all steps need to be valid in both directions.</p>
+
+<p>But  we still cannot solve an equation like \(3 x =1\) or \(5x+2=11\). There are no integers satisfying these. This is because integers (other than \(1,-1\)) do not have <em>multiplicative inverses</em>.</p>
+
+<h2 id="rational-numbers">Rational Numbers</h2>
+
+<p>For \(𝑎∈ℤ,a≠0\), let’s call the solution to \(𝑎𝑥=1\) as \(1/𝑎\) and add it to the set of integers. Since \(a\times(1/a)=1\), we call \(1/a\) the multiplicative inverse of \(a\). After adding \(1/a\) for all nonzero \(a\in\mathbb Z\), we’ll need to add some more elements to make sure \(+,\times\) have the closure property. The end result is the set of rational numbers:</p>
+
+\[ℚ=\left\{\frac ab:𝑎,𝑏∈ℤ,𝑏≠0\right\}.\]
+
+<p>Two rational numbers \(\frac ab\) and \(\frac cd\) are equal if and only if \(a\times d = c\times b\).</p>
+
+<p>Operations over rational numbers:</p>
+<ul>
+  <li>Addition: \(\frac ab+\frac cd = \frac{ad+bc}{bd}.\)
+    <ul>
+      <li>The additive inverse of \(\frac ab\) is \(-\frac{a}{b}=\frac{-a}{b}=\frac{a}{-b}\).</li>
+    </ul>
+  </li>
+  <li>Multiplication: \(\frac ab\times \frac cd = \frac{ac}{bd}.\)
+    <ul>
+      <li>If \(a\neq 0\), the multiplicative inverse of \(\frac ab\) is \(\frac{b}{a}\).</li>
+    </ul>
+  </li>
+  <li>Subtraction: \(\frac ab-\frac cd = \frac ab+\left(-\frac cd\right)=\frac{ad-bc}{bd}.\)</li>
+  <li>Division: \(\frac ab / \frac cd = \frac ab \times \frac db = \frac{ad}{bc}.\) (\(b,c,d\) are nonzero).</li>
+</ul>
+
+<p>We can verify that \(\frac a1\) and \(\frac b1\)  behave the same way as the integers \(a,b\). So we consider \(a=\frac a1\) and \(b=\frac b1\).</p>
+
+<div class="exercise">
+  Using the appropriate definitions and the properties of addition and multiplication over integers, prove the distributive property for rationals, which states that <button onclick="showSolution(this,'solID')" style="float:right;">Show Solution</button>
+  \begin{equation*}
+    \frac ab \left(\frac cd + \frac ef\right) = \frac {ac}{bd} + \frac{ae}{bf}.
+  \end{equation*}
+  In each step, indicate which property is used.
+  <div id="solID" style="display:none;" class="solution">
+    \begin{align*}
+\frac{a}{b}\left(\frac{c}{d}+\frac{e}{f}\right) &amp; \stackrel{i}{=}\frac{a}{b}\left(\frac{cf+de}{df}\right)\stackrel{ii}{=}\frac{a(cf+de)}{b(df)}\\
+ &amp; \stackrel{iii}{=}\frac{acf+ade}{bdf}\stackrel{iv}{=}\frac{acf}{bdf}+\frac{ade}{bdf}\\
+ &amp; \stackrel{v}{=}\frac{ac}{bd}+\frac{ae}{bf}
+\end{align*}
+<ol type="i">
+  <li>Definition of addition of rationals</li>
+  <li>Definition of multiplication of rationals</li>
+  <li>Distributive property of multiplication over addition for integers and the associative property</li>
+  <li>Definition of addition of rationals</li>
+  <li>Equality of rational numbers (\(x/y=u/w\iff xw=yu\))</li>
+</ol>
+  </div>
+</div>
+<p><br></p>
+
+<p>Now we have all we need to solve the equation \(5x+2=11\):</p>
+
+<p>\begin{align*}
+5x+2=11&amp;\iff 5x+2-2 = 11 -2 \iff 5x=9\\&amp;\iff \frac15\times5 x = \frac15\times 9\iff x = \frac 95.
+\end{align*}</p>
+
+<div class="hw">
+  Solve the equation \(ax+b=c\) over rational numbers, assuming \(a\neq0\).
+</div>
+<p><br></p>
+
+<div class="exercise">
+  Write down a question that you still have about natural numbers, integers, or rationals.
+</div>
+<p><br></p>
+
+<footer>
+  <br><br>
+  <center>
+    <hr>
+  © Farzad Farnoud, 2020</center>
+</footer>
+</div>
+<!-- Default Statcounter code for MoI
+http://www.ece.virginia.edu/~ffh8x/moi/ -->
+<script type="text/javascript">
+var sc_project=12471818; 
+var sc_invisible=1; 
+var sc_security="62b9c6a1"; 
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
+<noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/12471818/0/62b9c6a1/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of Statcounter Code -->
+</body>
+</html>

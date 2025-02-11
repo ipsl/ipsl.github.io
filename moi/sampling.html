@@ -1,0 +1,449 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="assets/css/home.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/mystyle.css">
+  
+  
+  <!-- for mathjax support -->
+  
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: { equationNumbers: { autoNumber: "AMS" } },
+    //tex2jax: {inlineMath: [['$', '$'], ['\\(', '\\)']]}
+    //tex2jax: {inlineMath: [['\(', '\)'], ['\\(', '\\)']]}
+    tex2jax: {inlineMath: [['$', '$'], ['\\(', '\\)']]}
+    //tex2jax: {inlineMath: [['$', '$'], ['\(', '\)'], ['\\(', '\\)']]}
+  });
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+  
+    <script type="text/javascript"  src="//cdnjs.cloudflare.com/ajax/libs/jsxgraph/1.1.0/jsxgraphcore.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/jsxgraph/1.1.0/jsxgraph.css" />
+  
+  <script src="assets/js/coding.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!--<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>-->
+  <script src="assets/js/course.js"></script>
+  <script src="assets/js/prob.js"></script>
+</head>
+<body>
+  <!-- Top navigation bar from the main webpage. must be updated from page.html-->
+  <div class="topnav">
+  <a style="float:left;" href="index.html"><strong>Mathematics of Information</strong></a>
+  <a id="teaching" href="../teaching.html">Teaching</a>
+  <a id="group" href="../ips.html">Group</a>
+  <a id="pubs" href="../publications.html">Publications</a>
+  <a id="home" href="../index.html">Home</a> 
+  </div>
+  <nav>
+   <div class="sidenav">
+     <!--<a href="/">Home</a><br>
+	     <a href="/moi/">Course Index</a><hr>-->
+	   <!--<h3><div class="chapnav"> Mathematics of <br> Information</div></h3>-->
+     
+     
+     
+     <a href="/~ffh8x/moi/"><strong>Home</strong></a>
+     
+     
+     
+    
+     
+     
+     <a href="/~ffh8x/moi/introduction.html"><strong>0. Introduction</strong></a>
+     
+     
+     
+    
+     
+     
+     <span class="chapnav"><strong>1. Numbers, fields, and <br/>representing information</strong></span>
+     <ul>
+      
+      
+      
+      <li><a href="/~ffh8x/moi/sets.html">Sets and set theory</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/numbers.html">Natural numbers, rationals</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/fields.html">Fields</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/reals.html">Real numbers</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/cardinality.html">Counting and cardinality</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/representation.html">Representing information</a></li>
+      
+      
+      
+    </ul>
+    
+    
+     
+     
+     <span class="chapnav"><strong>2. Probability & information</strong></span>
+     <ul>
+      
+      
+      
+      <li><a href="/~ffh8x/moi/defining_information.html">Defining information</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/probability_basics.html">Basics of probability</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/distributions.html">Random variables, <br/> distributions, independence</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/expectation.html">Expectation and Variance</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/conditional.html">Conditional probability</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/markov.html">Random sequences and <br/> Markov chains</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/information_theory.html">Quantifying Information</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/compression.html">Data compression</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/communications.html">Mathematics of communications</a></li>
+      
+      
+      
+    </ul>
+    
+    
+     
+     
+     <span class="chapnav"><strong>3. Linear algebra, finite fields, <br/>and error correction</strong></span>
+     <ul>
+      
+      
+      
+      <li><a href="/~ffh8x/moi/codes_graphs_algebra.html">Codes, graphs, and algebra</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/vectors.html">Vectors and spaces</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/fundamental_spaces.html">Fundamental spaces</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/ecc.html">Linear codes</a></li>
+      
+      
+      
+    </ul>
+    
+    
+     
+     
+     <span class="chapnav"><strong>4. The frequency domain and <br/>transmission of information</strong></span>
+     <ul>
+      
+      
+      <li class="chapnav">Complex numbers</li>
+      
+      
+      
+      <li class="chapnav">Frequency and spectrum</li>
+      
+      
+      
+      <li class="chapnav">Filteration and sampling</li>
+      
+      
+      
+      <li class="chapnav">Linear systems</li>
+      
+      
+      
+      <li class="chapnav">Frequency response</li>
+      
+      
+      
+      <li class="chapnav">Modulation</li>
+      
+      
+      
+      <li class="chapnav">Orthogonality</li>
+      
+      
+      
+      <li class="chapnav">Multiple-access communication</li>
+      
+      
+    </ul>
+    
+    
+     
+     
+     <span class="chapnav"><strong>5. Number theory and <br/>information privacy</strong></span>
+     <ul>
+      
+      
+      <li class="chapnav">Encryption</li>
+      
+      
+      
+      <li class="chapnav">Number theory</li>
+      
+      
+      
+      <li class="chapnav">Public key cryptography</li>
+      
+      
+    </ul>
+    
+    
+     
+     
+     <span class="chapnav"><strong>6. Boolean algebra and <br/ >computation</strong></span>
+     <ul>
+      
+      
+      <li class="chapnav">Number systems and arithmetic</li>
+      
+      
+      
+      <li class="chapnav">Boolean algebra</li>
+      
+      
+      
+      <li class="chapnav">Logic design and computation</li>
+      
+      
+      
+      <li class="chapnav"></li>
+      
+      
+    </ul>
+    
+    
+     
+     
+     <span class="chapnav"><strong>Appendix</strong></span>
+     <ul>
+      
+      
+      
+      <li><a href="/~ffh8x/moi/axiomatic.html">Axiomatic systems</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/index.html"><br/></a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/index.html"><br/></a></li>
+      
+      
+      
+    </ul>
+    
+    
+  </div>
+</nav>
+<div class="main">
+  <!-- variables for replacement -->
+  <h1 id="sampling-signals">Sampling signals</h1>
+
+<p>Information in the real world is analog. To store them on a computer, we sample the signal:</p>
+<div style="float;"><img src=".//media/image1.png" width="250px" /></div>
+<div style="float;"><img src=".//media/image2.png" width="250px" /></div>
+<div style="float;"><img src=".//media/image3.png" width="250px" /></div>
+
+<p>Reconstruction
+But how can recover the original signal? There are many analog signals (an infinite number, actually) that fit these samples:
+<!-- missing 2 imgs --></p>
+
+<p>Only sampled (and quantized) values are stored</p>
+
+<h2 id="sampling-and-the-spectrum">Sampling and the spectrum</h2>
+
+<p>We know that any signal can be viewed as a weighted sum (integral) of complex exponentials. So let’s first consider sampling a complex exponential. A complex exponential is defined by its magnitude, frequency, and initial phase like: $Ae^{i2\pi ft + \phi}$.
+So the goal is to find these quantities from samples. For simplicity, we will assume that $A = 1$ and $\phi = 0$. Let’s see under what conditions we can recover $f$ from samples</p>
+
+<div style="float;"><img src=".//media/image1.gif" width="250px" /></div>
+
+<h3 id="sampling-complex-exponentials">Sampling complex exponentials</h3>
+
+<div style="float: right;"><img src=".//media/image4.png" width="250px" /></div>
+<!-- need gif -->
+<p>The animation on the right is a sampled exponential at the rate of three samples per second</p>
+
+<p>What is the frequency of the original signal? $f = 1 Hz$.</p>
+
+<p>What is the sampling frequency? That is, how many samples are taken per second? $f_{s} = 3 Hz$.</p>
+
+<p>We can see that the sampled signal coincides with the original signal
+(time is slowed by a factor of 12)</p>
+
+<!-- need fig -->
+<p>f=1 f=1 sampled at f_s = 3 samples per second</p>
+
+<p>Let’s overlap these to make sure the samples agree with the original signal.
+The samples are taken at 0s, 1/3s, 2/3s, …
+Is there any other frequency that would result in the same samples?</p>
+
+<h2 id="bandwidth-and-sampling">Bandwidth and sampling</h2>
+
+<p>If we sample with frequency $f_{s}$ signals with the following frequencies appear the same</p>
+
+<p>$f,f \pm f_{s},f \pm 2f_{s},\ldots$</p>
+
+<div style="float;"><img src=".//media/image5.png" width="250px" /></div>
+
+<p>How can we ensure that we can recover the correct frequency? Not possible if we don’t make any additional assumption about the range of possible frequencies</p>
+
+<p>If the true frequency $f$ satisfies
+$- \frac{f_{s}}{2} &lt; f &lt; \frac{f_{s}}{2}$, then it can be recovered correctly.</p>
+<div style="float;"><img src=".//media/image6.png" width="250px" /></div>
+
+<h3 id="bandlimited-signals">Bandlimited signals</h3>
+
+<p>So the true frequency must be restricted in a certain sense. But how can we ensure this is the case?</p>
+
+<p>Fortunately, real signals are band-limited, i.e., there is a number
+$B$ such that all their frequency content is between $- B$ and $B$</p>
+
+<p>An analog (continuous-time) signal that has a finite range of nonzero frequency content is called <em>bandlimited</em>.</p>
+
+<p>If our bandlimited signal has content up to positive frequency B, we call B the <em>bandwidth</em> of the signal. The signal’s frequency content spans $[-B, B]$</p>
+
+<p>Suppose our signal is a sinusoid: $x(t) = 2cos(2π(500)t + π/4)$.</p>
+
+<p>What does the analog spectrum look like?</p>
+
+<p>What is the bandwidth of this signal?</p>
+
+<!-- #### Bandwidth and sampling -->
+
+<p>Let’s make our observations precise.</p>
+
+<p>If for $f$ in the range $[-B,B]$, to recover it without ambiguity:</p>
+
+<p>$f \pm f_{s}$must fall outside the range $\lbrack - B,B\rbrack$ that is, $f + f_{s} &gt; B$ and $f - f_{s} &lt; - B$</p>
+
+<p>Example: If $f_{s} = 3$, what is the largest value for $B$?</p>
+
+<p>So what is the relationship between $f_{s}$ and $B$ for correct recovery?</p>
+
+<p>The largest frequency is $B$. We need $B + f_{s} &gt; B$ (obvious) and $B - f_{s} &lt; - B \Rightarrow f_{s} &gt; 2B$</p>
+
+<p>The smallest frequency is $- B$. We need $- B + f_{s} &gt; B \Rightarrow f_{s} &gt; 2B$ and $- B - f_{s} &lt; - B$ (obvious)</p>
+
+<p>So we need $f_{s} &gt; 2B$.</p>
+
+<h3 id="the-sampling-theorem">The sampling theorem</h3>
+
+<p>If $2B &lt; f_{s}$ then given samples from a complex exponential with frequency $f$in the range $\lbrack - B,B\rbrack$, we can correctly recover $f$</p>
+
+<p>The same holds for a combination of complex exponentials if all their frequencies are in the range $\lbrack - B,B\rbrack$, and so for all bandlimited signal with bandwidth $B$</p>
+
+<div class="highlight">
+<strong>Fundamental Tenet IIX (Sampling Theorem):</strong>
+<p>Perfect reconstruction of a bandlimited signal with bandwidth $B$ from a finite number of samples is possible by sampling with frequency $f_{s} &gt; 2B$. </p>
+</div>
+
+<p>The bandwidth of human voice (speaking) is 4kHz. At quantization bit depth of 8 bits/sample, what data rate is needed to transmit human voice?</p>
+
+<p>$f_{s} = 8kHz,Rate = 8000\frac{samples}{second} \times 8\frac{bits}{sample} = 64000\frac{bits}{second} = 64kbps$</p>
+
+<p>This is what happens on your phone</p>
+
+<p>In the old modems it was the opposite. Data was converted to analog signal with bandwidth of 4kHz, since phone circuits could carry analog signals with bandwidth of 4kHz</p>
+
+<p>But why were modems 56kbps instead of 64kpbs? One out of each 8 bits was used for control purposes when transmitting data</p>
+
+
+<footer>
+  <br/><br/>
+  <center>
+    <hr/>
+  &copy; Farzad Farnoud, 2020</center>
+</footer>
+</div>
+<!-- Default Statcounter code for MoI
+http://www.ece.virginia.edu/~ffh8x/moi/ -->
+<script type="text/javascript">
+var sc_project=12471818; 
+var sc_invisible=1; 
+var sc_security="62b9c6a1"; 
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js"
+async></script>
+<noscript><div class="statcounter"><a title="Web Analytics"
+href="https://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="https://c.statcounter.com/12471818/0/62b9c6a1/1/"
+alt="Web Analytics"></a></div></noscript>
+<!-- End of Statcounter Code -->
+</body>
+</html>

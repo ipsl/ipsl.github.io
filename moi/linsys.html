@@ -1,0 +1,654 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="assets/css/home.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/mystyle.css">
+  
+  
+  <!-- for mathjax support -->
+  
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: { equationNumbers: { autoNumber: "AMS" } },
+    //tex2jax: {inlineMath: [['$', '$'], ['\\(', '\\)']]}
+    //tex2jax: {inlineMath: [['\(', '\)'], ['\\(', '\\)']]}
+    tex2jax: {inlineMath: [['$', '$'], ['\\(', '\\)']]}
+    //tex2jax: {inlineMath: [['$', '$'], ['\(', '\)'], ['\\(', '\\)']]}
+  });
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+  
+    <script type="text/javascript"  src="//cdnjs.cloudflare.com/ajax/libs/jsxgraph/1.1.0/jsxgraphcore.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/jsxgraph/1.1.0/jsxgraph.css" />
+  
+  <script src="assets/js/coding.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!--<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>-->
+  <script src="assets/js/course.js"></script>
+  <script src="assets/js/prob.js"></script>
+</head>
+<body>
+  <!-- Top navigation bar from the main webpage. must be updated from page.html-->
+  <div class="topnav">
+  <a style="float:left;" href="index.html"><strong>Mathematics of Information</strong></a>
+  <a id="teaching" href="../teaching.html">Teaching</a>
+  <a id="group" href="../ips.html">Group</a>
+  <a id="pubs" href="../publications.html">Publications</a>
+  <a id="home" href="../index.html">Home</a> 
+  </div>
+  <nav>
+   <div class="sidenav">
+     <!--<a href="/">Home</a><br>
+	     <a href="/moi/">Course Index</a><hr>-->
+	   <!--<h3><div class="chapnav"> Mathematics of <br> Information</div></h3>-->
+     
+     
+     
+     <a href="/~ffh8x/moi/"><strong>Home</strong></a>
+     
+     
+     
+    
+     
+     
+     <a href="/~ffh8x/moi/introduction.html"><strong>0. Introduction</strong></a>
+     
+     
+     
+    
+     
+     
+     <span class="chapnav"><strong>1. Numbers, fields, and <br/>representing information</strong></span>
+     <ul>
+      
+      
+      
+      <li><a href="/~ffh8x/moi/sets.html">Sets and set theory</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/numbers.html">Natural numbers, rationals</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/fields.html">Fields</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/reals.html">Real numbers</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/cardinality.html">Counting and cardinality</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/representation.html">Representing information</a></li>
+      
+      
+      
+    </ul>
+    
+    
+     
+     
+     <span class="chapnav"><strong>2. Probability & information</strong></span>
+     <ul>
+      
+      
+      
+      <li><a href="/~ffh8x/moi/defining_information.html">Defining information</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/probability_basics.html">Basics of probability</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/distributions.html">Random variables, <br/> distributions, independence</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/expectation.html">Expectation and Variance</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/conditional.html">Conditional probability</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/markov.html">Random sequences and <br/> Markov chains</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/information_theory.html">Quantifying Information</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/compression.html">Data compression</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/communications.html">Mathematics of communications</a></li>
+      
+      
+      
+    </ul>
+    
+    
+     
+     
+     <span class="chapnav"><strong>3. Linear algebra, finite fields, <br/>and error correction</strong></span>
+     <ul>
+      
+      
+      
+      <li><a href="/~ffh8x/moi/codes_graphs_algebra.html">Codes, graphs, and algebra</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/vectors.html">Vectors and spaces</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/fundamental_spaces.html">Fundamental spaces</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/ecc.html">Linear codes</a></li>
+      
+      
+      
+    </ul>
+    
+    
+     
+     
+     <span class="chapnav"><strong>4. The frequency domain and <br/>transmission of information</strong></span>
+     <ul>
+      
+      
+      <li class="chapnav">Complex numbers</li>
+      
+      
+      
+      <li class="chapnav">Frequency and spectrum</li>
+      
+      
+      
+      <li class="chapnav">Filteration and sampling</li>
+      
+      
+      
+      <li class="chapnav">Linear systems</li>
+      
+      
+      
+      <li class="chapnav">Frequency response</li>
+      
+      
+      
+      <li class="chapnav">Modulation</li>
+      
+      
+      
+      <li class="chapnav">Orthogonality</li>
+      
+      
+      
+      <li class="chapnav">Multiple-access communication</li>
+      
+      
+    </ul>
+    
+    
+     
+     
+     <span class="chapnav"><strong>5. Number theory and <br/>information privacy</strong></span>
+     <ul>
+      
+      
+      <li class="chapnav">Encryption</li>
+      
+      
+      
+      <li class="chapnav">Number theory</li>
+      
+      
+      
+      <li class="chapnav">Public key cryptography</li>
+      
+      
+    </ul>
+    
+    
+     
+     
+     <span class="chapnav"><strong>6. Boolean algebra and <br/ >computation</strong></span>
+     <ul>
+      
+      
+      <li class="chapnav">Number systems and arithmetic</li>
+      
+      
+      
+      <li class="chapnav">Boolean algebra</li>
+      
+      
+      
+      <li class="chapnav">Logic design and computation</li>
+      
+      
+      
+      <li class="chapnav"></li>
+      
+      
+    </ul>
+    
+    
+     
+     
+     <span class="chapnav"><strong>Appendix</strong></span>
+     <ul>
+      
+      
+      
+      <li><a href="/~ffh8x/moi/axiomatic.html">Axiomatic systems</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/index.html"><br/></a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/index.html"><br/></a></li>
+      
+      
+      
+    </ul>
+    
+    
+  </div>
+</nav>
+<div class="main">
+  <!-- variables for replacement -->
+  <h1 id="linear-systems-and-filtering">Linear systems and filtering</h1>
+
+<div style="float;"><img src=".//media/image7.png" width="250px" /></div>
+
+<p>This audio equalizer from Apple iTunes is made possible by a collection of digital <em>frequency-selective</em> filters.</p>
+
+<h2 id="filtering-signals-digitally">Filtering signals digitally</h2>
+
+<p>One of the main advantages of living in the computer/smartphone/wearable age is that digital processing power is widely available!</p>
+
+<p>In the olden days, if we wanted to process information, we had to build a machine to accomplish a very specific task. The ability of the processing to adapt to the signal or task was very limited.</p>
+
+<div style="float;"><img src=".//media/image1.jpeg" width="250px" /></div>
+<p>A mechanical clock contains a series of gears calibrated to tell time.
+What if we suddenly decided an hour was composed of 100 minutes instead of 60? We’d need a new clock! (Image credit: Jose Manuel/Wikipedia)</p>
+
+<div style="float;"><img src=".//media/image2.jpeg" width="250px" /></div>
+<p>A sextant is specifically constructed to measure angles between objects in the sky and the horizon.</p>
+
+<p>Many of these devices are <em>programmable</em>, allowing us to process signals how we see fit.</p>
+
+<p>So what is filtering?</p>
+
+<p>A <em>filter</em> is a system that permits some information to pass through the system while suppressing other information.</p>
+
+<p>What is a system?</p>
+
+<p>A <em>system</em> performs a mathematical operation, or operations, on one or more <em>input</em> signals, to produce one or more <em>output</em> signals.</p>
+
+<p>A <em>digital filter</em> processes a digital input signal to produce the desired digital output signal.</p>
+
+<p>There are many kinds of digital filters. The <em>equalizer</em> shown earlier is one example. What is an equalizer?</p>
+
+<p>Applications of filtering</p>
+
+<p>The notion of filtering is not new to digital, however. It has shown up for a long time in many mundane places:</p>
+
+<ul>
+  <li>Coffee filter</li>
+  <li>Water purification</li>
+  <li>Color filter on a camera (or even a stage light)</li>
+  <li>Grain separation</li>
+  <li>Chemical reactions</li>
+</ul>
+
+<p>Let’s think how we use digital filters in our everyday lives:</p>
+<ul>
+  <li>Clean up noise in the video and audio we watch and listen to</li>
+  <li>One way to allow multiple cell phones to communicate at the same time</li>
+  <li>How a GPS receiver identifies satellites</li>
+  <li>How movies play smoothly on high-frame-rate TV’s and computer monitors</li>
+</ul>
+
+<p>What is being filtered in each of these examples?</p>
+
+<p>Peer activity</p>
+
+<p>Instructions: Take few moments and discuss one of the digital filtering applications we identified with someone next to (or seated near) you.
+Note your answers to these three questions:</p>
+<ul>
+  <li>What is the input signal?</li>
+  <li>What is the desired output signal?</li>
+  <li>What is removed from the input signal? (Or, what is preserved in the output?)</li>
+</ul>
+
+<p>We will discuss your answers as a group.</p>
+
+<h2 id="lets-talk-about-systems">Let’s talk about systems</h2>
+
+<p>A system (call it <em>T</em>) takes one or more inputs $x_1, x_2, \cdots,$ and produces one or more outputs $y_1, y_2, \cdots,$</p>
+
+<p>Let’s constrain ourselves to one input and one output to start.</p>
+
+<p>We will work with digital systems, but it is more convenient to study discrete-time (DT) systems with continuous-valued inputs
+$x[n]$ and outputs $y[n]$.</p>
+
+<p>The following diagram describes such a system:</p>
+<div style="float;"><img src=".//media/image8.png" width="250px" /></div>
+
+<p>The distinction of working with discrete-valued digital signals is important, but makes analysis much more complicated.</p>
+
+<h3 id="properties-of-systems">Properties of systems</h3>
+
+<p>While a complete discussion of system properties is more appropriate for a later course, there are a couple of important properties that will make our study of filters much easier:</p>
+<ul>
+  <li>Linearity</li>
+  <li>Time invariance</li>
+</ul>
+
+<p>We already saw linearity in another context: the spectrum of a signal.</p>
+
+<p>Linearity of a system is the same principle: additivity and scaling</p>
+
+<p>For an input $x[n]$, the system $T$ produces the output
+$y[n] = T(x[n])$</p>
+
+<p>Then,
+\(y_1[n] = T(x_1[n]), y_2[n] = T(x_2[n]), \rightarrow y_1[n] + y_2[n] = T(x_1[n], + x_2[n]), cy_1[n] = T(cx_1[n]), ay_1[n] + by_2[n] = T(ax_1[n] + bx_2[n].\)</p>
+
+<p>Linearity is a very powerful property that ensures systems are well-behaved:</p>
+
+<p>The system behaves the same no matter how the signal is scaled.</p>
+
+<p>Given a input composed of multiple signals, we can describe the output by processing those component signals individually.</p>
+
+<p>Unfortunately, very little in the world is strictly linear:</p>
+
+<p>Quantization is fundamentally nonlinear, so digital processing is inherently nonlinear.</p>
+
+<p>Real systems have physical limits on the range of possible inputs and outputs. These limits cause saturating, nonlinear behavior.</p>
+
+<p>Fortunately, real systems can be approximately linear over a useful range.</p>
+
+<h4 id="which-is-linearnonlinear">Which is linear/nonlinear?</h4>
+
+<p>Consider idealized examples of the following systems. Which are linear?</p>
+<ul>
+  <li>Amplifier</li>
+  <li>EKG-based heart rate monitor</li>
+  <li>Quantizer
+<!-- linear linear non-linear -->
+Now, some mathematical examples:</li>
+  <li>$T(x[n]) = (x[n])^2$.</li>
+  <li>$T(x[n]) = x[n] - x[n-1]$</li>
+  <li>$T(x[n]) = 2$
+<!-- non-linear linear non-linear --></li>
+</ul>
+
+<h3 id="time-invariance">Time Invariance</h3>
+<p>Time invariance is another simplifying property that some systems have: processing a time-shifted input produces the output, time-shifted by the same amount.
+$y[n] = T(x[n]) \rightarrow y[n-n_0] = T(x[n-n_0])$</p>
+
+<p>Some examples:</p>
+<ul>
+  <li>$T(x[n]) = x[n+1]$.</li>
+  <li>$T(x[n]) = \frac12(x[n] + x[n-1])$</li>
+  <li>$T(x[n]) = (x[n])^2$</li>
+</ul>
+
+<p>Let’s show the following are not time-invariant:</p>
+<ul>
+  <li>$T(x[n]) = (-1)^n x[n]$</li>
+  <li>$T(x[n]) = x[2n]$</li>
+</ul>
+
+<p>Some real-world examples of time-invariant systems:</p>
+
+<p>The audio equalizer</p>
+
+<p>Noise-cancelling headphones</p>
+
+<p>A real-world example that is not time-invariant:</p>
+
+<p>Many systems behave differently as the environment changes, e.g., a car
+(road, fuel), sound system (humidity, temperature)</p>
+
+<h2 id="linear-time-invariant-lti-systems">Linear, time invariant (LTI) systems</h2>
+
+<p>The class of systems that are both linear and time-invariant is a very important class in signal processing theory. While a detailed discussion of these systems will wait for a future course, the frequency representation of these systems is very powerful.</p>
+
+<p>It allows us to describe a filter in terms of what it does to the spectrum of a signal.</p>
+
+<h3 id="analog-systems-and-filters">Analog systems and filters</h3>
+
+<p>Most of the processing of signals is performed in the digital realm</p>
+
+<p>But there are also analog systems and filters</p>
+
+<p>For example, a microphone, before the A-to-D converter, is an analog system</p>
+
+<p>Input: sound waves, analog</p>
+
+<p>Output: voltage signal, analog</p>
+
+<p>The principles are the same (although there are also significant differences)</p>
+
+<p>The concepts are easier to understand and observe with analog systems</p>
+
+<p>So we’ll focus on analog LTI systems for the rest of the lecture</p>
+
+<p>$x\left( t \right) \rightarrow y\left( t \right) \Rightarrow x\left( t - T \right) \rightarrow y(t - T)$</p>
+
+<p>$x_{1}\left( t \right) \rightarrow y_{1}\left( t \right),x_{2}\left( t \right) \rightarrow y_{2}\left( t \right) \Rightarrow ax_{1}\left( t \right) + bx_{2}\left( t \right) \rightarrow ay_{1}\left( t \right) + by_{2}\left( t \right)$</p>
+
+<p>Determine which ones are LTI.</p>
+
+<p>$y\left( t \right) = \frac{1}{2}x\left( t - \frac{1}{6} \right)$
+<!-- LTI -->
+$y\left( t \right) = x(3t)$
+<!-- L non-TI -->
+$y\left( t \right) = \frac{dx\left( t \right)}{dt}$
+<!-- LTI -->
+$y\left( t \right) = \frac{1}{2\pi}\frac{dx\left( t \right)}{dt} - \frac{1}{\left( 2\pi \right)^{2}}\frac{d^{2}x\left( t \right)}{dt^{2}}$
+<!-- non LI non TI -->
+$y\left( t \right) = x\left( t \right)^{2} - x(t/2)$</p>
+
+<p>The response to a single frequency</p>
+
+<p>Let’s see how each of these systems treat a single frequency:</p>
+
+<p>The response to a single frequency
+$x\left( t \right) = 1e^{i2\pi t},y\left( t \right) = \frac{1}{2}x\left( t - \frac{1}{6} \right)$</p>
+<div style="float;"><img src=".//media/image2.gif" width="250px" /></div>
+<div style="float;"><img src=".//media/image3.gif" width="250px" /></div>
+
+<p>$x\left( t \right) = 1e^{i2\pi t},y\left( t \right) = x(3t)$</p>
+<div style="float;"><img src=".//media/image2.gif" width="250px" /></div>
+<div style="float;"><img src=".//media/image4.gif" width="250px" /></div>
+
+<p>$x\left( t \right) = 1e^{i2\pi t},y\left( t \right) = \frac{dx\left( t \right)}{dt}$</p>
+<div style="float;"><img src=".//media/image2.gif" width="250px" /></div>
+<div style="float;"><img src=".//media/image5.gif" width="250px" /></div>
+
+<p>$x\left( t \right) = 1e^{i2\pi t},y\left( t \right) = \frac{dx\left( t \right)}{dt} - \frac{d^{2}x\left( t \right)}{dt^{2}}$</p>
+<div style="float;"><img src=".//media/image2.gif" width="250px" /></div>
+<div style="float;"><img src=".//media/image6.gif" width="250px" /></div>
+
+<p>$x\left( t \right) = 1e^{i2\pi t},y\left( t \right) = x\left( t \right)^{2} - x(t/2)$</p>
+<div style="float;"><img src=".//media/image2.gif" width="250px" /></div>
+<div style="float;"><img src=".//media/image7.gif" width="250px" /></div>
+
+<h2 id="frequency-response-of-lti-systems">Frequency response of LTI systems</h2>
+
+<p>For LTI systems, the output for a complex exponential is a scaled and shifted version of it (with the same frequency)</p>
+
+<p>$x\left( t \right) = e^{i2\pi ft} \rightarrow y\left( t \right) = A_{f}e^{i2\pi ft + \phi_{f}}$</p>
+
+<p>Since any signal is a combination of complex exponentials, in the frequency domain, each frequency as scaled and shifted by a certain value: $Y\left( f \right) = H(f)X(f)$, $H\left( f \right) = A_{f}e^{i\phi_{f}}$. Describing LTI systems is significantly simpler in the frequency domain rather than the time domain.</p>
+
+<p>In the time domain:</p>
+
+<p>Sinusoids are scaled and shifted. For non-sinusoids the shape may change.</p>
+<div style="float;"><img src=".//media/image9.png" width="250px" /></div>
+<p>rightarrow</p>
+<div style="float;"><img src=".//media/image11.png" width="250px" /></div>
+<!-- <div style="float;"><img src=".//media/image10.png" width="250px"></div> copied the wrong pic.. -->
+<p>rightarrow</p>
+<div style="float;"><img src=".//media/image12.png" width="250px" /></div>
+
+<p>$y\left( t \right) = \frac{1}{2}x\left( t - \frac{1}{6} \right) \Rightarrow$</p>
+
+<p>$x\left( t \right) = e^{i2\pi ft} \rightarrow y\left( t \right) = \frac{1}{2}e^{i2\pi f\left( t - \frac{1}{6} \right)} = \frac{1}{2}e^{- i2\pi f/6}e^{i2\pi ft} \Rightarrow H\left( f \right) = \frac{1}{2}e^{- i2\pi f/6}$</p>
+
+<p>$y\left( t \right) = x(3t)$</p>
+
+<p>$x\left( t \right) = e^{i2\pi ft} \rightarrow y\left( t \right) = e^{i2\pi 3ft}$, for input with frequency $f$ the output has frequency $3f$ =&gt; Not
+LTI</p>
+
+<p>$y\left( t \right) = \frac{dx\left( t \right)}{dt}$</p>
+
+<p>$x\left( t \right) = e^{i2\pi ft} \rightarrow y\left( t \right) = (i2\pi f)e^{i2\pi ft} = 2\pi fe^{- i\pi/2}e^{i2\pi ft} \Rightarrow H\left( f \right) = 2\pi fe^{- i\pi/2}$</p>
+
+<p>$y\left( t \right) = \frac{1}{2\pi}\frac{dx\left( t \right)}{dt} - \frac{1}{\left( 2\pi \right)^{2}}\frac{d^{2}x\left( t \right)}{dt^{2}}$</p>
+
+<p>$y\left( t \right) = x\left( t \right)^{2} - x(t/2)$</p>
+
+<p>Recall, real-valued signals have conjugate-symmetric spectra. For the same reason, a real system has a conjugate-symmetric frequency response.</p>
+
+<p>Thus,</p>
+
+<p>$H(f) = H^{\ast}( - f)$</p>
+
+<p>If the input is real, the output of a real filter will also be real, with a symmetric spectrum:</p>
+
+<p>$Y(f) = Y^{\ast}( - f)$</p>
+
+<p>Suppose a signal x(t) has a certain spectrum X(f). If our filter is an LTI system, it effectively scales individual frequencies by fixed values. We call these scaling values the frequency response
+H(f) of the filter:
+<!-- add img -->
+Image credit: FaberAcoustical</p>
+
+<h2 id="frequency-selective-filters">Frequency-selective filters</h2>
+
+<p>Frequency-selective filters are LTI filters that preserve some frequencies (the passband) and eliminate other frequencies (the stopband) in the signal:</p>
+<div style="float;"><img src=".//media/image13.png" width="250px" /></div>
+<div style="float;"><img src=".//media/image14.png" width="250px" /></div>
+
+<h3 id="filtering-a-sinusoid">Filtering a sinusoid.</h3>
+<p>Consider a three-tone signal x(t):
+$x(t) = \frac13(\cos(2\pi (250)t) + \cos(2\pi (500)t) + \cos(2\pi (1000)t))$</p>
+<div style="float;"><img src=".//media/image16.png" width="250px" /></div>
+<div style="float;"><img src=".//media/image15.png" width="250px" /></div>
+<p>These filters are especially useful when the desired signal occupies a limited set of frequencies.</p>
+
+<p>Given a digital low pass filter that corresponds to an analog frequency of 400 Hz, only the lowest-frequency sinusoid will be preserved:</p>
+<div style="float;"><img src=".//media/image17.png" width="250px" /></div>
+<div style="float;"><img src=".//media/image18.png" width="250px" /></div>
+
+<p>Thus, we observe:</p>
+<div style="float;"><img src=".//media/image16.png" width="250px" /></div>
+<p>Low pass filter (400 Hz)</p>
+<div style="float;"><img src=".//media/image19.png" width="250px" /></div>
+
+<p>A high pass filter can preserve the highest-frequency sinusoid, while suppressing the others: This filter has a 600 Hz cutoff.</p>
+<div style="float;"><img src=".//media/image20.png" width="250px" /></div>
+<div style="float;"><img src=".//media/image21.png" width="250px" /></div>
+<p>Observe:</p>
+
+<div style="float;"><img src=".//media/image16.png" width="250px" /></div>
+<p>High pass filter (600 Hz)</p>
+<div style="float;"><img src=".//media/image22.png" width="250px" /></div>
+
+<h3 id="filtering-a-sawtooth-wave">Filtering a sawtooth wave</h3>
+
+<p>A sawtooth wave can be constructed from a set of sinusoids of decreasing amplitude: $x(t) = 1 + \sum_{k=1}^{\infty} \frac2{k \pi} \cos(2\pi (5k) t + \frac{\pi}2)$.</p>
+<div style="float;"><img src=".//media/image23.png" width="250px" /></div>
+
+<p>After filtering above the tenth harmonic (50 Hz):</p>
+<div style="float;"><img src=".//media/image24.png" width="250px" /></div>
+
+<p>This graphic equalizer can be considered a set of frequency selective filters:</p>
+<div style="float;"><img src=".//media/image7.png" width="250px" /></div>
+
+<p>Each of the frequencies along the horizontal axis represents a range corresponding to the passband of a filter.  The decibel (dB) factor selected using the slider represents the passband gain of that filter. The decibel scale is logarithmic, so a factor $&gt; 0$ dB represents <em>amplification</em> (gain $&gt; 1$), while a factor $&lt; 0$ dB represents <em>attenuation</em> (gain $&lt; 1$). The equalizer inputs the sound into each of the filters and adds the outputs together to get the chosen equalizer characteristic. Choose your favorite music and try it out!</p>
+
+
+<footer>
+  <br/><br/>
+  <center>
+    <hr/>
+  &copy; Farzad Farnoud, 2020</center>
+</footer>
+</div>
+<!-- Default Statcounter code for MoI
+http://www.ece.virginia.edu/~ffh8x/moi/ -->
+<script type="text/javascript">
+var sc_project=12471818; 
+var sc_invisible=1; 
+var sc_security="62b9c6a1"; 
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js"
+async></script>
+<noscript><div class="statcounter"><a title="Web Analytics"
+href="https://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="https://c.statcounter.com/12471818/0/62b9c6a1/1/"
+alt="Web Analytics"></a></div></noscript>
+<!-- End of Statcounter Code -->
+</body>
+</html>

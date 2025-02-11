@@ -1,0 +1,1659 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="assets/css/home.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/mystyle.css">
+  
+  
+  <!-- for mathjax support -->
+  
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: { equationNumbers: { autoNumber: "AMS" } },
+    //tex2jax: {inlineMath: [['$', '$'], ['\\(', '\\)']]}
+    //tex2jax: {inlineMath: [['\(', '\)'], ['\\(', '\\)']]}
+    tex2jax: {inlineMath: [['$', '$'], ['\\(', '\\)']]}
+    //tex2jax: {inlineMath: [['$', '$'], ['\(', '\)'], ['\\(', '\\)']]}
+  });
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+  
+    <script type="text/javascript"  src="//cdnjs.cloudflare.com/ajax/libs/jsxgraph/1.1.0/jsxgraphcore.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/jsxgraph/1.1.0/jsxgraph.css" />
+  
+  <script src="assets/js/coding.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!--<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>-->
+  <script src="assets/js/course.js"></script>
+  <script src="assets/js/prob.js"></script>
+</head>
+<body>
+  <!-- Top navigation bar from the main webpage. must be updated from page.html-->
+  <div class="topnav">
+  <a style="float:left;" href="index.html"><strong>Mathematics of Information</strong></a>
+  <a id="teaching" href="../teaching.html">Teaching</a>
+  <a id="group" href="../ips.html">Group</a>
+  <a id="pubs" href="../publications.html">Publications</a>
+  <a id="home" href="../index.html">Home</a> 
+  </div>
+  <nav>
+   <div class="sidenav">
+     <!--<a href="/">Home</a><br>
+	     <a href="/moi/">Course Index</a><hr>-->
+	   <!--<h3><div class="chapnav"> Mathematics of <br> Information</div></h3>-->
+     
+     
+     
+     <a href="/~ffh8x/moi/"><strong>Home</strong></a>
+     
+     
+     
+    
+     
+     
+     <a href="/~ffh8x/moi/introduction.html"><strong>0. Introduction</strong></a>
+     
+     
+     
+    
+     
+     
+     <span class="chapnav"><strong>1. Numbers, fields, and <br>representing information</strong></span>
+     <ul>
+      
+      
+      
+      <li><a href="/~ffh8x/moi/sets.html">Sets and set theory</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/numbers.html">Natural numbers, rationals</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/fields.html">Fields</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/reals.html">Real numbers</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/cardinality.html">Counting and cardinality</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/representation.html">Representing information</a></li>
+      
+      
+      
+    </ul>
+    
+    
+     
+     
+     <span class="chapnav"><strong>2. Probability &amp; information</strong></span>
+     <ul>
+      
+      
+      
+      <li><a href="/~ffh8x/moi/defining_information.html">Defining information</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/probability_basics.html">Basics of probability</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/distributions.html">Random variables, <br> distributions, independence</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/expectation.html">Expectation and Variance</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/conditional.html">Conditional probability</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/markov.html">Random sequences and <br> Markov chains</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/information_theory.html">Quantifying Information</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/compression.html">Data compression</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/communications.html">Mathematics of communications</a></li>
+      
+      
+      
+    </ul>
+    
+    
+     
+     
+     <span class="chapnav"><strong>3. Linear algebra, finite fields, <br>and error correction</strong></span>
+     <ul>
+      
+      
+      
+      <li><a href="/~ffh8x/moi/codes_graphs_algebra.html">Codes, graphs, and algebra</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/vectors.html">Vectors and spaces</a></li>
+      
+      
+      
+      
+      
+      <li><a class="active" style="color:#76bdd5" href="/~ffh8x/moi/fundamental_spaces.html"><img class="emoji" title=":point_right:" alt=":point_right:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f449.png" height="20" width="20"> Fundamental spaces</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/ecc.html">Linear codes</a></li>
+      
+      
+      
+    </ul>
+    
+    
+     
+     
+     <span class="chapnav"><strong>4. The frequency domain and <br>transmission of information</strong></span>
+     <ul>
+      
+      
+      <li class="chapnav">Complex numbers</li>
+      
+      
+      
+      <li class="chapnav">Frequency and spectrum</li>
+      
+      
+      
+      <li class="chapnav">Filteration and sampling</li>
+      
+      
+      
+      <li class="chapnav">Linear systems</li>
+      
+      
+      
+      <li class="chapnav">Frequency response</li>
+      
+      
+      
+      <li class="chapnav">Modulation</li>
+      
+      
+      
+      <li class="chapnav">Orthogonality</li>
+      
+      
+      
+      <li class="chapnav">Multiple-access communication</li>
+      
+      
+    </ul>
+    
+    
+     
+     
+     <span class="chapnav"><strong>5. Number theory and <br>information privacy</strong></span>
+     <ul>
+      
+      
+      <li class="chapnav">Encryption</li>
+      
+      
+      
+      <li class="chapnav">Number theory</li>
+      
+      
+      
+      <li class="chapnav">Public key cryptography</li>
+      
+      
+    </ul>
+    
+    
+     
+     
+     <span class="chapnav"><strong>6. Boolean algebra and <br>computation</strong></span>
+     <ul>
+      
+      
+      <li class="chapnav">Number systems and arithmetic</li>
+      
+      
+      
+      <li class="chapnav">Boolean algebra</li>
+      
+      
+      
+      <li class="chapnav">Logic design and computation</li>
+      
+      
+      
+      <li class="chapnav">
+      
+      
+    </ul>
+    
+    
+     
+     
+     <span class="chapnav"><strong>Appendix</strong></span>
+     <ul>
+      
+      
+      
+      <li><a href="/~ffh8x/moi/axiomatic.html">Axiomatic systems</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/index.html"><br></a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/index.html"><br></a></li>
+      
+      
+      
+    </ul>
+    
+    
+  </div>
+</nav>
+<div class="main">
+  <!-- variables for replacement -->
+  <h1 id="matrices-and-fundamental-spaces">Matrices and fundamental spaces</h1>
+
+<h2 id="matrices-the-basics">Matrices, the basics</h2>
+<h3 id="what-is-a-matrix">What is a Matrix?</h3>
+
+<p>A matrix is a finite, ordered sequence of numbers arranged in a rectangle with a number of rows and columns.</p>
+
+<p>Examples:</p>
+
+\[A = \begin{pmatrix}
+3 &amp; -1 \\
+1 &amp; 2 \\
+\end{pmatrix},\qquad B = \begin{pmatrix}
+-1 &amp; 1 \\
+7 &amp; 4 \\
+0 &amp; 3 \\
+\end{pmatrix}.\]
+
+<p>To refer the element in row $i$ and column $j$ of $A$, we write $A_{ij}$. For example, above, $A_{12}=-1.$</p>
+
+<p>The dimension of a matrix is written as $m\times n$, where $m$ is the number of rows and $n$ is the number of columns. We write $A_{m\times n}$ to denote a matrix of dimension $m\times n$.</p>
+
+<p><strong>Addition</strong>: Matrices can be added and multiplied together. The addition of two matrices with the same dimensions is obtained by adding the elements in the same positions, as shown below. Multiplication is discussed later in detail.</p>
+
+\[\begin{pmatrix}1&amp;2&amp;3\\4&amp;5&amp;6\end{pmatrix} + \begin{pmatrix}7&amp;8&amp;9\\10&amp;11&amp;12\end{pmatrix} = \begin{pmatrix}8&amp;10&amp;12\\14&amp;16&amp;18\end{pmatrix}.\]
+
+<p><br></p>
+
+<p><strong>Transposition</strong>: We can <em>transpose</em> a matrix by mirroring it with respect to the diagonal:</p>
+
+\[\begin{pmatrix}
+2 &amp; -3 \\
+-1 &amp; 4 \\
+1 &amp; 0 \\
+\end{pmatrix}^{T} = \begin{pmatrix}
+2 &amp; -1 &amp; 1 \\
+-3 &amp; 4 &amp; 0 \\
+\end{pmatrix}\]
+
+<p><br></p>
+
+<p><strong>Vectors as matrices</strong>: Vectors are special cases of matrices, where either one row or one column:</p>
+
+<ul>
+  <li>Column vector: elements arranged in a single column; a D-dimensional column vector is a $D\times1$ matrix. These are more common and the default format for vectors.</li>
+  <li>Row vector: elements arranged in a single row; a D-dimensional row vector is a $1\times D$ matrix.</li>
+</ul>
+
+<p>We use the notation $v = \left( v_{1},v_{2},\ldots,v_{n} \right)$ for both row and column vectors. If we want to be precise, to write a column vector as a row vector, we can write $v^T=\left( v_{1},v_{2},\ldots,v_{n} \right)$. If $v$ is a column vector, $v^T$ is a row vector and vice versa.</p>
+
+<p>It is  usually helpful to think of a matrix as a collection of (usually column) vectors.</p>
+
+\[\begin{pmatrix}
+\color{blue}{ - 1} &amp; \color{blue}{1} \\
+\color{brown}{0} &amp; \color{brown}{3} \\
+\color{green}{2 }&amp; \color{green}{- 2} \\
+\end{pmatrix},\qquad
+\begin{pmatrix}
+\color{blue}{ -5 }&amp; \color{brown}{-6} &amp; \color{green}{-4 }\\
+\color{blue}{5 }&amp; \color{brown}{8 }&amp; \color{green}{7} \\
+\color{blue}{ -1 }&amp; \color{brown}{0} &amp; \color{green}{1 }\\
+\end{pmatrix}.\]
+
+<h3 id="matrix-vector-multiplication">Matrix-vector multiplication</h3>
+
+<p>We can multiply a vector $x$ and a matrix $A$ in two different ways: \(Ax\) and \(xA\)</p>
+<ul>
+  <li>For $Ax$, the number of <strong>columns</strong> of $A$ must be the same as the  number of elements of $x$. $x$ must be a column vector. The result is the linear combination of the <strong>columns</strong> of $A$, where the coefficients are the elements of $x$:</li>
+</ul>
+
+\[\begin{pmatrix}
+\color{blue}{1}  &amp; \color{brown}{-1} \\
+\color{blue}{3}  &amp; \color{brown}{-4} \\
+\color{blue}{-1} &amp; \color{brown}{2} \\
+\end{pmatrix}
+\begin{pmatrix}
+\color{blue}{2} \\
+\color{brown}{1} \\
+\end{pmatrix} = 
+\color{blue}{2} \begin{pmatrix}
+\color{blue}{1} \\
+\color{blue}{3} \\
+\color{blue}{-1}\\
+\end{pmatrix}
++
+\color{brown}{1}
+\begin{pmatrix}
+\color{brown}{-1} \\
+\color{brown}{-4} \\
+\color{brown}{2} \\
+\end{pmatrix}
+=
+\begin{pmatrix}
+1 \\
+2 \\
+0 \\
+\end{pmatrix}\]
+
+<p>More generally, for 
+\(A = \begin{pmatrix}
+\color{blue}{a_{11}} &amp; a_{12} &amp; a_{13} \\
+\color{blue}{a_{21}} &amp; a_{22} &amp; a_{23} \\
+\color{blue}{a_{31}} &amp; a_{32} &amp; a_{33} \\
+\color{blue}{a_{41}} &amp; a_{42} &amp; a_{43} \\
+\end{pmatrix},x = \begin{pmatrix}
+\color{blue}{x_{1}} \\
+x_{2} \\
+x_{3} \\
+\end{pmatrix},\)
+we have</p>
+
+\[Ax =  \color{blue}{x_{1}}\begin{pmatrix}
+\color{blue}{a_{11}} \\
+\color{blue}{a_{21}} \\
+\color{blue}{a_{31}} \\
+\color{blue}{a_{41}} \\
+\end{pmatrix} + x_{2}\begin{pmatrix}
+a_{12} \\
+a_{22} \\
+a_{32} \\
+a_{42} \\
+\end{pmatrix} + x_{3}\begin{pmatrix}
+a_{13} \\
+a_{23} \\
+a_{33} \\
+a_{43} \\
+\end{pmatrix}=
+\begin{pmatrix}
+\color{blue}{x_{1}a_{11}} + x_{2}a_{12} + x_{3}a_{13} \\
+\color{blue}{x_{1}a_{21}} + x_{2}a_{22} + x_{3}a_{23} \\
+\color{blue}{x_{1}a_{31}} + x_{2}a_{32} + x_{3}a_{33} \\
+\color{blue}{x_{1}a_{41}} + x_{2}a_{42} + x_{3}a_{43} \\
+\end{pmatrix}\]
+
+<ul>
+  <li>For $xA$, the number of <strong>rows</strong> of $A$ must be the same as the  number of elements of $x$. $x$ must be a row vector. The result is the linear combination of the <strong>rows</strong> of $A$, where the $i$-th element of $x$ is the coefficient of the $i$-th column of $A$:</li>
+</ul>
+
+\[\begin{pmatrix}
+\color{blue}{ - 1} &amp; \color{brown}{1 }&amp; \color{green}{0} \\
+\end{pmatrix}\begin{pmatrix}
+\color{blue}{ - 1} &amp; \color{blue}{1} \\
+\color{brown}{0} &amp; \color{brown}{3} \\
+\color{green}{2 }&amp; \color{green}{- 2} \\
+\end{pmatrix} = 
+\color{blue}{ - 1}
+\begin{pmatrix}
+\color{blue}{ - 1} &amp; \color{blue}{1} \\
+\end{pmatrix} +
+\color{brown}{1 }
+\begin{pmatrix}
+\color{brown}{0} &amp; \color{brown}{3} \\
+\end{pmatrix} +
+\color{green}{0}
+\begin{pmatrix}
+\color{green}{2 }&amp; \color{green}{- 2} \\
+\end{pmatrix}
+ = \begin{pmatrix}
+1 &amp; 2 \\
+\end{pmatrix}\]
+
+<p>We can multiply a column vector $v$ by a matrix from the left by first writing it as row vector, i.e., $v^T A$.</p>
+
+<!--
+
+
+${\mathbf{x}}^{\mathbf{T}}{\mathbf{A}}$ **is a linear combination of
+    the rows of** $\mathbf{A}$. 
+$$x = \begin{pmatrix}x_{1} \\
+x_{2} \\
+x_{3} \\
+x_{4} \\
+\end{pmatrix}, A = \begin{pmatrix}
+a_{11} & a_{12} & a_{13} \\
+a_{21} & a_{22} & a_{23} \\
+a_{31} & a_{32} & a_{33} \\
+a_{41} & a_{42} & a_{43} \\
+\end{pmatrix}$$
+
+$$x^{T}A = \begin{pmatrix}
+\color{blue}{x_{1} }& x_{2} & x_{3} & x_{4} \\
+\end{pmatrix}\begin{pmatrix}
+\color{blue}{a_{11}} & \color{blue}{a_{12}} & \color{blue}{a_{13}} \\
+a_{21} & a_{22} & a_{23} \\
+a_{31} & a_{32} & a_{33} \\
+a_{41} & a_{42} & a_{43} \\
+\end{pmatrix} $$
+$$= \color{blue}{x_{1}\begin{pmatrix}
+  a_{11} & a_{12} & a_{13} \\
+  \end{pmatrix}} + x_{2}\begin{pmatrix}
+  a_{21} & a_{22} & a_{23} \\
+  \end{pmatrix} + x_{3}\begin{pmatrix}
+  a_{31} & a_{32} & a_{33} \\
+  \end{pmatrix}$ $+ x_{4}\begin{pmatrix}
+  a_{41} & a_{42} & a_{43} \\
+  \end{pmatrix}$$
+-->
+
+<div style="float: right;"><img src="https://imgs.xkcd.com/comics/matrix_transform.png" width="300px"></div>
+
+<p>We can view matrix-vector multiplication (also vector-matrix multiplication) as a transformation.  The input to the transformation is $x$ and the output is $Ax$ (or $xA$).
+<br><br><br><br></p>
+
+<div class="exercise">
+    <button onclick="showSolution(this,'rotate')" style="float:right;">Show Solution</button>
+    Let $$A = \begin{pmatrix}0 &amp; 1 \\ -1 &amp; 0\end{pmatrix}.$$ Find $Ax$ and $Ay$, where
+    $$x = \begin{pmatrix}1\\2\end{pmatrix},\qquad y = \begin{pmatrix}4\\3\end{pmatrix}.$$
+Show $x,y,Ax,Ay$ on Cartesian axes. Viewed as a transformation, what does this matrix do?
+        <div id="rotate" style="display:none;" class="solution">
+        <div style="float: right;"><div id="fig1" class="jxgbox" style="width:200px; height:320px;"></div></div>
+        For $x$, we have
+        $$Ax = \begin{pmatrix}2\\-1\end{pmatrix}.$$
+        We can see that $x$ is rotated clockwise by 90 degrees. Plotting $y$ and $Ay$ is left as an exercise. But $y$ will also be rotated by 90 degrees. In general,
+        $$A\begin{pmatrix}a\\b\end{pmatrix} = \begin{pmatrix}b\\-a\end{pmatrix},$$
+        which can be shown to be equivalent to a 90 degree clockwise rotation.
+<script>
+JXG.Options.text.useMathJax = true;
+var fig1 = JXG.JSXGraph.initBoard('fig1', {boundingbox: [-1, 4, 4, -4], axis: true, showCopyright: false, showNavigation: false});
+fig1.create('point',[1,2],{name:'$x$',fontSize:18,color:'blue'});
+fig1.create('arrow',[[0,0],[1,2]],{color:'blue'});
+fig1.create('point',[2,-1],{name:'$Ax$',fontSize:18});
+fig1.create('arrow',[[0,0],[2,-1]],{color:'red'});
+</script>
+<br><br>
+    </div>
+</div>
+<p><br></p>
+
+<p>Matrix-vector multiplication $Ax$ is a linear transformation:</p>
+<ul>
+  <li>Scaling: $A(cx) = c(Ax)$</li>
+  <li>Additivity: $A(x+y) = Ax + Ay$</li>
+</ul>
+
+<p>Note: this also holds for the vector-matrix multiplication $xA$.</p>
+
+<h3 id="matrix-multiplication">Matrix multiplication</h3>
+
+<p>We can also multiply two matrices together. In this case, the $i$-th column of the result is obtained by multiplying the $i$-th column of the second matrix by the first matrix. For example,</p>
+
+\[\begin{pmatrix}
+2 &amp; -3 \\
+ -1 &amp; 4 \\
+1 &amp; 0 \\
+\end{pmatrix}\begin{pmatrix}
+\color{blue}{ -1 }&amp;\color{brown}{ 0 }&amp;\color{green}{ 1 }\\
+\color{blue}{1 }&amp;\color{brown}{ 2 }&amp; \color{green}{2 }\\
+\end{pmatrix} = \begin{pmatrix}
+\color{blue}{ -5 }&amp; \color{brown}{-6} &amp; \color{green}{-4 }\\
+\color{blue}{5 }&amp; \color{brown}{8 }&amp; \color{green}{7} \\
+\color{blue}{ -1 }&amp; \color{brown}{0} &amp; \color{green}{1 }\\
+\end{pmatrix}\]
+
+<p>Note for example that the first column of the result is obtained by multiplying the first column of the second matrix by the first matrix:</p>
+
+\[\begin{pmatrix}
+2 &amp; -3 \\
+ -1 &amp; 4 \\
+1 &amp; 0 \\
+\end{pmatrix}\begin{pmatrix}
+-1\\
+1\\
+\end{pmatrix} = (-1)\begin{pmatrix}
+2 \\
+ -1 \\
+1  \\
+\end{pmatrix}+ (1) \begin{pmatrix}
+-3 \\
+4 \\
+0 \\
+\end{pmatrix}=
+\begin{pmatrix}
+-5\\
+5\\
+-1\\
+\end{pmatrix}\]
+
+<p>We can also view matrix multiplication as follows: If $C=AB$, then $C_{ij}$ is the result of the inner product of the $i$-th row of $A$ and the $j$-th column of $B$. The number of columns of $A$ must equal the number of rows of $B$. $A_{n\times m} B_{m \times p} = C_{n \times p}$.</p>
+
+<div class="exercise">
+    <button onclick="showSolution(this,'matmul')" style="float:right;">Show Solution</button>
+    Find
+    $$\begin{pmatrix}
+ -1 &amp; 1 \\
+2 &amp; 2 \\
+\end{pmatrix}\begin{pmatrix}
+ -2 &amp; 3 &amp; 0 \\
+2 &amp; 0 &amp; 1 \\
+\end{pmatrix}. $$
+    <div id="matmul" style="display:none;" class="solution">
+     $$\begin{pmatrix}
+4 &amp; -3 &amp; 1 \\
+0 &amp; 6 &amp; 2
+\end{pmatrix}$$
+    </div>
+</div>
+<p><br></p>
+
+<p>Note that matrix-vector multiplication can be viewed as a special case of matrix multiplication.</p>
+
+<h4 id="properties-of-matrix-multiplication">Properties of matrix multiplication</h4>
+
+<ul>
+  <li>Matrix multiplication is <strong>not commutative</strong>. If $AB$ and $BA$ are both defined, they may be different.</li>
+  <li>Matrix multiplication is <strong>associative</strong>: $A(BC) = (AB)C$. Similarly, for a vector $x$, $A(Bx)=(AB)x$.</li>
+  <li>Matrix multiplication is <strong>distributive</strong>: $A(B+C) = AB+AC$.</li>
+  <li>
+<strong>Transposition</strong>: $(AB)^T = B^TA^T.$</li>
+</ul>
+
+<div class="exercise">
+    <button onclick="showSolution(this,'rot2')" style="float:right;">Show Solution</button>
+    Recall that $A = \begin{pmatrix}0 &amp; 1 \\ -1 &amp; 0\end{pmatrix}$
+    rotates any vector by 90 degrees. 
+    <ul>
+        <li> Let $x = \begin{pmatrix}a\\b\end{pmatrix}$. Find $y=Ax$. </li>
+        <li> Find $z = Ay$.</li>
+        <li> Compute $A^2 = A\times A$.</li>
+        <li> Show that $z=A^2 x$.</li>
+        <li> What does $A^2$ do?</li>
+     </ul> 
+      
+
+    <div id="rot2" style="display:none;" class="solution">
+        The computation is left to the reader but it will be clear that $A^2$ rotates any vector by $180$ degrees, which is equivalent to applying $A$ twice.
+    </div>
+</div>
+<p><br></p>
+
+<h3 id="the-identity-matrix">The identity matrix</h3>
+<p>The $n \times n$ identity matrix has 1s on the diagonal and 0s elsewhere
+\(I_{n} = \begin{pmatrix}
+1 &amp; \ldots &amp; 0 \\
+ \vdots &amp; \ddots &amp; \vdots \\
+0 &amp; \ldots &amp; 1 \\
+\end{pmatrix}\)</p>
+
+<div class="exercise"> Find the result:
+$A_{m \times n}I_{n}$ = <span id="ind-0" style="visibility:hidden;" class="solution"> $A_{m \times n}$</span>
+$,\quad I_{m}A_{m \times n}$ = <span id="ind-1" style="visibility:hidden;" class="solution"> $A_{m \times n}$</span>
+$,\quad x^{T}I$ = <span id="ind-2" style="visibility:hidden;" class="solution"> $x^T$</span>
+$,\quad Ix$ = <span id="ind-3" style="visibility:hidden;" class="solution"> $x$</span>
+\(\qquad\)<button onclick="showSolution(this,['ind-0','ind-1','ind-2','ind-3'])" style="float:right;">Show solution</button>
+</div>
+
+<ul>
+  <li>Matrix multiplication has the identity property: $IA = AI = A$.</li>
+</ul>
+
+<h2 id="the-four-fundamental-spaces-of-a-matrix">The four fundamental spaces of a matrix</h2>
+<p>There are four subspaces associated with each matrix. The column space, the row space, the null space, and the left null space. The column space and the null space are particularly important in error correction.</p>
+
+<h3 id="the-row-space">The row space</h3>
+
+<p>The row space of $A$ is the span of the rows of $A$</p>
+<ul>
+  <li>linear combinations of rows of $A$</li>
+  <li>the set of vectors obtained by $x^{T}A$ for all $x$</li>
+  <li>we show the row space as $RS(A)$.</li>
+</ul>
+
+<p>To represent the row space in a simple way, we can find a basis for it. We can do so as explained in the last section, where we discussed <a href="vectors.html#how-to-find-a-basis">how to find a basis for a subspace</a>. When we apply this method to rows of a matrix, adding the multiple of a row to the other is called an <em>elementary row operation</em> and if we find the basis in the reduced form, this form is called the <strong>reduced row-echelon form</strong>. We can then represent the row space as a <a href="vectors.html#representing-a-subspace-with-free-and-dependent-coordinates"> set of vectors with free and dependent coordinates.</a></p>
+
+<p>The <strong>row rank</strong> of a matrix is the dimension of its row space.</p>
+
+<div class="exercise">
+<button onclick="showSolution(this,'ros')" style="float:right;">Show solution</button>
+    Find a basis for the row space of $$B = \begin{pmatrix}
+    1 &amp; 1 &amp; 3 \\
+    1 &amp; 3 &amp; 2 \\
+    2 &amp; 4 &amp; 5 \\
+    \end{pmatrix}.$$
+    Write the row space as a set of vectors with free and dependent coordinates. What is the row rank of the matrix.
+    <div id="ros" style="display:none;" class="solution"> 
+    $$ \begin{pmatrix}
+    1 &amp; 1 &amp; 3 \\
+    0 &amp; 2 &amp; -1 \\
+    0 &amp; 2 &amp; -1 \\
+    \end{pmatrix} \rightarrow \begin{pmatrix}
+    1 &amp; 0 &amp; 3.5 \\
+    0 &amp; 2 &amp; -1 \\
+    \end{pmatrix} \rightarrow \begin{pmatrix}
+    1 &amp; 0 &amp; 3.5 \\
+    0 &amp; 1 &amp; -0.5 
+    \end{pmatrix}.$$
+    The row space is the set of vectors of the form
+    $$x_1 \begin{pmatrix}1\\0\\3.5\end{pmatrix} + x_2 \begin{pmatrix}0\\1\\-.5\end{pmatrix},$$
+    which we can write as
+    $$RS = \left\{\begin{pmatrix}x_1\\ x_2\\ 3.5x_1 - 0.5x_2\end{pmatrix} : x_1, x_2 \in \mathbb{R} \right\}.$$
+    The row rank is 2.
+    </div>
+</div>
+
+<p><br></p>
+
+<h3 id="the-column-space">The column space</h3>
+
+<p>The column space of $A$ is the span of the columns of $A$</p>
+<ul>
+  <li>linear combinations of columns of $A$</li>
+  <li>the set of vectors obtained by $Ax$ for all $x$</li>
+  <li>we show the column space as $CS(A)$.</li>
+</ul>
+
+<p>Finding a basis for the column space is similar to row space, except that here we manipulate the columns. As an example, let us find a basis for the column space of \(A = \begin{pmatrix}
+1 &amp; 1 &amp; 3 \\
+1 &amp; 3 &amp; 2 \\
+2 &amp; 4 &amp; 6 \\
+\end{pmatrix}\)</p>
+
+\[A \rightarrow 
+\begin{pmatrix}
+1 &amp; 0 &amp; 0 \\
+1 &amp; 2 &amp; -1 \\
+2 &amp; 2 &amp; 0 \\
+\end{pmatrix} 
+\rightarrow 
+\begin{pmatrix}
+1 &amp; 0 &amp; 0 \\
+1 &amp; 1 &amp; -1 \\
+2 &amp; 1 &amp; 0 \\
+\end{pmatrix} 
+\rightarrow 
+\begin{pmatrix}
+1 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 \\
+1 &amp; 1 &amp; 1 \\
+\end{pmatrix} 
+\rightarrow 
+\begin{pmatrix}
+1 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 1 \\
+\end{pmatrix} 
+\rightarrow 
+\left\{\begin{pmatrix}
+a \\
+b \\
+c \\
+\end{pmatrix} \vert a, b, c \in \mathbb{R} \right\}.\]
+
+<p>For example, in the first step, we have subtracted the first column from the second column and 3 times the first column from the third column. In the second step, we scaled the second column and then subtracted scaled versions of it from the other columns and so on. These are called elementary column operations.</p>
+
+<p>The dimension of the column space is called the column rank.</p>
+
+<div class="exercise">
+<button onclick="showSolution(this,'cs1')" style="float:right;">Show solution</button>
+Find a reduced basis for the column space of $$A = \begin{pmatrix}
+    1 &amp; 1 &amp; 1 &amp; 1 \\
+    1 &amp; 2 &amp; 3 &amp; 4 \\
+    4 &amp; 9 &amp; 14 &amp; 19 \\
+\end{pmatrix}$$
+and find the column rank.
+    <div id="cs1" style="display:none;" class="solution"> $$ \begin{pmatrix}
+    1 &amp; 1 &amp; 1 &amp; 1 \\
+    1 &amp; 2 &amp; 3 &amp; 4 \\
+    4 &amp; 9 &amp; 14 &amp; 19 \\
+\end{pmatrix}\to\begin{pmatrix}
+    1 &amp; 0 &amp; 0 &amp; 0 \\
+    1 &amp; 1 &amp; 2 &amp; 3 \\
+    4 &amp; 5 &amp; 10 &amp; 15 \\
+    \end{pmatrix} \rightarrow \begin{pmatrix}
+    1 &amp; 0 &amp; 0 &amp; 0 \\
+    0 &amp; 1 &amp; 0 &amp; 0 \\
+    -1 &amp; 5 &amp; 0 &amp; 0 \\
+    \end{pmatrix} \rightarrow \begin{pmatrix}
+    1 &amp; 0 \\
+    0 &amp; 1 \\
+    -1 &amp; 5 \\
+    \end{pmatrix}
+    $$
+    The column rank is  2.
+    </div>
+</div>
+
+<p><br></p>
+
+<div class="exercise"> Find a basis for the column space of $B = \begin{pmatrix}
+1 &amp; 1 &amp; 3 \\
+1 &amp; 3 &amp; 2 \\
+2 &amp; 4 &amp; 5 \\
+\end{pmatrix}.$ Find the column space as a set of vectors with free and dependent coordinates and find its dimension.
+<!-- <span id="cos" style="visibility:hidden;" class="solution">  -->
+<!-- </span> -->
+<!-- \(\qquad\)<button  onclick="showSolution(this,'cos')" style="float:right;">Show solution</button> -->
+</div>
+
+<h3 id="rank-of-a-matrix">Rank of a matrix</h3>
+<!--
+Recall: The row and column spaces of a matrix are formed from linear
+    combinations of the rows/columns of the matrix.
+-   The *row rank* of the matrix is the dimension of the row space.
+        If all the rows are linearly independent, we say the matrix has
+        *full row rank*.
+-   The *column rank* of the matrix is the dimension of the column
+    space. If all the columns are linearly independent, we say the
+    matrix has *full column rank*.
+-->
+
+<p>What is the relationship between row and column ranks? They are equal, as we saw above for</p>
+
+\[B = \begin{pmatrix}
+1 &amp; 1 &amp; 3 \\
+1 &amp; 3 &amp; 2 \\
+2 &amp; 4 &amp; 5 \\
+\end{pmatrix}.\]
+
+<p>As another example, recall that the column rank of the matrix $A$ given below is 2. Let’s find its row rank</p>
+
+\[A = \begin{pmatrix}
+    1 &amp; 1 &amp; 1 &amp; 1 \\
+    1 &amp; 2 &amp; 3 &amp; 4 \\
+    4 &amp; 9 &amp; 14 &amp; 19 \\
+\end{pmatrix}\]
+
+\[\begin{pmatrix}
+1 &amp; 1 &amp; 1 &amp; 1 \\
+1 &amp; 2 &amp; 3 &amp; 4 \\
+4 &amp; 9 &amp; 14 &amp; 19 \\
+\end{pmatrix} \rightarrow \begin{pmatrix}
+1 &amp; 1 &amp; 1 &amp; 1 \\
+0 &amp; 1 &amp; 2 &amp; 3 \\
+0 &amp; 5 &amp; 10 &amp; 15 \\
+\end{pmatrix} \rightarrow \begin{pmatrix}
+1 &amp; 0 &amp; -1 &amp; -2 \\
+0 &amp; 1 &amp; 2 &amp; 3 \\
+0 &amp; 0 &amp; 0 &amp; 0 \\
+\end{pmatrix} \rightarrow \begin{pmatrix}
+1 &amp; 0 &amp; -1 &amp; -2 \\
+0 &amp; 1 &amp; 2 &amp; 3 \\
+\end{pmatrix}.\]
+
+<p>and so the row rank of $A$ is also 2.</p>
+
+<div class="highlight">
+    The row rank is equal to the column rank and is called the <strong>rank</strong> of the matrix.
+</div>
+<!--
+Suppose $A$ is a $p \times q$ matrix, whose rows are independent and
+    whose columns are independent.
+
+Can $q > p$?
+-   The column space of $A$ has dimension $\leq p$
+-   There are at most $p$ independent vectors in the column space of
+    $A$
+-   $A$ has $q$ independent columns
+-   So $q \leq p$
+
+Similarly, $p \leq q$
+
+If the rows of a matrix are independent and its columns are independent, it is necessarily square!
+
+<div style="float: right;"><img src="/~ffh8x/moi/assets/img/matpq.png" width="200px"></div>
+
+
+
+Consider an $m \times n$ matrix $A$.
+
+By removing dependent rows one-by-one, we can find a matrix whose
+row space is the same as $A$, and so is its row rank (dimension of
+row space).
+
+Fact (proof omitted): Removing a dependent row does not change the
+row rank nor the column rank. Similarly, removing a dependent column
+does not change the column rank nor the row rank.
+
+Remove all such rows and columns. We will get a $p \times q$ matrix
+whose rows and columns are independent. So $p = q$. But $p$ is the
+row rank and $q$ is the column rank. Thus:
+
+The row rank and the column rank of the matrix **are necessarily
+equal**. Thus, we usually just call these the *rank* of the matrix.
+If the matrix is both full column rank and full row rank, then we
+say it is also *full rank*.
+
+See [here](https://www.maa.org/sites/default/files/Loehr-1-0708496.pdf)
+for reference.
+-->
+
+<h3 id="the-null-space">The null space</h3>
+
+<p>Let $A$ be an $m\times n$ matrix. The null space of $A$, denoted $NS(A)$, is the set of $n$-dimensional vectors $x$ satisfying $Ax=\mathbf 0$.</p>
+
+<ul>
+  <li>The null space of any matrix, at a minimum, is a vector space
+containing the zero vector since $A\mathbf 0 =\mathbf 0$.</li>
+  <li>If the row rank is smaller than the number of rows, then the dimension of the null space is larger than 0, i.e., it contains other vectors than $\mathbf 0$.</li>
+</ul>
+
+<p>Note that elementary row operations are like adding one equation to another one and so they don’t change the set of vectors satisfying $Ax=\mathbf 0$. So to find the null space, we first write the matrix in the reduced row echelon form.</p>
+
+<p>Example: the null space of</p>
+
+\[A = \begin{pmatrix}
+1 &amp; - 1 &amp; 2 &amp; 1 \\
+-1 &amp; 2 &amp; 1 &amp; 2 \\
+2 &amp; 1 &amp; 2 &amp; - 2 \\
+\end{pmatrix} \rightarrow \begin{pmatrix}
+1 &amp; - 1 &amp; 2 &amp; 1 \\
+0 &amp; 1 &amp; 3 &amp; 3 \\
+0 &amp; 3 &amp; -2 &amp; -4 \\
+\end{pmatrix} \rightarrow \begin{pmatrix}
+1 &amp; 0 &amp; 5 &amp; 4 \\
+0 &amp; 1 &amp; 3 &amp; 3 \\
+0 &amp; 0 &amp; -11 &amp; -13 \\
+\end{pmatrix} \rightarrow \begin{pmatrix}
+1 &amp; 0 &amp; 0 &amp; - 21/11 \\
+0 &amp; 1 &amp; 0 &amp; - 6/11 \\
+0 &amp; 0 &amp; 1 &amp; 13/11 \\
+\end{pmatrix}\]
+
+<p>So the null space of $A$ is the set of solutions to</p>
+
+\[\begin{pmatrix}
+1 &amp; 0 &amp; 0 &amp; - 21/11 \\
+0 &amp; 1 &amp; 0 &amp; - 6/11 \\
+0 &amp; 0 &amp; 1 &amp; 13/11 \\
+\end{pmatrix}
+\begin{pmatrix}x_1\\ x_2\\ x_3\\ x_4\end{pmatrix}=\begin{pmatrix}0\\0\\0\\0\end{pmatrix},\]
+
+<p>which we can write as</p>
+
+\[\begin{matrix}
+x_{1} - \frac{21}{11}x_{4} = 0 \\
+x_{2} - \frac{6}{11}x_{4} = 0 \\
+x_{3} + \frac{13}{11}x_{4} = 0 \\
+\end{matrix}\]
+
+<p>This allows us to express $x_1, x_2, x_3$ in terms of $x_4$, then write out the null space vector as:</p>
+
+\[NS(A) = \left\{ \begin{pmatrix}
+\frac{21}{11}x_{4} \\
+\frac{6}{11}x_{4} \\
+-\frac{13}{11}x_{4} \\
+x_{4} \\
+\end{pmatrix} \vert x_4 \in \mathbb{R} \right\}\]
+
+<p>On the other hand, the row space of $A$ is given by</p>
+
+\[RS(A) = \left\{ \begin{pmatrix}
+x_1 \\
+x_2\\
+x_3\\
+\frac{-21x_1-6x_2+13x_3}{11}\\
+\end{pmatrix} \vert x_1,x_2,x_3 \in \mathbb{R} \right\}.\]
+
+<p>We can see the set of free and dependent coordinates complement each other in the row space and the null space. This shows the following fact:</p>
+
+<div class="highlight"> For a matrix with $n$ columns, the row rank plus the dimension of the null space is equal to $n$.</div>
+
+<p><br></p>
+
+<div class="exercise">
+<button onclick="showSolution(this,'RSNS')" style="float:right;">Show Solution</button>
+Find the null space and the row space of the matrix 
+$$A = \begin{pmatrix}
+ -1 &amp; 1 &amp; 0 &amp; 1 \\
+3 &amp; 1 &amp; -2 &amp; -1 \\
+4 &amp; -2 &amp; -1 &amp; -3 \\
+\end{pmatrix}$$
+<div id="RSNS" style="display:none;" class="solution">
+       
+Compute reduced echelon form:
+
+$$\begin{pmatrix}
+ -1 &amp; 1 &amp; 0 &amp; 1 \\
+3 &amp; 1 &amp; -2 &amp; -1 \\
+4 &amp; - 2 &amp; -1 &amp; -3 \\
+\end{pmatrix} \rightarrow \begin{pmatrix}
+ -1 &amp; 1 &amp; 0 &amp; 1 \\
+0 &amp; 4 &amp; -2 &amp; 2 \\
+0 &amp; 2 &amp; -1 &amp; 1 \\
+\end{pmatrix} \rightarrow\\ \begin{pmatrix}
+ -1 &amp; 1 &amp; 0 &amp; 1 \\
+0 &amp; 4 &amp; -2 &amp; 2 \\
+0 &amp; 0 &amp; 0 &amp; 0 \\
+\end{pmatrix} \rightarrow \begin{pmatrix}
+1 &amp; -1 &amp; 0 &amp; -1 \\
+0 &amp; 1 &amp; -0.5 &amp; 0.5 \\
+\end{pmatrix} \rightarrow \begin{pmatrix}
+1 &amp; 0 &amp; -0.5 &amp; -0.5 \\
+0 &amp; 1 &amp; -0.5 &amp; 0.5 \\
+\end{pmatrix} $$
+
+For the null space, $x_1 = \frac{x_3 + x_4}{2}, x_2 = \frac{x_3 - x_4}{2}$.
+
+$$NS = \left\{ \begin{pmatrix} \frac{x_3 + x_4}{2} \\ \frac{x_3 - x_4}{2} \\ x_3 \\ x_4 \end{pmatrix} \vert x_3, x_4 \in \mathbb{R} \right\}$$
+
+So the null space has two free variables $x_3, x_4$.
+
+<p>For the row space, 
+$$RS = \left\{ \begin{pmatrix} x_1\\x_2\\-\frac{x_1 + x_2}{2} \\ \frac{x_1 + x_2}{2} \end{pmatrix} \vert x_1, x_2 \in \mathbb{R} \right\}.$$
+The dimension of both spaces is 2, which add up to 4.</p>
+</div>
+</div>
+<p><br></p>
+
+<h4 id="the-generator-matrix">The generator matrix</h4>
+
+<p>Note that in the previous example, we can write the null space of the matrix $A$ as a linear combination:</p>
+
+\[\begin{pmatrix}
+(x_{3} + x_{4})/2 \\
+(x_{3} - x_{4})/2 \\
+x_{3} \\
+x_{4} \\
+\end{pmatrix} = \begin{pmatrix}
+1/2 \\
+1/2 \\
+1 \\
+0 \\
+\end{pmatrix}x_{3} + \begin{pmatrix}
+1/2 \\
+-1/2 \\
+0 \\
+1 \\
+\end{pmatrix}x_{4}\]
+
+<p>The null space of $A$ is the column space of the matrix</p>
+
+\[G = \begin{pmatrix}
+\begin{matrix}
+1/2 \\
+1/2 \\
+1 \\
+0 \\
+\end{matrix} &amp; \begin{matrix}
+1/2 \\
+-1/2 \\
+0 \\
+1 \\
+\end{matrix} \\
+\end{pmatrix}\]
+
+<p>We call this the <em>generator</em> of the null space. That is, the null space is the set of vectors of the form \(G\begin{pmatrix}
+x_{1} \\
+x_{2} \\
+\end{pmatrix}.\)</p>
+
+<p>This generator matrix is not unique. For example, we can start the row operations from the opposite side (bottom right) of the matrix:</p>
+
+\[\begin{pmatrix}
+ -1 &amp; 1 &amp; 0 &amp; 1 \\
+3 &amp; 1 &amp; -2 &amp; -1 \\
+4 &amp; -2 &amp; -1 &amp; -3 \\
+\end{pmatrix} \rightarrow \begin{pmatrix}
+1/3 &amp; 1/3 &amp; -1/3 &amp; 0 \\
+5/3 &amp; 5/3 &amp; -5/3 &amp; 0 \\
+4 &amp; -2 &amp; -1 &amp; -3 \\
+\end{pmatrix} \rightarrow \begin{pmatrix}
+0 &amp; 0 &amp; 0 &amp; 0 \\
+5/3 &amp; 5/3 &amp; -5/3 &amp; 0 \\
+4 &amp; -2 &amp; -1 &amp; -3 \\
+\end{pmatrix} \rightarrow \\ \begin{pmatrix}
+1 &amp; 1 &amp; -1 &amp; 0 \\
+-4/3 &amp; 2/3 &amp; 1/3 &amp; 1 \\
+\end{pmatrix} \rightarrow \begin{pmatrix}
+-1 &amp; -1 &amp; 1 &amp; 0 \\
+-1 &amp; 1 &amp; 0 &amp; 1 \\
+\end{pmatrix}\]
+
+\[\rightarrow \begin{cases} x_3 = x_1 + x_2 \\ x_4 = x_1 - x_2 \end{cases}\]
+
+\[\begin{pmatrix}
+x_{1} \\
+x_{2} \\
+x_{1} + x_{2} \\
+x_{1} - x_{2} \\
+\end{pmatrix} = \begin{pmatrix}
+1 \\
+0 \\
+1 \\
+1 \\
+\end{pmatrix} x_{1} + \begin{pmatrix}
+0 \\
+1 \\
+1 \\
+-1 \\
+\end{pmatrix} x_{2} \rightarrow G = \begin{pmatrix}
+1 &amp; 0 \\
+0 &amp; 1 \\
+1 &amp; 1 \\
+1 &amp; -1 \\
+\end{pmatrix},NS = \left\{ G\begin{pmatrix}
+x_{1} \\
+x_{2} \\
+\end{pmatrix}:x_{1},x_{2} \in {\mathbb{R}} \right\}\]
+
+<div class="hw">
+    <button onclick="showSolution(this,'RSNS2')" style="float:right;">Show Solution</button>
+    What are the row and null spaces of 
+    $$A = \begin{pmatrix}
+    0 &amp; 0 &amp; 1 \\
+    0 &amp; 0 &amp; 2 \\
+    \end{pmatrix}$$
+    Find a generator for the null space.
+    <div id="RSNS2" style="display:none;" class="solution">
+        The reduced row echelon form is
+        $$\begin{pmatrix}0 &amp; 0 &amp;1\end{pmatrix}.$$
+        The null space is the solution to 
+        $$\begin{pmatrix}0 &amp; 0 &amp;1\end{pmatrix} \begin{pmatrix}x_1\\x_2\\x_3\end{pmatrix} = \mathbf 0$$.
+        So the null space is defined by the equation $x_3 =0$:
+        $$
+        NS = \left\{\begin{pmatrix}x_1\\x_2\\0\end{pmatrix}: x_1,x_2\in\mathbb R\right\}.
+        $$
+        Since we have only a single row, the row space is the scaled versions of this row:
+        $$
+        RS = \left\{\begin{pmatrix}0\\0\\x_3\end{pmatrix}, x_3\in \mathbb R.\right\}.
+        $$
+        The dimension of the null space is 2 and the row space 1, summing to 3.
+
+        Since 
+        $$
+        \begin{pmatrix}x_1\\x_2\\0\end{pmatrix} = x_1 \begin{pmatrix}1\\0\\0\end{pmatrix}+x_2 \begin{pmatrix}0\\1\\0\end{pmatrix},
+        $$
+        the generator matirx is
+        $$G = \begin{pmatrix}1&amp;0\\0&amp;1\\0&amp;0\end{pmatrix}.$$
+    </div>
+</div>
+<p><br></p>
+
+<div class="exercise">
+    <button onclick="showSolution(this,'RSNS3')" style="float:right;">Show Solution</button>
+    What are the row and null spaces and a generator matrix of
+$$A = \begin{pmatrix}
+1 &amp; 1 &amp; 2 \\
+2 &amp; 1 &amp; 4 \\
+\end{pmatrix}$$
+    <div id="RSNS3" style="display:none;" class="solution">
+        $$A \rightarrow \begin{pmatrix}
+        1 &amp; 1 &amp; 2 \\
+        0 &amp; -1 &amp; 0 \\
+        \end{pmatrix} \rightarrow \begin{pmatrix}
+1 &amp; 0 &amp; 2 \\
+0 &amp; 1 &amp; 0 \\
+\end{pmatrix}.$$
+The row space is 
+$$
+RS = \left\{\begin{pmatrix}x_1\\x_2\\2x_1\end{pmatrix}:x_1,x_2\in \mathbb R\right\}.
+$$
+
+The null space is given by the equations $x_1 = - 2x_3, x_2 = 0$, leading to
+$$NS = \left\{\begin{pmatrix}-2x_3\\0\\x_3\end{pmatrix}: x_3\in\mathbb R\right\},$$
+with 
+$$G = \begin{pmatrix}-2\\0\\1\end{pmatrix}.$$
+    </div>
+</div>
+<p><br></p>
+
+<h3 id="the-column-space-and-left-null-space">The column space and left null space</h3>
+<p>The left null space (LNS) of $A$: the set of vectors $x$ such that
+$x^TA = 0$</p>
+
+<p>For an $m \times n$ matrix $A$, the CS and LNS contain
+$m$-dimensional vectors</p>
+
+<p>What is the relationship between CS and LNS of $A$?
+$dim(CS) + dim(LNS) = m$, where dim stands for dimension.</p>
+
+<p>The left null space is not useful for us in the future, so it will not be discussed in detail.</p>
+
+<!--
+What are CS and LNS of $$A = \begin{pmatrix}
+0 & 0 & 1 \\
+0 & 0 & 2 \\
+\end{pmatrix}$$
+
+What are CS and LNS of $$A = \begin{pmatrix}
+1 & 2 & 1 \\
+2 & 4 & 1 \\
+\end{pmatrix}$$
+ 
+ TODO -->
+
+<h3 id="in-summary">In summary</h3>
+
+<p>Suppose we have a matrix A with M rows and N columns. Then, we can
+define four vector spaces:</p>
+<ul>
+  <li>Row space (RS): the span of the M rows = the set of vectors $x^{T}A$
+for all $x$. This vector space contains vectors of dimension N.</li>
+  <li>Column space (CS): the span of the N columns = the set of vectors
+$Ax$ for all $x$. This vector space contains vectors of
+dimension M.</li>
+  <li>Null space (NS): the vector space containing all N-dimensional
+vectors x such that Ax = <strong>0</strong>.</li>
+  <li>Left null space (LNS): the vector space containing all M-dimensional
+vectors y such that $y^{T}A = \mathbf{0}$.</li>
+</ul>
+
+<p>It turns out these spaces tell us a lot about the underlying linear
+    operation performed by A. To understand why, we need to introduce a
+    couple more definitions about vectors.</p>
+
+<h3 id="the-fundamental-theorem-of-linear-algebra">The fundamental theorem of linear algebra</h3>
+
+<!-- image: mathworld -->
+<p>Theorem: For an $m \times n$ matrix $A$:</p>
+<ul>
+  <li>dim(RS) = dim(CS), called rank</li>
+  <li>NS is orthogonal to RS</li>
+  <li>dim(NS) + dim(RS) = n</li>
+  <li>LNS is orthogonal to CS</li>
+  <li>dim(LNS) + dim(CS) = m</li>
+</ul>
+
+<!--
+Other facts:
+- CS is the image of RS
+- 0 is the image of NS
+- A vector $x$ can be written as\
+the sum of $x_{r}$ from RS and $x_{n}$ from NS.
+But only the RS component matters
+when finding $Ax$.
+-->
+
+<!--
+
+<div style="float: right;"><img src="/~ffh8x/moi/assets/img/linspace.gif" width="400px"></div>
+<div style="float: right;"><img src="/~ffh8x/moi/assets/img/rscs.png" width="400px"></div>
+## Linear systems of equation
+
+Consider the system
+
+$$\begin{matrix}
+a_{11}x_{1} + \cdots + a_{1n}x_{n} = b_{1} \\
+ \vdots \\
+a_{m1}x_{1} + \cdots + a_{mn}x_{n} = b_{m} \\
+\end{matrix}$$
+
+We can write it as $Ax = b$ where
+
+$$A = \begin{pmatrix}
+a_{11} & \ldots & a_{1n} \\
+\vdots & \ddots & \vdots \\
+a_{m1} & \ldots & a_{mn} \\
+\end{pmatrix}, x = \begin{pmatrix}
+x_{1} \\
+\vdots \\
+x_{n} \\
+\end{pmatrix}, b = \begin{pmatrix}
+b_{1} \\
+\vdots \\
+b_{m} \\
+\end{pmatrix}$$
+
+Possibilities:
+-   No solution
+-   Unique solution
+-   Many solutions
+
+A **solution exists** for every $b$
+-   iff (if & only if) the **columns span** ${\mathbb{R}}^{m}$
+-   iff the left null space has dimension 0
+-   iff matrix has full row rank
+-   only possible if $m \leq n$
+
+The solution, if any, **is unique**
+-   iff the **columns are linearly independent**
+-   iff the null space has dimension 0
+-   iff matrix has full column rank
+-   only possible if $n \leq m$
+
+### Solving linear systems
+How can we solve the system $Ax = b$?
+
+Two powerful techniques:
+1. Elimination -- construct a matrix form of the linear system and
+solve through transformations. This is essentially the same as the
+process we used to find a basis
+1. Matrix inversion -- for a square matrix $A$, find the *inverse*
+$A^{-1}$ such that $A^{-1}A = AA^{-1} = I$, then $Ax = b \Leftrightarrow x = A^{-1}b$.
+
+#### Elimination
+
+Suppose we want to solve:
+
+$$\begin{matrix}
+2x_{1} + 6x_{2} + 3x_{3} = -1 \\
+4x_{1} + 3x_{2} - 1x_{3} = 5 \\
+ - 2x_{1} + x_{3} = - 3 \\
+\end{matrix}$$
+
+Collect coefficients into a matrix:
+
+$$\begin{pmatrix}
+\begin{matrix}
+2 & 6 & 3 \\
+4 & 3 & -1 \\
+ -2 & 0 & 1 \\
+\end{matrix} & \begin{matrix}
+ -1 \\
+5 \\
+ -3 \\
+\end{matrix} \\
+\end{pmatrix}$$
+
+Row operations in this augmented matrix are equivalent to adding a
+    multiple of one equation to another, which does not change the
+    solution. In this example:
+
+$$\begin{pmatrix}
+\begin{matrix}
+1 & 0 & 0 \\
+0 & 1 & 0 \\
+0 & 0 & 1 \\
+\end{matrix} & \begin{matrix}
+1 \\
+0 \\
+ -1 \\
+\end{matrix} \\
+\end{pmatrix}$$
+
+Then $x_{1} = 1,x_{2} = 0,x_{3} = -1$.
+
+#### Gauss-Jordan Elimination
+
+Elimination is equivalent to finding a basis for the row space, and
+    at the same time keeping track of how $b$ is affected by row
+    operations.
+
+**Elimination in more detail:** After forming the augmented matrix
+(A b), here are the steps:
+
+1. Starting from the first column, let the pivot be the first
+equation (row) with a nonzero value. If that's not the first row,
+swap rows. From each of the equations (rows), multiply by the entry
+to eliminate and subtract entry-by-entry from that row. The result
+should have eliminated (set to zero) all the values below the first
+row in the first column.
+2. Proceed to the next column. Let the pivot be the next row with a
+nonzero value; if that's not the next row, swap rows. From each of
+the other equations (rows), multiply by the entry to eliminate and
+subtract entry-by-entry from that row. The result should have
+eliminated the values other than the pivot for that column.
+3. Proceed to the next column, and repeat, until we've reduced the
+A part of the augmented matrix to be diagonal (zeros in non-pivot
+positions). This is the *reduced row echelon form*.
+
+
+Use elimination to solve 
+
+$$\begin{matrix}
+x_{1} + 2x_{2} - x_{3} = 1 \\
+4x_{1} + 9x_{2} - 3x_{3} = 8 \\
+ - 2x_{1} - 3x_{2} + 7x_{3} = 10 \\
+\end{matrix}$$
+
+$$\begin{pmatrix}
+1 & 2 & -1 & 1 \\
+4 & 9 & -3 & 8 \\
+-2 & -3 & 7 & 10 \\
+\end{pmatrix} \rightarrow \begin{pmatrix}
+1 & 2 & -1 & 1 \\
+0 & 1 & 1 & 4 \\
+0 & 1 & 5 & 12 \\
+\end{pmatrix} \rightarrow \begin{pmatrix}
+1 & 0 & -3 & -7 \\
+0 & 1 & 1 & 4 \\
+0 & 0 & 4 & 8 \\
+\end{pmatrix}$$
+
+$$\rightarrow \begin{pmatrix}
+1 & 0 & -3 & -7 \\
+0 & 1 & 1 & 4 \\
+0 & 0 & 1 & 2 \\
+\end{pmatrix} \rightarrow \begin{pmatrix}
+1 & 0 & 0 & -1 \\
+0 & 1 & 0 & 2 \\
+0 & 0 & 1 & 2 \\
+\end{pmatrix} \Rightarrow \begin{cases}
+x_1 = -1 \\
+x_2 = 2 \\
+x_3 = 2
+\end{cases} $$
+
+<div class="exercise"> Use elimination to solve $$\begin{matrix}
+x_{1} + x_{2} + x_{3} = 6 \\
+x_{1} + 2x_{2} + 2x_{3} = 9 \\
+x_{1} + 2x_{2} + 3x_{3} = 10 \\
+\end{matrix}.$$
+</div>
+
+#### Elimination to compute inverse
+
+We can use Gaussian elimination to solve simultaneous linear systems
+    (with the same A matrix): $Ax_{1} = b_{1},Ax_{2} = b_{2},Ax_{3} = b_{3} \Rightarrow AX = B$.
+
+Construct augmented matrix $(A B)$ and repeat pivot/elimination steps
+    for all A columns.
+
+We can also do this for $B = I$: perform elimination of (A I), where
+    I is the identity matrix $$\begin{pmatrix}
+    1 & 0 & 0 \\
+    0 & \ddots & 0 \\
+    0 & 0 & 1 \\
+    \end{pmatrix}$$.
+
+We will then find a matrix that is the solution to $AX = I$
+
+The solution is the inverse of $A$, denoted $A^{-1}$ and satisfies $AA^{-1} = I$
+
+Compute the matrix inverse of $$A = \begin{pmatrix}
+2 & -1 & 1 \\
+1 & 2 & 1 \\
+    -1 & 1 & 1 \\
+\end{pmatrix}$$
+
+$$\left( \begin{array}{c:c} 
+\begin{matrix}
+2 & -1 & 1 \\
+1 & 2 & 1 \\
+ -1 & 1 & 1 \\
+\end{matrix} & \begin{matrix}
+1 & 0 & 0 \\
+0 & 1 & 0 \\
+0 & 0 & 1 \\
+\end{matrix} 
+\end{array} \right)
+
+\rightarrow
+
+\left( \begin{array}{c:c} 
+\begin{matrix}
+2 & -1 & 1 \\
+0 & 5/2 & 1/2 \\
+0 & 1/2 & 3/2 \\
+\end{matrix} & \begin{matrix}
+1 & 0 & 0 \\
+ -1/2 & 1 & 0 \\
+1/2 & 0 & 1 \\
+\end{matrix} 
+\end{array} \right)$$
+
+$$ \rightarrow \left( \begin{array}{c:c} 
+\begin{matrix}
+2 & -1 & 1 \\
+0 & 5/2 & 1/2 \\
+0 & 0 & 7/5 \\
+\end{matrix} & \begin{matrix}
+1 & 0 & 0 \\
+ -1/2 & 1 & 0 \\
+3/5 & -1/5 & 1 \\
+\end{matrix} 
+\end{array} \right)
+
+\rightarrow
+
+\left( \begin{array}{c:c} 
+\begin{matrix}
+2 & -1 & 0 \\
+0 & 5/2 & 0 \\
+0 & 0 & 7/5 \\
+\end{matrix} & \begin{matrix}
+4/7 & 1/7 & -5/7 \\
+ -5/7 & 15/14 & -5/14 \\
+3/5 & -1/5 & 1 \\
+\end{matrix} 
+\end{array} \right)$$
+
+$$\rightarrow \left( \begin{array}{c:c} 
+\begin{matrix}
+2 & 0 & 0 \\
+0 & 5/2 & 0 \\
+0 & 0 & 7/5 \\
+\end{matrix} & \begin{matrix}
+2/7 & 4/7 & -6/7 \\
+ -5/7 & 15/14 & -5/14 \\
+3/5 & -1/5 & 1 \\
+\end{matrix} 
+\end{array} \right)
+
+\rightarrow
+
+\left( \begin{array}{c:c} 
+\begin{matrix}
+1 & 0 & 0 \\
+0 & 1 & 0 \\
+0 & 0 & 1 \\
+\end{matrix} & \begin{matrix}
+1/7 & 2/7 & -3/7 \\
+ -2/7 & 3/7 & -1/7 \\
+3/7 & -1/7 & 5/7 \\
+\end{matrix} 
+\end{array} \right)$$
+
+<div class="exercise">
+Compute the matrix inverse of $$A = \begin{pmatrix}
+2 & -1 & 0 \\
+    -1 & 2 & -1 \\
+0 & -1 & 2 \\
+\end{pmatrix}$$ using Gauss-Jordan elimination.
+
+Check your answer: multiple $A^{-1}$ by $A$, and $A$ by $A^{-1}$: (inverse
+    should satisfy $A^{-1}A = AA^{-1} = I$).
+</div>
+
+
+### Invertibility
+
+Recall that a solution exists for every $b$ if and only if the rows
+    of $A$ are linearly independent
+
+As we have seen when finding a basis, we end up with a degenerate
+case of rows that are equal to **0**. Then the matrix cannot be
+inverted. This means A is *singular*, does not have full rank, has a
+determinant equal to zero, and is not invertible. Thus, the Gaussian
+elimination procedure is a test for invertibility!
+
+Example: try elimination on $$A = \begin{pmatrix}
+2 & -1 & -1 \\
+-1 & 2 & -1 \\
+-1 & -1 & 2 \\
+\end{pmatrix}$$.
+
+For invertible matrices, the equations $Ax = b$ can be solved easily
+as
+$Ax = b \Rightarrow A^{-1}Ax = A^{-1}b \Rightarrow x = A^{-1}b$
+
+### Matrix determinant
+
+Given a square matrix, we can determine if it's full rank by
+    computing the determinant:
+
+For a 2x2 matrix, $$\begin{vmatrix}
+a & b \\
+c & d \\
+\end{vmatrix}  = ad - bc$$
+
+For an NxN matrix, we can compute determinants by taking all
+possible N-permutations (α, β, ..., ω) of the N columns (1, 2,
+..., N) and computing the sum
+
+$$\begin{vmatrix}
+a_{11} & \cdots & a_{1N} \\
+    \vdots & \ddots & \vdots \\
+a_{N1} & \cdots & a_{NN} \\
+\end{vmatrix} = \sum\left( -1 \right)^{flips}a_{1\alpha}a_{2\beta}\cdots a_{N\omega}$$
+
+N! terms -- yikes!
+
+Flips for a permutation is how many interchanges we have to do to get from (1, 2, ..., N) to (α, β, ..., ω). We'll skip how to computed the determinant more efficiently (use MATLAB!) If the determinant is nonzero, the matrix is full rank and invertible
+
+
+### More about matrices
+
+Recall: a matrix is a finite, ordered sequence of numbers arranged
+in a rectangle with some number of rows and columns.
+
+We already observed that these numbers influence the rank of the
+matrix, and the number of linearly independent vectors in the
+row/column spaces and corresponding null spaces of the matrix.
+
+The shape and numbers in a matrix also yield other important
+properties that will be useful.
+
+## Matrix symmetry
+
+If a matrix A is square, and its off-diagonal elements satisfy $A(i,j) = A(j,i)$, we call the matrix *symmetric*.
+
+Below are to symmetric matrices. 
+
+$$\begin{pmatrix}
+0 & -1 \\
+ -1 & 2 \\
+\end{pmatrix}$$
+
+$$\begin{pmatrix}
+2 & 3 & 4 \\
+3 & -1 & -2 \\
+4 & -2 & 1 \\
+\end{pmatrix}$$
+
+Suppose a matrix measures N columns and N rows. How many degrees of freedom does it have?
+Now suppose it is also symmetric. How many degrees of freedom now?
+
+For a general matrix A, with M rows and N columns, we call its
+*transpose* $A^T$, another matrix with N rows and M columns, such
+that $A^T(i,j) = A(j,i)$.
+
+For a symmetric matrix, $A = A^T$
+
+If we have a square matrix A, we can decompose it into *symmetric* and *antisymmetric* parts:
+
+Verify $A_S$ is symmetric:
+
+$$A_{S} = \frac{1}{2}\left( A + A^{T} \right),A_{-S} = \frac{1}{2}\left( A -A^{T} \right)$$
+
+What does antisymmetric mean?
+
+$$A = \begin{pmatrix}
+3 & -1 \\
+1 & 2 \\
+\end{pmatrix}$$
+
+Example:
+Given a square matrix, another important property is positive
+definiteness (or semidefiniteness). To understand this property, we
+should first introduce the matrix determinant:
+
+### *Positive definite matrices*
+
+In general, positive definite matrices have nice properties (especially when they are also symmetric). For example, when A is positive definite, the quadratic function $x^TAx - b^Tx + c$ always has a unique minimum. This also implies that the linear system $Ax = b$ has a unique solution.
+
+It also means that the matrix transformation $A$ preserves some information about the size or length of a vector x, so that $y = Ax$ grows as $x$ grows.
+
+Positive semidefinite matrices are less well-behaved, as the linear system $Ax = b$ no longer has a unique solution, and the quadratic function does not have a unique minimum.
+
+### Gram Matrix
+
+For a general matrix $A$ with $M$ rows and $N$ columns, we can construct
+its *Gramian*, or *Gram matrix*, $G$, by taking the matrix product
+$A^TA$.
+-  This Gram matrix is always symmetric and positive semidefinite.
+-  This Gram matrix is always square.
+- The rank of G is the same as the rank of A. If G is full rank, G
+is also positive definite.
+
+<div class="exercise">
+What is the Gram matrix of $$A = \begin{pmatrix}
+2 & 1 \\
+1 & 0 \\
+-1 & 1 \\
+\end{pmatrix}$$?
+</div>
+-->
+
+<footer>
+  <br><br>
+  <center>
+    <hr>
+  © Farzad Farnoud, 2020</center>
+</footer>
+</div>
+<!-- Default Statcounter code for MoI
+http://www.ece.virginia.edu/~ffh8x/moi/ -->
+<script type="text/javascript">
+var sc_project=12471818; 
+var sc_invisible=1; 
+var sc_security="62b9c6a1"; 
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
+<noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/12471818/0/62b9c6a1/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of Statcounter Code -->
+</body>
+</html>

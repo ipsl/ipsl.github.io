@@ -1,0 +1,682 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="assets/css/home.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/mystyle.css">
+  
+  
+  <!-- for mathjax support -->
+  
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: { equationNumbers: { autoNumber: "AMS" } },
+    //tex2jax: {inlineMath: [['$', '$'], ['\\(', '\\)']]}
+    //tex2jax: {inlineMath: [['\(', '\)'], ['\\(', '\\)']]}
+    tex2jax: {inlineMath: [['$', '$'], ['\\(', '\\)']]}
+    //tex2jax: {inlineMath: [['$', '$'], ['\(', '\)'], ['\\(', '\\)']]}
+  });
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+  
+  <script src="assets/js/coding.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!--<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>-->
+  <script src="assets/js/course.js"></script>
+  <script src="assets/js/prob.js"></script>
+</head>
+<body>
+  <!-- Top navigation bar from the main webpage. must be updated from page.html-->
+  <div class="topnav">
+  <a style="float:left;" href="index.html"><strong>Mathematics of Information</strong></a>
+  <a id="teaching" href="../teaching.html">Teaching</a>
+  <a id="group" href="../ips.html">Group</a>
+  <a id="pubs" href="../publications.html">Publications</a>
+  <a id="home" href="../index.html">Home</a> 
+  </div>
+  <nav>
+   <div class="sidenav">
+     <!--<a href="/">Home</a><br>
+	     <a href="/moi/">Course Index</a><hr>-->
+	   <!--<h3><div class="chapnav"> Mathematics of <br> Information</div></h3>-->
+     
+     
+     
+     <a href="/~ffh8x/moi/"><strong>Home</strong></a>
+     
+     
+     
+    
+     
+     
+     <a href="/~ffh8x/moi/introduction.html"><strong>0. Introduction</strong></a>
+     
+     
+     
+    
+     
+     
+     <span class="chapnav"><strong>1. Numbers, fields, and <br/>representing information</strong></span>
+     <ul>
+      
+      
+      
+      <li><a href="/~ffh8x/moi/sets.html">Sets and set theory</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/numbers.html">Natural numbers, rationals</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/fields.html">Fields</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/reals.html">Real numbers</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/cardinality.html">Counting and cardinality</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/representation.html">Representing information</a></li>
+      
+      
+      
+    </ul>
+    
+    
+     
+     
+     <span class="chapnav"><strong>2. Probability & information</strong></span>
+     <ul>
+      
+      
+      
+      <li><a href="/~ffh8x/moi/defining_information.html">Defining information</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/probability_basics.html">Basics of probability</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/distributions.html">Random variables, <br/> distributions, independence</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/expectation.html">Expectation and Variance</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/conditional.html">Conditional probability</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/markov.html">Random sequences and <br/> Markov chains</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/information_theory.html">Quantifying Information</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/compression.html">Data compression</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/communications.html">Mathematics of communications</a></li>
+      
+      
+      
+    </ul>
+    
+    
+     
+     
+     <span class="chapnav"><strong>3. Linear algebra, finite fields, <br/>and error correction</strong></span>
+     <ul>
+      
+      
+      
+      <li><a href="/~ffh8x/moi/codes_graphs_algebra.html">Codes, graphs, and algebra</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/vectors.html">Vectors and spaces</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/fundamental_spaces.html">Fundamental spaces</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/ecc.html">Linear codes</a></li>
+      
+      
+      
+    </ul>
+    
+    
+     
+     
+     <span class="chapnav"><strong>4. The frequency domain and <br/>transmission of information</strong></span>
+     <ul>
+      
+      
+      <li class="chapnav">Complex numbers</li>
+      
+      
+      
+      <li class="chapnav">Frequency and spectrum</li>
+      
+      
+      
+      <li class="chapnav">Filteration and sampling</li>
+      
+      
+      
+      <li class="chapnav">Linear systems</li>
+      
+      
+      
+      <li class="chapnav">Frequency response</li>
+      
+      
+      
+      <li class="chapnav">Modulation</li>
+      
+      
+      
+      <li class="chapnav">Orthogonality</li>
+      
+      
+      
+      <li class="chapnav">Multiple-access communication</li>
+      
+      
+    </ul>
+    
+    
+     
+     
+     <span class="chapnav"><strong>5. Number theory and <br/>information privacy</strong></span>
+     <ul>
+      
+      
+      <li class="chapnav">Encryption</li>
+      
+      
+      
+      <li class="chapnav">Number theory</li>
+      
+      
+      
+      <li class="chapnav">Public key cryptography</li>
+      
+      
+    </ul>
+    
+    
+     
+     
+     <span class="chapnav"><strong>6. Boolean algebra and <br/ >computation</strong></span>
+     <ul>
+      
+      
+      <li class="chapnav">Number systems and arithmetic</li>
+      
+      
+      
+      <li class="chapnav">Boolean algebra</li>
+      
+      
+      
+      <li class="chapnav">Logic design and computation</li>
+      
+      
+      
+      <li class="chapnav"></li>
+      
+      
+    </ul>
+    
+    
+     
+     
+     <span class="chapnav"><strong>Appendix</strong></span>
+     <ul>
+      
+      
+      
+      <li><a href="/~ffh8x/moi/axiomatic.html">Axiomatic systems</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/index.html"><br/></a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/index.html"><br/></a></li>
+      
+      
+      
+    </ul>
+    
+    
+  </div>
+</nav>
+<div class="main">
+  <!-- variables for replacement -->
+  <h1 id="complex-numbers">Complex numbers</h1>
+
+<h3 id="the-square-root-of--1">The square root of \(-1\)</h3>
+
+<p>The field of real numbers is quite powerful (and complex). Still, there are simple equations with no solutions, in particular,  \(𝑥^2+1=0\) does not have a solution. Let’s represent a solution to \(𝑥^2+1=0\) as \(\sqrt{-1}\). So \(\sqrt {-1}\) is defined as the number whose square is \(-1\). It is also shown by 𝕚,𝑖,𝑗. This is called an imaginary number, but the way we arrived at it is similar to defining negative numbers, e.g., as the solution to \(x+1=0\). So in a sense, \(\sqrt {-1}\) is not less “real” than -1.</p>
+
+<p>If \(\sqrt{-1}\) is a solution then \(−\sqrt{-1}=−𝕚\) must be another solution:
+\((−𝕚)^2=(-𝕚)\times(-𝕚)=𝕚\times 𝕚 = -1\)</p>
+
+<p>What is \(1/𝕚\)? In other words, what is \(x\) such that \(𝕚\times x = 1\)?</p>
+
+\[𝕚\times x = 1 \Rightarrow 𝕚\times 𝕚\times x = 𝕚\Rightarrow -1\times x = 𝕚 \Rightarrow x = -𝕚.\]
+
+<p>The set of complex numbers is defined as</p>
+
+\[ℂ=\{𝑎+𝑏𝕚:𝑎,𝑏∈ℝ\}\]
+
+<p>with the following operations and inverses:</p>
+<ul>
+  <li>
+    <p>Addition: 
+\((𝑎+𝑏𝕚)+(𝑐+𝑑𝕚)=𝑎+𝑐+𝕚(𝑏+𝑑)\)</p>
+  </li>
+  <li>
+    <p>Multiplication:
+\((𝑎+𝑏𝕚)(𝑐+𝑑𝕚)=𝑎𝑐+𝑎𝑑𝕚+𝑏𝑐𝕚+𝑏𝑑𝕚^2=𝑎𝑐−𝑏𝑑+(𝑎𝑑+𝑏𝑐)𝕚\)</p>
+  </li>
+  <li>
+    <p>Additive inverse: 
+\(−(𝑎+𝑏𝕚)=(−𝑎)+(−𝑏)𝕚\)</p>
+  </li>
+  <li>
+    <p>Multiplicative inverse: 
+\(\frac{1}{(𝑎+𝑏𝕚)}=\frac{1}{(𝑎+𝑏𝕚)}\frac{(𝑎−𝑏𝕚)}{(𝑎−𝑏𝕚)}=\frac{(𝑎−𝑏𝕚)}{(𝑎^2+𝑏^2 )}=\frac{𝑎}{(𝑎^2+𝑏^2 )}−\frac{𝑏}{(𝑎^2+𝑏^2)} 𝕚\)</p>
+  </li>
+</ul>
+
+<div class="highlight">
+<strong>The fundamental theorem of algebra</strong><hr />
+Every non-constant polynomial has a complex root. Furthermore, any polynomial of degree \(n\) can be written as a product of \(n\) first-degree polynomials and has precisely \(n\) roots.
+</div>
+
+<p>Examples:</p>
+
+\[\begin{align*}
+𝑥^2+5&amp;=(𝑥−𝕚\sqrt{5})(𝑥+𝕚\sqrt{5})\\
+&amp;⇒𝑟𝑜𝑜𝑡𝑠=𝕚\sqrt{5},−𝕚\sqrt{5}
+\end{align*}\]
+
+\[\begin{align*}
+𝑥^3−1&amp;=(𝑥−1)(𝑥^2+𝑥+1)\\
+&amp; =(𝑥−1)(𝑥^2+𝑥+1/4+3/4)\\
+&amp; =(𝑥−1)((𝑥+1/2)^2+3/4)\\
+&amp; =(𝑥−1)(𝑥+1/2+(𝕚\sqrt{3})/2)(𝑥+1/2−(𝕚\sqrt{3})/2)\\
+&amp; \Rightarrow roots = 1, -1/2-(𝕚\sqrt{3})/2, -1/2+(𝕚\sqrt{3})/2
+\end{align*}\]
+
+<h2 id="numbers-summary">Numbers: Summary</h2>
+
+<table class="tabDefault">
+  <thead>
+    <tr>
+      <th>Set</th>
+      <th>Symbol</th>
+      <th>Elements</th>
+      <th>Operations</th>
+      <th>What’s missing?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Natural numbers</td>
+      <td>\(\mathbb N\)</td>
+      <td>0,1,2,…</td>
+      <td>\(+ \times\)</td>
+      <td>Solve \(x+3=0\)</td>
+    </tr>
+    <tr>
+      <td>Integers</td>
+      <td>\(\mathbb Z\)</td>
+      <td>…,-2,-1,0,1,2,…</td>
+      <td>\(+\times - /\)</td>
+      <td>Solve \(3x+1=0\)</td>
+    </tr>
+    <tr>
+      <td>Rationals</td>
+      <td>\(\mathbb Q\)</td>
+      <td>\(0,\pm 1,\pm\frac12,...\)</td>
+      <td>\(+\times -/\)</td>
+      <td>Solve \(x^2=2\)<br />Perimeter of unit circle</td>
+    </tr>
+    <tr>
+      <td>Reals</td>
+      <td>\(\mathbb R\)</td>
+      <td>Limits of converging sequences in \(\mathbb Q\)</td>
+      <td>\(+\times -/\)</td>
+      <td>Solve \(x^2+1=1\)</td>
+    </tr>
+    <tr>
+      <td>Complex numbers</td>
+      <td>\(\mathbb C\)</td>
+      <td>\(\{a+b\mathbb i: a,b\in\mathbb R\}\)</td>
+      <td>\(+\times -/\)</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Complex numbers are said to be complete (contain the limits of all converging sequences) and algebraically closed (all polynomial have roots).</p>
+
+<h2 id="geometric-representation">Geometric representation</h2>
+<p>Real numbers can be represented on (1-dimensional) real line</p>
+
+<p>Complex numbers are represented on (2-dim) complex plane</p>
+
+<p>$z = a + ib$</p>
+
+<p>Real part: $Re(z) = a$</p>
+
+<p>Imaginary part: $Im(z) = b$</p>
+
+<p>Magnitude: distance from origin</p>
+
+<p>$\left\vert z \right\vert = \sqrt{a^{2} + b^{2}}$</p>
+
+<p>Phase: angle (counterclockwise) from the real line</p>
+
+<p>$\angle z = \tan^{- 1}\frac{b}{a}$</p>
+
+<p><img src=".//media/complex/image1.png" alt="" />
+<img src=".//media/complex/image2.png" alt="" /></p>
+
+<p>Examples: $z_{1} = 1$, $z_{2} = i$, $z_{3} = 3 + 2i$,
+$z_{4} = z_{2} + z_{3}$, $z_{5} = \frac{1}{z_{3}}$</p>
+
+<h2 id="multiplication-by-i">Multiplication by $i$</h2>
+
+<p>What do we get of we multiply $a + ib$ by $i$. Show on complex plane</p>
+
+<p>What are the powers of $i$: $i$, $i^{2},i^{3},\ldots$</p>
+
+<h2 id="complex-exponentiation">Complex exponentiation</h2>
+
+<p>What is $a^{ix}$ when $a,x$ are real?</p>
+
+<p>Let’s start with $e^{ix}$.</p>
+
+<p>One way to extend real functions to complex numbers is to define them
+based on series:</p>
+
+<p>$e^{x} = 1 + x + \frac{x^{2}}{2} + \frac{x^{3}}{3!} + \frac{x^{4}}{4!} + \frac{x^{5}}{5!} + \ldots$</p>
+
+<p>$\cos x = 1 - \frac{x^{2}}{2} + \frac{x^{4}}{4!} - \ldots$</p>
+
+<p>$\sin x = x - \frac{x^{3}}{3!} + \frac{x^{5}}{5!} - \ldots$</p>
+
+<p>Can we write $e^{ix}$ in terms of $\cos x$ and $\sin x$?</p>
+
+<h3 id="eulers-equation">Euler’s equation</h3>
+
+<p>$e^{ix} = \cos x + i\sin x$</p>
+
+<p>Click on the <a href="https://youtu.be/v0YEaeIClKY">link</a> for a visual proof.</p>
+
+<p>More generally,</p>
+
+<p>$z_{1}^{z_{2}} = e^{z_{2}\log z_{1}}$,</p>
+
+<p>where for $z_{1} = re^{i\theta}$, $\log z_{1} = \ln r + i\theta$</p>
+
+<p>Example: find $\sin\left( a + b \right)$ and $\cos\left( a + b \right)$
+in terms of $\sin a,\sin b,\cos a,\cos b$using Euler’s equation.</p>
+
+<p>$e^{i\left( a + b \right)} = \cos\left( a + b \right) + i\sin{(a + b)}$
+<img src=".//media/complex/image3.png" alt="" /></p>
+
+<p>$\begin{matrix}
+e^{i\left( a + b \right)} = e^{ia}e^{ib} = \left( cosa + i\sin a \right) + \left( \cos b + i\sin b \right) <br />
+= \left( \cos a\cos b - \sin a\sin b \right) + i\left( \cos a\sin b + \sin a\cos b \right) <br />
+\end{matrix}$</p>
+
+<p>$\cos\left( a + b \right) = \cos a\cos b - \sin a\sin b$</p>
+
+<p>$\sin{(a + b)} = \cos a\sin b + \sin a\cos b$</p>
+
+<h2 id="two-representations">Two Representations</h2>
+<p>We can also represent complex numbers as $z = {re}^{i\theta}$</p>
+
+<p>What are the real and imaginary parts?</p>
+
+<p>$Re\left( z \right) = Re\left( r\left( \cos\theta + i\sin\theta \right) \right) = r\cos\theta$</p>
+
+<p>$Im\left( z \right) = r\sin\theta$</p>
+
+<p>What are the magnitude and phase of $z = re^{i\theta}$?</p>
+
+<p>$z = re^{i\theta} = r\cos\theta + ir\sin\theta$</p>
+
+<p>$\left\vert z \right\vert = \sqrt{r^{2}\left( \cos\theta \right)^{2} + r^{2}\left( \sin\theta \right)^{2}} = r$</p>
+
+<p>$\angle z = \tan^{- 1}\frac{\sin\theta}{\cos\theta} = \theta$</p>
+
+<p>We can represent a complex number $z$ in terms of</p>
+
+<p>real and imaginary parts: $z = a + ib$ (Cartesian)</p>
+
+<p>magnitude and phase: $z = re^{i\theta}$ (Polar)</p>
+
+<p>$a = r\cos\theta,b = r\sin\theta$</p>
+
+<p>$r = \sqrt{a^{2} + b^{2}},\theta = \tan^{- 1}\frac{b}{a}$</p>
+
+<h3 id="cartesian-vs-polar">Cartesian vs Polar</h3>
+
+<p>Related to these representation are two coordinate systems</p>
+
+<p><img src=".//media/complex/image4.png" alt="" />
+<img src=".//media/complex/image5.png" alt="" /></p>
+
+<p>Cartesian: (real part, imaginary part) Polar: (magnitude,
+phase)</p>
+
+<p>Note: We refer to $re^{i\theta}$ as the polar representation, even if we
+don’t necessarily use the polar axis shown on the right</p>
+
+<p>Polar representation</p>
+
+<p>Examples: $z_{1} = e^{i\pi}$, $z_{2} = e^{\frac{i\pi}{2}}$,
+$z_{3} = e^{- \frac{i\pi}{2}}$, $z_{4} = 2e^{i\pi/6}$,
+$z_{5} = 2e^{i13\pi/6}$</p>
+
+<p>Examples: $z_{1} = 2e^{i\pi/6}$, $z_{2} = 3e^{- i2\pi/6}$,
+$z_{3} = z_{1}z_{2}$, $z_{4} = 1/z_{2}$</p>
+
+<h2 id="arithmetic-in-the-complex-plane">Arithmetic in the complex plane</h2>
+
+<p>The right representation simplifies computation.</p>
+
+<p>Addition/subtraction:
+$a + ib + c + id = \left( a + c \right) + i(b + d)$</p>
+
+<p>Multiplication:
+$re^{i\theta} \times \rho e^{i\phi} = r\rho e^{i\left( \theta + \phi \right)}$</p>
+
+<p>Inverse: $\frac{1}{r e^{i\theta}} = \frac1r e ^{-i\theta}$</p>
+
+<p>Division: $\frac{\rho e^{i\phi}}{r e^{i\theta}} = \frac{\rho}{\phi}e^{-i(\phi-\theta)} $</p>
+
+<p>Power (to the power of $n$): ${(re^{i\theta})}^n = r^n e^{i n\theta}$</p>
+
+<h2 id="signals-in-the-complex-plane">Signals in the complex plane</h2>
+
+<p>We can represent real signals on a two-dimensional graph
+<img src=".//media/complex/image1.gif" alt="" /></p>
+
+<p>How about complex signals?</p>
+
+<p>Represent $e^{i2\pi t}$ as a path on the complex plane.</p>
+
+<p>Signals of the form $e^{i\omega t}$ are called complex exponentials
+and are very important!</p>
+
+<p>Find $Re(e^{i2\pi t})$</p>
+
+<p>Find $Im(e^{i2\pi t})$</p>
+
+<p>Let $f\left( t \right) = t$.</p>
+
+<p>Represent $f\left( t \right)e^{i2\pi t}$ as a path on the
+complex plane.
+<img src=".//media/complex/image2.gif" alt="" /></p>
+
+<h2 id="fundamental-theorem-of-algebra">Fundamental theorem of algebra</h2>
+
+<div class="highlight">
+<strong>Every non-constant polynomial has a complex root. </strong>
+</div>
+
+<p>Idea behind the proof:</p>
+
+<p>Consider the polynomial $f\left( z \right) = a_{n}z^{n} + \ldots + a_{0},a_{0} \neq 0$</p>
+
+<p>For a large value of $r$ what shape is formed by $f\left( re^{i\theta} \right),0 \leq \theta \leq 2\pi$?</p>
+
+<p>What shape is formed by a small value of $r$?</p>
+
+<p>What happens if we start from a large value of $r$ and gradually
+make it equal to 0?</p>
+
+<!-- {:.highlight}
+> Corollary: A degree $\mathbf{n}$ polynomial has $\mathbf{n}$ complex roots. -->
+
+<p>Proof by induction:</p>
+
+<p>A degree 1 polynomial has 1 root.
+Suppose degree $k$ polynomial has $k$ roots.
+Given a degree $k + 1$ polynomial, find one of its roots, say $w$.
+Divide the polynomial by $(z - w)$. This polynomial has degree $k$
+and most have $k$ roots. So a degree $k + 1$ polynomial has $k + 1$
+roots.</p>
+
+<p>$x^{5} - x^{3} = x^{3}\left( x - 1 \right)\left( x + 1 \right) \Rightarrow roots = 0,0,0,1, - 1$</p>
+
+<p>$x^{2} + 5 = \left( x - {\mathbb{i}}\sqrt{5} \right)\left( x + {\mathbb{i}}\sqrt{5} \right) \Rightarrow roots = {\mathbb{i}}\sqrt{5}, - {\mathbb{i}}\sqrt{5}$</p>
+
+<p>$x^{3} - 1 = \left( x - 1 \right)\left( x^{2} + x + 1 \right) = \left( x - 1 \right)\left( x^{2} + x + \frac{1}{4} + \frac{3}{4} \right) = \left( x - 1 \right)\left( \left( x + \frac{1}{2} \right)^{2} + \frac{3}{4} \right)$</p>
+
+<p>$= (x - 1)\left( x + \frac{1}{2} +  \frac{ \mathbb{i}\sqrt{3} }{2} \right)\left( x + \frac{1}{2} - \frac{\mathbb{i}\sqrt{3}}{2} \right)$</p>
+
+<h2 id="conjugate">Conjugate</h2>
+
+<p>The conjugate of a complex number $z = a + ib$ is $z^{\ast} = a - ib$</p>
+
+<p>In polar form, the conjugate of $z = re^{i\theta}$ is
+$z^{\ast} = re^{- i\theta}$</p>
+
+<p>If a real polynomial has a complex root $w$, then $w^{\ast}$ is also a
+root</p>
+
+<p>Example:$x^{2} - 2x + 2$</p>
+
+<p><img src=".//media/complex/image6.png" alt="" />$</p>
+
+<h2 id="roots-of-unity">Roots of unity</h2>
+
+<p>What are the solutions to $z^{3} = 1$?</p>
+
+<p>Recall: $re^{i\theta} = re^{i\left( 2\pi k + \theta \right)}$<br />
+$z^{3} = 1 \Rightarrow \left( re^{i\theta} \right)^{3} = 1 \Rightarrow r^{3}e^{i3\theta} = 1e^{i0} \Rightarrow \begin{cases}
+r = 1 <br />
+3\theta = 2\pi k <br />
+\end{cases} \Rightarrow \begin{cases}
+r = 1 <br />
+\theta = \frac{2\pi k}{3} <br />
+\end{cases} \Rightarrow \begin{cases}
+r = 1 <br />
+\theta = 0,\frac{2\pi}{3},\frac{4\pi}{3} <br />
+\end{cases}$</p>
+
+<p>Check:</p>
+
+<p><img src=".//media/complex/image7.png" alt="" /></p>
+
+<p>What about $z^{n} = 1$?</p>
+
+<p>Roots of $z^{n} = re^{i\theta}$?</p>
+
+<footer>
+  <br/><br/>
+  <center>
+    <hr/>
+  &copy; Farzad Farnoud, 2020</center>
+</footer>
+</div>
+<!-- Default Statcounter code for MoI
+http://www.ece.virginia.edu/~ffh8x/moi/ -->
+<script type="text/javascript">
+var sc_project=12471818; 
+var sc_invisible=1; 
+var sc_security="62b9c6a1"; 
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js"
+async></script>
+<noscript><div class="statcounter"><a title="Web Analytics"
+href="https://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="https://c.statcounter.com/12471818/0/62b9c6a1/1/"
+alt="Web Analytics"></a></div></noscript>
+<!-- End of Statcounter Code -->
+</body>
+</html>

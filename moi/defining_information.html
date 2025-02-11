@@ -1,0 +1,478 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="assets/css/home.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/mystyle.css">
+  
+  
+  <!-- for mathjax support -->
+  
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: { equationNumbers: { autoNumber: "AMS" } },
+    //tex2jax: {inlineMath: [['$', '$'], ['\\(', '\\)']]}
+    //tex2jax: {inlineMath: [['\(', '\)'], ['\\(', '\\)']]}
+    tex2jax: {inlineMath: [['$', '$'], ['\\(', '\\)']]}
+    //tex2jax: {inlineMath: [['$', '$'], ['\(', '\)'], ['\\(', '\\)']]}
+  });
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+  
+    <script type="text/javascript"  src="//cdnjs.cloudflare.com/ajax/libs/jsxgraph/1.1.0/jsxgraphcore.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/jsxgraph/1.1.0/jsxgraph.css" />
+  
+  <script src="assets/js/coding.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!--<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>-->
+  <script src="assets/js/course.js"></script>
+  <script src="assets/js/prob.js"></script>
+</head>
+<body>
+  <!-- Top navigation bar from the main webpage. must be updated from page.html-->
+  <div class="topnav">
+  <a style="float:left;" href="index.html"><strong>Mathematics of Information</strong></a>
+  <a id="teaching" href="../teaching.html">Teaching</a>
+  <a id="group" href="../ips.html">Group</a>
+  <a id="pubs" href="../publications.html">Publications</a>
+  <a id="home" href="../index.html">Home</a> 
+  </div>
+  <nav>
+   <div class="sidenav">
+     <!--<a href="/">Home</a><br>
+	     <a href="/moi/">Course Index</a><hr>-->
+	   <!--<h3><div class="chapnav"> Mathematics of <br> Information</div></h3>-->
+     
+     
+     
+     <a href="/~ffh8x/moi/"><strong>Home</strong></a>
+     
+     
+     
+    
+     
+     
+     <a href="/~ffh8x/moi/introduction.html"><strong>0. Introduction</strong></a>
+     
+     
+     
+    
+     
+     
+     <span class="chapnav"><strong>1. Numbers, fields, and <br>representing information</strong></span>
+     <ul>
+      
+      
+      
+      <li><a href="/~ffh8x/moi/sets.html">Sets and set theory</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/numbers.html">Natural numbers, rationals</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/fields.html">Fields</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/reals.html">Real numbers</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/cardinality.html">Counting and cardinality</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/representation.html">Representing information</a></li>
+      
+      
+      
+    </ul>
+    
+    
+     
+     
+     <span class="chapnav"><strong>2. Probability &amp; information</strong></span>
+     <ul>
+      
+      
+      
+      <li><a class="active" style="color:#76bdd5" href="/~ffh8x/moi/defining_information.html"><img class="emoji" title=":point_right:" alt=":point_right:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f449.png" height="20" width="20"> Defining information</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/probability_basics.html">Basics of probability</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/distributions.html">Random variables, <br> distributions, independence</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/expectation.html">Expectation and Variance</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/conditional.html">Conditional probability</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/markov.html">Random sequences and <br> Markov chains</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/information_theory.html">Quantifying Information</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/compression.html">Data compression</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/communications.html">Mathematics of communications</a></li>
+      
+      
+      
+    </ul>
+    
+    
+     
+     
+     <span class="chapnav"><strong>3. Linear algebra, finite fields, <br>and error correction</strong></span>
+     <ul>
+      
+      
+      
+      <li><a href="/~ffh8x/moi/codes_graphs_algebra.html">Codes, graphs, and algebra</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/vectors.html">Vectors and spaces</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/fundamental_spaces.html">Fundamental spaces</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/ecc.html">Linear codes</a></li>
+      
+      
+      
+    </ul>
+    
+    
+     
+     
+     <span class="chapnav"><strong>4. The frequency domain and <br>transmission of information</strong></span>
+     <ul>
+      
+      
+      <li class="chapnav">Complex numbers</li>
+      
+      
+      
+      <li class="chapnav">Frequency and spectrum</li>
+      
+      
+      
+      <li class="chapnav">Filteration and sampling</li>
+      
+      
+      
+      <li class="chapnav">Linear systems</li>
+      
+      
+      
+      <li class="chapnav">Frequency response</li>
+      
+      
+      
+      <li class="chapnav">Modulation</li>
+      
+      
+      
+      <li class="chapnav">Orthogonality</li>
+      
+      
+      
+      <li class="chapnav">Multiple-access communication</li>
+      
+      
+    </ul>
+    
+    
+     
+     
+     <span class="chapnav"><strong>5. Number theory and <br>information privacy</strong></span>
+     <ul>
+      
+      
+      <li class="chapnav">Encryption</li>
+      
+      
+      
+      <li class="chapnav">Number theory</li>
+      
+      
+      
+      <li class="chapnav">Public key cryptography</li>
+      
+      
+    </ul>
+    
+    
+     
+     
+     <span class="chapnav"><strong>6. Boolean algebra and <br>computation</strong></span>
+     <ul>
+      
+      
+      <li class="chapnav">Number systems and arithmetic</li>
+      
+      
+      
+      <li class="chapnav">Boolean algebra</li>
+      
+      
+      
+      <li class="chapnav">Logic design and computation</li>
+      
+      
+      
+      <li class="chapnav">
+      
+      
+    </ul>
+    
+    
+     
+     
+     <span class="chapnav"><strong>Appendix</strong></span>
+     <ul>
+      
+      
+      
+      <li><a href="/~ffh8x/moi/axiomatic.html">Axiomatic systems</a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/index.html"><br></a></li>
+      
+      
+      
+      
+      
+      <li><a href="/~ffh8x/moi/index.html"><br></a></li>
+      
+      
+      
+    </ul>
+    
+    
+  </div>
+</nav>
+<div class="main">
+  <!-- variables for replacement -->
+  <script type="text/javascript">
+	var DNAColor = {};
+	DNAColor['A'] = '<span style="color:brown;">A</span>';
+	DNAColor['C'] = '<span style="color:green;">C</span>';
+	DNAColor['G'] = '<span style="color:blue;">G</span>';
+	DNAColor['T'] = '<span style="color:black;">T</span>';
+
+	var DNACnormal = {};
+	DNACnormal['A'] = '<span style="color:brown;">00</span>';
+	DNACnormal['C'] = '<span style="color:green;">01</span>';
+	DNACnormal['G'] = '<span style="color:blue;">10</span>';
+	DNACnormal['T'] = '<span style="color:black;">11</span>';
+
+	var DNAChighA = {};
+	DNAChighA['A'] = '<span style="color:brown;">0</span>';
+	DNAChighA['C'] = '<span style="color:green;">10</span>';
+	DNAChighA['G'] = '<span style="color:blue;">110</span>';
+	DNAChighA['T'] = '<span style="color:black;">111</span>';
+
+	var DNAnormal = {};
+	DNAnormal['A'] = '00';
+	DNAnormal['C'] = '01';
+	DNAnormal['G'] = '10';
+	DNAnormal['T'] = '11';
+
+	var DNAhighA = {};
+	DNAhighA['A'] = '0';
+	DNAhighA['C'] = '10';
+	DNAhighA['G'] = '110';
+	DNAhighA['T'] = '111';
+</script>
+
+<h1 id="defining-and-quantifying-information-introduction">Defining and quantifying information: Introduction</h1>
+<p>Our goal in this chapter is  defining and quantifying information. It may seem at first glance that defining information mathematically and trying to measure it is a theoretical exercise. However, the elegance of the resulting theory is that while the definition is mathematical and abstract, it underlies a wide range of applications from cell phones to data centers.</p>
+
+<h2 id="information-three-different-views">Information: three different views</h2>
+
+<p>In this section, we consider three different ways of looking at information: information content of signals; information capacity of storage devices and communication channels; and our intuitive perception of information. The definition of information, which we will provide in the following sections, should be compatible with all three views.</p>
+
+<p>Disclaimer: In this section, we are mostly posing questions and motivating future discussions so some of the statements I make are not 100% mathematically precise.</p>
+
+<h3 id="information-and-the-shortest-representation-of-a-signal">Information and the shortest representation of a signal</h3>
+
+<p>We have seen before how a digital sequence can be encoded as binary. For example, with the mapping \(A\to00,C\to01,G\to10,T\to11,\)
+we can represent the sequence <span id="dna1"></span> as <span id="dna2"></span> (colors are only for clarity and not part of the signal). So we have encoded a DNA sequence of length 8 as a binary sequence of length 16 bits, which we can store in the memory of a computer. Given that we need 16 bits to represent this sequence, it seems reasonable to say that it has at most 16 bits of information.</p>
+
+<p>But we have the freedom to choose the mapping. In particular, we do not need to choose binary representations of the same lengths for all symbols. For example, using the mapping</p>
+
+\[A\to0,C\to10,G\to110,T\to111,\]
+
+<p>the sequence <span id="dna3"></span> becomes  <span id="dna4"></span>, which has 13 bits. So, when stored on a computer this will take less space (around 20% less).</p>
+
+<p>Note that even though DNA symbols are mapped to binary sequences of different lengths, we can still recover the DNA sequence from the binary sequence as illustrated by the following exercise.</p>
+<div class="exercise">
+	Using the mapping \(A\to0,C\to10,G\to110,T\to111\), a DNA sequence is encoded as <span id="dna5"></span>. Find the DNA sequence.
+	<button onclick="showSolution(this,'highAexer')" style="float:right;">Show Solution</button>
+	<div id="highAexer" style="display:none;" class="solution">
+		<span id="dna6"></span>
+	</div>
+</div>
+<p><br></p>
+
+<script type="text/javascript">
+	document.getElementById('dna1').innerHTML=encode('AAATAGCA',DNAColor);
+	document.getElementById('dna3').innerHTML=encode('AAATAGCA',DNAColor);
+	document.getElementById('dna2').innerHTML=encode('AAATAGCA',DNACnormal);
+	document.getElementById('dna4').innerHTML=encode('AAATAGCA',DNAChighA);
+	document.getElementById('dna6').innerHTML='ATACACGCAAACC';
+	document.getElementById('dna5').innerHTML=encode('ATACACGCAAACC',DNAhighA);
+</script>
+
+<p><span id="dnaseq"></span>
+So, there are different ways to represent a sequence in binary. Among these, there is a shortest representation. What is the relationship between the information content of a signal and the length of its shortest representation? If two signals have the same length but one of them can be represented using fewer bits, can we say that it carries less information than the other? The table below provides an example of this with two DNA sequences of length 500. We are able to represent the one on the right with fewer than 1000 bits. Can we say its information content is lower than the one on the left?</p>
+
+<table style="font-family:'Courier New', Courier, monospace;width:1000px;word-break:break-all;" class="tabDefault">
+	 <colgroup>
+       <col span="1" style="width: 50%;">
+       <col span="1" style="width: 50%;">
+    </colgroup>
+  <tbody>
+    <tr>
+      <td id="seq1" style="text-align: left;font-size:80%;"></td>
+      <td id="seq2" style="text-align: left;font-size:80%;"></td>
+    </tr>
+    <tr>
+      <td id="seq3" style="text-align: left;font-size:61%"></td>
+      <td id="seq4" style="text-align: left;font-size:61%;vertical-align:top"></td>
+    </tr>
+  </tbody>
+</table>
+
+<script type="text/javascript">
+	var seq1 = 'AGTGACAAATTCTTGCCACGCGGTACGAGAGTCCAATTCACTTGTTAGCATCTACGAGCTGCCCTCCCTATACTCGCAGGGCCGTAAGTTACGCTCAGATTCAACTGCCCTTGGGAGACCAATGCCAACCTCCATGTGTTCGGCTAAAAGGCCATGCATTTCTTAATCCTTTGTCACCGAAATTGTTTATGACTTAGTAACACCCTCCAAAAGAGCAGCAGATGTTTGGGCGTAGCTGTGTCGAGTGCTATAGGGCCGTGTAGAGGATCTCAAATAAAAAGGAAACAGCCGTCGCCTTGAAGCCGAGAACATTCACCGCTTTCCTAAGTCAATGCGTCGATGACGTGGGTACCGTCTCGCTGTACTAACTCGCAGTCAAGCGAGCACGTTTTTTGCAGTCTACCAGCTCGAGGTGTTAATACCGATTGCAGAAACGTCACGTCCTGGCCTCCCGGGCCCACTTGTTTTTACCCATGAAGCACATTAGGCTCAATGTGTAC';
+	var seq2 = 'AAATAGCTAAATAGGGAAAGATAAAAGCCAGCACAAAAAAAATTAAATAAGAAAAATTCAAAGAAACCCACACACAACGATGAAAACCGGCAGCATTCCCAAAAGAAAAAATAATTAAAACACCAAAAACAAGATCACAATCCAACCAATATTGAAACACACAGCTTACAACCATCCGGCAATAAATCCAACAACAGGCACCTCGAAGAAAAGGAACACCAAATAAAAAATTACAACTATACCCCCAATAACTCAAATAGCAAAAACAACAACAGTCACATTGACAAAAAAACACCCAAACCAGCTCAACGAAAAAACATCTCTACACCAAACGAGCACATAAAAGAGAAACAAACACATAGAAACCCACCCCTACAACAACGACAGGACCCGAAATCACCCCCCTAAAAAAAGCGTTAACACCGAACCCAACAAGAACACACCAAAAAAGATAGAGGAAGTACAGGAGTCTCAAACGGACAAACAAAAAGCTCCGTTAG';
+	document.getElementById('seq1').innerHTML = encode(seq1,DNAColor);
+	document.getElementById('seq2').innerHTML = encode(seq2,DNAColor);
+	document.getElementById('seq3').innerHTML = encode(seq1,DNACnormal);
+	document.getElementById('seq4').innerHTML = encode(seq2,DNAChighA);
+</script>
+
+<h3 id="information-capacity-of-storage-devices-and-communication-channels">Information capacity of storage devices and communication channels</h3>
+
+<p>Suppose that we have a storage device that can store 1000 bits, but because of noise each bit can flip. (This happens in all storage devices such as hard drives, <a href="https://ieeexplore.ieee.org/document/4558857" target="_blank">flash drives</a>, etc.) For example, suppose that if we write 1000 bits, when we read this data again, on average 10 random bits have been flipped. The <em>information capacity</em> of the device is the amount of information we can store on it <em>reliably</em>. But is it possible to store information reliably on a noisy device? If so, how can we determine how much? In our example, we clearly cannot store 1000 bits reliably. How is the amount of information that we can store related to how likely bits are to flip?</p>
+
+<p>A similar problem arises in the context of communication. For example, the link between a cell tower and a cell phone is almost always noisy. Nevertheless, we are able to communicate reliably over these noisy links. What is the maximum amount of information that we can transmit in unit time while still maintaining reliability?</p>
+
+<h3 id="information-and-perception">Information and perception</h3>
+
+<p>Ideally, our mathematical definition of information should be compatible with how we perceive informativeness. Let us consider the following statements:</p>
+<ul>
+  <li>Tomorrow the sun will rise in the east.</li>
+  <li>It is raining in Seattle.</li>
+  <li>It is raining in the Sahara.</li>
+</ul>
+<div class="exercise">
+	Which statement would you say has more information? Why? 
+</div>
+
+<p>You will probably agree that the second statement has more information than the first, while the third has more information than the second. The first statement is obvious, so it carries little if any information for us; we already know this. The second statement is reasonably informative. The third statement is about an event that is very unlikely, so knowing that it has indeed occurred changes our knowledge about the world in a significant way.</p>
+
+<p>It seems that statements that are obvious or about events that almost surely will happen, carry little information while those that are surprising or report unlikely events, carry more. Our intuition then suggests the following:</p>
+
+<div class="highlight"> Information content is inversely related to probability.</div>
+
+<p>Can we quantify information mathematically in a way that agrees with our intuition?</p>
+
+<h2 id="information-theory">Information theory</h2>
+
+<p>The questions that we asked above, and many more, are answered by information theory. Information theory is a mathematical field that studies information and fundamental limits on its transformation, communication, and storage. Information theory was founded by <a href="https://en.wikipedia.org/wiki/Claude_Shannon" target="_blank">Claude E. Shannon</a> in his paper: “<a href="http://people.math.harvard.edu/~ctm/home/text/others/shannon/entropy/entropy.pdf" target="_blank">A Mathematical Theory of Communication,</a>” in The Bell System Technical Journal in 1948.</p>
+
+<p>Shannon, along with Alan Turing and others, developed the mathematical foundation that makes a device such as an iPhone possible.</p>
+
+<h3 id="information-theory-and-probability">Information theory and probability</h3>
+<p>The common component in the three contexts above, as you may have noticed, is probability.</p>
+<ul>
+  <li>In encoding signals, if a symbol is more likely, we can choose to represent it with fewer bits compared with symbols that are less likely, as we did <a href="#information-and-the-shortest-representation-of-a-signal">above</a>.</li>
+  <li>In information capacity, the probability of bit flips determines how much information we can store on a device.</li>
+  <li>And finally, our perception of informativeness is also affected by the probability of the event: surprising statements carry more information.</li>
+</ul>
+
+<p>Hence, to understand information better, we will first learn about probability theory in this chapter. We will then return to information theory, including data compression and reliable data storage/communication.</p>
+<div class="exercise">
+  Write a question that you still have about this section.
+</div>
+<p><br></p>
+
+<footer>
+  <br><br>
+  <center>
+    <hr>
+  © Farzad Farnoud, 2020</center>
+</footer>
+</div>
+<!-- Default Statcounter code for MoI
+http://www.ece.virginia.edu/~ffh8x/moi/ -->
+<script type="text/javascript">
+var sc_project=12471818; 
+var sc_invisible=1; 
+var sc_security="62b9c6a1"; 
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
+<noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/12471818/0/62b9c6a1/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of Statcounter Code -->
+</body>
+</html>
