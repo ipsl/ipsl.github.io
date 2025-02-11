@@ -1,0 +1,189 @@
+div.tabDefault table td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+div.tabDefault table tr {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+div.tabDefault table th {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+  background-color: #EFEFEF;
+}
+
+table.tabDefault td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+table.tabDefault tr {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+table.tabDefault th {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+  background-color: #EFEFEF;
+}
+
+.tabDefault {
+  background-origin: collapse;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tabnoborder table, .tabnoborder th, .tabnoborder td {
+  border-collapse: collapse;
+  border: none !important;
+}
+
+.table2 th, .table2 td{
+  padding:4px;
+}
+.table2 th {
+  background-color: #ccffcc;
+}
+.table2 tr:nth-child(even){background-color: #f2f2f2;}
+
+/* Fixed sidenav, full height */
+.sidenav {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 80px;
+  left: 0;
+  background-color: #FFFFE0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .chapnav {
+  padding: 3px 6px 3px 10px;
+  text-decoration: none;
+  display: block;
+  border: none;
+  background: none;
+  /*color: #818181;*/
+  width:100%;
+  text-align: left;
+  /*cursor: pointer;*/
+  outline: none;
+}
+
+.sidenav .chapnav {
+  padding: 6px 6px 3px 10px;
+}
+
+.sidenav a:visited {
+  color: blue;
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+  color: DeepSkyBlue;
+  cursor: default;
+}
+
+.sidenav ul {
+    list-style-type:none;
+    display: block;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 10px;
+}
+
+.note {
+  background-color: #F0F0F0;
+  max-width : 1000px;
+  padding: 10px;
+}
+
+.solution {
+  background-color: #FFF0F0;
+  max-width : 1000px;
+  padding: 10px;
+}
+
+.highlight::before{
+  content: "⭐";
+}
+
+.highlight{
+  background-color: #F0FFF0;
+  max-width : 1000px;
+  padding: 10px;
+}
+
+.exercise::before{
+  counter-increment: exer-counter;
+  content: "✍️" "E"counter(exer-counter) ": ";
+}
+.exercise{
+  background-color: #F0F0FF;
+  max-width : 1000px;
+  padding: 10px;
+}
+
+
+.example{
+  background-color: #EFEFF6;
+  max-width : 1000px;
+  padding: 10px;
+}
+
+.hw::before{
+  counter-increment: hw-counter;
+  content: "📝" "H"counter(hw-counter) ": ";
+}
+.hw{
+  background-color: #F0F0AF;
+  max-width : 1000px;
+  padding: 10px;
+}
+p + ul, p + ol {  
+   margin-top: -15px;
+}
+
+
+.row {
+  display: flex;
+  margin-left:-5px;
+  margin-right:-5px;
+}
+
+.column {
+  flex: 50%;
+  padding: 5px;
+}
+
+.MC_text {
+  color: brown;
+  text-align: center;
+}
+
+.checkBit {
+  color: blue;
+}
+
+.msgBit {
+  color: darkgreen;
+}
+
+.answer {
+  color: brown;
+}
+

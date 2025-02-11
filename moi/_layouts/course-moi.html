@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/home.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/mystyle.css">
+  {% if page.usePlotly %}
+  <script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+  {% endif %}
+  {% if page.useTikz %}
+  <link rel="stylesheet" type="text/css" href="assets/css/tikzfonts.css">
+  <script src="assets/js/tikzjax.js"></script>
+  {% endif %}
+  <!-- for mathjax support -->
+  {% if page.usemathjax %}
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: { equationNumbers: { autoNumber: "AMS" } },
+    //tex2jax: {inlineMath: [['$', '$'], ['\\(', '\\)']]}
+    //tex2jax: {inlineMath: [['\(', '\)'], ['\\(', '\\)']]}
+    tex2jax: {inlineMath: [['$', '$'], ['\\(', '\\)']]}
+    //tex2jax: {inlineMath: [['$', '$'], ['\(', '\)'], ['\\(', '\\)']]}
+  });
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  {% endif %}
+  {% if page.useJSXGraph %}
+    <script type="text/javascript"  src="//cdnjs.cloudflare.com/ajax/libs/jsxgraph/1.1.0/jsxgraphcore.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/jsxgraph/1.1.0/jsxgraph.css" />
+  {% endif %}
+  <script src="assets/js/coding.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!--<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>-->
+  <script src="assets/js/course.js"></script>
+  <script src="assets/js/prob.js"></script>
+</head>
+<body>
+  <!-- Top navigation bar from the main webpage. must be updated from page.html-->
+  <div class="topnav">
+  <a style="float:left;" href="index.html"><strong>Mathematics of Information</strong></a>
+  <a id="teaching" href="../teaching.html">Teaching</a>
+  <a id="group" href="../ips.html">Group</a>
+  <a id="pubs" href="../publications.html">Publications</a>
+  <a id="home" href="../index.html">Home</a> 
+  </div>
+  <nav>
+   <div class="sidenav">
+     <!--<a href="/">Home</a><br>
+	     <a href="/moi/">Course Index</a><hr>-->
+	   <!--<h3><div class="chapnav"> Mathematics of <br> Information</div></h3>-->
+     {% for item in site.data.nav.course_toc %}
+     {% if item.url %}
+     {% if item.url == page.url %}
+     <a class="active" style="color:#76bdd5" href="{{item.url | relative_url}}"><strong>:point_right:  {{item.page}}</strong></a><!--inline style to override precednec-->
+     {% else %}
+     <a href="{{item.url| relative_url }}"><strong>{{item.page}}</strong></a>
+     {% endif %}
+     {% endif %}
+     {% if item.lectures %}
+     <span class="chapnav"><strong>{{ item.page }}</strong></span>
+     <ul>
+      {% for entry in item.lectures %}
+      {% if entry.url %}
+      {% if entry.url == page.url %}
+      <li><a class="active" style="color:#76bdd5" href="{{ entry.url | relative_url}}">:point_right: {{ entry.page }}</a></li>
+      {% else %}
+      <li><a href="{{ entry.url |relative_url}}">{{ entry.page }}</a></li>
+      {% endif %}
+      {% else %}
+      <li class="chapnav">{{ entry.page }}</li>
+      {% endif %}
+      {% endfor %}
+    </ul>
+    {% endif %}
+    {% endfor %}
+  </div>
+</nav>
+<div class="main">
+  <!-- variables for replacement -->
+  {{ content }}
+<footer>
+  <br/><br/>
+  <center>
+    <hr/>
+  &copy; Farzad Farnoud, 2020</center>
+</footer>
+</div>
+<!-- Default Statcounter code for MoI
+http://www.ece.virginia.edu/~ffh8x/moi/ -->
+<script type="text/javascript">
+var sc_project=12471818; 
+var sc_invisible=1; 
+var sc_security="62b9c6a1"; 
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js"
+async></script>
+<noscript><div class="statcounter"><a title="Web Analytics"
+href="https://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="https://c.statcounter.com/12471818/0/62b9c6a1/1/"
+alt="Web Analytics"></a></div></noscript>
+<!-- End of Statcounter Code -->
+</body>
+</html>

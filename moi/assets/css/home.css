@@ -1,0 +1,51 @@
+/* When this file is changed it also must be copied to the MoI course folder*/
+
+
+/* Main content */
+.main {
+  counter-reset: exer-counter hw-counter;
+  margin-left: 250px; /* Same as the width of the sidenav */
+  font-size: 18px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+  max-width: 1000px;
+}
+
+  .topnav {
+  /* added to center and limit width */
+  margin-left: 250px; /* Same as the width of the sidenav */
+  font-size: 20px; /* Increased text to enable scrolling */
+  /* original */
+  padding: 0px 10px;
+  max-width: 1000px;
+
+  overflow: hidden;
+  background-color: #232D4B;
+}
+
+.topnav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 19px;
+}
+
+.topnav a:hover {
+  background-color: #FF8D1A;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #E57200;
+  color: white;
+}
+
+.pubitem {
+  margin: 5px 0;
+}
+
+.coauthorlink {
+  text-decoration: none;
+  color: black;
+}

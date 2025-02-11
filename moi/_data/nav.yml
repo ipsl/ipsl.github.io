@@ -1,0 +1,104 @@
+course_toc:
+  - page: Home
+    url: /
+  - page: 0. Introduction 
+    url: /introduction.html
+  - page: 1. Numbers, fields, and <br/>representing information
+    url:
+    lectures:
+#      - page: Axiomatic systems and mathematical proofs
+#        url: /axiomatic.html
+      - page: Sets and set theory 
+        url: /sets.html
+      - page: Natural numbers, rationals
+        url: /numbers.html
+      - page: Fields
+        url: /fields.html
+      - page: Real numbers
+        url: /reals.html
+      - page: Counting and cardinality
+        url: /cardinality.html
+      - page: Representing information
+        url: /representation.html
+  - page: 2. Probability & information 
+    url: 
+    lectures:
+      - page: Defining information 
+        url: /defining_information.html
+      - page: Basics of probability
+        url: /probability_basics.html
+      - page: Random variables, <br/> distributions, independence
+        url: /distributions.html
+      - page: Expectation and Variance
+        url: /expectation.html
+      - page: Conditional probability
+        url: /conditional.html
+      - page: Random sequences and <br/> Markov chains
+        url: /markov.html
+      - page: Quantifying Information
+        url: /information_theory.html
+      - page: Data compression
+        url: /compression.html
+      - page: Mathematics of communications
+        url: /communications.html
+  - page: 3. Linear algebra, finite fields, <br/>and error correction
+    url:
+    lectures:
+      - page: Codes, graphs, and algebra
+        url: /codes_graphs_algebra.html
+      - page: Vectors and spaces
+        url: /vectors.html
+      - page: Fundamental spaces
+        url: /fundamental_spaces.html
+      - page: Linear codes 
+        url: /ecc.html
+  - page: 4. The frequency domain and <br/>transmission of information
+    url:
+    lectures:
+      - page: Complex numbers
+#        url: /complex.html
+      - page: Frequency and spectrum
+#        url: /fourier.html
+      - page: Filteration and sampling
+#        url: /sampling.html
+      - page: Linear systems
+#        url: /linsys.html
+      - page: Frequency response
+#        url: /freqresponse.html
+      - page: Modulation
+#        url: /modulation.html
+      - page: Orthogonality
+#        url:    
+      - page: Multiple-access communication
+#        url: /maccs.html
+  - page: 5. Number theory and <br/>information privacy
+    url:
+    lectures:
+      - page: Encryption
+        url:
+      - page: Number theory
+        url:
+      - page: Public key cryptography
+        url:
+  - page: 6. Boolean algebra and <br/ >computation
+    url:
+    lectures:
+      - page: Number systems and arithmetic 
+        url:
+      - page: Boolean algebra
+        url:
+      - page: Logic design and computation
+        url:
+      - page:  
+        url:
+  - page: Appendix
+    url:
+    lectures:
+      - page: Axiomatic systems 
+        url: /axiomatic.html
+      - page: <br/> 
+        url: /index.html
+      - page: <br/> 
+        url: /index.html
+
+
