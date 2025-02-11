@@ -1,0 +1,654 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="assets/css/home.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/mystyle.css">
+  
+  
+  <!-- for mathjax support -->
+  
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: { equationNumbers: { autoNumber: "AMS" } },
+    //tex2jax: {inlineMath: [['$', '$'], ['\\(', '\\)']]}
+    //tex2jax: {inlineMath: [['\(', '\)'], ['\\(', '\\)']]}
+    tex2jax: {inlineMath: [['$', '$'], ['\\(', '\\)']]}
+    //tex2jax: {inlineMath: [['$', '$'], ['\(', '\)'], ['\\(', '\\)']]}
+  });
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+  
+    <script type="text/javascript"  src="//cdnjs.cloudflare.com/ajax/libs/jsxgraph/1.1.0/jsxgraphcore.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/jsxgraph/1.1.0/jsxgraph.css" />
+  
+  <script src="assets/js/coding.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!--<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>-->
+  <script src="assets/js/course.js"></script>
+  <script src="assets/js/prob.js"></script>
+</head>
+<body>
+  <!-- Top navigation bar from the main webpage. must be updated from page.html-->
+  <div class="topnav">
+  <a style="float:left;" href="index.html"><strong>Mathematics of Information</strong></a>
+  <a id="teaching" href="../teaching.html">Teaching</a>
+  <a id="group" href="../ips.html">Group</a>
+  <a id="pubs" href="../publications.html">Publications</a>
+  <a id="home" href="../index.html">Home</a> 
+  </div>
+  <nav>
+   <div class="sidenav">
+     <!--<a href="/">Home</a><br>
+	     <a href="/moi/">Course Index</a><hr>-->
+	   <!--<h3><div class="chapnav"> Mathematics of <br> Information</div></h3>-->
+     
+     
+     
+     <a href=""><strong>Home</strong></a>
+     
+     
+     
+    
+     
+     
+     <a href="introduction.html"><strong>0. Introduction</strong></a>
+     
+     
+     
+    
+     
+     
+     <span class="chapnav"><strong>1. Numbers, fields, and <br>representing information</strong></span>
+     <ul>
+      
+      
+      
+      <li><a href="sets.html">Sets and set theory</a></li>
+      
+      
+      
+      
+      
+      <li><a href="numbers.html">Natural numbers, rationals</a></li>
+      
+      
+      
+      
+      
+      <li><a href="fields.html">Fields</a></li>
+      
+      
+      
+      
+      
+      <li><a href="reals.html">Real numbers</a></li>
+      
+      
+      
+      
+      
+      <li><a class="active" style="color:#76bdd5" href="/~ffh8x/moi/cardinality.html"><img class="emoji" title=":point_right:" alt=":point_right:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f449.png" height="20" width="20"> Counting and cardinality</a></li>
+      
+      
+      
+      
+      
+      <li><a href="representation.html">Representing information</a></li>
+      
+      
+      
+    </ul>
+    
+    
+     
+     
+     <span class="chapnav"><strong>2. Probability &amp; information</strong></span>
+     <ul>
+      
+      
+      
+      <li><a href="defining_information.html">Defining information</a></li>
+      
+      
+      
+      
+      
+      <li><a href="probability_basics.html">Basics of probability</a></li>
+      
+      
+      
+      
+      
+      <li><a href="distributions.html">Random variables, <br> distributions, independence</a></li>
+      
+      
+      
+      
+      
+      <li><a href="expectation.html">Expectation and Variance</a></li>
+      
+      
+      
+      
+      
+      <li><a href="conditional.html">Conditional probability</a></li>
+      
+      
+      
+      
+      
+      <li><a href="markov.html">Random sequences and <br> Markov chains</a></li>
+      
+      
+      
+      
+      
+      <li><a href="information_theory.html">Quantifying Information</a></li>
+      
+      
+      
+      
+      
+      <li><a href="compression.html">Data compression</a></li>
+      
+      
+      
+      
+      
+      <li><a href="communications.html">Mathematics of communications</a></li>
+      
+      
+      
+    </ul>
+    
+    
+     
+     
+     <span class="chapnav"><strong>3. Linear algebra, finite fields, <br>and error correction</strong></span>
+     <ul>
+      
+      
+      
+      <li><a href="codes_graphs_algebra.html">Codes, graphs, and algebra</a></li>
+      
+      
+      
+      
+      
+      <li><a href="vectors.html">Vectors and spaces</a></li>
+      
+      
+      
+      
+      
+      <li><a href="fundamental_spaces.html">Fundamental spaces</a></li>
+      
+      
+      
+      
+      
+      <li><a href="ecc.html">Linear codes</a></li>
+      
+      
+      
+    </ul>
+    
+    
+     
+     
+     <span class="chapnav"><strong>4. The frequency domain and <br>transmission of information</strong></span>
+     <ul>
+      
+      
+      <li class="chapnav">Complex numbers</li>
+      
+      
+      
+      <li class="chapnav">Frequency and spectrum</li>
+      
+      
+      
+      <li class="chapnav">Filteration and sampling</li>
+      
+      
+      
+      <li class="chapnav">Linear systems</li>
+      
+      
+      
+      <li class="chapnav">Frequency response</li>
+      
+      
+      
+      <li class="chapnav">Modulation</li>
+      
+      
+      
+      <li class="chapnav">Orthogonality</li>
+      
+      
+      
+      <li class="chapnav">Multiple-access communication</li>
+      
+      
+    </ul>
+    
+    
+     
+     
+     <span class="chapnav"><strong>5. Number theory and <br>information privacy</strong></span>
+     <ul>
+      
+      
+      <li class="chapnav">Encryption</li>
+      
+      
+      
+      <li class="chapnav">Number theory</li>
+      
+      
+      
+      <li class="chapnav">Public key cryptography</li>
+      
+      
+    </ul>
+    
+    
+     
+     
+     <span class="chapnav"><strong>6. Boolean algebra and <br>computation</strong></span>
+     <ul>
+      
+      
+      <li class="chapnav">Number systems and arithmetic</li>
+      
+      
+      
+      <li class="chapnav">Boolean algebra</li>
+      
+      
+      
+      <li class="chapnav">Logic design and computation</li>
+      
+      
+      
+      <li class="chapnav">
+      
+      
+    </ul>
+    
+    
+     
+     
+     <span class="chapnav"><strong>Appendix</strong></span>
+     <ul>
+      
+      
+      
+      <li><a href="axiomatic.html">Axiomatic systems</a></li>
+      
+      
+      
+      
+      
+      <li><a href="index.html"><br></a></li>
+      
+      
+      
+      
+      
+      <li><a href="index.html"><br></a></li>
+      
+      
+      
+    </ul>
+    
+    
+  </div>
+</nav>
+<div class="main">
+  <!-- variables for replacement -->
+  <h1 id="counting-and-cardinality">Counting and cardinality</h1>
+
+<p>Recall that information is often in the form of identifying a state/outcome among a set of states/possibilities. In this context, the size of the set of the states is an important property. We devote this section to learn more about the sizes of sets.</p>
+
+<h2 id="finite-and-infinite-sets">Finite and infinite sets</h2>
+<p>First, let us define two types of sets. Sets containing a finite number of elements are called <em>finite sets</em>. For such sets, there is a natural number that gives the number of elements. For example, the set of prime numbers less than 10, {2,3,5,7}, has 4 elements.</p>
+
+<p>An <em>infinite set</em> is one that has an infinite number of elements. In other words, there is no natural number that can describe the size of an infinite set; we can always present more elements than the proposed number.</p>
+
+<p>Some examples of infinite sets:</p>
+<ul>
+  <li>Natural numbers: \(\mathbb N = \{0,1,2,\dotsc\}\).</li>
+  <li>Integers: \(\{0,1,-1,2,-2,\dotsc\}\)</li>
+  <li>Real numbers, or equivalently  points on the real line</li>
+  <li>The set of points in the interval from 0 to 1</li>
+</ul>
+
+<h2 id="size-and-cardinality">Size and Cardinality</h2>
+<p>There are different ways that we can define the notion of size for sets. The most relevant to us is <em>cardinality</em> of a set. For a finite set, the cardinality is simply the number of elements in the set.</p>
+
+<p>What about infinite sets? Do all infinite sets have the same number of elements, for example natural and real numbers? Cardinality is also generalized to infinite sets, helping us classify infinite sets in a way that has implications for storing information, as we’ll discuss below. We use the terms size and cardinality interchangeably, even though one the former is an informal concept while the latter is mathematical term.</p>
+
+<h2 id="counting-the-elements-of-finite-sets">Counting the elements of finite sets</h2>
+<p>When the elements of a finite set are not given explicitly, we may need to compute the size of the set. The following two rules can be helpful for this task.</p>
+<div class="highlight">
+  <strong> The rule of sum:</strong> If action 1 can be done in \(m\) ways, action 2 can be done in \(n\) ways, and the actions cannot be performed simultaneously, then action 1 or action 2 can be done in \(m+n\) ways.
+  <p>⭐<strong> The rule of product: </strong> If action 1 can be done in \(m\) ways, action 2 can be done in \(n\) ways, and actions 1 and 2 must be both performed, then there are a total of \(m\times n\) ways to perform them.</p>
+</div>
+
+<p><br></p>
+
+<div class="exercise">
+  I need to travel to Washington D.C. to meet with the president. I can either wear a blue tie or a red tie. I have 3 blue ties and 5 red ties. There are 4 ways of getting to DC (drive, fly, take the train, walk). What is the total number of options that I have? Which option should I pick?
+  <button onclick="showSolution(this,'meeting')" style="float:right;">Show Solution</button>
+
+  <div id="meeting" style="display:none;" class="solution">
+    I have \(3+5=8\) options for picking a tie (rule of sum). So I can pick a tie in 8 ways and travel via 4 modes of transportation, so in total I have \(8\times4=32\) options (rule of product).
+  </div>
+</div>
+<p><br></p>
+
+<div class="exercise">
+  What is the size of the set of (positive) two-digit even numbers?
+  <button onclick="showSolution(this,'evenNumbs')" style="float:right;">Show Solution</button>
+
+  <div id="evenNumbs" style="display:none;" class="solution">
+    For the first digit, we have 9 options and for the second digit we have 5 options. So in total, there are \(9\times 5=45\) two-digit even numbers.
+  </div>
+</div>
+<p><br></p>
+
+<h2 id="infinite-sets-countably-infinite-vs-uncountable">Infinite sets: countably infinite vs uncountable</h2>
+
+<p>Some sets are infinite, or equivalently have an infinite number of elements. Infinity is not a number, but it is convenient to treat it as a number sometimes. However, not all infinities are created equal. Some infinite sets are much bigger than the other ones. One possible way to classify infinite sets is to divide them into <em>countably infinite sets</em> and <em>uncountable sets</em>. Uncountable sets are unimaginably bigger than countably infinite sets.</p>
+
+<p>To understand what the difference is, we need to learn about <em>bijections</em>. A bijection between two sets \(A\) and \(B\) is a function that maps each element of \(A\) to exactly one element of \(B\) and for each element of \(B\), there is an element of \(A\) that is mapped to it.</p>
+
+<center>
+<svg width="400" height="200">
+  <defs>
+    <marker id="arrowhead" markerwidth="10" markerheight="7" refx="0" refy="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7"></polygon>
+    </marker>
+  </defs>
+<ellipse cx="100" cy="100" rx="50" ry="99" style="fill:rgba(0,256,128,.5);stroke:black;stroke-width:1"></ellipse>
+<ellipse cx="300" cy="100" rx="50" ry="99" style="fill:rgba(256,128,0,.3);stroke:black;stroke-width:1"></ellipse>
+<text x="50" y="30" font-style="italic">A</text>
+<text x="340" y="30" font-style="italic">B</text>
+<text x="95" y="40">1</text>
+<text x="95" y="80">2</text>
+<text x="95" y="120">3</text>
+<text x="95" y="160">4</text>
+<text x="295" y="40">a</text>
+<text x="295" y="80">b</text>
+<text x="295" y="120">c</text>
+<text x="295" y="160">d</text>
+<line x1="105" y1="33" x2="270" y2="33" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"></line>
+<line x1="105" y1="73" x2="270" y2="73" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"></line>
+<line x1="105" y1="113" x2="270" y2="113" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"></line>
+<line x1="105" y1="153" x2="270" y2="153" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"></line>
+</svg>
+</center>
+
+<div class="highlight"> Two sets have the same cardinality if there is a bijection between them.</div>
+<p>So roughly speaking a bijection means the same size. This is very natural for finite sets but also holds for infinite sets. For example, there is a bijection between the set of even numbers \(\mathbb E=\{0,2,4,6,8,\dotsc\}\) and the set of natural numbers \(\mathbb N\), as shown by the \(f(x)=2x\).</p>
+<center>
+<svg width="400" height="200">
+  <defs>
+    <marker id="arrowhead" markerwidth="10" markerheight="7" refx="0" refy="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7"></polygon>
+    </marker>
+  </defs>
+<ellipse cx="100" cy="100" rx="50" ry="99" style="fill:rgba(0,256,128,.5);stroke:black;stroke-width:1"></ellipse>
+<ellipse cx="300" cy="100" rx="50" ry="99" style="fill:rgba(256,128,0,.3);stroke:black;stroke-width:1"></ellipse>
+<text x="95" y="40">0</text>
+<text x="95" y="70">1</text>
+<text x="95" y="100">2</text>
+<text x="95" y="130">𝑥</text>
+<text x="95" y="160">...</text>
+<text x="295" y="40">0</text>
+<text x="295" y="70">2</text>
+<text x="295" y="100">4</text>
+<text x="295" y="130">2𝑥</text>
+<text x="295" y="160">...</text>
+<line x1="105" y1="33" x2="270" y2="33" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"></line>
+<line x1="105" y1="63" x2="270" y2="63" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"></line>
+<line x1="105" y1="93" x2="270" y2="93" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"></line>
+<line x1="115" y1="123" x2="270" y2="123" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"></line>
+<line x1="115" y1="153" x2="270" y2="153" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"></line>
+<foreignobject x="35" y="20" width="30" height="20">
+    <div>
+    \(\mathbb N\)
+    </div>
+  </foreignobject>
+<foreignobject x="335" y="20" width="30" height="20">
+    <div>
+    \(\mathbb E\)
+    </div>
+  </foreignobject>
+</svg>
+</center>
+<p>So even numbers and natural numbers have the same cardinality. Informally, there are the same number of even numbers as there are  natural numbers 🤯.</p>
+
+<div class="highlight"> A set \(A\) is <em>countably infinite</em> if there is a bijection between \(A\) and the set of natural numbers \(\mathbb N\).  An <em>uncountable set</em> is an infinite set that is not countably infinite. </div>
+
+<p>In other words, we can “count” the elements of a countably infinite set, labeling them 0, 1, 2, and so on (you can also start counting from 1). Yet another way to show a set is countably infinite is to “list” all its elements, in a way that every element appears is the list. For even numbers, the list can be:</p>
+
+\[0,2,4,\dotsc\]
+
+<p>A <em>countable set</em> is either finite or countably infinite. Typically though, when people say countable, they mean countably infinite.</p>
+
+<div class="exercise">
+  Is the set of integers countable?
+  <button onclick="showSolution(this,'solID')" style="float:right;">Show Solution</button>
+  <div id="solID" style="display:none;" class="solution">
+    Yes, we can list the integers as: \[0,1,-1,2,-2,3,-3,\dotsc\]
+  </div>
+</div>
+<p><br></p>
+
+<h3 id="rationals-and-reals">Rationals and reals</h3>
+<p>So far we have only seen countable sets. Rationals and reals seem like good candidates for being uncountable. Between any two rational numbers there exists another rational number so this suggests that it might be difficult to list all rational numbers. It turns out, however, that the rational numbers are countable.</p>
+
+<div class="exercise">
+Can you construct a list containing all rational numbers?
+<button onclick="showSolution(this,'count_rationals')" style="float:right;">Show Solution</button>
+
+<div id="count_rationals" style="display:none;" class="solution">
+Let us only show that positive rationals are countable. Extending this to include 0 and negative rationals is straightforward. First, arrange all positive rationals as in the table below, where the number in \(i\)th row and \(j\)th column is \(i/j\).<br>
+<center>
+<table border="1" cellpadding="5px" style="border-collapse:collapse;"><tbody>
+<tr>
+<td></td>
+<td><strong>1</strong></td>
+<td><strong>2</strong></td>
+<td><strong>3</strong></td>
+<td><strong>4</strong></td>
+<td><strong>5</strong></td>
+<td><strong>6</strong></td>
+<td><strong>7</strong></td>
+<td>...</td>
+</tr>
+<tr>
+<td><strong>1</strong></td>
+<td>1/1</td>
+<td>1/2</td>
+<td>1/3</td>
+<td>1/4</td>
+<td>1/5</td>
+<td>1/6</td>
+<td>1/7</td>
+<td>...</td>
+</tr>
+<tr>
+<td><strong>2</strong></td>
+<td>2/1</td>
+<td>2/2</td>
+<td>2/3</td>
+<td>2/4</td>
+<td>2/5</td>
+<td>2/6</td>
+<td>2/7</td>
+<td>...</td>
+</tr>
+<tr>
+<td><strong>3</strong></td>
+<td>3/1</td>
+<td>3/2</td>
+<td>3/3</td>
+<td>3/4</td>
+<td>3/5</td>
+<td>3/6</td>
+<td>3/7</td>
+<td>...</td>
+</tr>
+<tr>
+<td><strong>4</strong></td>
+<td>4/1</td>
+<td>4/2</td>
+<td>4/3</td>
+<td>4/4</td>
+<td>4/5</td>
+<td>4/6</td>
+<td>4/7</td>
+<td>...</td>
+</tr>
+<tr>
+<td><strong>5</strong></td>
+<td>5/1</td>
+<td>5/2</td>
+<td>5/3</td>
+<td>5/4</td>
+<td>5/5</td>
+<td>5/6</td>
+<td>5/7</td>
+<td>...</td>
+</tr>
+<tr>
+<td><strong>6</strong></td>
+<td>6/1</td>
+<td>6/2</td>
+<td>6/3</td>
+<td>6/4</td>
+<td>6/5</td>
+<td>6/6</td>
+<td>6/7</td>
+<td>...</td>
+</tr>
+<tr>
+<td><strong>7</strong></td>
+<td>7/1</td>
+<td>7/2</td>
+<td>7/3</td>
+<td>7/4</td>
+<td>7/5</td>
+<td>7/6</td>
+<td>7/7</td>
+<td>...</td>
+</tr>
+<tr>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+</tbody></table>
+</center>
+Then start from the top left and then list all new rationals on each diagonal line:
+
+\[\frac11,\frac12,\frac21,\frac13,\frac31,\frac14,\frac23,\frac32,\frac41,\frac15,\dotsc\]
+Note that we have skipped \(\frac22\) since we have seen it as \(\frac11\) before. Every rational number appears in this list.
+</div>
+</div>
+<p>So the set of rational numbers and the set of natural numbers have the same size 🤯🤯
+<br></p>
+
+<p>But real numbers are uncountable. It can be proven that any strategy for listing all real numbers will fail. One way to prove this is <a href="https://en.wikipedia.org/wiki/Cantor%27s_diagonal_argument" target="_blank">Cantor’s diagonal argument</a>.</p>
+
+<div class="note">
+<h3> <span class="note_emoji"></span> Size beyond counting: measures</h3>
+Does the real line have more elements than the interval \((0,1)\)? The answer is, perhaps surprisingly, no. Can you find a bijection between the two?
+<button onclick="showSolution(this,'interval_line')" style="float:right;">Show Solution</button>
+<div class="solution">
+<div id="interval_line" style="display:none;">
+One such mapping is the function 
+\[
+f(x) = \frac1{1+e^{-x}}
+\]
+<center><div id="box" class="jxgbox" style="width:600px; height:300px;"></div></center>
+<script>
+var b2 = JXG.JSXGraph.initBoard('box', {boundingbox: [-10, 1.2, 10, -.2], axis: true, showCopyright: false, showNavigation: false});
+b2.create('functiongraph', [function(x){return 1/(1+Math.exp(-x));},-10,10]);
+</script>
+
+Its domain is \(\mathbb R\) and its range is \((0,1)\).
+</div>
+</div>
+So as far as cardinality is concerned, the interval \((0,1)\) has the same number of elements as \(\mathbb R\). We can even show that \(\mathbb R\) has the same number of elements as \(\mathbb C\).
+
+This suggests that we may need a finer way of evaluating sizes of sets than simply counting. This is what <strong>measures</strong> do, which include  length, area, volume, …. While the interval \((0,1)\) has length 1, the real line has infinite length. The area of the real line is 0, but the complex plane has an infinite area.
+</div>
+<p><br></p>
+<div class="note">
+<h3> <span class="note_emoji"></span> Beyond naive set theory</h3>
+
+<p>Set theory is a fascinating topic, with many surprising (and controversial) results, especially when dealing with uncountable sets. Click on images below to learn about the axiom of choice, and how not to carve pumpkins.</p>
+
+
+<table width="980" cellspacing="0" cellpadding="0" style="border:none;">
+    <tr>
+        <td style="border:none;vertical-align:top;" width="18%">
+<a href="https://youtu.be/hcRZadc5KpI" target="_blank"><img src="https://imgs.xkcd.com/comics/set_theory.png" width="100%"></a>
+        </td>
+        <td width="2%" style="border:none;vertical-align:top">
+
+        </td>
+        <td width="70%" style="border:none;vertical-align:top;">
+<a href="https://youtu.be/s86-Z-CbaHA" target="_blank"><img src="https://imgs.xkcd.com/comics/pumpkin_carving.png" width="100%"></a>
+        </td>
+    </tr>
+</table>
+<br>
+Image credit: <a href="http://www.xkcd.com" target="_blank">XKCD</a>
+</div>
+
+<h2 id="cardinality-and-information">Cardinality and information</h2>
+<p>Recall that information is determining one state/possibility among a set of states/possibilities. The cardinality of the set has implications on whether we can represent the corresponding information on a computer.</p>
+<ul>
+  <li>If the set of possibilities is countable, information can be represented on a computer (or a piece of paper). That is, given sufficient memory, we can store the information.</li>
+  <li>If the set is uncountable, like real numbers, there are going to be some possibilities for which we do not have a representation and cannot be stored on any computer.</li>
+</ul>
+<div class="exercise">
+  Write a question that you still have about this section.
+</div>
+<p><br></p>
+
+
+<footer>
+  <br><br>
+  <center>
+    <hr>
+  © Farzad Farnoud, 2020</center>
+</footer>
+</div>
+<!-- Default Statcounter code for MoI
+http://www.ece.virginia.edu/~ffh8x/moi/ -->
+<script type="text/javascript">
+var sc_project=12471818; 
+var sc_invisible=1; 
+var sc_security="62b9c6a1"; 
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
+<noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/12471818/0/62b9c6a1/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of Statcounter Code -->
+</body>
+</html>
