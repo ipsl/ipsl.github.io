@@ -1,0 +1,338 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"co",
+				"color\tproperty"
+			],
+			[
+				"font",
+				"font-size\tproperty"
+			],
+			[
+				"trace",
+				"traceb"
+			],
+			[
+				"cell",
+				"cellpadding\tAttr"
+			],
+			[
+				"game",
+				"game_ended"
+			],
+			[
+				"bac",
+				"backgroundColor"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"backgr",
+				"background-color\tproperty"
+			],
+			[
+				"open",
+				"opened_door"
+			],
+			[
+				"init",
+				"initialize_game"
+			],
+			[
+				"goat",
+				"goat_doors"
+			],
+			[
+				"priz",
+				"prize_door"
+			],
+			[
+				"pri",
+				"prize_door"
+			],
+			[
+				"door",
+				"door_selected"
+			],
+			[
+				"doo",
+				"door1"
+			],
+			[
+				"fon",
+				"font-size\tproperty"
+			],
+			[
+				"y",
+				"yaxis"
+			],
+			[
+				"ti",
+				"ticks"
+			],
+			[
+				"genera",
+				"generateWeather3"
+			],
+			[
+				"red",
+				"reduce"
+			],
+			[
+				"wea",
+				"weather_MC"
+			],
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"we",
+				"weather"
+			],
+			[
+				"curv",
+				"curve2"
+			],
+			[
+				"stro",
+				"strokeWidth"
+			],
+			[
+				"stra",
+				"straightLast"
+			],
+			[
+				"straig",
+				"straightFirst"
+			],
+			[
+				"plot",
+				"plotBinomial"
+			],
+			[
+				"u",
+				"ul\tul"
+			],
+			[
+				"coin",
+				"coin3"
+			],
+			[
+				"note",
+				"note\tmoiNote"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"snip",
+				"Snippet: moiExer"
+			],
+			[
+				"Snippet: ",
+				"Snippet: moiExer"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/farzad/Box/Courses/Mathematics of Information/MoI-Web/assets/js/prob.js",
+		"/Users/farzad/Box/Courses/Mathematics of Information/MoI-Web/_layouts/course-moi.html",
+		"/Users/farzad/Box/Courses/Mathematics of Information/MoI-Web/assets/js/coding.js",
+		"/Users/farzad/Box/Courses/Mathematics of Information/MoI-Web/expectation.md",
+		"/Users/farzad/Box/Courses/Mathematics of Information/MoI-Web/assets/js/EnglishMC.js",
+		"/Users/farzad/Box/Courses/Mathematics of Information/MoI-Web/information_theory.md",
+		"/Users/farzad/Box/Courses/Mathematics of Information/MoI-Web/_data/nav.yml",
+		"/Users/farzad/Box/Courses/Mathematics of Information/MoI-Web/sets.md",
+		"/Users/farzad/Box/Courses/Mathematics of Information/MoI-Web/cardinality.md",
+		"/Users/farzad/Box/Courses/Mathematics of Information/MoI-Web/markov.md",
+		"/Users/farzad/Box/Courses/Mathematics of Information/2021-01-Spring/HW4/Homework4.md",
+		"/Users/farzad/Box/Courses/Mathematics of Information/MoI-Web/conditional.md",
+		"/Users/farzad/Box/Courses/Mathematics of Information/MoI-Web/distributions.md",
+		"/Users/farzad/Box/Courses/Mathematics of Information/MoI-Web/index.md",
+		"/Users/farzad/Box/Courses/Mathematics of Information/MoI-Web/assets/js/course.js",
+		"/Users/farzad/Box/Courses/Mathematics of Information/2021-01-Spring/HW4/Homework4",
+		"/Users/farzad/Dropbox/Homa-Farzad/Ayda/Daycare/DDS Insepection Summary",
+		"/Users/farzad/Box/Courses/Mathematics of Information/MoI-Web/fields.md",
+		"/Users/farzad/Box/Courses/Mathematics of Information/MoI-Web/assets/js/ecc.js",
+		"/Users/farzad/Library/Application Support/Sublime Text 3/Packages/User/moiExer.sublime-snippet",
+		"/Users/farzad/Box/Courses/Mathematics of Information/MoI-Web/sublime_proj.sublime-project",
+		"/Users/farzad/Box/Courses/Mathematics of Information/MoI-Web/numbers.md",
+		"/Users/farzad/Box/Courses/Mathematics of Information/MoI-Web/_config.yml",
+		"/Users/farzad/Box/Courses/Mathematics of Information/MoI-Web/introduction.md",
+		"/Users/farzad/Box/Courses/Mathematics of Information/MoI-Web/reals.md",
+		"/Users/farzad/Box/Courses/Mathematics of Information/MoI-Web/axiomatic.md",
+		"/Users/farzad/Box/Courses/Mathematics of Information/MoI-Web/research.html",
+		"/Users/farzad/Downloads/23050fcb53d6083d9e42043bebf2863fa9746043.svg",
+		"/Users/farzad/Box/Courses/Mathematics of Information/MoI-Web/counting.md",
+		"/Users/farzad/Library/Application Support/Sublime Text 3/Packages/User/inlineSol.sublime-snippet",
+		"/Users/farzad/Box/Courses/Mathematics of Information/MoI-Web/representation.md",
+		"/Users/farzad/Box/Courses/Mathematics of Information/MoI-Web/introduction.markdown",
+		"/Users/farzad/Library/Application Support/Sublime Text 3/Packages/User/multChoice.sublime-snippet",
+		"/Users/farzad/Library/Application Support/Sublime Text 3/Packages/User/snippets",
+		"/Users/farzad/Box/Courses/Mathematics-of-Information-Online/jekyll/sublime_proj.sublime-project",
+		"/Users/farzad/Box/Courses/Mathematics-of-Information-Online/jekyll/index.markdown",
+		"/Users/farzad/Box/Courses/Mathematics-of-Information-Online/jekyll/about.markdown",
+		"/Users/farzad/Box/Courses/Mathematics-of-Information-Online/jekyll/_config.yml"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 102.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.mdpopups":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "distributions.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
