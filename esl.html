@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7QF7HZ9LEN"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-7QF7HZ9LEN');
+  </script>
+  <meta charset="utf-8">
+  <title>Estimation and Statistical Learning</title>
+  <link rel="stylesheet" type="text/css" href="cssjs/home.css">
+  <script type="text/javascript" src="cssjs/page.js"></script>
+</head>
+<body>
+  <!-- Every time this navigation bar changes, it must also be changed in course_moi.html for the MoI course -->
+  <div class="topnav">
+    <a id="teaching" href="teaching.html">Teaching</a>
+    <a id="pubs" href="publications.html">Publications</a>
+    <a id="home" href="index.html">Home</a>
+
+    
+      <script>document.getElementById('home').className = "";</script>
+    
+
+    
+      <script>document.getElementById('pubs').className = "";</script>
+    
+
+    
+      <script>document.getElementById('teaching').className = "";</script>
+    
+  </div>
+
+  <div class="main">
+    <table width="1000px">
+	<tr><td width="35%"><img style="width: 350px" src="img/teaching/bias-variance-1.png" /></td><td width="35%"><img style="width: 350px;" src="img/teaching/Q-LDAQDA.png" /></td><td>
+<table width="40%">
+<tr><td><img style="width: 150px" src="img/teaching/EM16.png" /></td>
+<td><img style="width: 150px" src="img/teaching/EM21.png" /></td></tr>
+<tr><td><img style="width: 150px" src="img/teaching/EM41.png" /></td>
+<td><img style="width: 150px" src="img/teaching/EM51.png" /></td></tr>
+</table></td>
+</tr>
+</table>
+
+<h2 id="ece-cs-450126501-statistical-learning-and-graphical-models-fall-2021">ECE, CS 450(1/2)/6501: Statistical Learning and Graphical Models (Fall 2021)</h2>
+
+<p>Welcome to statistical learning and graphical models! This course is focused on the foundations of estimation theory, statistical learning, probabilistic graphical models, and relevant computational algorithms. The course maintains a probabilistic view of these topics, aiming to represent complex systems via probabilistic models and using these models to draw conclusions about hidden values from observation and data.</p>
+
+<p>We will start with the fundamentals of inference, including frequentist and Bayesian estimation methods, and explore these further in the context of regression and classification problems. We will then turn our attention to probabilistic graphical models, which provide a flexible mechanism for representing statistical relationships between variables and processes. Finally, we will study computational methods for inference and learning, enabling us to analyze, interpret, and explain patterns in complex data.</p>
+
+<p><strong>Pre-requisites:</strong></p>
+<ul>
+  <li>Fluency in <strong>basic probability</strong> (e.g., APMA 3100) is needed for the course. You should be comfortable with 70-80% of <a href="docs/teaching/esl/2020-04/farnoud-slgm-chap00.pdf" target="_blank">Chapter 0</a>. You can also refer to these pages I developed for a different course to review probability, although these don’t cover everything we’ll need:
+    <ul>
+      <li><a href="./moi/probability_basics.html" target="_blank">Basics</a></li>
+      <li><a href="./moi/distributions.html" target="_blank">Random variables, distributions, and independence</a></li>
+      <li><a href="./moi/expectation.html" target="_blank">Expectation and variance</a></li>
+      <li><a href="./moi/conditional.html" target="_blank">Conditional probability</a></li>
+    </ul>
+  </li>
+  <li>Familiarity with <strong>linear algebra</strong>.</li>
+  <li>The programming exercises are based on <strong>Python</strong>.</li>
+</ul>
+
+<p><strong>Note to Undergraduate students:</strong> You do not need instructor permission to enroll in this course. But fluency in probability is an important prereq and if your foundation in probability is not strong, you will not be able to fully benefit from the course.</p>
+
+<p><strong>Tentative Grading Scheme:</strong> HW/Labs = 50%; Quizzes/In-class activities = 20%; Midterm Exam = 20%; Project = 10%</p>
+
+<p><strong>Course Notes:</strong> The notes can be found <a href="docs/teaching/esl/esl.pdf" target="_blank">here</a> and are continuously updated. For pre-reading, quizzes, exams, etc., download the latest version when announcements are made.</p>
+
+<p>The individual chapter notes below may be slightly more up to date than the link above:</p>
+
+<ol start="0">
+<li><a href="docs/teaching/esl/00-Review-of-Probability.pdf" target="_blank">Review of Probability</a></li>
+<li><a href="docs/teaching/esl/01-Probability-Inference-and-Learning.pdf" target="_blank">Probability, Inference, and Learning</a></li>
+<li><a href="docs/teaching/esl/02-Frequentist-Parameter-Estimation.pdf" target="_blank">Frequentist Parameter Estimation</a></li>
+<li><a href="docs/teaching/esl/03-Bayesian-Parameter-Estimation.pdf" target="_blank">Bayesian Parameter Estimation</a></li>
+<li><a href="docs/teaching/esl/04-Multivariate-Random-Variables.pdf" target="_blank">Multivariate random variables</a></li>
+<li><a href="docs/teaching/esl/05-Linear-Regression.pdf" target="_blank">Linear Regression</a></li>
+<li><a href="docs/teaching/esl/06-Linear-Classification.pdf" target="_blank">Linear Classification</a></li>
+<li><a href="docs/teaching/esl/07-Expectation-Maximization.pdf" target="_blank">Expectation-Maximization</a></li>
+<li><a href="docs/teaching/esl/08-Basics-of-Graphical-Models.pdf" target="_blank">Basics of Graphical Models</a></li>
+<li><a href="docs/teaching/esl/09-Independence-in-Graphical-Models.pdf" target="_blank">Independence in Graphical Models</a></li>
+<li><a href="docs/teaching/esl/10-Parameter-Estimation-in-Graphical-Models.pdf" target="_blank">Parameter Estimation in Graphical Models</a></li>
+<li><a href="docs/teaching/esl/11-Inference-in-Graphical-Models.pdf" target="_blank">Inference in Graphical Models</a></li>
+<li><a href="docs/teaching/esl/12-Inference-in-Hidden-Markov-Models.pdf" target="_blank">Inference in Hidden Markov Models</a></li>
+<li><a href="docs/teaching/esl/13-Factor-Graphs-and-Sum-Max-product-Algorithms.pdf" target="_blank">Factor Graphs and Sum/Max-product Algorithms</a></li>
+<li><a href="docs/teaching/esl/14-Markov-Chains.pdf" target="_blank">Markov Chains</a></li>
+<li><a href="docs/teaching/esl/15-Sampling-Methods.pdf" target="_blank">Sampling Methods</a></li>
+<li><a href="docs/teaching/esl/16-Appendix.pdf" target="_blank">Appendix </a></li>
+</ol>
+
+<p><strong>Course Schedule:</strong> The schedule below is tentative. We will, almost surely, deviate from it.</p>
+<iframe height="730" width="1000" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRnTmfUpZ1wsG8LLTi2mhcb7F7wAxuvJnDcTGW120EV5sdv1vMYiIcQo8hZd2J0MHCDyLuuDQAPON0H/pubhtml?gid=1528711690&amp;single=true&amp;widget=true&amp;headers=false&amp;range=A:D"></iframe>
+<p><br />
+<br /></p>
+
+<p>
+<hr />
+<strong>Notes (from previous offering):</strong></p>
+<ol start="0">
+<li><a href="docs/teaching/esl/2020-04/farnoud-slgm-chap00.pdf" target="_blank">Review of Probability</a></li>
+<li><a href="docs/teaching/esl/2020-04/farnoud-slgm-chap01.pdf" target="_blank">Probability, Inference, and Learning</a></li>
+<li><a href="docs/teaching/esl/2020-04/farnoud-slgm-chap02.pdf" target="_blank">Frequentist Parameter Estimation (partial *)</a></li>
+<li><a href="docs/teaching/esl/2020-04/farnoud-slgm-chap03.pdf" target="_blank">Bayesian Parameter Estimation</a></li>
+<li><a href="docs/teaching/esl/2020-04/farnoud-slgm-chap04.pdf" target="_blank">Multivariate random variables</a></li>
+<li><a href="docs/teaching/esl/2020-04/farnoud-slgm-chap05.pdf" target="_blank">Linear Regression</a></li>
+<li><a href="docs/teaching/esl/2020-04/farnoud-slgm-chap06.pdf" target="_blank">Linear Classification</a></li>
+<li><a href="docs/teaching/esl/2020-04/farnoud-slgm-chap07.pdf">Expectation-Maximization *</a></li>
+<li><a href="docs/teaching/esl/2020-04/farnoud-slgm-chap08.pdf" target="_blank">Basics of Graphical Models</a></li>
+<li><a href="docs/teaching/esl/2020-04/farnoud-slgm-chap09.pdf" target="_blank">Independence in Graphical Models</a></li>
+<li><a href="docs/teaching/esl/2020-04/farnoud-slgm-chap10.pdf" target="_blank">Parameter Estimation in Graphical Models</a></li>
+<li><a href="docs/teaching/esl/2020-04/farnoud-slgm-chap11.pdf" target="_blank">Inference in Graphical Models</a></li>
+<li><a href="docs/teaching/esl/2020-04/farnoud-slgm-chap12.pdf" target="_blank">Inference in Hidden Markov Models</a></li>
+<li><a href="docs/teaching/esl/2020-04/farnoud-slgm-chap13.pdf" target="_blank">Factor Graphs and Sum/Max-product Algorithms **</a></li>
+<li><a href="docs/teaching/esl/2020-04/farnoud-slgm-chap14.pdf" target="_blank">Markov Chains</a></li>
+<li><a href="docs/teaching/esl/2020-04/farnoud-slgm-chap15.pdf" target="_blank">Sampling Methods</a></li>
+<li><a href="docs/teaching/esl/2020-04/farnoud-slgm-chap16.pdf" target="_blank"> Appendix </a></li>
+</ol>
+<p>*: material only for graduate students. **: optional material for completeness (not part of the course)<p>
+<p><strong>Other Material:</strong></p>
+<ul>
+<li><a href="https://onedrive.live.com/view.aspx?resid=BAC4795D0F24E76A!5005&amp;ithint=onenote%2c&amp;app=OneNote&amp;authkey=!AM0ZAlB9w2B1ryQ" target="_blank">Notes (OneNote)</a></li>
+<li><a href="docs/teaching/esl/slgm17/ProbabilityReviewTest.pdf" target="_blank">Probability Review Test</a></li>
+<li><a href="https://nbviewer.jupyter.org/url/www.ece.virginia.edu/~ffh8x/docs/teaching/esl/slgm17/Lab1.5.ipynb" target="_blank">Lab 0: Probability and Python</a> <a href="http://ipython.org/notebook.html" target="_blank">(IPython Notebook)</a></li>
+<li><a href="docs/teaching/esl/slgm17/HW1.pdf" target="_blank">Assignment 1</a></li>
+<li><a href="https://nbviewer.jupyter.org/url/www.ece.virginia.edu/~ffh8x/docs/teaching/esl/slgm17/Lab1.ipynb" target="_blank">Lab 1: Graphical Models</a></li>
+<li><a href="docs/teaching/esl/slgm17/HW2.pdf" target="_blank">Assignment 2</a></li>
+<li><a href="https://nbviewer.jupyter.org/url/www.ece.virginia.edu/~ffh8x/docs/teaching/esl/slgm17/Lab2.ipynb" target="_blank">Lab 2: Frequentist and Bayesian Estimation</a></li>
+<li><a href="docs/teaching/esl/slgm17/HW3.pdf" target="_blank">Assignment 3</a></li>
+<li><a href="https://nbviewer.jupyter.org/url/www.ece.virginia.edu/~ffh8x/docs/teaching/esl/slgm17/Lab3.ipynb" target="_blank">Lab 3: Regression and SGD</a>, <a href="docs/teaching/esl/slgm17/BoxOffice2017.csv" target="_blank">data: BoxOffice2017.csv</a></li>
+<li><a href="docs/teaching/esl/slgm17/Lab3.5.ipynb" target="_blank">Miniproject</a></li>
+<li><a href="https://nbviewer.jupyter.org/url/www.ece.virginia.edu/~ffh8x/docs/teaching/esl/slgm17/Lab4.ipynb" target="_blank">Lab 4: Classification</a></li>
+<li><a href="https://nbviewer.jupyter.org/url/www.ece.virginia.edu/~ffh8x/docs/teaching/esl/slgm17/Lab5.ipynb" target="_blank">Lab 5: EM</a></li>
+<li><a href="docs/teaching/esl/slgm17/HW4.pdf" target="_blank">Assignment 4</a></li>
+<li><a href="https://nbviewer.jupyter.org/url/www.ece.virginia.edu/~ffh8x/docs/teaching/esl/slgm17/Lab6.ipynb" target="_blank">Lab 6: HMM</a></li>
+<li><a href="docs/teaching/esl/slgm17/HW5.pdf" target="_blank">Assignment 5</a></li>
+<li><a href="https://nbviewer.jupyter.org/url/www.ece.virginia.edu/~ffh8x/docs/teaching/esl/slgm17/Lab7.ipynb" target="_blank">Lab 7: MCMC</a></li>
+</ul>
+</p></p>
+
+
+    <footer>
+      <br/><br/>
+      <center>
+        <hr/>
+        &copy; Farzad Farnoud, 2025
+      </center>
+    </footer>
+  </div>
+
+  <!-- Default Statcounter code -->
+  <script type="text/javascript">
+    var sc_project = 12471818;
+    var sc_invisible = 1;
+    var sc_security = "62b9c6a1";
+  </script>
+  <script type="text/javascript"
+          src="https://www.statcounter.com/counter/counter.js"
+          async>
+  </script>
+  <noscript>
+    <div class="statcounter">
+      <a title="Web Analytics" href="https://statcounter.com/" target="_blank">
+        <img class="statcounter"
+             src="https://c.statcounter.com/12471818/0/62b9c6a1/1/"
+             alt="Web Analytics">
+      </a>
+    </div>
+  </noscript>
+</body>
+</html>
