@@ -9,16 +9,27 @@
   
   <!-- for mathjax support -->
   
-  <script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    TeX: { equationNumbers: { autoNumber: "AMS" } },
-    //tex2jax: {inlineMath: [['$', '$'], ['\\(', '\\)']]}
-    //tex2jax: {inlineMath: [['\(', '\)'], ['\\(', '\\)']]}
-    tex2jax: {inlineMath: [['$', '$'], ['\\(', '\\)']]}
-    //tex2jax: {inlineMath: [['$', '$'], ['\(', '\)'], ['\\(', '\\)']]}
-  });
-  </script>
-  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <script>
+    window.MathJax = {
+      tex: {
+        tags: "ams",
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        autoload: {
+          color: [],
+          colorv2: ['color']
+        },
+        packages: {'[+]': ['noerrors']}
+      },
+      options: {
+        ignoreHtmlClass: 'tex2jax_ignore',
+        processHtmlClass: 'tex2jax_process'
+      },
+      loader: {
+        load: ['[tex]/noerrors']
+      }
+    };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script"></script>
   
   
   <script src="assets/js/coding.js"></script>
@@ -32,7 +43,6 @@
   <div class="topnav">
   <a style="float:left;" href="index.html"><strong>Mathematics of Information</strong></a>
   <a id="teaching" href="../teaching.html">Teaching</a>
-  <a id="group" href="../ips.html">Group</a>
   <a id="pubs" href="../publications.html">Publications</a>
   <a id="home" href="../index.html">Home</a> 
   </div>
@@ -44,14 +54,10 @@
      
      
      
-     <a href="index.html"><strong>Home</strong></a>
-     
-     
-     
     
      
      
-     <a href="index.html"><strong>0. Introduction</strong></a>
+     <a href="/moi/"><strong>0. Introduction</strong></a>
      
      
      
@@ -63,37 +69,37 @@
       
       
       
-      <li><a href="sets.html">Sets and set theory</a></li>
+      <li><a href="/moi/sets.html">Sets and set theory</a></li>
       
       
       
       
       
-      <li><a href="numbers.html">Natural numbers, rationals</a></li>
+      <li><a href="/moi/numbers.html">Natural numbers, rationals</a></li>
       
       
       
       
       
-      <li><a href="fields.html">Fields</a></li>
+      <li><a href="/moi/fields.html">Fields</a></li>
       
       
       
       
       
-      <li><a href="reals.html">Real numbers</a></li>
+      <li><a href="/moi/reals.html">Real numbers</a></li>
       
       
       
       
       
-      <li><a href="cardinality.html">Counting and cardinality</a></li>
+      <li><a href="/moi/counting.html">Counting and cardinality</a></li>
       
       
       
       
       
-      <li><a href="representation.html">Representing information</a></li>
+      <li><a href="/moi/representation.html">Representing information</a></li>
       
       
       
@@ -107,55 +113,55 @@
       
       
       
-      <li><a href="defining_information.html">Defining information</a></li>
+      <li><a href="/moi/defining_information.html">Defining information</a></li>
       
       
       
       
       
-      <li><a href="probability_basics.html">Basics of probability</a></li>
+      <li><a href="/moi/probability_basics.html">Basics of probability</a></li>
       
       
       
       
       
-      <li><a href="distributions.html">Random variables, <br> distributions, independence</a></li>
+      <li><a href="/moi/distributions.html">Random variables, <br> distributions, independence</a></li>
       
       
       
       
       
-      <li><a href="expectation.html">Expectation and Variance</a></li>
+      <li><a href="/moi/expectation.html">Expectation and Variance</a></li>
       
       
       
       
       
-      <li><a href="conditional.html">Conditional probability</a></li>
+      <li><a href="/moi/conditional.html">Conditional probability</a></li>
       
       
       
       
       
-      <li><a href="markov.html">Random sequences and <br> Markov chains</a></li>
+      <li><a href="/moi/markov.html">Random sequences and <br> Markov chains</a></li>
       
       
       
       
       
-      <li><a href="information_theory.html">Quantifying Information</a></li>
+      <li><a href="/moi/information_theory.html">Quantifying Information</a></li>
       
       
       
       
       
-      <li><a href="compression.html">Data compression</a></li>
+      <li><a href="/moi/compression.html">Data compression</a></li>
       
       
       
       
       
-      <li><a href="communications.html">Mathematics of communications</a></li>
+      <li><a href="/moi/communications.html">Mathematics of communications</a></li>
       
       
       
@@ -169,25 +175,25 @@
       
       
       
-      <li><a href="codes_graphs_algebra.html">Codes, graphs, and algebra</a></li>
+      <li><a href="/moi/codes_graphs_algebra.html">Codes, graphs, and algebra</a></li>
       
       
       
       
       
-      <li><a href="vectors.html">Vectors and spaces</a></li>
+      <li><a href="/moi/vectors.html">Vectors and spaces</a></li>
       
       
       
       
       
-      <li><a href="fundamental_spaces.html">Fundamental spaces</a></li>
+      <li><a href="/moi/fundamental_spaces.html">Fundamental spaces</a></li>
       
       
       
       
       
-      <li><a href="ecc.html">Linear codes</a></li>
+      <li><a href="/moi/ecc.html">Linear codes</a></li>
       
       
       
@@ -200,27 +206,39 @@
      <ul>
       
       
-      <li><a href="complex.html">Complex numbers</a></li>
+      
+      <li><a href="/moi/complex.html">Complex numbers</a></li>
       
       
       
-      <li><a href="fourier.html">Frequency and spectrum</a></li>
+      
+      
+      <li><a href="/moi/fourier.html">Frequency and spectrum</a></li>
       
       
       
-      <li><a href="sampling.html">Filteration and sampling</a></li>
+      
+      
+      <li><a href="/moi/sampling.html">Filteration and sampling</a></li>
       
       
       
-      <li><a href="linsys.html">Linear systems</a></li>
+      
+      
+      <li><a href="/moi/linsys.html">Linear systems</a></li>
       
       
       
-      <li><a href="freqresponse.html">Frequency response</a></li>
+      
+      
+      <li><a href="/moi/freqresponse.html">Frequency response</a></li>
       
       
       
-      <li><a href="modulation.html">Modulation</a></li>
+      
+      
+      <li><a href="/moi/modulation.html">Modulation</a></li>
+      
       
       
       
@@ -285,19 +303,19 @@
       
       
       
-      <li><a class="active" style="color:#76bdd5" href="/~ffh8x/moi/axiomatic.html"><img class="emoji" title=":point_right:" alt=":point_right:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f449.png" height="20" width="20"> Axiomatic systems</a></li>
+      <li><a class="active" style="color:#76bdd59c" href="/moi/axiomatic.html"><img class="emoji" title=":point_right:" alt=":point_right:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f449.png" height="20" width="20"> Axiomatic systems</a></li>
       
       
       
       
       
-      <li><a href="index.html"><br></a></li>
+      <li><a href="/moi/index.html"><br></a></li>
       
       
       
       
       
-      <li><a href="index.html"><br></a></li>
+      <li><a href="/moi/index.html"><br></a></li>
       
       
       
@@ -335,7 +353,7 @@
   <br><br>
   <center>
     <hr>
-  © Farzad Farnoud, 2020</center>
+  © Farzad Farnoud, 2023</center>
 </footer>
 </div>
 <!-- Default Statcounter code for MoI

@@ -9,19 +9,30 @@
   
   <!-- for mathjax support -->
   
-  <script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    TeX: { equationNumbers: { autoNumber: "AMS" } },
-    //tex2jax: {inlineMath: [['$', '$'], ['\\(', '\\)']]}
-    //tex2jax: {inlineMath: [['\(', '\)'], ['\\(', '\\)']]}
-    tex2jax: {inlineMath: [['$', '$'], ['\\(', '\\)']]}
-    //tex2jax: {inlineMath: [['$', '$'], ['\(', '\)'], ['\\(', '\\)']]}
-  });
-  </script>
-  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <script>
+    window.MathJax = {
+      tex: {
+        tags: "ams",
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        autoload: {
+          color: [],
+          colorv2: ['color']
+        },
+        packages: {'[+]': ['noerrors']}
+      },
+      options: {
+        ignoreHtmlClass: 'tex2jax_ignore',
+        processHtmlClass: 'tex2jax_process'
+      },
+      loader: {
+        load: ['[tex]/noerrors']
+      }
+    };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script"></script>
   
   
-    <script type="text/javascript"  src="//cdnjs.cloudflare.com/ajax/libs/jsxgraph/1.1.0/jsxgraphcore.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jsxgraph/1.1.0/jsxgraphcore.js"></script>
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/jsxgraph/1.1.0/jsxgraph.css" />
   
   <script src="assets/js/coding.js"></script>
@@ -35,7 +46,6 @@
   <div class="topnav">
   <a style="float:left;" href="index.html"><strong>Mathematics of Information</strong></a>
   <a id="teaching" href="../teaching.html">Teaching</a>
-  <a id="group" href="../ips.html">Group</a>
   <a id="pubs" href="../publications.html">Publications</a>
   <a id="home" href="../index.html">Home</a> 
   </div>
@@ -47,56 +57,52 @@
      
      
      
-     <a href="index.html"><strong>Home</strong></a>
+    
+     
+     
+     <a href="/moi/"><strong>0. Introduction</strong></a>
      
      
      
     
      
      
-     <a href="index.html"><strong>0. Introduction</strong></a>
-     
-     
-     
-    
-     
-     
-     <span class="chapnav"><strong>1. Numbers, fields, and <br/>representing information</strong></span>
+     <span class="chapnav"><strong>1. Numbers, fields, and <br>representing information</strong></span>
      <ul>
       
       
       
-      <li><a href="sets.html">Sets and set theory</a></li>
+      <li><a href="/moi/sets.html">Sets and set theory</a></li>
       
       
       
       
       
-      <li><a href="numbers.html">Natural numbers, rationals</a></li>
+      <li><a href="/moi/numbers.html">Natural numbers, rationals</a></li>
       
       
       
       
       
-      <li><a href="fields.html">Fields</a></li>
+      <li><a href="/moi/fields.html">Fields</a></li>
       
       
       
       
       
-      <li><a href="reals.html">Real numbers</a></li>
+      <li><a href="/moi/reals.html">Real numbers</a></li>
       
       
       
       
       
-      <li><a href="cardinality.html">Counting and cardinality</a></li>
+      <li><a href="/moi/counting.html">Counting and cardinality</a></li>
       
       
       
       
       
-      <li><a href="representation.html">Representing information</a></li>
+      <li><a href="/moi/representation.html">Representing information</a></li>
       
       
       
@@ -105,60 +111,60 @@
     
      
      
-     <span class="chapnav"><strong>2. Probability & information</strong></span>
+     <span class="chapnav"><strong>2. Probability &amp; information</strong></span>
      <ul>
       
       
       
-      <li><a href="defining_information.html">Defining information</a></li>
+      <li><a href="/moi/defining_information.html">Defining information</a></li>
       
       
       
       
       
-      <li><a href="probability_basics.html">Basics of probability</a></li>
+      <li><a href="/moi/probability_basics.html">Basics of probability</a></li>
       
       
       
       
       
-      <li><a href="distributions.html">Random variables, <br/> distributions, independence</a></li>
+      <li><a href="/moi/distributions.html">Random variables, <br> distributions, independence</a></li>
       
       
       
       
       
-      <li><a href="expectation.html">Expectation and Variance</a></li>
+      <li><a href="/moi/expectation.html">Expectation and Variance</a></li>
       
       
       
       
       
-      <li><a href="conditional.html">Conditional probability</a></li>
+      <li><a href="/moi/conditional.html">Conditional probability</a></li>
       
       
       
       
       
-      <li><a href="markov.html">Random sequences and <br/> Markov chains</a></li>
+      <li><a href="/moi/markov.html">Random sequences and <br> Markov chains</a></li>
       
       
       
       
       
-      <li><a href="information_theory.html">Quantifying Information</a></li>
+      <li><a href="/moi/information_theory.html">Quantifying Information</a></li>
       
       
       
       
       
-      <li><a href="compression.html">Data compression</a></li>
+      <li><a href="/moi/compression.html">Data compression</a></li>
       
       
       
       
       
-      <li><a href="communications.html">Mathematics of communications</a></li>
+      <li><a href="/moi/communications.html">Mathematics of communications</a></li>
       
       
       
@@ -167,30 +173,30 @@
     
      
      
-     <span class="chapnav"><strong>3. Linear algebra, finite fields, <br/>and error correction</strong></span>
+     <span class="chapnav"><strong>3. Linear algebra, finite fields, <br>and error correction</strong></span>
      <ul>
       
       
       
-      <li><a href="codes_graphs_algebra.html">Codes, graphs, and algebra</a></li>
+      <li><a href="/moi/codes_graphs_algebra.html">Codes, graphs, and algebra</a></li>
       
       
       
       
       
-      <li><a href="vectors.html">Vectors and spaces</a></li>
+      <li><a href="/moi/vectors.html">Vectors and spaces</a></li>
       
       
       
       
       
-      <li><a href="fundamental_spaces.html">Fundamental spaces</a></li>
+      <li><a href="/moi/fundamental_spaces.html">Fundamental spaces</a></li>
       
       
       
       
       
-      <li><a href="ecc.html">Linear codes</a></li>
+      <li><a href="/moi/ecc.html">Linear codes</a></li>
       
       
       
@@ -199,31 +205,43 @@
     
      
      
-     <span class="chapnav"><strong>4. The frequency domain and <br/>transmission of information</strong></span>
+     <span class="chapnav"><strong>4. The frequency domain and <br>transmission of information</strong></span>
      <ul>
       
       
-      <li><a href="complex.html">Complex numbers</a></li>
+      
+      <li><a href="/moi/complex.html">Complex numbers</a></li>
       
       
       
-      <li><a href="fourier.html"><img href="" class="emoji" title=":point_right:" alt=":point_right:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f449.png" height="20" width="20">Frequency and spectrum</a></li>
+      
+      
+      <li><a class="active" style="color:#76bdd59c" href="/moi/fourier.html"><img class="emoji" title=":point_right:" alt=":point_right:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f449.png" height="20" width="20"> Frequency and spectrum</a></li>
       
       
       
-      <li><a href="sampling.html">Filteration and sampling</a></li>
+      
+      
+      <li><a href="/moi/sampling.html">Filteration and sampling</a></li>
       
       
       
-      <li><a href="linsys.html">Linear systems</a></li>
+      
+      
+      <li><a href="/moi/linsys.html">Linear systems</a></li>
       
       
       
-      <li><a href="freqresponse.html">Frequency response</a></li>
+      
+      
+      <li><a href="/moi/freqresponse.html">Frequency response</a></li>
       
       
       
-      <li><a href="modulation.html">Modulation</a></li>
+      
+      
+      <li><a href="/moi/modulation.html">Modulation</a></li>
+      
       
       
       
@@ -239,7 +257,7 @@
     
      
      
-     <span class="chapnav"><strong>5. Number theory and <br/>information privacy</strong></span>
+     <span class="chapnav"><strong>5. Number theory and <br>information privacy</strong></span>
      <ul>
       
       
@@ -259,7 +277,7 @@
     
      
      
-     <span class="chapnav"><strong>6. Boolean algebra and <br/ >computation</strong></span>
+     <span class="chapnav"><strong>6. Boolean algebra and <br>computation</strong></span>
      <ul>
       
       
@@ -275,7 +293,7 @@
       
       
       
-      <li class="chapnav"></li>
+      <li class="chapnav">
       
       
     </ul>
@@ -288,19 +306,19 @@
       
       
       
-      <li><a href="axiomatic.html">Axiomatic systems</a></li>
+      <li><a href="/moi/axiomatic.html">Axiomatic systems</a></li>
       
       
       
       
       
-      <li><a href="index.html"><br/></a></li>
+      <li><a href="/moi/index.html"><br></a></li>
       
       
       
       
       
-      <li><a href="index.html"><br/></a></li>
+      <li><a href="/moi/index.html"><br></a></li>
       
       
       
@@ -325,9 +343,14 @@ Complex numbers -->
 
 <p><!-- Frequency vs. time: the spectrogram --></p>
 
-<div style="float;"><img src=".//media/fourier/image1.jpeg" width="250px" /></div>
+<div style="float: right;">
 
-<p>Image credit: Randall Munroe/<a href="http://xkcd.com">xkcd.com</a></p>
+<img src="https://imgs.xkcd.com/comics/fourier.jpg" width="350px">
+<p>
+Fortunately, Dr. Elizabeth was able to invert the transform. <br>
+Image credit: Randall Munroe/<a href="http://xkcd.com">xkcd.com</a>
+</p>
+</div>
 
 <p>A signal is a function of time $x(t)$ in audio, or a function of space
 $I(x, y)$ in an image.</p>
@@ -338,9 +361,19 @@ $I(x, y)$ in an image.</p>
 $x(t) = A \cos(2 \pi f t + \phi)$</p>
 
 <p>This sinusoid has three parameters: the amplitude <em>A</em>, the frequency
-<em>f</em>, and the phase <em>φ</em>. The <em>period</em> is the smallest time <em>T</em> such that $x(t) = x(t + T)$ for all <em>t</em>.</p>
+<em>f</em>, and the phase <em>φ</em>. The <em>period</em> is the smallest time <em>T</em> such that $x(t) = x(t + T)$ for all <em>t</em>. The following interactive graph may help you understand these concepts.</p>
 
-<p>What is the period of this sinusoid?</p>
+<div id="sin" class="jxgbox" style="width:400px; height:400px;"></div>
+<script>
+JXG.Options.text.useMathJax = true;
+var b_sin = JXG.JSXGraph.initBoard('sin', {boundingbox: [-0.3, 1.6, 4, -1], axis: true, showCopyright: false, showNavigation: false});
+var slide_a = b_sin.create('slider',[[0.1, 1.5], [3.2, 1.5], [0.1, 0.5, 1.0]], {name: "A"});
+var slide_f = b_sin.create('slider',[[0.1, 1.3], [3.2, 1.3], [1, 3, 10]], {name: "f", snapWidth: 1});
+var slide_phi = b_sin.create('slider',[[0.1, 1.1], [3.2, 1.1], [0, 0, 6.28]], {name: "φ", snapWidth: Math.PI/6});
+b_sin.create('functiongraph', [(x) => slide_a.Value() * Math.cos(2*Math.PI*slide_f.Value() * x + slide_phi.Value()), -10, 10]);
+</script>
+
+<!-- What is the period of this sinusoid? -->
 
 <h2 id="what-is-frequency">What is frequency?</h2>
 
@@ -351,16 +384,57 @@ $x(t) = A \cos(2 \pi f t + \phi)$</p>
 
 <p>Yes, but it can be used in other contexts as well, even when the signal is not periodic…</p>
 
-<p>$x(t) = \cos(2 \pi (440) t)$</p>
-<div id="aplot" class="jxgbox" style="width:400px; height:400px;"></div>
+<h2 id="sound-waves-and-music">Sound waves and music</h2>
+<p>Sound and music are good ways to better understand frequencies.
+Music generally consists of chords that contain multiple notes simultaneously.</p>
+
+<p><button onclick="play()">Play</button></p>
+<div class="snd_func" id="sound_func1" style="display: block">$x(t) = \cos(2 \pi 440 t)$</div>
+<div class="snd_func" id="sound_func2" style="display: none">$x(t) = \frac12 ( \cos (2 \pi 440 t) + \cos (2 \pi 554.4 t) )$</div>
+<div class="snd_func" id="sound_func3" style="display: none">$x(t) = \frac13 ( \cos (2 \pi 440 t) + \cos (2 \pi 554.4 t) + \cos (2 \pi 659.3 t))$</div>
+<div class="snd_func" id="sound_func4" style="display: none">$x(t) = \frac14 ( \cos (2 \pi 440 t) + \cos (2 \pi 554.4 t) + \cos (2 \pi 659.3 t) + \cos (2 \pi 880 t))$</div>
+<div id="sound_harmo_plot" class="jxgbox" style="width:400px; height:400px;"></div>
 <script>
-$(document).ready(
-    function() {
-        JXG.Options.text.useMathJax = true;
-        var b3 = JXG.JSXGraph.initBoard('aplot', {boundingbox: [0, 1, 0.03, -1], axis: true, showCopyright: false, showNavigation: false});
-        b3.create('functiongraph', [function(x){return Math.cos(2*Math.PI*440*x);},-10,10]);
+JXG.Options.text.useMathJax = true;
+var sound_harmo = JXG.JSXGraph.initBoard('sound_harmo_plot', {boundingbox: [-0.002, 1.3, 0.03, -1.1], axis: true, showCopyright: false, showNavigation: false});
+var slider_n_harmo = sound_harmo.create('slider', [[0.001, 1.15], [0.025, 1.15], [1, 1, 4]], {name: "n", snapWidth: 1});
+let sound_f = (x) => {
+        let n = slider_n_harmo.Value();
+        var f = 0;
+        for (let i = 0; i < n; i++) {
+            f += 1./n * Math.cos(2 * Math.PI * 440 * Math.pow(2, 1./3*i) * x);
+        }
+        return f;
+}
+slider_n_harmo.on('drag', () => {
+    var func_doms = document.getElementsByClassName("snd_func");
+    var show_dom = document.getElementById("sound_func" + slider_n_harmo.Value());
+    for (e of func_doms) {
+        if (e == show_dom) {
+            e.style.display = "block";
+        }
+        else {
+            e.style.display = "none";
+        }
     }
-)
+})
+var g = sound_harmo.create('functiongraph', [
+    sound_f, 0, 10]);
+function play() {
+    var audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    var myArrayBuffer = audioCtx.createBuffer(2, audioCtx.sampleRate * 1, audioCtx.sampleRate);
+    for (var channel = 0; channel < myArrayBuffer.numberOfChannels; channel++) {
+        var nowBuffering = myArrayBuffer.getChannelData(channel);
+        for (var i = 0; i < myArrayBuffer.length; i++) {
+            let t = i / audioCtx.sampleRate;
+            nowBuffering[i] = sound_f(t);
+        }
+    }
+    var source = audioCtx.createBufferSource();
+    source.buffer = myArrayBuffer;
+    source.connect(audioCtx.destination);
+    source.start();
+}
 </script>
 
 <h4 id="what-are-the-units-of-frequency">What are the units of frequency?</h4>
@@ -402,7 +476,7 @@ Hertz (Hz).</p>
 (510-520 THz), orange (480-510 THz), and finally red light (400-480
 THz).</p>
 
-<div style="float;"><img src=".//media/fourier/image1.png" width="250px" /></div>
+<div style="float;"><img src=".//media/fourier/image1.png" width="250px"></div>
 
 <p>The energy (E) of the corresponding light photon increases with increasing frequency: $E = h \nu = \frac{h c}{\lambda}$.  h = Planck’s constant ($6.6 \times 10^{-34} J\cdot s)$.</p>
 
@@ -455,7 +529,7 @@ Clerk Maxwell (yes, <em>that</em> Maxwell) as a possible basis for color photogr
 
 <p>Fortunately, extremely high energy radiation from the sun is mostly disrupted by the earth’s magnetic field and the ozone layer. Or we’d all be cooked like a rotisserie chicken!</p>
 
-<h3 id="sound-waves-and-music">Sound waves and music</h3>
+<h3 id="sound-waves-and-music-1">Sound waves and music</h3>
 
 <p>Like light, sound propagates as a wave, and hence can be described as a sinusoid (or a collection of sinusoids).</p>
 
@@ -478,8 +552,8 @@ Clerk Maxwell (yes, <em>that</em> Maxwell) as a possible basis for color photogr
 <p>We can superimpose three tones to form a triad, or combine four :</p>
 
 <p>Note the relationship between frequency and notes on the musical octave scale:</p>
-<div style="float;"><img src=".//media/fourier/image2.png" width="250px" /></div>
-<div style="float;"><img src=".//media/fourier/image3.png" width="250px" /></div>
+<div style="float;"><img src=".//media/fourier/image2.png" width="450px"></div>
+<div style="float;"><img src=".//media/fourier/image3.png" width="450px"></div>
 
 <h2 id="the-spectrum">The spectrum</h2>
 
@@ -487,24 +561,49 @@ Clerk Maxwell (yes, <em>that</em> Maxwell) as a possible basis for color photogr
 
 <p>Let’s see a few examples</p>
 
-<p>$x\left( t \right) = \cos{(2\pi 440t)}$
-This signal consists of a single frequency</p>
-<div style="float: left;"><img src=".//media/fourier/image4.png" width="250px" /></div>
-<div style="float;"><img src=".//media/fourier/image5.png" width="250px" /></div>
+<div class="snd_func_w_spec" id="sound_w_spec_func1" style="display: block">$x(t) = \cos(2 \pi 440 t)$ - Signal consists of a single frequency</div>
+<div class="snd_func_w_spec" id="sound_w_spec_func2" style="display: none">$x(t) = \frac12 ( \cos (2 \pi 440 t) + \cos (2 \pi 554.4 t) )$ - Combination (sum) of two frequencies</div>
+<div class="snd_func_w_spec" id="sound_w_spec_func3" style="display: none">$x(t) = \frac13 ( \cos (2 \pi 440 t) + \cos (2 \pi 554.4 t) + \cos (2 \pi 659.3 t))$ - Combination (sum) of three frequencies</div>
+<div class="snd_func_w_spec" id="sound_w_spec_func4" style="display: none">$x(t) = \frac14 ( \cos (2 \pi 440 t) + \cos (2 \pi 554.4 t) + \cos (2 \pi 659.3 t) + \cos (2 \pi 880 t))$ - Combination (sum) of four frequencies</div>
+<div id="sound_harmo_plot_w_spec" class="jxgbox" style="width:400px; height:400px;"></div>
+<div id="sound_harmo_plot_s_spec" class="jxgbox" style="width:400px; height:400px;"></div>
 
-<p>$x\left( t \right) = \frac{1}{2}\left( \cos\left( 2\pi 440t \right) + cos\left( 2\pi 554.4t \right) \right)$
-Combination (sum) of two frequencies
-<!-- missing --></p>
-<div style="float: left;"><img src=".//media/fourier/image6.png" width="250px" /></div>
-
-<p>$\frac{1}{3}\left( \cos\left( 2\pi 440t \right) + \cos\left( 2\pi 554.4t \right) + cos\left( 2\pi 659.3t \right) \right)$
-Combination (sum) of three frequencies
-<!-- missing --></p>
-<div style="float;"><img src=".//media/fourier/image7.png" width="250px" /></div>
-
-<p>$1/4\left( \cos\left( 2\pi 440t \right) + \cos\left( 2\pi 554.4t \right) + \cos\left( 2\pi 659.3t \right) + \cos\left( 2\pi 880t \right) \right)$</p>
-<div style="float;"><img src=".//media/fourier/image8.png" width="250px" /></div>
-<div style="float;"><img src=".//media/fourier/image9.png" width="250px" /></div>
+<script>
+JXG.Options.text.useMathJax = true;
+var sound_harmo_w_spec = JXG.JSXGraph.initBoard('sound_harmo_plot_w_spec', {title: "Signal", boundingbox: [-0.002, 1.3, 0.03, -1.1], axis: true, showCopyright: false, showNavigation: false});
+var sound_harmo_plot_s_spec = JXG.JSXGraph.initBoard('sound_harmo_plot_s_spec', {title: "Spectrum", boundingbox: [-100, 1.1, 1000, -0.1], axis: true, showCopyright: false, showNavigation: false});
+var slider_n_harmo_spec = sound_harmo_w_spec.create('slider', [[0.001, 1.15], [0.025, 1.15], [1, 1, 4]], {name: "n", snapWidth: 1});
+var spec_lines = [];
+spec_lines.push(sound_harmo_plot_s_spec.create('line', [[440, 0], [440, 1]], {straightFirst:false, straightLast:false, strokeWidth:2}))
+let sound_f2 = (x) => {
+        let n = slider_n_harmo_spec.Value();
+        var f = 0;
+        for (let i = 1; i <= n; i++) {
+            f += 1./n * Math.cos(2 * Math.PI * 440 * Math.pow(2, 1./3*i) * x);
+        }
+        return f;
+}
+slider_n_harmo_spec.on('drag', () => {
+    var func_doms = document.getElementsByClassName("snd_func_w_spec");
+    var show_dom = document.getElementById("sound_w_spec_func" + slider_n_harmo_spec.Value());
+    for (e of func_doms) {
+        if (e == show_dom) {
+            e.style.display = "block";
+        }
+        else {
+            e.style.display = "none";
+        }
+    }
+    let n = slider_n_harmo_spec.Value();
+    var f = 0;
+    spec_lines.forEach((e) => sound_harmo_plot_s_spec.removeObject(e))
+    for (let i = 0; i < n; i++) {
+        f = 440 * Math.pow(2, i/3);
+        spec_lines.push(sound_harmo_plot_s_spec.create('line', [[f, 0], [f, 1./n]], {straightFirst:false, straightLast:false, strokeWidth:2}))
+    }
+})
+var g = sound_harmo_w_spec.create('functiongraph', [sound_f2, 0, 10]);
+</script>
 
 <p>Pure tones or combinations of pure tones are fine, but they don’t sound very musical.</p>
 
@@ -517,14 +616,14 @@ Combination (sum) of three frequencies
 <p>Different instruments weight these harmonics relatively differently to produce different sound.</p>
 
 <p>Piano</p>
-<div style="float;"><img src=".//media/fourier/image10.png" width="250px" /></div>
+<div style="float;"><img src=".//media/fourier/image10.png" width="650px"></div>
 
 <p>Trumpet</p>
-<div style="float;"><img src=".//media/fourier/image11.png" width="250px" /></div>
+<div style="float;"><img src=".//media/fourier/image11.png" width="650px"></div>
 
 <p>We see the same periodicity (high “A”) in the waveforms, but the character is different:</p>
 
-<div style="float;"><img src=".//media/fourier/image13.png" width="250px" /></div>
+<div style="float;"><img src=".//media/fourier/image13.png" width="650px"></div>
 
 <p>There’s a lot more that goes into the shape of a musical waveform and its impact on the corresponding sound. We won’t go into it in this class…</p>
 
@@ -559,21 +658,21 @@ Combination (sum) of three frequencies
 
 <p>Think of $\cos\left( 2\pi ft \right)$ as a point moving on the complex plane.</p>
 
-<div style="float;"><img src=".//media/fourier/image2.jpeg" width="250px" /></div>
-<div style="float;"><img src=".//media/fourier/image1.gif" width="250px" /></div>
-<div style="float;"><img src=".//media/fourier/image2.gif" width="250px" /></div>
+<div style="float;"><img src=".//media/fourier/image2.jpeg" width="250px"></div>
+<div style="float;"><img src=".//media/fourier/image1.gif" width="250px"></div>
+<div style="float;"><img src=".//media/fourier/image2.gif" width="250px"></div>
 <p>click on image to see more interesting examples</p>
-<div style="float;"><a href="https://www.youtube.com/watch?v=r6sGWTCMz2k"><img src=".//media/fourier/image3.jpeg" width="250px" /></a></div>
+<div style="float;"><a href="https://www.youtube.com/watch?v=r6sGWTCMz2k"><img src=".//media/fourier/image3.jpeg" width="250px"></a></div>
 
 <p>If the coefficient of $e^{i\omega t}$ and $e^{- i\omega t}$ are the same, the signal is real</p>
 
 <p>$\color{blue}{1e^{i2\pi 0.5t}} + \color{red}{1e^{- i2\pi 0.5t}} + \color{orange}{\frac{1}{2}e^{- i2\pi 1t}}$</p>
-<div style="float;"><img src=".//media/fourier/image3.gif" width="250px" /></div>
-<div style="float;"><img src=".//media/fourier/image4.jpeg" width="250px" /></div>
+<div style="float;"><img src=".//media/fourier/image3.gif" width="250px"></div>
+<div style="float;"><img src=".//media/fourier/image4.jpeg" width="250px"></div>
 
 <p>$\color{blue}{1e^{i2\pi 0.5t}} + \color{red}{1e^{- i2\pi 0.5t}} + \color{purple}{\frac12e^{i2\pi1t}} + \color{orange}{\frac{1}{2}e^{- i2\pi 1t}}$</p>
-<div style="float;"><img src=".//media/fourier/image4.gif" width="250px" /></div>
-<div style="float;"><img src=".//media/fourier/image5.jpeg" width="250px" /></div>
+<div style="float;"><img src=".//media/fourier/image4.gif" width="250px"></div>
+<div style="float;"><img src=".//media/fourier/image5.jpeg" width="250px"></div>
 
 <p>In addition to multiplying by nonnegative constants, we can change their starting angle by multiplying by terms of the form $e^{i\phi}$.
 <!-- more images to come --></p>
@@ -605,7 +704,7 @@ Combination (sum) of three frequencies
 <p>The Fourier transform of
 $1 + \sin\left( 2\pi 6t \right),0 \leq t \leq 1$ at $f = 0$ Hz</p>
 
-<div style="float;"><img src=".//media/fourier/image14.png" width="250px" /></div>
+<div style="float;"><img src=".//media/fourier/image14.png" width="800px"></div>
 <!-- hard to transfer annotation -->
 <!-- more matlab demo  -->
 
@@ -717,10 +816,10 @@ Medical devices use time-frequency analysis to analyze heart rhythm.</p>
 
 
 <footer>
-  <br/><br/>
+  <br><br>
   <center>
-    <hr/>
-  &copy; Farzad Farnoud, 2020</center>
+    <hr>
+  © Farzad Farnoud, 2023</center>
 </footer>
 </div>
 <!-- Default Statcounter code for MoI
@@ -730,14 +829,8 @@ var sc_project=12471818;
 var sc_invisible=1; 
 var sc_security="62b9c6a1"; 
 </script>
-<script type="text/javascript"
-src="https://www.statcounter.com/counter/counter.js"
-async></script>
-<noscript><div class="statcounter"><a title="Web Analytics"
-href="https://statcounter.com/" target="_blank"><img
-class="statcounter"
-src="https://c.statcounter.com/12471818/0/62b9c6a1/1/"
-alt="Web Analytics"></a></div></noscript>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
+<noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/12471818/0/62b9c6a1/1/" alt="Web Analytics"></a></div></noscript>
 <!-- End of Statcounter Code -->
 </body>
 </html>

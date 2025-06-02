@@ -9,19 +9,30 @@
   
   <!-- for mathjax support -->
   
-  <script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    TeX: { equationNumbers: { autoNumber: "AMS" } },
-    //tex2jax: {inlineMath: [['$', '$'], ['\\(', '\\)']]}
-    //tex2jax: {inlineMath: [['\(', '\)'], ['\\(', '\\)']]}
-    tex2jax: {inlineMath: [['$', '$'], ['\\(', '\\)']]}
-    //tex2jax: {inlineMath: [['$', '$'], ['\(', '\)'], ['\\(', '\\)']]}
-  });
-  </script>
-  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <script>
+    window.MathJax = {
+      tex: {
+        tags: "ams",
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        autoload: {
+          color: [],
+          colorv2: ['color']
+        },
+        packages: {'[+]': ['noerrors']}
+      },
+      options: {
+        ignoreHtmlClass: 'tex2jax_ignore',
+        processHtmlClass: 'tex2jax_process'
+      },
+      loader: {
+        load: ['[tex]/noerrors']
+      }
+    };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script"></script>
   
   
-    <script type="text/javascript"  src="//cdnjs.cloudflare.com/ajax/libs/jsxgraph/1.1.0/jsxgraphcore.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jsxgraph/1.1.0/jsxgraphcore.js"></script>
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/jsxgraph/1.1.0/jsxgraph.css" />
   
   <script src="assets/js/coding.js"></script>
@@ -35,7 +46,6 @@
   <div class="topnav">
   <a style="float:left;" href="index.html"><strong>Mathematics of Information</strong></a>
   <a id="teaching" href="../teaching.html">Teaching</a>
-  <a id="group" href="../ips.html">Group</a>
   <a id="pubs" href="../publications.html">Publications</a>
   <a id="home" href="../index.html">Home</a> 
   </div>
@@ -47,14 +57,10 @@
      
      
      
-     <a href="index.html"><strong>Home</strong></a>
-     
-     
-     
     
      
      
-     <a href="index.html"><strong>0. Introduction</strong></a>
+     <a href="/moi/"><strong>0. Introduction</strong></a>
      
      
      
@@ -66,37 +72,37 @@
       
       
       
-      <li><a href="sets.html">Sets and set theory</a></li>
+      <li><a href="/moi/sets.html">Sets and set theory</a></li>
       
       
       
       
       
-      <li><a href="numbers.html">Natural numbers, rationals</a></li>
+      <li><a href="/moi/numbers.html">Natural numbers, rationals</a></li>
       
       
       
       
       
-      <li><a href="fields.html">Fields</a></li>
+      <li><a href="/moi/fields.html">Fields</a></li>
       
       
       
       
       
-      <li><a href="reals.html">Real numbers</a></li>
+      <li><a href="/moi/reals.html">Real numbers</a></li>
       
       
       
       
       
-      <li><a href="cardinality.html">Counting and cardinality</a></li>
+      <li><a href="/moi/counting.html">Counting and cardinality</a></li>
       
       
       
       
       
-      <li><a class="active" style="color:#76bdd5" href="/~ffh8x/moi/representation.html"><img class="emoji" title=":point_right:" alt=":point_right:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f449.png" height="20" width="20"> Representing information</a></li>
+      <li><a class="active" style="color:#76bdd59c" href="/moi/representation.html"><img class="emoji" title=":point_right:" alt=":point_right:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f449.png" height="20" width="20"> Representing information</a></li>
       
       
       
@@ -110,55 +116,55 @@
       
       
       
-      <li><a href="defining_information.html">Defining information</a></li>
+      <li><a href="/moi/defining_information.html">Defining information</a></li>
       
       
       
       
       
-      <li><a href="probability_basics.html">Basics of probability</a></li>
+      <li><a href="/moi/probability_basics.html">Basics of probability</a></li>
       
       
       
       
       
-      <li><a href="distributions.html">Random variables, <br> distributions, independence</a></li>
+      <li><a href="/moi/distributions.html">Random variables, <br> distributions, independence</a></li>
       
       
       
       
       
-      <li><a href="expectation.html">Expectation and Variance</a></li>
+      <li><a href="/moi/expectation.html">Expectation and Variance</a></li>
       
       
       
       
       
-      <li><a href="conditional.html">Conditional probability</a></li>
+      <li><a href="/moi/conditional.html">Conditional probability</a></li>
       
       
       
       
       
-      <li><a href="markov.html">Random sequences and <br> Markov chains</a></li>
+      <li><a href="/moi/markov.html">Random sequences and <br> Markov chains</a></li>
       
       
       
       
       
-      <li><a href="information_theory.html">Quantifying Information</a></li>
+      <li><a href="/moi/information_theory.html">Quantifying Information</a></li>
       
       
       
       
       
-      <li><a href="compression.html">Data compression</a></li>
+      <li><a href="/moi/compression.html">Data compression</a></li>
       
       
       
       
       
-      <li><a href="communications.html">Mathematics of communications</a></li>
+      <li><a href="/moi/communications.html">Mathematics of communications</a></li>
       
       
       
@@ -172,25 +178,25 @@
       
       
       
-      <li><a href="codes_graphs_algebra.html">Codes, graphs, and algebra</a></li>
+      <li><a href="/moi/codes_graphs_algebra.html">Codes, graphs, and algebra</a></li>
       
       
       
       
       
-      <li><a href="vectors.html">Vectors and spaces</a></li>
+      <li><a href="/moi/vectors.html">Vectors and spaces</a></li>
       
       
       
       
       
-      <li><a href="fundamental_spaces.html">Fundamental spaces</a></li>
+      <li><a href="/moi/fundamental_spaces.html">Fundamental spaces</a></li>
       
       
       
       
       
-      <li><a href="ecc.html">Linear codes</a></li>
+      <li><a href="/moi/ecc.html">Linear codes</a></li>
       
       
       
@@ -203,27 +209,39 @@
      <ul>
       
       
-      <li><a href="complex.html">Complex numbers</a></li>
+      
+      <li><a href="/moi/complex.html">Complex numbers</a></li>
       
       
       
-      <li><a href="fourier.html">Frequency and spectrum</a></li>
+      
+      
+      <li><a href="/moi/fourier.html">Frequency and spectrum</a></li>
       
       
       
-      <li><a href="sampling.html">Filteration and sampling</a></li>
+      
+      
+      <li><a href="/moi/sampling.html">Filteration and sampling</a></li>
       
       
       
-      <li><a href="linsys.html">Linear systems</a></li>
+      
+      
+      <li><a href="/moi/linsys.html">Linear systems</a></li>
       
       
       
-      <li><a href="freqresponse.html">Frequency response</a></li>
+      
+      
+      <li><a href="/moi/freqresponse.html">Frequency response</a></li>
       
       
       
-      <li><a href="modulation.html">Modulation</a></li>
+      
+      
+      <li><a href="/moi/modulation.html">Modulation</a></li>
+      
       
       
       
@@ -288,19 +306,19 @@
       
       
       
-      <li><a href="axiomatic.html">Axiomatic systems</a></li>
+      <li><a href="/moi/axiomatic.html">Axiomatic systems</a></li>
       
       
       
       
       
-      <li><a href="index.html"><br></a></li>
+      <li><a href="/moi/index.html"><br></a></li>
       
       
       
       
       
-      <li><a href="index.html"><br></a></li>
+      <li><a href="/moi/index.html"><br></a></li>
       
       
       
@@ -339,7 +357,7 @@
 
 <p>A <em>continuous set</em> is a connected set of numbers, typically a subset of real numbers, or Euclidean space. Continuous sets are uncountable.</p>
 <ul>
-  <li>[0,1], ℝ, \(\{(𝑎,𝑏):𝑎∈[0,1],𝑏∈[0,1]\}\)</li>
+  <li>[0,1], ℝ, \(\{(𝑎,𝑏):𝑎∈[0,1],𝑏∈[0,1],a&lt;b\}\)</li>
 </ul>
 
 <p>A <em>discrete set</em> is either a finite set or a countably infinite set, consisting of values that are not too close to each other. More precisely, if you take any element of a discrete set, the other ones are at a positive distance away from it.</p>
@@ -648,6 +666,22 @@ Real number cannot be represented on a computer in an explicit and exact way.-->
 </div>
 <p><br></p>
 
+<div class="exercise">
+  How many bits are needed to represent the order of a deck of cards?
+  <button onclick="showSolution(this,'solID4')" style="float:right;">Show Solution</button>
+  <div id="solID4" class="solution" style="display:none; margin-top:10px; margin-left:20px;">
+  Consider a given permutation of the cards. We can either give the list of individual cards, or give a bit sequence representing the whole permutation. The former is easier to encode and decode while the latter method usually uses fewer bits.
+    <p><strong>Method 1:</strong> We need at least 6 bits per card. So for 52 cards:</p>
+    <p>
+      $$6 \times 52 = 312 \text{ bits}.$$
+    </p>
+    <p><strong>Method 2:</strong> We need:</p>
+    <p>
+      $$\log_{2}(52!) \approx 225.58 \to 226 \text{ bits}.$$
+    </p>
+  </div>
+</div>
+
 <p><br></p>
 <div class="exercise">
   Write a question that you still have about this section.
@@ -676,10 +710,11 @@ Real number cannot be represented on a computer in an explicit and exact way.-->
 
 <p>So why store analog information as 0s and 1s while we can use analog devices?</p>
 
-<p>The answer is related to what we do with information, which is generally computation and/or communication. And digital is better for both:</p>
+<p>The answer is related to what we do with information, which is generally computation and/or communication. And digital is better for both. Some of advantages are listed below. For each item in the list, compare how it applies to an image stored as negative on film vs an image stored digitally.</p>
 <ul>
   <li>Analog computation is possible but difficult in all but very simple cases</li>
   <li>Removing noise from analog signals is difficult, if not impossible</li>
+  <li>Digital signals can be replicated without adding noise, while replicating analog signals almost always adds noise.</li>
   <li>Digital information is less dependent on a particular medium. Copying audio from vinyl to cassette tape requires special equipment. Digital data is just bits.</li>
 </ul>
 
@@ -1052,7 +1087,7 @@ Why 44100 samples? More on this later!</p>
   <br><br>
   <center>
     <hr>
-  © Farzad Farnoud, 2020</center>
+  © Farzad Farnoud, 2023</center>
 </footer>
 </div>
 <!-- Default Statcounter code for MoI
