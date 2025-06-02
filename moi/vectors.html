@@ -9,19 +9,30 @@
   
   <!-- for mathjax support -->
   
-  <script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    TeX: { equationNumbers: { autoNumber: "AMS" } },
-    //tex2jax: {inlineMath: [['$', '$'], ['\\(', '\\)']]}
-    //tex2jax: {inlineMath: [['\(', '\)'], ['\\(', '\\)']]}
-    tex2jax: {inlineMath: [['$', '$'], ['\\(', '\\)']]}
-    //tex2jax: {inlineMath: [['$', '$'], ['\(', '\)'], ['\\(', '\\)']]}
-  });
-  </script>
-  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <script>
+    window.MathJax = {
+      tex: {
+        tags: "ams",
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        autoload: {
+          color: [],
+          colorv2: ['color']
+        },
+        packages: {'[+]': ['noerrors']}
+      },
+      options: {
+        ignoreHtmlClass: 'tex2jax_ignore',
+        processHtmlClass: 'tex2jax_process'
+      },
+      loader: {
+        load: ['[tex]/noerrors']
+      }
+    };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script"></script>
   
   
-    <script type="text/javascript"  src="//cdnjs.cloudflare.com/ajax/libs/jsxgraph/1.1.0/jsxgraphcore.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jsxgraph/1.1.0/jsxgraphcore.js"></script>
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/jsxgraph/1.1.0/jsxgraph.css" />
   
   <script src="assets/js/coding.js"></script>
@@ -35,7 +46,6 @@
   <div class="topnav">
   <a style="float:left;" href="index.html"><strong>Mathematics of Information</strong></a>
   <a id="teaching" href="../teaching.html">Teaching</a>
-  <a id="group" href="../ips.html">Group</a>
   <a id="pubs" href="../publications.html">Publications</a>
   <a id="home" href="../index.html">Home</a> 
   </div>
@@ -47,14 +57,10 @@
      
      
      
-     <a href="index.html"><strong>Home</strong></a>
-     
-     
-     
     
      
      
-     <a href="index.html"><strong>0. Introduction</strong></a>
+     <a href="/~ffh8x/moi/"><strong>0. Introduction</strong></a>
      
      
      
@@ -66,37 +72,37 @@
       
       
       
-      <li><a href="sets.html">Sets and set theory</a></li>
+      <li><a href="/~ffh8x/moi/sets.html">Sets and set theory</a></li>
       
       
       
       
       
-      <li><a href="numbers.html">Natural numbers, rationals</a></li>
+      <li><a href="/~ffh8x/moi/numbers.html">Natural numbers, rationals</a></li>
       
       
       
       
       
-      <li><a href="fields.html">Fields</a></li>
+      <li><a href="/~ffh8x/moi/fields.html">Fields</a></li>
       
       
       
       
       
-      <li><a href="reals.html">Real numbers</a></li>
+      <li><a href="/~ffh8x/moi/reals.html">Real numbers</a></li>
       
       
       
       
       
-      <li><a href="cardinality.html">Counting and cardinality</a></li>
+      <li><a href="/~ffh8x/moi/counting.html">Counting and cardinality</a></li>
       
       
       
       
       
-      <li><a href="representation.html">Representing information</a></li>
+      <li><a href="/~ffh8x/moi/representation.html">Representing information</a></li>
       
       
       
@@ -110,55 +116,55 @@
       
       
       
-      <li><a href="defining_information.html">Defining information</a></li>
+      <li><a href="/~ffh8x/moi/defining_information.html">Defining information</a></li>
       
       
       
       
       
-      <li><a href="probability_basics.html">Basics of probability</a></li>
+      <li><a href="/~ffh8x/moi/probability_basics.html">Basics of probability</a></li>
       
       
       
       
       
-      <li><a href="distributions.html">Random variables, <br> distributions, independence</a></li>
+      <li><a href="/~ffh8x/moi/distributions.html">Random variables, <br> distributions, independence</a></li>
       
       
       
       
       
-      <li><a href="expectation.html">Expectation and Variance</a></li>
+      <li><a href="/~ffh8x/moi/expectation.html">Expectation and Variance</a></li>
       
       
       
       
       
-      <li><a href="conditional.html">Conditional probability</a></li>
+      <li><a href="/~ffh8x/moi/conditional.html">Conditional probability</a></li>
       
       
       
       
       
-      <li><a href="markov.html">Random sequences and <br> Markov chains</a></li>
+      <li><a href="/~ffh8x/moi/markov.html">Random sequences and <br> Markov chains</a></li>
       
       
       
       
       
-      <li><a href="information_theory.html">Quantifying Information</a></li>
+      <li><a href="/~ffh8x/moi/information_theory.html">Quantifying Information</a></li>
       
       
       
       
       
-      <li><a href="compression.html">Data compression</a></li>
+      <li><a href="/~ffh8x/moi/compression.html">Data compression</a></li>
       
       
       
       
       
-      <li><a href="communications.html">Mathematics of communications</a></li>
+      <li><a href="/~ffh8x/moi/communications.html">Mathematics of communications</a></li>
       
       
       
@@ -172,25 +178,25 @@
       
       
       
-      <li><a href="codes_graphs_algebra.html">Codes, graphs, and algebra</a></li>
+      <li><a href="/~ffh8x/moi/codes_graphs_algebra.html">Codes, graphs, and algebra</a></li>
       
       
       
       
       
-      <li><a class="active" style="color:#76bdd5" href="/~ffh8x/moi/vectors.html"><img class="emoji" title=":point_right:" alt=":point_right:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f449.png" height="20" width="20"> Vectors and spaces</a></li>
+      <li><a class="active" style="color:#76bdd59c" href="/~ffh8x/moi/vectors.html"><img class="emoji" title=":point_right:" alt=":point_right:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f449.png" height="20" width="20"> Vectors and spaces</a></li>
       
       
       
       
       
-      <li><a href="fundamental_spaces.html">Fundamental spaces</a></li>
+      <li><a href="/~ffh8x/moi/fundamental_spaces.html">Fundamental spaces</a></li>
       
       
       
       
       
-      <li><a href="ecc.html">Linear codes</a></li>
+      <li><a href="/~ffh8x/moi/ecc.html">Linear codes</a></li>
       
       
       
@@ -203,27 +209,39 @@
      <ul>
       
       
-      <li><a href="complex.html">Complex numbers</a></li>
+      
+      <li><a href="/~ffh8x/moi/complex.html">Complex numbers</a></li>
       
       
       
-      <li><a href="fourier.html">Frequency and spectrum</a></li>
+      
+      
+      <li><a href="/~ffh8x/moi/fourier.html">Frequency and spectrum</a></li>
       
       
       
-      <li><a href="sampling.html">Filteration and sampling</a></li>
+      
+      
+      <li><a href="/~ffh8x/moi/sampling.html">Filteration and sampling</a></li>
       
       
       
-      <li><a href="linsys.html">Linear systems</a></li>
+      
+      
+      <li><a href="/~ffh8x/moi/linsys.html">Linear systems</a></li>
       
       
       
-      <li><a href="freqresponse.html">Frequency response</a></li>
+      
+      
+      <li><a href="/~ffh8x/moi/freqresponse.html">Frequency response</a></li>
       
       
       
-      <li><a href="modulation.html">Modulation</a></li>
+      
+      
+      <li><a href="/~ffh8x/moi/modulation.html">Modulation</a></li>
+      
       
       
       
@@ -288,19 +306,19 @@
       
       
       
-      <li><a href="axiomatic.html">Axiomatic systems</a></li>
+      <li><a href="/~ffh8x/moi/axiomatic.html">Axiomatic systems</a></li>
       
       
       
       
       
-      <li><a href="index.html"><br></a></li>
+      <li><a href="/~ffh8x/moi/index.html"><br></a></li>
       
       
       
       
       
-      <li><a href="index.html"><br></a></li>
+      <li><a href="/~ffh8x/moi/index.html"><br></a></li>
       
       
       
@@ -318,7 +336,7 @@
 <h3 id="linear-equations-and-protecting-information">Linear equations and protecting information</h3>
 <p>Recall:</p>
 <ol>
-  <li>Fundamental Tenet V: Error-correction requires restricting possible messages</li>
+  <li>Fundamental Tenet V: Error-correction requires restricting possible words that can be stored or transmitted</li>
   <li>One way to enforce such restrictions is linear equations</li>
 </ol>
 
@@ -339,7 +357,8 @@ used in early computers.-->
 
 <h3 id="linear-algebra-and-its-applications">Linear algebra and its applications</h3>
 
-<div style="float: right;"><img src="https://imgs.xkcd.com/comics/machine_learning.png" width="300px"></div>
+<div style="float: right;">
+<img src="https://imgs.xkcd.com/comics/machine_learning.png" width="300px"><br>Credit: <a href="https://xkcd.com/1838/" target="_blank">xkcd</a> </div>
 <p>Linear algebra is the study of (linear) equations and operations. It is foundational to many elements of mathematics, science, and engineering.</p>
 <ul>
   <li>In the abstract sense, linear algebra describes the theory of vectors and operations involving them.</li>
@@ -407,7 +426,7 @@ dimensions:</p>
 
 \begin{equation}  a x + b y + c = 0,\qquad a,b,c\in \mathbb R.\label{eq:line}\end{equation}
 
-If $a\neq 0$, then we can write this equation (with different $a,b$) as
+If $b\neq 0$, then we can write this equation (with different $a,b$) as
 
 \begin{equation}  y = a x + b,\qquad a,b\in \mathbb R.\label{eq:line-can}\end{equation}
 
@@ -431,7 +450,7 @@ Plot the line represented by $2x+y = 1.$
 
 \begin{equation}  a x + b y + c z + d = 0,\qquad a,b,c,d\in \mathbb R.\label{eq:plane}\end{equation}
 
-If $a,b\neq 0$, then we can write the plane (with different $a,b,c$) as
+If $c\neq 0$, then we can write the plane (with different $a,b,c$) as
 
 \begin{equation}  z = a x + b y + c,\qquad a,b,c\in \mathbb R.\label{eq:plane-can}\end{equation}
 
@@ -472,7 +491,7 @@ We can represent vectors geometrically. Some examples of vectors:
 
 <p>In this section, we alternate between the column and row representations as convenient, that is, both notations represent the same object. Later, when we deal with matrices, we’ll be more careful! The terms <em>column vector</em> and <em>row vector</em> are used to distinguish the arrangement if necessary.</p>
 
-<p>The number of elements in a vector is called its <em>dimension</em>. For example, $v$ is a 3-dimensional vector.</p>
+<p>A vector with $n$ elements is called an $n$-<em>dimensional</em> vector. For example, $v$ is a 3-dimensional vector.</p>
 
 <h4 id="geometric-representation-magnitude-and-direction">Geometric representation, magnitude and direction</h4>
 <div style="float: right;"><div id="box" class="jxgbox" style="width:200px; height:200px;"></div></div>
@@ -534,6 +553,8 @@ var vec3 = fig3.create('arrow', [[0,0],[5,1]],{color:'brown'});
   <li>$(-1,0,1) + (-2,2,0) = (-3, 2, 1)$.</li>
 </ul>
 
+<p style="margin-bottom:3cm;"></p>
+
 <div style="float: right;"><div id="fig4" class="jxgbox" style="width:220px; height:200px;"></div></div>
 <script>
 JXG.Options.text.useMathJax = true;
@@ -546,39 +567,36 @@ var vec1 = fig4.create('arrow', [[0,0],[3,2]],{strokeWidth:2});
 <p>We can also multiply vectors by numbers.</p>
 <ul>
   <li>The result is a scaled version of the vector.</li>
-  <li>In the context of linear algebra, numbers are called <em>scalars</em>. 
-<!-- plot? -->
-</li>
+  <li>In the context of linear algebra, numbers are called <em>scalars</em>.</li>
 </ul>
+
+<!-- plot? -->
 
 <p>Definition: The product of a scalar $a$ and a vector $v = (v_1 , v_2 , \cdots , v_n )$ is $(av_1, av_2, \cdots, av_n)$.</p>
 
 <p>Example: $2(3,2) = (6, 4)$</p>
 
 <h4 id="the-zero-vector">The zero vector</h4>
-<p>If we multiply any vector by the scalar 0, we get a vector all of whose elements are 0. This vector is represented by $\mathbf{0}$. It also has the property that adding it to any vector $v$ yields $v$ back: $v+\mathbf{0}= v$. The $\mathbf 0$ vector is specially important when dealing with spaces and linear transformations discussed below.</p>
+<p>If we multiply any vector by the scalar 0, we get a vector all of whose elements are 0. This vector is represented by $\mathbf{0}$. It also has the property that adding it to any vector $v$ yields $v$ back: $v+\mathbf{0}= v$. The $\mathbf 0$ vector is specially important when dealing with spaces discussed below.</p>
 
 <!--(This is obvious for the vectors we deal with but not so in more complex settings.)
 *  Any scaling of the zero vector should give the zero vector back.
 *  Scaling any vector by the scalar 0 results in the $\mathbf{0}$ vector.
 * In common cases: for the 2D coordinate vector, it is just $(0,0)$.-->
 
-<h3 id="linear-transformations">Linear Transformations</h3>
-<p>Linear algebra also concerns itself with <em>linear transformations</em>.
-An operation is linear if it satisfies the following properties:</p>
-<ul>
-  <li>Scaling: $T(ax) = aT(x)$, for any number number $a$ and vector $x$</li>
-  <li>Additivity: $ T(x + y) = T(x) + T(y)$ for any vectors $x,y$</li>
-</ul>
+<!--
+### Linear Transformations
+Linear algebra also concerns itself with _linear transformations_.
+An operation is linear if it satisfies the following properties:
+* Scaling: $T(ax) = aT(x)$, for any number number $a$ and vector $x$
+* Additivity: $ T(x + y) = T(x) + T(y)$ for any vectors $x,y$
 
-<p>This definition can be extended to any context in which multiplication by a number and addition are defined:</p>
-<ul>
-  <li>Expected value is linear: $E[aX] = aE[X], E[X+Y] = E[X] + E[Y]$</li>
-  <li>Other examples we will see: Matrix-vector multiplication, Fourier transform, linear filters</li>
-</ul>
+This definition can be extended to any context in which multiplication by a number and addition are defined:
+*  Expected value is linear: $E[aX] = aE[X], E[X+Y] = E[X] + E[Y]$
+*  Other examples we will see: Matrix-vector multiplication, Fourier transform, linear filters
 
 <div class="exercise">
-  <button onclick="showSolution(this,'linOp')" style="float:right;">Show Solution</button>
+  <button  onclick="showSolution(this,'linOp')" style="float:right;">Show Solution</button>
   For a vector $v$, define $T(v) = 2v$. 
   <ul>
     <li> Find $T((3,5,1))$.</li>
@@ -590,30 +608,30 @@ An operation is linear if it satisfies the following properties:</p>
     <li> $T((3,5,1)) = T(6,10,2)$.</li>
     <li> $T((3,5,1))+T((1,2,-1)) = (6,10,2)+(2,4,-2) = (8,14,0) = T((4,7,0))=T((3,5,1)+(1,2,-1))$.</li>
     <li>\begin{align*}
-      T(a v) &amp;= 2av = a (2v) = a T(v) \\
-     T(x+y)&amp; = 2(x+y) = 2x+2y = T(x)+T(y).
+      T(a v) &= 2av = a (2v) = a T(v) \\
+     T(x+y)& = 2(x+y) = 2x+2y = T(x)+T(y).
   \end{align*}</li>
   </ul>
   </div>
 </div>
-<p><br></p>
+<br/>
 
 <div class="exercise">
 Is $T(v) = 2v+(1,1)$, where $v$ is a 2-dimensional vector, linear? If so, prove it. If not, provide a counter example.
 </div>
-<p><br></p>
+<br/>
 
 <div class="exercise">
-  <button onclick="showSolution(this,'zero')" style="float:right;">Show Solution</button>
+  <button  onclick="showSolution(this,'zero')" style="float:right;">Show Solution</button>
   For any linear transformation $T$ which takes an $n$-dimensional vector as input and produces an $n$-dimensional vector, prove that $T(\mathbf 0) = \mathbf0$.
   <div id="zero" style="display:none;" class="solution">
     Hint: use the scaling property of linear transformations with an appropriate choice of $a$.
   </div>
 </div>
-<p><br></p>
+<br/>
 
 <div class="exercise">
-  <button onclick="showSolution(this,'rot')" style="float:right;">Show Solution</button>
+  <button  onclick="showSolution(this,'rot')" style="float:right;">Show Solution</button>
   For a vector $v=(a,b)$, define $T(v) = 3a-2b$. 
   <ul>
     <li>Find $T(1,-3)$.</li>
@@ -623,24 +641,26 @@ Is $T(v) = 2v+(1,1)$, where $v$ is a 2-dimensional vector, linear? If so, prove 
     For the first part: $T(1,-3) = 3(1)-2(-3) = 3+6 = 9.$
     <p>For the second part, you need to show that for $v_1 = (a_1,b_1)$ and $v_2 = (a_2,b_2)$ and a scalar $c$, 
     \begin{align*}
-     T(c v_1)&amp; = cT(v_1).\\
-      T(v_1+v_2) &amp; = T(v_1) + T(v_2).
+     T(c v_1)& = cT(v_1).\\
+      T(v_1+v_2) & = T(v_1) + T(v_2).
       \end{align*}</p>
   </div>
 </div>
-<p><br>
-<br></p>
+<br/>
+<br/>
+
+-->
 
 <h2 id="vector-spaces">Vector Spaces</h2>
 
-<p>Linear algebra defines three kinds of objects:</p>
-<ul>
-  <li>Vector: the elementary object involved in linear algebra; for instance, a pair of coordinates $(x,y)$.</li>
-  <li>Vector space: a collection of vectors that satisfies certain properties.</li>
-  <li>Linear transformations: a mapping from one vector space to another that satisfies linearity.</li>
-</ul>
+<!-- 
+Linear algebra defines three kinds of objects:
+* Vector: the elementary object involved in linear algebra; for instance, a pair of coordinates $(x,y)$.
+* Vector space: a collection of vectors that satisfies certain properties.
+* Linear transformations: a mapping from one vector space to another that satisfies linearity.
 
-<p>Abstract linear algebra will work on theoretical versions of such objects; we’ll work with concrete examples.</p>
+Abstract linear algebra will work on theoretical versions of such objects; we'll work with concrete examples.
+-->
 
 <h3 id="spaces">Spaces</h3>
 <p>Working with vectors is more useful if we can manipulate them via operations, specifically, vector addition and scalar multiplication. But if these operations produce objects that we cannot represent, this can be problematic. For example, if we deal with binary vectors, their addition, if not defined properly, can lead to vectors that are not binary. The concept of vector spaces helps us avoid such issues.</p>
@@ -730,7 +750,7 @@ Is $T(v) = 2v+(1,1)$, where $v$ is a 2-dimensional vector, linear? If so, prove 
 <div style="float: right;"><img src="assets/img/vSubspace.png" width="200px"></div>
 <p>Note that both $\mathbb R^2$ (two-dimensional Euclidean space) and $\mathbb R^3$ (three-dimensional Euclidean space) are spaces. But one of them can be contained in the other. Such structures are called subspaces.</p>
 
-<p>A <em>subspace of a vector space</em> is a collection of vectors which is itself a vector space.</p>
+<p>A <em>subspace of a vector space</em> is a subset of vectors that is itself a vector space.</p>
 
 <p>What are the subspaces of $\mathbb{R}^2$?</p>
 <ul>
@@ -1355,7 +1375,7 @@ subspace spanned by $(3,0, - 1),(1,1, - 1)$</p>
   <br><br>
   <center>
     <hr>
-  © Farzad Farnoud, 2020</center>
+  © Farzad Farnoud, 2023</center>
 </footer>
 </div>
 <!-- Default Statcounter code for MoI

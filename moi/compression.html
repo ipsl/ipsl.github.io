@@ -9,19 +9,30 @@
   
   <!-- for mathjax support -->
   
-  <script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    TeX: { equationNumbers: { autoNumber: "AMS" } },
-    //tex2jax: {inlineMath: [['$', '$'], ['\\(', '\\)']]}
-    //tex2jax: {inlineMath: [['\(', '\)'], ['\\(', '\\)']]}
-    tex2jax: {inlineMath: [['$', '$'], ['\\(', '\\)']]}
-    //tex2jax: {inlineMath: [['$', '$'], ['\(', '\)'], ['\\(', '\\)']]}
-  });
-  </script>
-  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <script>
+    window.MathJax = {
+      tex: {
+        tags: "ams",
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        autoload: {
+          color: [],
+          colorv2: ['color']
+        },
+        packages: {'[+]': ['noerrors']}
+      },
+      options: {
+        ignoreHtmlClass: 'tex2jax_ignore',
+        processHtmlClass: 'tex2jax_process'
+      },
+      loader: {
+        load: ['[tex]/noerrors']
+      }
+    };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script"></script>
   
   
-    <script type="text/javascript"  src="//cdnjs.cloudflare.com/ajax/libs/jsxgraph/1.1.0/jsxgraphcore.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jsxgraph/1.1.0/jsxgraphcore.js"></script>
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/jsxgraph/1.1.0/jsxgraph.css" />
   
   <script src="assets/js/coding.js"></script>
@@ -35,7 +46,6 @@
   <div class="topnav">
   <a style="float:left;" href="index.html"><strong>Mathematics of Information</strong></a>
   <a id="teaching" href="../teaching.html">Teaching</a>
-  <a id="group" href="../ips.html">Group</a>
   <a id="pubs" href="../publications.html">Publications</a>
   <a id="home" href="../index.html">Home</a> 
   </div>
@@ -47,14 +57,10 @@
      
      
      
-     <a href="index.html"><strong>Home</strong></a>
-     
-     
-     
     
      
      
-     <a href="index.html"><strong>0. Introduction</strong></a>
+     <a href="/~ffh8x/moi/"><strong>0. Introduction</strong></a>
      
      
      
@@ -66,37 +72,37 @@
       
       
       
-      <li><a href="sets.html">Sets and set theory</a></li>
+      <li><a href="/~ffh8x/moi/sets.html">Sets and set theory</a></li>
       
       
       
       
       
-      <li><a href="numbers.html">Natural numbers, rationals</a></li>
+      <li><a href="/~ffh8x/moi/numbers.html">Natural numbers, rationals</a></li>
       
       
       
       
       
-      <li><a href="fields.html">Fields</a></li>
+      <li><a href="/~ffh8x/moi/fields.html">Fields</a></li>
       
       
       
       
       
-      <li><a href="reals.html">Real numbers</a></li>
+      <li><a href="/~ffh8x/moi/reals.html">Real numbers</a></li>
       
       
       
       
       
-      <li><a href="cardinality.html">Counting and cardinality</a></li>
+      <li><a href="/~ffh8x/moi/counting.html">Counting and cardinality</a></li>
       
       
       
       
       
-      <li><a href="representation.html">Representing information</a></li>
+      <li><a href="/~ffh8x/moi/representation.html">Representing information</a></li>
       
       
       
@@ -110,55 +116,55 @@
       
       
       
-      <li><a href="defining_information.html">Defining information</a></li>
+      <li><a href="/~ffh8x/moi/defining_information.html">Defining information</a></li>
       
       
       
       
       
-      <li><a href="probability_basics.html">Basics of probability</a></li>
+      <li><a href="/~ffh8x/moi/probability_basics.html">Basics of probability</a></li>
       
       
       
       
       
-      <li><a href="distributions.html">Random variables, <br> distributions, independence</a></li>
+      <li><a href="/~ffh8x/moi/distributions.html">Random variables, <br> distributions, independence</a></li>
       
       
       
       
       
-      <li><a href="expectation.html">Expectation and Variance</a></li>
+      <li><a href="/~ffh8x/moi/expectation.html">Expectation and Variance</a></li>
       
       
       
       
       
-      <li><a href="conditional.html">Conditional probability</a></li>
+      <li><a href="/~ffh8x/moi/conditional.html">Conditional probability</a></li>
       
       
       
       
       
-      <li><a href="markov.html">Random sequences and <br> Markov chains</a></li>
+      <li><a href="/~ffh8x/moi/markov.html">Random sequences and <br> Markov chains</a></li>
       
       
       
       
       
-      <li><a href="information_theory.html">Quantifying Information</a></li>
+      <li><a href="/~ffh8x/moi/information_theory.html">Quantifying Information</a></li>
       
       
       
       
       
-      <li><a class="active" style="color:#76bdd5" href="/~ffh8x/moi/compression.html"><img class="emoji" title=":point_right:" alt=":point_right:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f449.png" height="20" width="20"> Data compression</a></li>
+      <li><a class="active" style="color:#76bdd59c" href="/~ffh8x/moi/compression.html"><img class="emoji" title=":point_right:" alt=":point_right:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f449.png" height="20" width="20"> Data compression</a></li>
       
       
       
       
       
-      <li><a href="communications.html">Mathematics of communications</a></li>
+      <li><a href="/~ffh8x/moi/communications.html">Mathematics of communications</a></li>
       
       
       
@@ -172,25 +178,25 @@
       
       
       
-      <li><a href="codes_graphs_algebra.html">Codes, graphs, and algebra</a></li>
+      <li><a href="/~ffh8x/moi/codes_graphs_algebra.html">Codes, graphs, and algebra</a></li>
       
       
       
       
       
-      <li><a href="vectors.html">Vectors and spaces</a></li>
+      <li><a href="/~ffh8x/moi/vectors.html">Vectors and spaces</a></li>
       
       
       
       
       
-      <li><a href="fundamental_spaces.html">Fundamental spaces</a></li>
+      <li><a href="/~ffh8x/moi/fundamental_spaces.html">Fundamental spaces</a></li>
       
       
       
       
       
-      <li><a href="ecc.html">Linear codes</a></li>
+      <li><a href="/~ffh8x/moi/ecc.html">Linear codes</a></li>
       
       
       
@@ -203,27 +209,39 @@
      <ul>
       
       
-      <li><a href="complex.html">Complex numbers</a></li>
+      
+      <li><a href="/~ffh8x/moi/complex.html">Complex numbers</a></li>
       
       
       
-      <li><a href="fourier.html">Frequency and spectrum</a></li>
+      
+      
+      <li><a href="/~ffh8x/moi/fourier.html">Frequency and spectrum</a></li>
       
       
       
-      <li><a href="sampling.html">Filteration and sampling</a></li>
+      
+      
+      <li><a href="/~ffh8x/moi/sampling.html">Filteration and sampling</a></li>
       
       
       
-      <li><a href="linsys.html">Linear systems</a></li>
+      
+      
+      <li><a href="/~ffh8x/moi/linsys.html">Linear systems</a></li>
       
       
       
-      <li><a href="freqresponse.html">Frequency response</a></li>
+      
+      
+      <li><a href="/~ffh8x/moi/freqresponse.html">Frequency response</a></li>
       
       
       
-      <li><a href="modulation.html">Modulation</a></li>
+      
+      
+      <li><a href="/~ffh8x/moi/modulation.html">Modulation</a></li>
+      
       
       
       
@@ -288,19 +306,19 @@
       
       
       
-      <li><a href="axiomatic.html">Axiomatic systems</a></li>
+      <li><a href="/~ffh8x/moi/axiomatic.html">Axiomatic systems</a></li>
       
       
       
       
       
-      <li><a href="index.html"><br></a></li>
+      <li><a href="/~ffh8x/moi/index.html"><br></a></li>
       
       
       
       
       
-      <li><a href="index.html"><br></a></li>
+      <li><a href="/~ffh8x/moi/index.html"><br></a></li>
       
       
       
@@ -313,13 +331,7 @@
   <!-- variables for replacement -->
   <h1 id="data-compression">Data Compression</h1>
 
-<p>In the last section, we defined information mathematically based on a set of desirable properties. From an engineering standpoint, such a definition is useful if it allows us to do some relevant task better. In this section, we study data compression and show how it is related to entropy. We will answer two important question:</p>
-<ol>
-  <li>What is the best we can do?</li>
-  <li>How can we do it?</li>
-</ol>
-
-<p>The answer to the first question is one of the most elegant and useful results in information theory. As we will see, regardless of the computational resources available to us and the type of compression algorithm we use, for a given source of information, there is a strict mathematical limit for the compression ratio that we can achieve.</p>
+<p>In the last section, we defined information mathematically based on a set of desirable properties. From an engineering standpoint, such a definition is useful if it allows us to do some relevant task better. In this section, we study data compression and show how it is related to entropy.</p>
 
 <p>Data compression is possible because real signals do not have a uniform distribution: <a href="information_theory.html#comppic">they have a lot of redundancy/predictability</a>. This means that data compression can reduce the memory required to store or transmit the information with no or little loss.
 The departure from complete randomness comes in two forms:</p>
@@ -327,6 +339,14 @@ The departure from complete randomness comes in two forms:</p>
   <li>Nonuniform probabilities: Not all possibilities have the same probability (e.g., specific colors more common in a given image; some letters are more common in English)</li>
   <li>Dependence and patterns: Adjacent pixels likely to have identical/similar values; Q is often followed by U.</li>
 </ul>
+
+<p>We will answer two important question about data compression:</p>
+<ol>
+  <li>What is the best we can do?</li>
+  <li>How can we do it?</li>
+</ol>
+
+<p>The answer to the first question is one of the most elegant and useful results in information theory. As we will see, regardless of the computational resources available to us and the type of compression algorithm we use, for a given source of information, there is a strict mathematical limit for the compression ratio that we can achieve.</p>
 
 <p>As the answer to the second question above, we’ll learn about Huffman codes (well-suited for nonuniform probabilities) and Lempel-Ziv compression (great for exploiting dependence and predictable patterns). Both are in widespread everyday use (e.g., .jpeg, .mp3, .zip formats rely on these).</p>
 
@@ -629,11 +649,14 @@ Is it possible to represent any of these sequences with less than 1000 bits? -->
 	<strong> The fundamental lower bound on expected length</strong>: The expected code length is not less than the entropy, i.e., $$L \geq H.$$
 </div>
 
-<p>We will not provide a formal proof of this. But intuitively:</p>
+<p>We will provide an informal proof of this statement:</p>
 <ul>
-  <li>Since we can decode and recover the original symbol, <em>the information conveyed by the encoded version</em> cannot be less than entropy.</li>
-  <li>The encoded version is represented by $L$ bits on average and each bit (binary digit) carries at most 1 bit of information, so <em>the information conveyed by the encoded version</em> is at most $L$.</li>
+  <li>Let $X$ be the symbol to be encoded in binary and let $Y$ be its binary representation. For example, $X$ can be a symbol of a DNA sequence and $Y$ is a binary sequence obtained using the code: $X=A\to Y=00$, $X=T \to Y = 01$, $X= C \to Y = 100$, $X = G\to Y=101$, $X=N\to Y = 111$. Now, if we know $Y$, we also know $X$ and vice versa. So $H(X)=H(Y)$.</li>
+  <li>On the other hand, $Y$ consists of $L$ bits on average, where $L$ is the expected code length. Each bit (binary digit) carries at most 1 bit of information. So $Y$ has, on average, at most $L$ bits of information. That is, $H(Y)\le L$.</li>
+  <li>So $L\ge H(Y) = H(X)$, completing the proof.</li>
 </ul>
+
+<p>This result is both deep and useful. It holds regardless of what method we use to find the code or what resources we use. The lower bound is mathematical and cannot be violated. In practice, if we get close to it, we know that we are achieving the theoretical limit, making a substantially better code impossible (so looking for it would be pointless).</p>
 
 <div class="exercise">
     Find the entropy of the source of information given in \eqref{eq:probs} and compare it with the expected code length for <a href="#varLenGenome2">this code</a>, as well as <a href="#varLenGenome">these codes</a>.
@@ -649,7 +672,7 @@ Is it possible to represent any of these sequences with less than 1000 bits? -->
 
 <p>We now know that the expected code length cannot be smaller than the entropy. But how close to the entropy can we get? What is the expected length of the best code?</p>
 
-<p>As an example, let us consider storing DNA data, where the symbols are {A, C, G, T}. The length of the fixed-length code is 2 bits/symbol. This is actually equal to the entropy when all symbols are equally likely, since the entropy is $\log_2 4 = 2$ bits per symbol. So our code matches the entropy of the signal and this is the best possible.</p>
+<p>As an example, let us consider storing DNA data, where the symbols are {A, C, G, T}. The length of the fixed-length code is 2 bits/symbol. This is actually equal to the entropy when all symbols are equally likely, since the entropy is $\log_2 4 = 2$ bits per symbol. So for equally likely outcomes, our code matches the entropy of the signal and this is the best possible.</p>
 
 <p>But what if some symbols are more probable. Then the entropy will be less than 2 bits/symbol and our fixed-length code is no longer necessarily optimal. For example, suppose</p>
 
@@ -918,13 +941,14 @@ Find the expected length of the code for the code in the table above.
 <p><br></p>
 
 <h4 id="20-questions-and-codes">20 questions and codes</h4>
-<p>If we fix our strategy (the way we divide the set of options and ask questions), we can turn our 20 question game into a <em>prefix code</em> for the food items as given in the graph below.</p>
+<p>We can represent our strategy for 20 question graphically, as shown below. Specifically, our first question is “Is the food in the left half?” If the answer is “yes”, we follow the branch labeled with 0, which gives us the new set of options. If “no,” we follow the branch labeled with 1. And continue in the same manner. The structure shown below is called a <em>tree</em>. A tree consists of <em>nodes</em> and <em>edges</em>. The edges connect the nodes. Each node in the tree above indicates a set of possible choices. The two edges going out of each node, divide the possible choices into two set.</p>
 <table width="1000px">
 	<td width="700px"><img src="assets/img/foodTree.png" width="700px"></td>
 	<td width="300px" align="right"><img src="assets/img/foodsCode.png" width="150px"></td>
 </table>
 <div align="center"></div>
-<p>The structure above is called a <em>tree</em>. A tree consists of <em>nodes</em> and <em>edges</em>. The edges connect the nodes. Each node in the tree above indicates a set of possible choices. The two edges going out of each node, divide the possible choices into two nearly equal set.  We label one of the edges with 0 and the other with 1. The sequence of labels leading to an item represent its codeword. For example, pizza is 0100.</p>
+
+<p>We can then turn our 20 question game into a <em>prefix code</em> for the food items. The bits represent answers to the questions, “0” for “yes” and “1” for “no”. Since the questions are already predetermined, we don’t actually have to ask them and the bit sequence uniquely identifies the selected food. For example, pizza is 0100.</p>
 
 <p>The expected number of questions is equal to the average length of the code and very close the entropy:</p>
 
@@ -1198,9 +1222,9 @@ Find the expected code length for the optimal code given above.
 </blockquote>
 
 <h4 id="huffman-codes-for-binary-data">Huffman codes for binary data</h4>
-<p>For the binary alphabet, if each bit is equally likely to be 0 or 1, then the entropy is 1 and the expected code length of any code will also be 1, so there is nothing to be gained from encoding.</p>
+<p>For the binary alphabet, if each bit is equally likely to be 0 or 1, then the entropy is 1 and the expected code length of any code will also be 1, so nothing can be done to reduce the size of the data.</p>
 
-<p>Now, suppose we have an information sources that produces an iid binary sequence where 𝑃(0)=0.1 and 𝑃(1)=0.9. What is the entropy?</p>
+<p>Now, suppose we have an information sources that produces an iid binary sequence where $P(0)=0.1$ and $P(1)=0.9$. What is the entropy?</p>
 
 \[H = 0.1\log 10 + 0.9\log \frac1{0.9} = 0.469\ bits\ per\ symbol\]
 
@@ -1255,25 +1279,35 @@ Find the expected code length for the optimal code given above.
 </div>
 <p><br></p>
 
-<p>When the input sequence and the encoded sequence are both binary, we define</p>
+<p>When the input sequence and the encoded sequence are both binary, we define the compression ratio (CR) as</p>
 
-\[\text{Compression Ratio}=\frac{\text{Length of original sequence}}{\text{Length of encoded sequence}}\]
+\[\text{CR}=\frac{\text{Length of original sequence}}{\text{Length of encoded sequence}}, \qquad (\text{binary input})\]
 
 <p>For the preceding exercise, the compression ratio (CR) is</p>
 
 \[\text{CR} = \frac{20}{14}=1.43.\]
 
+<p>If the input sequence is non-binary, but rather the symbols are from an alphabet with $M$ symbols, then the compression ratio is defined in reference to the shortest fixed-length binary code:</p>
+
+\[\text{CR}=\frac{\text{Length of original sequence}\times \lceil\log_2 M\rceil}{\text{Length of encoded sequence}}, \qquad (\text{non-binary input with $M$ symbols}).\]
+
+<p>For example, if the sequence \(AACGTAN\) is encoded into binary as \(0,0,100,101,110,0,111\) (commas added for clarity), then the compression ratio is \(7\times 3/15=1.4\).</p>
+
 <p>Clearly, the higher the compression ratio the better.</p>
 
 <p>If we are not dealing with a file and are instead discussing a probabilistic source of information and a code without actually using it for compression, we can define the compression ratio for the code as</p>
 
-\[\text{Compression Ratio of a Code}=\frac{1}{\text{Expected Code Length Per Symbol}}\ .\]
+\[\text{CR of a Code}=\frac{1}{\text{Expected Code Length Per Symbol}}\ .\]
 
 <p>For example, for the code of the previous exercise, the compression ratio is</p>
 
 \[\text{CR} = \frac{1}{0.645}=1.55,\]
 
 <p>which is reasonably close to the empirical CR of 1.43.</p>
+
+<p>Similarly, if the input is non-binary with $M$ distinct symbols,</p>
+
+\[\text{CR of a Code}=\frac{\lceil\log_2 M\rceil}{\text{Expected Code Length Per Symbol}}, \qquad (\text{non-binary input with $M$ symbols}).\]
 
 <h4 id="the-codebook">The codebook</h4>
 <p>When encoding data using Huffman codes or any other code, we need to also store the code, so that we can later use it for decoding. This information is referred to as the <em>codebook</em> or the <em>dictionary</em>. In practical problems, the number of bits used for the dictionary is typically much smaller than the length of the sequence, so we usually ignore it when computing the size of the compressed sequence.</p>
@@ -1296,29 +1330,59 @@ Find the expected code length for the optimal code given above.
   </li>
 </ul>
 
-<h2 id="compression-of-non-iid-data">Compression of non-iid data</h2>
+<h2 id="compression-of-markov-sequences-and-other-non-iid-data">Compression of Markov sequences and other non-iid data</h2>
 
-<p>Shannon’s result also holds for non-iid data, including Markov chains. In this case, it says if the length of data is long, the best expected code length that can be achieved is essentially equal to the entropy per symbol of the random sequence. We will discuss two approaches for achieving this.</p>
+<p>Shannon’s result also holds for non-iid data, including Markov chains. In this case, it says if the length of data is long, the best expected code length that can be achieved is essentially equal to the entropy per symbol of the random sequence. We will discuss two approaches for achieving this, using Huffman codes on blocks of symbols and the Lempel-Ziv algorithm.</p>
 
 <h3 id="huffman-codes-again">Huffman codes, again</h3>
 <p>Huffman codes can also be used when there is dependence between the sequence’s symbols, such as an image, where adjacent pixels are likely to be similar. But in this case, we have to create blocks larger than one symbol to be able to take advantage of the dependence between symbols. Let us see two examples:</p>
-
-<h4 id="an-image">An image</h4>
-<p>Consider the eye image we saw before:</p>
-
-<div align="center">
-<img src="assets/img/eye.png" width="310px">
-</div>
-
-<p>We can group $2\times 2$ blocks of pixels as blocks for Huffman code. There will be many completely black blocks and some completely white blocks. There will be a few blocks with mixed colors too. The Huffman code will assign short codewords to black and to white blocks and long codewords to mixed blocks, leading to a smaller number of bits than the 744 original bits.</p>
 
 <h4 id="a-markov-chain">A Markov chain</h4>
 
 <p>Let us consider the Markov chain with transition matrix:</p>
 
+<table class="tabDefault" align="center">
+  <thead>
+    <tr>
+      <th style="text-align: right"> </th>
+      <th>🌞</th>
+      <th>☁️</th>
+      <th>🌧️</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th style="text-align: right">🌞</th>
+      <td>.7</td>
+      <td>.2</td>
+      <td>.1</td>
+    </tr>
+    <tr>
+      <th style="text-align: right">☁️</th>
+      <td>.1</td>
+      <td>.7</td>
+      <td>.2</td>
+    </tr>
+    <tr>
+      <th style="text-align: right">🌧️</th>
+      <td>.2</td>
+      <td>.1</td>
+      <td>.7</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The following sequence of length around 300 is generated by this Markov chain:</p>
+
+<p>🌞🌞🌞🌞☁️☁️☁️☁️☁️☁️☁️☁️☁️🌞🌞🌞🌞🌞☁️🌧️🌧️🌧️🌧️🌧️🌞🌞🌞☁️🌧️🌧️🌞🌞🌞🌞🌞🌧️☁️🌞☁️🌧️🌧️🌧️🌞☁️🌧️☁️☁️☁️☁️☁️☁️☁️☁️☁️☁️☁️☁️🌧️🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞☁️🌧️🌧️🌧️🌧️🌧️🌞🌞🌞🌞🌞🌞🌧️🌧️🌧️🌧️🌧️🌞🌞🌞🌞🌞🌧️🌧️🌧️🌧️🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌧️🌞🌞🌞🌞🌞🌞🌞🌧️☁️☁️☁️☁️☁️🌧️☁️☁️🌧️🌧️🌧️🌧️🌧️🌧️☁️🌞🌧️🌧️🌧️🌧️🌧️🌧️🌧️🌧️🌞🌞🌞🌞🌞☁️☁️☁️☁️☁️🌞☁️🌞☁️☁️☁️☁️☁️🌧️🌧️🌞🌞🌞☁️🌞☁️☁️☁️☁️🌧️🌞🌞🌞🌞🌞🌧️🌧️☁️🌧️🌧️🌧️🌧️🌧️🌧️🌞🌞🌞🌧️🌧️🌞🌞☁️🌞🌞🌧️🌧️☁️☁️☁️🌧️🌧️🌧️🌞☁️☁️☁️☁️🌧️🌧️🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌧️🌧️🌧️🌧️🌧️🌧️🌧️🌧️🌞🌞☁️🌧️🌧️☁️☁️☁️☁️☁️🌧️🌞☁️☁️☁️☁️☁️☁️☁️☁️☁️☁️☁️🌞🌧️☁️☁️☁️☁️☁️🌧️🌧️🌞☁️☁️🌞🌞☁️🌞☁️🌧️🌧️🌧️🌧️🌧️🌧️🌧️🌧️🌧️☁️☁️☁️☁️☁️☁️☁️☁️🌧️🌧️🌧️🌞🌞🌞☁️🌞🌞🌞☁️🌧️🌧️🌞🌞🌞🌞🌞🌞🌞🌞☁️☁️☁️☁️🌧️🌞🌞🌞🌧️☁️🌞☁️☁️☁️🌧️🌧️🌧️🌞☁️☁️🌧️🌧️🌧️☁️☁️🌞🌧️🌧️🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌞🌧️🌧️🌧️🌧️🌞🌞🌞🌞🌞☁️☁️☁️☁️☁️☁️☁️🌧️🌧️🌧️</p>
+
+<p>How should we represent this data? The three weather types appear the same number of times. So we cannot assign a short codeword to the most common.  We shouldn’t focus on individual symbols but rather on patterns as Markov chains are designed to represent relationships and patterns. More specifically, we should assign short codewords to common patterns. For the above example, we can form blocks by grouping each pair of symbols. Then we can assign short codewords to 🌞🌞, ☁️☁️, and 🌧️🌧️, and longer codewords to the other possibilities.</p>
+
+<p>As a simpler example, consider the transition matrix,</p>
+
 \[A= \left(\begin{array} 0.9&amp;.1\\.1&amp;.9\end{array}\right).\]
 
-<p>State 1 may for example correspond to cloudy weather and state 2 to sunny weather. To keep our alphabet binary, we use 0 instead of 2. The following sequence of length 50 is generated by this Markov chain:</p>
+<p>State 1 may for example correspond to cloudy weather and state 2 to sunny weather (it does not rain, ever). To keep our alphabet binary, we use 0 instead of 2. The following sequence of length 50 is generated by this Markov chain:</p>
 
 \[00000000001000000000000111110000000011111111111111\]
 
@@ -1348,6 +1412,15 @@ Find the expected code length for the optimal code given above.
     Use a Huffman code with an appropriate block size to compress the sequence and compare the length of the resulting sequence with the entropy of the Markov chain and the length of the original sequence.
 </div>
 <p><br></p>
+
+<h4 id="an-image">An image</h4>
+<p>Consider the eye image we saw before:</p>
+
+<div align="center">
+<img src="assets/img/eye.png" width="310px">
+</div>
+
+<p>We can group $2\times 2$ blocks of pixels as blocks for Huffman code. There will be many completely black blocks and some completely white blocks. There will be a few blocks with mixed colors too. The Huffman code will assign short codewords to black and to white blocks and long codewords to mixed blocks, leading to a smaller number of bits than the 744 original bits.</p>
 
 <h3 id="lempel-ziv-the-universal-compression-method">Lempel-Ziv, the universal compression method</h3>
 <p>Suppose we are given a text file to compress. What should we take as symbols? Letters? Words? Sentences?</p>
@@ -1425,7 +1498,7 @@ Find the expected code length for the optimal code given above.
   <br><br>
   <center>
     <hr>
-  © Farzad Farnoud, 2020</center>
+  © Farzad Farnoud, 2023</center>
 </footer>
 </div>
 <!-- Default Statcounter code for MoI

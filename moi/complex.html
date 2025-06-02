@@ -9,17 +9,31 @@
   
   <!-- for mathjax support -->
   
-  <script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    TeX: { equationNumbers: { autoNumber: "AMS" } },
-    //tex2jax: {inlineMath: [['$', '$'], ['\\(', '\\)']]}
-    //tex2jax: {inlineMath: [['\(', '\)'], ['\\(', '\\)']]}
-    tex2jax: {inlineMath: [['$', '$'], ['\\(', '\\)']]}
-    //tex2jax: {inlineMath: [['$', '$'], ['\(', '\)'], ['\\(', '\\)']]}
-  });
-  </script>
-  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <script>
+    window.MathJax = {
+      tex: {
+        tags: "ams",
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        autoload: {
+          color: [],
+          colorv2: ['color']
+        },
+        packages: {'[+]': ['noerrors']}
+      },
+      options: {
+        ignoreHtmlClass: 'tex2jax_ignore',
+        processHtmlClass: 'tex2jax_process'
+      },
+      loader: {
+        load: ['[tex]/noerrors']
+      }
+    };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script"></script>
   
+  
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jsxgraph/1.1.0/jsxgraphcore.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/jsxgraph/1.1.0/jsxgraph.css" />
   
   <script src="assets/js/coding.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -32,7 +46,6 @@
   <div class="topnav">
   <a style="float:left;" href="index.html"><strong>Mathematics of Information</strong></a>
   <a id="teaching" href="../teaching.html">Teaching</a>
-  <a id="group" href="../ips.html">Group</a>
   <a id="pubs" href="../publications.html">Publications</a>
   <a id="home" href="../index.html">Home</a> 
   </div>
@@ -44,56 +57,52 @@
      
      
      
-     <a href="index.html"><strong>Home</strong></a>
+    
+     
+     
+     <a href="/~ffh8x/moi/"><strong>0. Introduction</strong></a>
      
      
      
     
      
      
-     <a href="index.html"><strong>0. Introduction</strong></a>
-     
-     
-     
-    
-     
-     
-     <span class="chapnav"><strong>1. Numbers, fields, and <br/>representing information</strong></span>
+     <span class="chapnav"><strong>1. Numbers, fields, and <br>representing information</strong></span>
      <ul>
       
       
       
-      <li><a href="sets.html">Sets and set theory</a></li>
+      <li><a href="/~ffh8x/moi/sets.html">Sets and set theory</a></li>
       
       
       
       
       
-      <li><a href="numbers.html">Natural numbers, rationals</a></li>
+      <li><a href="/~ffh8x/moi/numbers.html">Natural numbers, rationals</a></li>
       
       
       
       
       
-      <li><a href="fields.html">Fields</a></li>
+      <li><a href="/~ffh8x/moi/fields.html">Fields</a></li>
       
       
       
       
       
-      <li><a href="reals.html">Real numbers</a></li>
+      <li><a href="/~ffh8x/moi/reals.html">Real numbers</a></li>
       
       
       
       
       
-      <li><a href="cardinality.html">Counting and cardinality</a></li>
+      <li><a href="/~ffh8x/moi/counting.html">Counting and cardinality</a></li>
       
       
       
       
       
-      <li><a href="representation.html">Representing information</a></li>
+      <li><a href="/~ffh8x/moi/representation.html">Representing information</a></li>
       
       
       
@@ -102,60 +111,60 @@
     
      
      
-     <span class="chapnav"><strong>2. Probability & information</strong></span>
+     <span class="chapnav"><strong>2. Probability &amp; information</strong></span>
      <ul>
       
       
       
-      <li><a href="defining_information.html">Defining information</a></li>
+      <li><a href="/~ffh8x/moi/defining_information.html">Defining information</a></li>
       
       
       
       
       
-      <li><a href="probability_basics.html">Basics of probability</a></li>
+      <li><a href="/~ffh8x/moi/probability_basics.html">Basics of probability</a></li>
       
       
       
       
       
-      <li><a href="distributions.html">Random variables, <br/> distributions, independence</a></li>
+      <li><a href="/~ffh8x/moi/distributions.html">Random variables, <br> distributions, independence</a></li>
       
       
       
       
       
-      <li><a href="expectation.html">Expectation and Variance</a></li>
+      <li><a href="/~ffh8x/moi/expectation.html">Expectation and Variance</a></li>
       
       
       
       
       
-      <li><a href="conditional.html">Conditional probability</a></li>
+      <li><a href="/~ffh8x/moi/conditional.html">Conditional probability</a></li>
       
       
       
       
       
-      <li><a href="markov.html">Random sequences and <br/> Markov chains</a></li>
+      <li><a href="/~ffh8x/moi/markov.html">Random sequences and <br> Markov chains</a></li>
       
       
       
       
       
-      <li><a href="information_theory.html">Quantifying Information</a></li>
+      <li><a href="/~ffh8x/moi/information_theory.html">Quantifying Information</a></li>
       
       
       
       
       
-      <li><a href="compression.html">Data compression</a></li>
+      <li><a href="/~ffh8x/moi/compression.html">Data compression</a></li>
       
       
       
       
       
-      <li><a href="communications.html">Mathematics of communications</a></li>
+      <li><a href="/~ffh8x/moi/communications.html">Mathematics of communications</a></li>
       
       
       
@@ -164,30 +173,30 @@
     
      
      
-     <span class="chapnav"><strong>3. Linear algebra, finite fields, <br/>and error correction</strong></span>
+     <span class="chapnav"><strong>3. Linear algebra, finite fields, <br>and error correction</strong></span>
      <ul>
       
       
       
-      <li><a href="codes_graphs_algebra.html">Codes, graphs, and algebra</a></li>
+      <li><a href="/~ffh8x/moi/codes_graphs_algebra.html">Codes, graphs, and algebra</a></li>
       
       
       
       
       
-      <li><a href="vectors.html">Vectors and spaces</a></li>
+      <li><a href="/~ffh8x/moi/vectors.html">Vectors and spaces</a></li>
       
       
       
       
       
-      <li><a href="fundamental_spaces.html">Fundamental spaces</a></li>
+      <li><a href="/~ffh8x/moi/fundamental_spaces.html">Fundamental spaces</a></li>
       
       
       
       
       
-      <li><a href="ecc.html">Linear codes</a></li>
+      <li><a href="/~ffh8x/moi/ecc.html">Linear codes</a></li>
       
       
       
@@ -196,31 +205,43 @@
     
      
      
-     <span class="chapnav"><strong>4. The frequency domain and <br/>transmission of information</strong></span>
+     <span class="chapnav"><strong>4. The frequency domain and <br>transmission of information</strong></span>
      <ul>
       
       
-      <li><a href="complex.html"><img href="" class="emoji" title=":point_right:" alt=":point_right:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f449.png" height="20" width="20">Complex numbers</a></li>
+      
+      <li><a class="active" style="color:#76bdd59c" href="/~ffh8x/moi/complex.html"><img class="emoji" title=":point_right:" alt=":point_right:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f449.png" height="20" width="20"> Complex numbers</a></li>
       
       
       
-      <li><a href="fourier.html">Frequency and spectrum</a></li>
+      
+      
+      <li><a href="/~ffh8x/moi/fourier.html">Frequency and spectrum</a></li>
       
       
       
-      <li><a href="sampling.html">Filteration and sampling</a></li>
+      
+      
+      <li><a href="/~ffh8x/moi/sampling.html">Filteration and sampling</a></li>
       
       
       
-      <li><a href="linsys.html">Linear systems</a></li>
+      
+      
+      <li><a href="/~ffh8x/moi/linsys.html">Linear systems</a></li>
       
       
       
-      <li><a href="freqresponse.html">Frequency response</a></li>
+      
+      
+      <li><a href="/~ffh8x/moi/freqresponse.html">Frequency response</a></li>
       
       
       
-      <li><a href="modulation.html">Modulation</a></li>
+      
+      
+      <li><a href="/~ffh8x/moi/modulation.html">Modulation</a></li>
+      
       
       
       
@@ -236,7 +257,7 @@
     
      
      
-     <span class="chapnav"><strong>5. Number theory and <br/>information privacy</strong></span>
+     <span class="chapnav"><strong>5. Number theory and <br>information privacy</strong></span>
      <ul>
       
       
@@ -256,7 +277,7 @@
     
      
      
-     <span class="chapnav"><strong>6. Boolean algebra and <br/ >computation</strong></span>
+     <span class="chapnav"><strong>6. Boolean algebra and <br>computation</strong></span>
      <ul>
       
       
@@ -272,7 +293,7 @@
       
       
       
-      <li class="chapnav"></li>
+      <li class="chapnav">
       
       
     </ul>
@@ -285,19 +306,19 @@
       
       
       
-      <li><a href="axiomatic.html">Axiomatic systems</a></li>
+      <li><a href="/~ffh8x/moi/axiomatic.html">Axiomatic systems</a></li>
       
       
       
       
       
-      <li><a href="index.html"><br/></a></li>
+      <li><a href="/~ffh8x/moi/index.html"><br></a></li>
       
       
       
       
       
-      <li><a href="index.html"><br/></a></li>
+      <li><a href="/~ffh8x/moi/index.html"><br></a></li>
       
       
       
@@ -309,63 +330,47 @@
 <div class="main">
   <!-- variables for replacement -->
   <h1 id="complex-numbers">Complex numbers</h1>
-
+<h2 id="introduction">Introduction</h2>
 <h3 id="the-square-root-of--1">The square root of \(-1\)</h3>
 
-<p>The field of real numbers is quite powerful (and complex). Still, there are simple equations with no solutions, in particular,  \(𝑥^2+1=0\) does not have a solution. Let’s represent a solution to \(𝑥^2+1=0\) as \(\sqrt{-1}\). So \(\sqrt {-1}\) is defined as the number whose square is \(-1\). It is also shown by 𝕚,𝑖,𝑗. This is called an imaginary number, but the way we arrived at it is similar to defining negative numbers, e.g., as the solution to \(x+1=0\). So in a sense, \(\sqrt {-1}\) is not less “real” than -1.</p>
+<p>The field of real numbers is quite powerful (and complex). Still, there are simple algebraic equations with no solutions. In particular,</p>
 
-<p>If \(\sqrt{-1}\) is a solution then \(−\sqrt{-1}=−𝕚\) must be another solution:
-\((−𝕚)^2=(-𝕚)\times(-𝕚)=𝕚\times 𝕚 = -1\)</p>
+<div>$$x^2+1=0.$$</div>
 
-<p>What is \(1/𝕚\)? In other words, what is \(x\) such that \(𝕚\times x = 1\)?</p>
+<p>What if we define \(\mathbb{i}\) as the solution to this equation? That is, \(\mathbb{i}\) is a number such that</p>
 
-\[𝕚\times x = 1 \Rightarrow 𝕚\times 𝕚\times x = 𝕚\Rightarrow -1\times x = 𝕚 \Rightarrow x = -𝕚.\]
+<div>$$\mathbb{i}^2+1=0.$$</div>
 
-<p>The set of complex numbers is defined as</p>
+<p>We can then use this definition to find out how \(\mathbb{i}\) behaves when interacting with other numbers. First, by rearranging, we find that</p>
 
-\[ℂ=\{𝑎+𝑏𝕚:𝑎,𝑏∈ℝ\}\]
+<div>$$\mathbb{i}^2=-1.$$</div>
 
-<p>with the following operations and inverses:</p>
-<ul>
-  <li>
-    <p>Addition: 
-\((𝑎+𝑏𝕚)+(𝑐+𝑑𝕚)=𝑎+𝑐+𝕚(𝑏+𝑑)\)</p>
-  </li>
-  <li>
-    <p>Multiplication:
-\((𝑎+𝑏𝕚)(𝑐+𝑑𝕚)=𝑎𝑐+𝑎𝑑𝕚+𝑏𝑐𝕚+𝑏𝑑𝕚^2=𝑎𝑐−𝑏𝑑+(𝑎𝑑+𝑏𝑐)𝕚\)</p>
-  </li>
-  <li>
-    <p>Additive inverse: 
-\(−(𝑎+𝑏𝕚)=(−𝑎)+(−𝑏)𝕚\)</p>
-  </li>
-  <li>
-    <p>Multiplicative inverse: 
-\(\frac{1}{(𝑎+𝑏𝕚)}=\frac{1}{(𝑎+𝑏𝕚)}\frac{(𝑎−𝑏𝕚)}{(𝑎−𝑏𝕚)}=\frac{(𝑎−𝑏𝕚)}{(𝑎^2+𝑏^2 )}=\frac{𝑎}{(𝑎^2+𝑏^2 )}−\frac{𝑏}{(𝑎^2+𝑏^2)} 𝕚\)</p>
-  </li>
-</ul>
+<p>For this reason, we sometimes repersent \(\mathbb{i}\) with \(\sqrt{-1}\). Other notations include \(i\) and \(j\), with the latter being common in electrical engineering (to avoid confusion with the symbol \(i\) used for current.) We will use \(i\) and \(\mathbb{i}\) interchangeably. The number \(\mathbb{i}\) is called the imaginary unit, but the way we arrived at it is similar to defining negative numbers, e.g., as the solution to \(x+1=0\). So in a sense, \(\mathbb{i}\) is not less “real” than \(-1\).</p>
+
+<p>If \(\mathbb{i}\) is a solution then \(−\mathbb{i}\) must be another solution:
+\((−\mathbb{i})^2=(-\mathbb{i})\times(-\mathbb{i})=\mathbb{i}\times \mathbb{i} = -1\).</p>
+
+<p>What is \(1/\mathbb{i}\)? In other words, what is \(x\) such that \(\mathbb{i}\times x = 1\)?</p>
+
+\[\mathbb{i}\times x = 1 \Rightarrow \mathbb{i}\times \mathbb{i}\times x = \mathbb{i}\Rightarrow -1\times x = \mathbb{i} \Rightarrow x = -\mathbb{i}.\]
 
 <div class="highlight">
-<strong>The fundamental theorem of algebra</strong><hr />
-Every non-constant polynomial has a complex root. Furthermore, any polynomial of degree \(n\) can be written as a product of \(n\) first-degree polynomials and has precisely \(n\) roots.
+<strong>Definition:</strong>
+The set of complex numbers is defined as
+$$\mathbb{C}=\{a+b\mathbb{i}: a,b \in \mathbb{R}\}$$ with the following operations and inverses:
+<ul>
+<li> Addition: \( (a+b\mathbb{i})+(c+d\mathbb{i})=a+c+\mathbb{i}(b+d) \)</li>
+<li> Multiplication: \( (a+b\mathbb{i})(c+d\mathbb{i})=ac+ad\mathbb{i}+bc\mathbb{i}+bd\mathbb{i}^2=ac−bd+(ad+bc)\mathbb{i} \)</li>
+<li> Additive inverse: \( −(a+b\mathbb{i})=(−a)+(−b)\mathbb{i}  \) </li>
+<li> Multiplicative inverse: \( \frac{1}{(a+b\mathbb{i})}=\frac{1}{(a+b\mathbb{i})}\frac{(a−b\mathbb{i})}{(a−b\mathbb{i})}=\frac{(a−b\mathbb{i})}{(a^2+b^2 )}=\frac{a}{(a^2+b^2 )}−\frac{b}{(a^2+b^2)} \mathbb{i} \)</li>
+</ul>
 </div>
 
-<p>Examples:</p>
+<p></p>
 
-\[\begin{align*}
-𝑥^2+5&amp;=(𝑥−𝕚\sqrt{5})(𝑥+𝕚\sqrt{5})\\
-&amp;⇒𝑟𝑜𝑜𝑡𝑠=𝕚\sqrt{5},−𝕚\sqrt{5}
-\end{align*}\]
+<h3 id="numbers-summary">Numbers: Summary</h3>
 
-\[\begin{align*}
-𝑥^3−1&amp;=(𝑥−1)(𝑥^2+𝑥+1)\\
-&amp; =(𝑥−1)(𝑥^2+𝑥+1/4+3/4)\\
-&amp; =(𝑥−1)((𝑥+1/2)^2+3/4)\\
-&amp; =(𝑥−1)(𝑥+1/2+(𝕚\sqrt{3})/2)(𝑥+1/2−(𝕚\sqrt{3})/2)\\
-&amp; \Rightarrow roots = 1, -1/2-(𝕚\sqrt{3})/2, -1/2+(𝕚\sqrt{3})/2
-\end{align*}\]
-
-<h2 id="numbers-summary">Numbers: Summary</h2>
+<p>Recall that we started with natural numbers and gradually built up to construct real numbers numbers. Now we have also added complex numbers.</p>
 
 <table class="tabDefault">
   <thead>
@@ -397,7 +402,7 @@ Every non-constant polynomial has a complex root. Furthermore, any polynomial of
       <td>\(\mathbb Q\)</td>
       <td>\(0,\pm 1,\pm\frac12,...\)</td>
       <td>\(+\times -/\)</td>
-      <td>Solve \(x^2=2\)<br />Perimeter of unit circle</td>
+      <td>Solve \(x^2=2\)<br>Perimeter of unit circle</td>
     </tr>
     <tr>
       <td>Reals</td>
@@ -409,257 +414,697 @@ Every non-constant polynomial has a complex root. Furthermore, any polynomial of
     <tr>
       <td>Complex numbers</td>
       <td>\(\mathbb C\)</td>
-      <td>\(\{a+b\mathbb i: a,b\in\mathbb R\}\)</td>
+      <td>\(\{a+b\mathbb{i}: a,b\in\mathbb R\}\)</td>
       <td>\(+\times -/\)</td>
       <td> </td>
     </tr>
   </tbody>
 </table>
 
-<p>Complex numbers are said to be complete (contain the limits of all converging sequences) and algebraically closed (all polynomial have roots).</p>
+<p>Complex numbers are said to be complete (contain the limits of all converging sequences) and algebraically closed (all polynomials have roots). The latter property is stated in the fundamental theorem of algebra, discussed below.</p>
 
-<h2 id="geometric-representation">Geometric representation</h2>
-<p>Real numbers can be represented on (1-dimensional) real line</p>
+<h2 id="two-representations">Two Representations</h2>
+<h3 id="geometric-representation">Geometric representation</h3>
+<p>Real numbers can be represented on the (1-dimensional) real line. For example, $r=2.2$ is shown below.</p>
 
-<p>Complex numbers are represented on (2-dim) complex plane</p>
+<center><div id="1dline" class="jxgbox" style="width:300px; height:100px;"></div></center>
+<script>
+var b1 = JXG.JSXGraph.initBoard('1dline', {boundingbox:[-5, 1, 5, -1],showCopyright: false,
+    showNavigation: false,});
+var axisx = b1.create('axis', [[0,0], [1,0]], 
+  {
+    firstArrow: false,
+    lastArrow: true,
+    ticks: {
+      drawZero: true,
+      ticksDistance: 1,
+      majorHeight: 30,
+      tickEndings: [1,1],
+      minorTicks: 0
+    }
+  });
+var p = b1.create('glider', [2.2, 0, axisx], {name: '$r$', size:2, color: "blue"});
+</script>
 
-<p>$z = a + ib$</p>
+<p>Complex numbers are represented on the (2-dimentional) complex plane. Specifically, $z=x+iy, x,y\in \mathbb R$ is given by the pont $(x,y)$. In the graph below, you can drag the point $z$ to see this representation in action.</p>
+<center>
+<div id="b2" class="jxgbox" style="width:300px; height:300px;"></div>
+</center>
+<script>
+JXG.Options.text.useMathJax = true;
+const b2 = JXG.JSXGraph.initBoard('b2', {
+    boundingbox: [-1, 4, 4, -1],
+    axis: true,
+    showCopyright: false,
+    showNavigation: false
+});
+var z_b2 = b2.create('point', [3, 2], {name:'$z$', size: 2, color:'blue'});
+var t_b2_im = b2.create('text', [0.2, 3.9, '$$Im$$'], {color:'grey', fontSize:12});
+var t_b2_re = b2.create('text', [3.2, 0.5, '$$Re$$'], {color:'grey', fontSize:12});
+var l_b2_z = b2.create('line', [[0, 0], z_b2], {straightFirst:false, straightLast:false, strokeWidth:2})
+var l_b2_a = b2.create('line', [[() => z_b2.X(), 0], z_b2], {straightFirst:false, straightLast:false, strokeWidth:2, dash: 1, color: "orange"});
+var l_b2_b = b2.create('line', [[0, () => z_b2.Y()], z_b2], {straightFirst:false, straightLast:false, strokeWidth:2, dash: 1, color: "orange"});
+var t_b2_z = b2.create('text', [() => z_b2.X()/2, () => z_b2.Y()/2, '$$|z|$$'], {color:'black', fontSize:12});
+var t_b2_a = b2.create('text', [() => z_b2.X()/2, () => z_b2.Y(), '$$a$$'], {color:'orange', fontSize:12});
+var t_b2_b = b2.create('text', [() => z_b2.X() + 0.1, () => z_b2.Y()/2, '$$b$$'], {color:'orange', fontSize:12});
+var t_b2_az = b2.create('text', [0.55, 0.25, '∠ z'], {color:'black', fontSize:12});
+var s_b2_z = b2.create('sector', [[0, 0], [0.5, 0], z_b2]);
+</script>
 
-<p>Real part: $Re(z) = a$</p>
+<div class="hightlight">
+</div>
+<p>For a complex number $z = a + ib$.</p>
+<ul>
+  <li>Real part: $Re(z) = a$</li>
+  <li>Imaginary part: $Im(z) = b$</li>
+  <li>Magnitude: distance from origin, $\left\vert z \right\vert = \sqrt{a^{2} + b^{2}}$</li>
+  <li>Phase: angle (counterclockwise) from the real line $\angle z = \tan^{- 1}\frac{b}{a}$</li>
+</ul>
 
-<p>Imaginary part: $Im(z) = b$</p>
+<div class="exercise"> <button onclick="showSolution(this,'plotz')" style="float:right;">Show Solution</button>Plot the following numbers in the complex plane: $z_{1} = 1$, $z_{2} = i$, $z_{3} = 3 + 2i$,
+$z_{4} = z_{2} + z_{3}$, $z_{5} = \frac{1}{z_{3}}$ 
 
-<p>Magnitude: distance from origin</p>
+</div>
+<div id="plotz" style="display:none;" class="solution">
+It is obvious to find $z_1$ to $z_4$. To find $z_5$ we have 
+\begin{align*}
+z_5z_3=1&amp;\Rightarrow (a+bi)(3+2i)=1+0i \\
+&amp;\Rightarrow (3a - 2b) + (2a + 3b)i = 1 + 0i\\
+&amp;\Rightarrow 3a - 2b = 1, 2a + 3b = 0 \\
+&amp;\Rightarrow a = \frac{3}{13}, b = -\frac{2}{13}.
+\end{align*}
+<center><div id="b3" class="jxgbox" style="width:300px; height:300px;"></div></center>
+<script>
+JXG.Options.text.useMathJax = true;
+const b3 = JXG.JSXGraph.initBoard('b3', {
+    boundingbox: [-1, 4, 4, -1],
+    axis: true,
+    showCopyright: false,
+    showNavigation: false
+});
+var z_b3_1 = b3.create('point', [1, 0], {name:'$z_1$', size: 2, color:'blue', fixed: true});
+var z_b3_2 = b3.create('point', [0, 1], {name:'$z_2$', size: 2, color:'blue', fixed: true});
+var z_b3_3 = b3.create('point', [3, 2], {name:'$z_3$', size: 2, color:'blue', fixed: true});
+var z_b3_4 = b3.create('point', [3, 3], {name:'$z_4$', size: 2, color:'blue', fixed: true});
+var z_b3_5 = b3.create('point', [3/13, -2/13], {name:'$z_5$', size: 2, color:'blue', fixed: true});
+</script>
+</div>
+<p><br></p>
 
-<p>$\left\vert z \right\vert = \sqrt{a^{2} + b^{2}}$</p>
+<div class="exercise"> <button onclick="showSolution(this,'plotzi')" style="float:right;">Show Solution</button>What do we get of we multiply $z = a + ib$ by $i$? Show on the complex plane.
 
-<p>Phase: angle (counterclockwise) from the real line</p>
+</div>
+<div id="plotzi" style="display:none;" class="solution">
+$$z\cdot i = (a + bi) i = -b + ai$$
+We can see that the vectors representing $z$ and $iz$ are orthogonal: 
+$$\langle(a,b),(-b,a)\rangle = -ab+ab = 0.$$ We can then see that $zi$ is $z$ rotated $90^{\circ}$ counter-clock-wise. The graph below shows an example and is interactive.
+<center><div id="b4" class="jxgbox" style="width:300px; height:300px;"></div></center>
+<script>
+JXG.Options.text.useMathJax = true;
+const b4 = JXG.JSXGraph.initBoard('b4', {
+    boundingbox: [-4, 4, 4, -4],
+    axis: true,
+    showCopyright: false,
+    showNavigation: false
+});
+{
+var z_b4 = b4.create('point', [2, 3], {name:'$z$', size: 2, color:'blue'});
+var zi_b4 = b4.create('point', [() => z_b4.Y()/-1, () => z_b4.X()], {name:'$$z i$$', size: 2, color:'blue'});
+var l_b4_zi = b4.create('line', [[0, 0], zi_b4], {straightFirst:false, straightLast:false, strokeWidth:2})
+var l_b4_ai = b4.create('line', [[() => zi_b4.X(), 0], zi_b4], {straightFirst:false, straightLast:false, strokeWidth:2, dash: 1, color: "orange"});
+var l_b4_bi = b4.create('line', [[0, () => zi_b4.Y()], zi_b4], {straightFirst:false, straightLast:false, strokeWidth:2, dash: 1, color: "orange"});
+var t_b4_ai = b4.create('text', [() => zi_b4.X()/2, () => zi_b4.Y(), '$$a$$'], {color:'orange', fontSize:12});
+var t_b4_bi = b4.create('text', [() => zi_b4.X() + 0.1, () => zi_b4.Y()/2, '$$b$$'], {color:'orange', fontSize:12});
+var t_b4_im = b4.create('text', [0.2, 3.9, '$$Im$$'], {color:'grey', fontSize:12});
+var t_b4_re = b4.create('text', [3.2, 0.5, '$$Re$$'], {color:'grey', fontSize:12});
+var l_b4_z = b4.create('line', [[0, 0], z_b4], {straightFirst:false, straightLast:false, strokeWidth:2})
+var l_b4_a = b4.create('line', [[() => z_b4.X(), 0], z_b4], {straightFirst:false, straightLast:false, strokeWidth:2, dash: 1, color: "orange"});
+var l_b4_b = b4.create('line', [[0, () => z_b4.Y()], z_b4], {straightFirst:false, straightLast:false, strokeWidth:2, dash: 1, color: "orange"});
+var t_b4_a = b4.create('text', [() => z_b4.X()/2, () => z_b4.Y(), '$$a$$'], {color:'orange', fontSize:12});
+var t_b4_b = b4.create('text', [() => z_b4.X() + 0.1, () => z_b4.Y()/2, '$$b$$'], {color:'orange', fontSize:12});
+var t_b4_z = b4.create('text', [() => z_b4.X()/2, () => z_b4.Y()/2, '$$|z|$$'], {color:'black', fontSize:12});
+var t_b4_az = b4.create('text', [0.75, 0.5, '$$∠ z$$'], {color:'black', fontSize:12});
+var s_b4_z = b4.create('sector', [[0, 0], [0.5, 0], z_b4]);
+}
+</script>
+</div>
 
-<p>$\angle z = \tan^{- 1}\frac{b}{a}$</p>
+<p><br></p>
+<div class="exercise"> Show the powers of $i$: $i$, $i^{2},i^{3},\ldots$ on the complex plane.
+<button onclick="showSolution(this,'plotiiii')" style="float:right;">Show Solution</button>
+</div>
+<div id="plotiiii" style="display:none;" class="solution">
+<center><div id="b5" class="jxgbox" style="width:300px; height:300px;"></div></center>
+The pattern repeats with a period of 4.
+<script>
+JXG.Options.text.useMathJax = true;
+const b5 = JXG.JSXGraph.initBoard('b5', {
+    boundingbox: [-2, 2, 2, -2],
+    axis: true,
+    showCopyright: false,
+    showNavigation: false
+});
+{
+var i1_b4 = b5.create('point', [0, 1], {name:'$i$', size: 2, color:'blue', fixed: true});
+var i2_b4 = b5.create('point', [-1, 0], {name:'$i^2=-1$', size: 2, color:'blue', fixed: true});
+var i3_b4 = b5.create('point', [0, -1], {name:'$i^3=-i$', size: 2, color:'blue', fixed: true});
+var i4_b4 = b5.create('point', [1, 0], {name:'$i^4=1$', size: 2, color:'blue', fixed: true});
+}
+</script>
+</div>
 
-<p><img src=".//media/complex/image1.png" alt="" />
-<img src=".//media/complex/image2.png" alt="" /></p>
-
-<p>Examples: $z_{1} = 1$, $z_{2} = i$, $z_{3} = 3 + 2i$,
-$z_{4} = z_{2} + z_{3}$, $z_{5} = \frac{1}{z_{3}}$</p>
-
-<h2 id="multiplication-by-i">Multiplication by $i$</h2>
-
-<p>What do we get of we multiply $a + ib$ by $i$. Show on complex plane</p>
-
-<p>What are the powers of $i$: $i$, $i^{2},i^{3},\ldots$</p>
-
-<h2 id="complex-exponentiation">Complex exponentiation</h2>
+<h3 id="complex-exponentiation">Complex exponentiation</h3>
 
 <p>What is $a^{ix}$ when $a,x$ are real?</p>
 
-<p>Let’s start with $e^{ix}$.</p>
+<p>Let’s start with $e^{ix}$. One way to extend real functions to complex numbers is to define them based on series:</p>
 
-<p>One way to extend real functions to complex numbers is to define them
-based on series:</p>
+<div>
+\begin{align*}
+e^{x} &amp;= 1 + x + \frac{x^{2}}{2} + \frac{x^{3}}{3!} + \frac{x^{4}}{4!} + \frac{x^{5}}{5!} + \ldots\\
+\cos x &amp;= 1 - \frac{x^{2}}{2} + \frac{x^{4}}{4!} - \dotsm\\
+\sin x &amp;= x - \frac{x^{3}}{3!} + \frac{x^{5}}{5!} - \dotsm
+\end{align*}
+</div>
 
-<p>$e^{x} = 1 + x + \frac{x^{2}}{2} + \frac{x^{3}}{3!} + \frac{x^{4}}{4!} + \frac{x^{5}}{5!} + \ldots$</p>
+<p>Extending the first series to imaginary numbers, we find</p>
 
-<p>$\cos x = 1 - \frac{x^{2}}{2} + \frac{x^{4}}{4!} - \ldots$</p>
+<div>
+\begin{align*}
+e^{ix} &amp;= 1 + ix - \frac{x^{2}}{2} - i\frac{x^{3}}{3!} + \frac{x^{4}}{4!} + i\frac{x^{5}}{5!} + \dotsm\\
+&amp;= \left(1 - \frac{x^{2}}{2} + \frac{x^{4}}{4!} +\dotsm\right) + \left(ix - i\frac{x^{3}}{3!} + i\frac{x^{5}}{5!}+\dotsm\right)\\
+&amp;= \cos x + i \sin x.
+\end{align*}
+</div>
 
-<p>$\sin x = x - \frac{x^{3}}{3!} + \frac{x^{5}}{5!} - \ldots$</p>
+<p>So, we can write $e^{ix}$ in terms of $\cos x$ and $\sin x$. This is called <em>Euler’s equation</em>. Here is a <a href="https://youtu.be/v0YEaeIClKY">visual proof</a>.</p>
+<div class="highlight">
+<strong> Euler's equation:</strong>
+$$e^{ix} = \cos x + i \sin x.$$
+</div>
+<p><br></p>
 
-<p>Can we write $e^{ix}$ in terms of $\cos x$ and $\sin x$?</p>
+<div class="exercise">
+Find $\sin\left( a + b \right)$ and $\cos\left( a + b \right)$
+in terms of $\sin a,\sin b,\cos a,\cos b$ using Euler's equation. Hint: write $e^{i(a+b)}$ in two different ways and compare terms.
+<button onclick="showSolution(this,'sinxcosx')" style="float:right;">Show Solution</button>
+</div>
+<div id="sinxcosx" style="display:none;" class="solution">
+First, note that  $$e^{i(a+b)} = \cos\left( a + b \right) + i\sin{(a + b)}.$$
+Moreover,
+\begin{align*}
+e^{i\left( a + b \right)} &amp;= e^{ia}e^{ib} \\
+&amp;= \left( \cos a + i\sin a \right)  \left( \cos b + i\sin b \right)\\
+&amp;= \left( \cos a\cos b - \sin a\sin b \right) + i\left( \cos a\sin b + \sin a\cos b \right).
+\end{align*}
 
-<h3 id="eulers-equation">Euler’s equation</h3>
+By comparing the terms, we conclude that
+$$\cos\left( a + b \right) = \cos a\cos b - \sin a\sin b,$$
+$$\sin{(a + b)} = \cos a\sin b + \sin a\cos b.$$
+</div>
 
-<p>$e^{ix} = \cos x + i\sin x$</p>
+<!-- abrupt things. -->
+<!-- More generally, $z_{1}^{z_{2}} = e^{z_{2}\log z_{1}}$, where for $z_{1} = re^{i\theta}$, $\log z_{1} = \ln r + i\theta$ -->
 
-<p>Click on the <a href="https://youtu.be/v0YEaeIClKY">link</a> for a visual proof.</p>
+<div style="float:right">
+<img src="https://imgs.xkcd.com/comics/e_to_the_pi_times_i.png" width="300"><br> Credit: <a href="https://xkcd.com/179/" target="_blank">xkcd</a>
+</div>
+<p><br>
+Given the above transformation, we can also represent complex numbers as $z = {re}^{i\theta} = r \left( \cos\theta + i\sin\theta \right)$.</p>
+<ul>
+  <li>Real parts: $Re\left( z \right) = r\cos\theta$</li>
+  <li>Imaginary part: $Im\left( z \right) = r\sin\theta$.</li>
+  <li>Magnitude: $\left\vert z \right\vert = \sqrt{r^{2}\left( \cos\theta \right)^{2} + r^{2}\left( \sin\theta \right)^{2}} = r$</li>
+  <li>Phase: $\angle z = \tan^{- 1}\frac{\sin\theta}{\cos\theta} = \theta$.</li>
+</ul>
 
-<p>More generally,</p>
+<p>Note that $e^{i\theta} = e^{i(\theta+2\pi)} = e^{i2\pi k+i\theta}$ for any integer $k$.</p>
 
-<p>$z_{1}^{z_{2}} = e^{z_{2}\log z_{1}}$,</p>
-
-<p>where for $z_{1} = re^{i\theta}$, $\log z_{1} = \ln r + i\theta$</p>
-
-<p>Example: find $\sin\left( a + b \right)$ and $\cos\left( a + b \right)$
-in terms of $\sin a,\sin b,\cos a,\cos b$using Euler’s equation.</p>
-
-<p>$e^{i\left( a + b \right)} = \cos\left( a + b \right) + i\sin{(a + b)}$
-<img src=".//media/complex/image3.png" alt="" /></p>
-
-<p>$\begin{matrix}
-e^{i\left( a + b \right)} = e^{ia}e^{ib} = \left( cosa + i\sin a \right) + \left( \cos b + i\sin b \right) <br />
-= \left( \cos a\cos b - \sin a\sin b \right) + i\left( \cos a\sin b + \sin a\cos b \right) <br />
-\end{matrix}$</p>
-
-<p>$\cos\left( a + b \right) = \cos a\cos b - \sin a\sin b$</p>
-
-<p>$\sin{(a + b)} = \cos a\sin b + \sin a\cos b$</p>
-
-<h2 id="two-representations">Two Representations</h2>
-<p>We can also represent complex numbers as $z = {re}^{i\theta}$</p>
-
-<p>What are the real and imaginary parts?</p>
-
-<p>$Re\left( z \right) = Re\left( r\left( \cos\theta + i\sin\theta \right) \right) = r\cos\theta$</p>
-
-<p>$Im\left( z \right) = r\sin\theta$</p>
-
-<p>What are the magnitude and phase of $z = re^{i\theta}$?</p>
-
-<p>$z = re^{i\theta} = r\cos\theta + ir\sin\theta$</p>
-
-<p>$\left\vert z \right\vert = \sqrt{r^{2}\left( \cos\theta \right)^{2} + r^{2}\left( \sin\theta \right)^{2}} = r$</p>
-
-<p>$\angle z = \tan^{- 1}\frac{\sin\theta}{\cos\theta} = \theta$</p>
-
-<p>We can represent a complex number $z$ in terms of</p>
-
-<p>real and imaginary parts: $z = a + ib$ (Cartesian)</p>
-
-<p>magnitude and phase: $z = re^{i\theta}$ (Polar)</p>
-
-<p>$a = r\cos\theta,b = r\sin\theta$</p>
-
-<p>$r = \sqrt{a^{2} + b^{2}},\theta = \tan^{- 1}\frac{b}{a}$</p>
+<div class="exercise">
+Find the real and imaginary parts of $e^{i\pi}$.
+<button onclick="showSolution(this,'euler')" style="float:right;">Show Solution</button>
+</div>
+<div id="euler" style="display:none;" class="solution">
+\begin{align*}
+Re(e^{i\pi})&amp;=1\cos\pi = -1,\\
+Im(e^{i\pi})&amp;=1\sin\pi = 0.
+\end{align*}
+So $e^{i\pi} = -1$.
+</div>
+<p><br>
+<br>
+<br>
+<br></p>
 
 <h3 id="cartesian-vs-polar">Cartesian vs Polar</h3>
 
-<p>Related to these representation are two coordinate systems</p>
+<p>We can represent a complex number $z$ in terms of:</p>
+<ul>
+  <li>real and imaginary parts: $z = a + ib$ (Cartesian)</li>
+  <li>magnitude and phase: $z = re^{i\theta}$ (Polar)</li>
+</ul>
 
-<p><img src=".//media/complex/image4.png" alt="" />
-<img src=".//media/complex/image5.png" alt="" /></p>
+<p>And one can convert it from one representation to the other:</p>
+<ul>
+  <li>$a = r\cos\theta,b = r\sin\theta$</li>
+  <li>$r = \sqrt{a^{2} + b^{2}},\theta = \tan^{- 1}\frac{b}{a}$</li>
+</ul>
 
-<p>Cartesian: (real part, imaginary part) Polar: (magnitude,
-phase)</p>
+<p>Related to these representations are two coordinate systems</p>
+
+<div class="tabDefault">
+
+  <table>
+    <tbody>
+      <tr>
+        <td><img src=".//media/complex/image4.png" alt=""></td>
+        <td><img src=".//media/complex/image5.png" alt=""></td>
+      </tr>
+      <tr>
+        <td>Cartesian: (real part, imaginary part)</td>
+        <td>Polar: (magnitude, phase)</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
 
 <p>Note: We refer to $re^{i\theta}$ as the polar representation, even if we
-don’t necessarily use the polar axis shown on the right</p>
+don’t necessarily use the polar axis shown on the right.</p>
 
-<p>Polar representation</p>
+<h4 id="polar-representation">Polar representation</h4>
 
-<p>Examples: $z_{1} = e^{i\pi}$, $z_{2} = e^{\frac{i\pi}{2}}$,
-$z_{3} = e^{- \frac{i\pi}{2}}$, $z_{4} = 2e^{i\pi/6}$,
-$z_{5} = 2e^{i13\pi/6}$</p>
+<!-- Examples: $z_{1} = e^{i\pi}$, $z_{2} = e^{\frac{i\pi}{2}}$, -->
+<!-- $z_{3} = e^{- \frac{i\pi}{2}}$, $z_{4} = 2e^{i\pi/6}$, -->
+<!-- $z_{5} = 2e^{i13\pi/6}$ -->
 
-<p>Examples: $z_{1} = 2e^{i\pi/6}$, $z_{2} = 3e^{- i2\pi/6}$,
-$z_{3} = z_{1}z_{2}$, $z_{4} = 1/z_{2}$</p>
+<p>Examples: $z_{1} = 1.5e^{i\pi/6}$, $z_{2} = 2e^{- i2\pi/6}$, $z_{3} = z_{1}z_{2}$, $z_{4} = 1/z_{2}$</p>
+
+<p><button onclick="show_z1()">$z_1$</button>
+<button onclick="show_z2()">$z_2$</button>
+<button onclick="show_z3()">$z_3$</button>
+<button onclick="show_z4()">$z_4$</button>
+<!-- <button onClick="clear()">reset</button> --></p>
+
+<div id="pp" class="jxgbox" style="width:300px; height:300px;"></div>
+<div id="pp_comment" style="float"></div>
+<script>
+JXG.Options.text.useMathJax = true;
+var pp = 0;
+function clear() {
+    pp = JXG.JSXGraph.initBoard('pp', {
+        boundingbox: [-4, 4, 4, -4],
+        axis: true,
+        showCopyright: false,
+        showNavigation: false
+    });
+    JXG.Options.text.useMathJax = true;
+}
+clear();
+function show_z1() {
+    clear();
+    var z1_pp = pp.create('point', [0, 0], {name:'\$z_1$', size: 2, color:'blue', fixed: true});
+    var l_pp_z = pp.create('line', [[0, 0], z1_pp], {straightFirst:false, straightLast:false, strokeWidth:2})
+    z1_pp.moveAlong(
+        function (t) {
+            if (t < 1000) {
+                document.getElementById("pp_comment").innerHTML="Length is 1.5."
+                return [1.5 * t / 1000, 0];
+            }
+            else if (t < 2000) {
+                document.getElementById("pp_comment").innerHTML="Rotate by counter-clock-wise π/6."
+            }
+            let theta = Math.PI / 6 * (t - 1000) / 1000;
+            // console.log(theta);
+            if (t > 2000) {
+                document.getElementById("pp_comment").innerHTML="Animation finished."
+                return NaN;
+            }
+            return [1.5 * Math.cos(theta), 1.5 * Math.sin(theta)];
+        }, 2000);
+}
+function show_z2() {
+    clear();
+    var z2_pp = pp.create('point', [0, 0], {name:'$z_2$', size: 2, color:'blue', fixed: true});
+    var l_pp_z = pp.create('line', [[0, 0], z2_pp], {straightFirst:false, straightLast:false, strokeWidth:2})
+    z2_pp.moveAlong(
+        function (t) {
+            if (t < 1000) {
+                document.getElementById("pp_comment").innerHTML="Length is 2."
+                return [2 * t / 1000, 0];
+            }
+            else if (t < 2000) {
+                document.getElementById("pp_comment").innerHTML="Rotate by clock-wise π/3."
+            }
+            let theta = -2 * Math.PI / 6 * (t - 1000) / 1000;
+            // console.log(theta);
+            if (t > 2000) {
+                document.getElementById("pp_comment").innerHTML="Animation finished."
+                return NaN;
+            }
+            return [2 * Math.cos(theta), 2 * Math.sin(theta)];
+        }, 2000);
+}
+function show_z3() {
+    clear();
+    var z3_pp = pp.create('point', [0, 0], {name:'$z_3$', size: 2, color:'blue', fixed: true});
+    var l_pp_z = pp.create('line', [[0, 0], z3_pp], {straightFirst:false, straightLast:false, strokeWidth:2})
+    z3_pp.moveAlong(
+        function (t) {
+            if (t < 1000) {
+                theta = 0;
+                r = 1.5 * t / 1000;
+                document.getElementById("pp_comment").innerHTML="Length is 1.5."
+            }
+            else if (t < 2000) {
+                theta = Math.PI / 6 * (t - 1000) / 1000;
+                r = 1.5;
+                document.getElementById("pp_comment").innerHTML="Rotate by counter-clock-wise π/6."
+            }
+            else if (t < 3000) {
+                theta = Math.PI / 6;
+                r = 1.5 + (t - 2000) / 1000 * 2;
+                document.getElementById("pp_comment").innerHTML="Multiply the length by 2."
+            }
+            else if (t < 4000) {
+                theta = Math.PI / 6 - 2 * Math.PI / 6 * (t - 3000) / 1000;
+                document.getElementById("pp_comment").innerHTML="Rotate by clock-wise π/3."
+                r = 1.5 * 2;
+            }
+            if (t < 4000) {
+                return [r * Math.cos(theta), r * Math.sin(theta)];
+            }
+            else {
+                document.getElementById("pp_comment").innerHTML="Animation finished."
+                return NaN;
+            }
+        }, 4000);
+}
+function show_z4() {
+    clear();
+    var z2_pp = pp.create('point', [2 * Math.cos(-Math.PI * 1/3), 2 * Math.sin(-Math.PI * 1/3)], {name:'$z_2$', size: 2, color:'blue', fixed: true});
+    var z4_pp = pp.create('point', [0, 0], {name:'$z_4$', size: 2, color:'blue', fixed: true});
+    var l_pp_z2 = pp.create('line', [[0, 0], z2_pp], {straightFirst:false, straightLast:false, strokeWidth:2})
+    var l_pp_z4 = pp.create('line', [[0, 0], z4_pp], {straightFirst:false, straightLast:false, strokeWidth:2})
+    z4_pp.moveAlong(
+        function (t) {
+            if (t < 1000) {
+                document.getElementById("pp_comment").innerHTML="The length is reciprocal to z2."
+                theta = 0;
+                r = 1 / 1.5 * t / 1000;
+            }
+            else if (t < 2000) {
+                document.getElementById("pp_comment").innerHTML="Rotate to the same angle as z2 but in opposite direction."
+                theta = Math.PI / 3 * (t - 1000) / 1000;
+                r = 1. / 1.5;
+            }
+            if (t < 2000) {
+                return [r * Math.cos(theta), r * Math.sin(theta)];
+            }
+            else {
+                document.getElementById("pp_comment").innerHTML="Animation finished."
+                return NaN;
+            }
+        }, 4000);
+}
+</script>
 
 <h2 id="arithmetic-in-the-complex-plane">Arithmetic in the complex plane</h2>
 
 <p>The right representation simplifies computation.</p>
 
-<p>Addition/subtraction:
-$a + ib + c + id = \left( a + c \right) + i(b + d)$</p>
+<p>Cartesian:</p>
+<ul>
+  <li>Addition/subtraction:
+$a + ib + c + id = \left( a + c \right) + i(b + d)$</li>
+</ul>
 
-<p>Multiplication:
-$re^{i\theta} \times \rho e^{i\phi} = r\rho e^{i\left( \theta + \phi \right)}$</p>
-
-<p>Inverse: $\frac{1}{r e^{i\theta}} = \frac1r e ^{-i\theta}$</p>
-
-<p>Division: $\frac{\rho e^{i\phi}}{r e^{i\theta}} = \frac{\rho}{\phi}e^{-i(\phi-\theta)} $</p>
-
-<p>Power (to the power of $n$): ${(re^{i\theta})}^n = r^n e^{i n\theta}$</p>
+<p>Polar:</p>
+<ul>
+  <li>Multiplication:
+$re^{i\theta} \times \rho e^{i\phi} = r\rho e^{i\left( \theta + \phi \right)}$</li>
+  <li>Inverse: $\frac{1}{r e^{i\theta}} = \frac1r e ^{-i\theta}$</li>
+  <li>Division: $\frac{\rho e^{i\phi}}{r e^{i\theta}} = \frac{\rho}{\phi}e^{-i(\phi-\theta)} $</li>
+  <li>Power (to the power of $n$): ${(re^{i\theta})}^n = r^n e^{i n\theta}$</li>
+</ul>
 
 <h2 id="signals-in-the-complex-plane">Signals in the complex plane</h2>
 
-<p>We can represent real signals on a two-dimensional graph
-<img src=".//media/complex/image1.gif" alt="" /></p>
+<p>We can represent real signals on a two-dimensional graph. How about complex signals?</p>
 
-<p>How about complex signals?</p>
+<p>Complex signals can be viewed as a path on the complex plain, or rather as a point moving along a path on the complex plain. For example, the complex signal $z(t)=e^{i2\pi t}$ can be shown as a path on the complex plane below.</p>
 
-<p>Represent $e^{i2\pi t}$ as a path on the complex plane.</p>
+<center>
+<div id="sig_t" class="jxgbox" style="width:300px; height:300px;">
+</div>
+<script>
+sig_t = JXG.JSXGraph.initBoard('sig_t', {
+    boundingbox: [-1.2, 1.2, 1.2, -1.2],
+    axis: true,
+    showCopyright: false,
+    showNavigation: false,
+    trace: true
+});
+var zt = sig_t.create('point', [0, 1], {name:'$z(t)$', size: 0, color:'blue', fixed: true});
+var c_zt = sig_t.create('circle', [[0, 0], 1], {size: 0.1, strokeColor: 'lightblue'});
+var l_zt = sig_t.create('arrow', [[0, 0], zt], {straightFirst:false, straightLast:false, strokeWidth:2})
+var t = 0;
+var t_t = sig_t.create('text', [0.8, 0.8, () => 't=' + Math.round(t*100)/100], {})
+JXG.Options.text.useMathJax = true;
+zt.moveAlong (
+    function (tt) {
+        t = tt / 3000  % 10;
+        x = Math.cos(Math.PI * 2 * t);
+        y = Math.sin(Math.PI * 2 * t);
+        return [x, y];
+    }, 20000);
+</script>
+</center>
 
-<p>Signals of the form $e^{i\omega t}$ are called complex exponentials
-and are very important!</p>
+<p>Signals of the form $e^{i\omega t}$ are called complex exponentials and are very important!</p>
 
-<p>Find $Re(e^{i2\pi t})$</p>
+\[Re(e^{i2\pi t}) = \cos(2\pi t),\qquad Im(e^{i2\pi t}) = \sin(2\pi t).\]
 
-<p>Find $Im(e^{i2\pi t})$</p>
-
-<p>Let $f\left( t \right) = t$.</p>
-
-<p>Represent $f\left( t \right)e^{i2\pi t}$ as a path on the
-complex plane.
-<img src=".//media/complex/image2.gif" alt="" /></p>
+<div class="exercise">
+Let $f\left( t \right) = t$.
+Represent $f\left( t \right)e^{i2\pi t}$ as a path on the
+complex plane. You may use some easy to compute points like $t=0, \frac12, \frac14, \ldots$ to approximately determine the path. 
+<button onclick="showSolution(this,'e_spiral')" style="float:right;">Show Solution</button>
+</div>
+<center>
+<div id="e_spiral" style="display:none;" class="solution">
+<div id="spiral" class="jxgbox" style="width:300px; height:300px;"></div>
+</div>
+</center>
+<script>
+spiral = JXG.JSXGraph.initBoard('spiral', {
+    boundingbox: [-3, 3, 3, -3],
+    axis: true,
+    showCopyright: false,
+    showNavigation: false,
+    trace: true
+});
+var zpi = spiral.create('point', [0, 0], {name:'$z(t)$', size: 0, color:'blue', fixed: true});
+var c_spiral = spiral.create('curve', 
+                             [
+                                (t) => t * Math.cos(2 * Math.PI * t),
+                                (t) => t * Math.sin(2 * Math.PI * t),
+                                0, 3
+                             ]
+                             , {size: 1, strokeColor: 'lightblue'});
+var l_zt = spiral.create('arrow', [[0, 0], zpi], {straightFirst:false, straightLast:false, strokeWidth:2})
+var t_t_spiral = spiral.create('text', [1.8, 2, () => 't=' + Math.round(t_spiral*100)/100], {})
+var t_spiral = 0;
+JXG.Options.text.useMathJax = true;
+zpi.moveAlong (
+    function (tt) {
+        t_spiral = t = tt / 3000 % 3;
+        x = t * Math.cos(Math.PI * 2 * t);
+        y = t * Math.sin(Math.PI * 2 * t);
+        return [x, y];
+    }, 10000);
+</script>
 
 <h2 id="fundamental-theorem-of-algebra">Fundamental theorem of algebra</h2>
 
+<p>For a polynomial \(f(x)\) of \(x\), any value of \(x\) that satisfies \(f(x)=0\) is called a <em>root</em>. For example, \(x=1\) is a root of \(x^2+x-2\) since \(1^2+1-2=0\).</p>
+
+<p>If \(x=x_0\) is a root of \(f(x)\), then \((x-x_0)\) is a factor of \(f(x)\). That is, we can write \(f(x)\) as a product of \(x-x_0\) and some other polynomial. In other words, a polynomial \(g(x)\) exists such that \(f(x) = (x-x_0)g(x)\). In our example, from the previous paragraph, we have \(x^2+x-2=(x-1)(x+2)\).</p>
+
+<p>On the other hand, if \(x-x_0\) is a factor of \(f(x)\), then \(x_0\) is a root of \(f(x)\) since \(f(x_0)=0\). In our example, \(x=-2\) is another root since \(x+2\) is a factor.</p>
+
+<p>A value \(x_0\) can be the root of a polynomial multiple times, meaning that the factor \((x-x_0)\) appears multiple times. For example, since \(x^4 - x^3 - 3x^2 + 5x - 2=(x-1)^3(x+2)\), the roots are \(1,1,1,-2\). We say that this polynomial has 4 roots, 1 of which has multiplicity 3.</p>
+
+<p>In the set of real numbers, not all polynomials have roots. An obvious example is \(x^2+1\). But the situation is different for complex numbers.</p>
+
 <div class="highlight">
-<strong>Every non-constant polynomial has a complex root. </strong>
+<strong>The fundamental theorem of algebra:</strong>
+<ul>
+<li> Every non-constant polynomial has a complex root.</li>
+<li> Every polynomial of degree \(n\) can be written as a product of \(n\) first-degree polynomials and has precisely \(n\) roots.</li>
+</ul>
 </div>
 
-<p>Idea behind the proof:</p>
+<p>The following two identities are sometimes useful for finding the roots:</p>
 
-<p>Consider the polynomial $f\left( z \right) = a_{n}z^{n} + \ldots + a_{0},a_{0} \neq 0$</p>
+<div>
+\begin{align*}
+a^2-b^2 &amp;= (a-b)  (a+b)\\
+a^2+b^2 &amp;= (a-\mathbb{i}b)  (a+\mathbb{i}b)
+\end{align*}
+</div>
 
-<p>For a large value of $r$ what shape is formed by $f\left( re^{i\theta} \right),0 \leq \theta \leq 2\pi$?</p>
+<p>For example:</p>
+<div>
+\begin{align*}
+x^2+1 &amp;= (x-\mathbb{i})(x+\mathbb{i})\Rightarrow roots = -\mathbb{i},\mathbb{i}\\
+x^{5} - x^{3} &amp;= x^3(x^2-1)=x^{3}\left( x - 1 \right)\left( x + 1 \right) \Rightarrow roots = 0,0,0,1, - 1\\
+x^{2} + 5 &amp;= \left( x - {\mathbb{i}}\sqrt{5} \right)\left( x + {\mathbb{i}}\sqrt{5} \right) \Rightarrow roots = {\mathbb{i}}\sqrt{5}, - {\mathbb{i}}\sqrt{5}\\
+x^{3} - 1 &amp;= \left( x - 1 \right)\left( x^{2} + x + 1 \right) = \left( x - 1 \right)\left( x^{2} + x + \frac{1}{4} + \frac{3}{4} \right) = \left( x - 1 \right)\left( \left( x + \frac{1}{2} \right)^{2} + \frac{3}{4} \right)\\
+&amp;= (x - 1)\left( x + \frac{1}{2} +  \frac{ \mathbb{i}\sqrt{3} }{2} \right)\left( x + \frac{1}{2} - \frac{\mathbb{i}\sqrt{3}}{2} \right)\Rightarrow roots = 1,-\frac{1}{2} - \frac{\mathbb{i}\sqrt{3}}{2},-\frac{1}{2} - \frac{\mathbb{i}\sqrt{3}}{2}
+\end{align*}
+</div>
 
-<p>What shape is formed by a small value of $r$?</p>
+<!--
+#### Proof of the fundamental theorem of algebra:
 
-<p>What happens if we start from a large value of $r$ and gradually
-make it equal to 0?</p>
+We will describe an informal geometric proof for the theorem. The main idea is using the fact that complex values can be repersented in the 2-D space.
+
+Consider the polynomial $f\left( z \right) = a_{n}z^{n} + \ldots + a_{0}$ and without loss of generality assume $$a_0,a_n \neq 0$$. Let us consider the argument in polar form, $$f(re^{i\theta})$$. For very large values of $r$, the term $$a_n z^n = a_n r^{n}e^{in\theta}$$ dominates the other terms in terms of magnitude. That is, $$\vert f(re^{i\theta})\vert \simeq r^n \vert a_n\vert $$. So the function $f\left( re^{i\theta} \right),0 \leq \theta \leq 2\pi$ for a fixed large $r$ traces a large circle-like shape that encompasses $a_0$. 
+
+On the other hand, for small values of $r$, the function $f(re^{i\theta})$ is a small closed path around $a_0$. 
+
+What happens if we start from a large value of $r$ and gradually make it equal to 0? 
+-->
 
 <!-- {:.highlight}
 > Corollary: A degree $\mathbf{n}$ polynomial has $\mathbf{n}$ complex roots. -->
 
-<p>Proof by induction:</p>
+<!--Proof by induction:
 
-<p>A degree 1 polynomial has 1 root.
+A degree 1 polynomial has 1 root.
 Suppose degree $k$ polynomial has $k$ roots.
 Given a degree $k + 1$ polynomial, find one of its roots, say $w$.
 Divide the polynomial by $(z - w)$. This polynomial has degree $k$
 and most have $k$ roots. So a degree $k + 1$ polynomial has $k + 1$
-roots.</p>
-
-<p>$x^{5} - x^{3} = x^{3}\left( x - 1 \right)\left( x + 1 \right) \Rightarrow roots = 0,0,0,1, - 1$</p>
-
-<p>$x^{2} + 5 = \left( x - {\mathbb{i}}\sqrt{5} \right)\left( x + {\mathbb{i}}\sqrt{5} \right) \Rightarrow roots = {\mathbb{i}}\sqrt{5}, - {\mathbb{i}}\sqrt{5}$</p>
-
-<p>$x^{3} - 1 = \left( x - 1 \right)\left( x^{2} + x + 1 \right) = \left( x - 1 \right)\left( x^{2} + x + \frac{1}{4} + \frac{3}{4} \right) = \left( x - 1 \right)\left( \left( x + \frac{1}{2} \right)^{2} + \frac{3}{4} \right)$</p>
-
-<p>$= (x - 1)\left( x + \frac{1}{2} +  \frac{ \mathbb{i}\sqrt{3} }{2} \right)\left( x + \frac{1}{2} - \frac{\mathbb{i}\sqrt{3}}{2} \right)$</p>
+roots.-->
 
 <h2 id="conjugate">Conjugate</h2>
 
-<p>The conjugate of a complex number $z = a + ib$ is $z^{\ast} = a - ib$</p>
-
-<p>In polar form, the conjugate of $z = re^{i\theta}$ is
-$z^{\ast} = re^{- i\theta}$</p>
+<p>The conjugate of a complex number $z = a + ib$ is $z^{\ast} = a - ib$. In polar form, the conjugate of $z = re^{i\theta}$ is $z^{\ast} = re^{- i\theta}$.
+<!-- ![](.//media/complex/image6.png)$ --></p>
+<center>
+<div id="conju" class="jxgbox" style="width:300px; height:300px;"></div>
+</center>
+<script>
+JXG.Options.text.useMathJax = true;
+const b_conj = JXG.JSXGraph.initBoard('conju', {
+    boundingbox: [-4, 4, 4, -4],
+    axis: true,
+    showCopyright: false,
+    showNavigation: false
+});
+var z_conju = b_conj.create('point', [3, 3], {name:'$z$', size: 2, color:'blue'});
+var t_conju_im = b_conj.create('text', [0.2, 3.9, '$$Im$$'], {color:'grey', fontSize:12});
+var t_conju_re = b_conj.create('text', [3.2, 0.5, '$$Re$$'], {color:'grey', fontSize:12});
+//
+var l_conju_z = b_conj.create('line', [[0, 0], z_conju], {straightFirst:false, straightLast:false, strokeWidth:2})
+var l_conju_a = b_conj.create('line', [[() => z_conju.X(), 0], z_conju], {straightFirst:false, straightLast:false, strokeWidth:2, dash: 1, color: "orange"});
+var l_conju_b = b_conj.create('line', [[0, () => z_conju.Y()], z_conju], {straightFirst:false, straightLast:false, strokeWidth:2, dash: 1, color: "orange"});
+var t_conju_z = b_conj.create('text', [() => z_conju.X()/2, () => z_conju.Y()/2, '$$r=|z|$$'], {color:'black', fontSize:12});
+var t_conju_a = b_conj.create('text', [() => z_conju.X()/2, () => z_conju.Y(), '$$a$$'], {color:'orange', fontSize:12});
+var t_conju_b = b_conj.create('text', [() => z_conju.X() + 0.1, () => z_conju.Y()/2, '$$b$$'], {color:'orange', fontSize:12});
+var t_conju_az = b_conj.create('text', [0.95, 0.75, ' θ = ∠ z'], {color:'black', fontSize:12});
+var s_conju_z = b_conj.create('sector', [[0, 0], [0.5, 0], z_conju]);
+//
+var z_orig = b_conj.create('point', [()=>z_conju.X(), ()=>-z_conju.Y()], {name:'$z^*$', size: 2, color:'blue'});
+//
+var l_orig_z = b_conj.create('line', [[0, 0], z_orig], {straightFirst:false, straightLast:false, strokeWidth:2})
+var l_orig_a = b_conj.create('line', [[() => z_orig.X(), 0], z_orig], {straightFirst:false, straightLast:false, strokeWidth:2, dash: 1, color: "orange"});
+var l_orig_b = b_conj.create('line', [[0, () => z_orig.Y()], z_orig], {straightFirst:false, straightLast:false, strokeWidth:2, dash: 1, color: "orange"});
+var t_orig_z = b_conj.create('text', [() => z_orig.X()/2, () => z_orig.Y()/2, '$$r=|z^*|$$'], {color:'black', fontSize:12});
+var t_orig_a = b_conj.create('text', [() => z_orig.X()/2, () => z_orig.Y(), '$$a$$'], {color:'orange', fontSize:12});
+var t_orig_b = b_conj.create('text', [() => z_orig.X() + 0.1, () => z_orig.Y()/2, '$$-b$$'], {color:'orange', fontSize:12});
+var endp = b_conj.create('point', [0.5, 0], {visible: false});
+var s_orig_z2 = b_conj.create('sector', [[0, 0], () => {r = Math.sqrt(z_orig.X()*z_orig.X() + z_orig.Y()*z_orig.Y()); return [z_orig.X()/r*endp.X(), z_orig.Y()/r*endp.X()]}, endp], {fillColor: 'yellow'});
+var t_orig_az = b_conj.create('text', [0.95, -0.75, '-θ = ∠ $z^*$'], {color:'black', fontSize:12});
+// var s_orig_z = b_conj.create('sector', [[0, 0], [0.8, 0], z_orig]);
+</script>
 
 <p>If a real polynomial has a complex root $w$, then $w^{\ast}$ is also a
-root</p>
+root.</p>
 
-<p>Example:$x^{2} - 2x + 2$</p>
-
-<p><img src=".//media/complex/image6.png" alt="" />$</p>
+<p>Example: $x^{2} - 2x + 2 = 0 \Rightarrow (x^2 - 2x + 1) = -1 \Rightarrow (x - 1)^2 = -1$. Then the roots are $1 \pm i$.</p>
 
 <h2 id="roots-of-unity">Roots of unity</h2>
 
 <p>What are the solutions to $z^{3} = 1$?</p>
 
-<p>Recall: $re^{i\theta} = re^{i\left( 2\pi k + \theta \right)}$<br />
-$z^{3} = 1 \Rightarrow \left( re^{i\theta} \right)^{3} = 1 \Rightarrow r^{3}e^{i3\theta} = 1e^{i0} \Rightarrow \begin{cases}
-r = 1 <br />
-3\theta = 2\pi k <br />
+<p>Recall: $re^{i\theta} = re^{i\left( 2\pi k + \theta \right)}$<br>
+\(z^{3} = 1 \Rightarrow \left( re^{i\theta} \right)^{3} = 1 \Rightarrow r^{3}e^{i3\theta} = 1e^{i0} \Rightarrow \begin{cases}
+r = 1 \\
+3\theta = 2\pi k \\
 \end{cases} \Rightarrow \begin{cases}
-r = 1 <br />
-\theta = \frac{2\pi k}{3} <br />
+r = 1 \\
+\theta = \frac{2\pi k}{3} \\
 \end{cases} \Rightarrow \begin{cases}
-r = 1 <br />
-\theta = 0,\frac{2\pi}{3},\frac{4\pi}{3} <br />
-\end{cases}$</p>
+r = 1 \\
+\theta = 0,\frac{2\pi}{3},\frac{4\pi}{3} \\
+\end{cases}\)</p>
 
-<p>Check:</p>
+<div class="exercise">
+What about $z^{n} = 1$? Whare are the roots of $z^{n} = re^{i\theta}$?
+</div>
 
-<p><img src=".//media/complex/image7.png" alt="" /></p>
+<p>Demonstration:</p>
 
-<p>What about $z^{n} = 1$?</p>
+<!-- ![](.//media/complex/image7.png) -->
 
-<p>Roots of $z^{n} = re^{i\theta}$?</p>
+<center>
+<div id="uroot" class="jxgbox" style="width:300px; height:300px;"></div>
+</center>
+
+<script>
+JXG.Options.text.useMathJax = true;
+uroot = JXG.JSXGraph.initBoard('uroot', {
+    boundingbox: [-1.2, 1.2, 1.2, -1.2],
+    axis: true,
+    showCopyright: false,
+    showNavigation: false
+});
+var list_root = [];
+var c_u = uroot.create('circle', [[0, 0], 1], {size: 0.1, strokeColor: 'lightblue'});
+var n = 3;
+var slide_n = uroot.create('slider',[[-1, 1.1], [0.8, 1.1], [1, 3, 31]], {snapWidth: 1});
+list_root.forEach((this_root) => uroot.removeObject(this_root))
+for (let i = 0; i < n; i++) {
+    var theta = Math.PI * 2 * i / n;
+    var x = Math.cos(theta);
+    var y = Math.sin(theta);
+    var this_root = uroot.create('point', [x, y], {name:'$z_'+ i +'$', size: 2, color:'blue', fixed: true});
+    list_root.push(this_root);
+}
+slide_n.on('drag', () => {
+    list_root.forEach((this_root) => uroot.removeObject(this_root))
+    list_root = []
+    n = slide_n.Value();
+    JXG.Options.text.useMathJax = true;
+    for (let i = 0; i < n; i++) {
+        var theta = Math.PI * 2 * i / n;
+        var x = Math.cos(theta);
+        var y = Math.sin(theta);
+        var this_root = uroot.create('point', [x, y], {name: '', size: 2, color:'blue', fixed: true});
+        list_root.push(this_root);
+    }
+})
+</script>
+
 
 <footer>
-  <br/><br/>
+  <br><br>
   <center>
-    <hr/>
-  &copy; Farzad Farnoud, 2020</center>
+    <hr>
+  © Farzad Farnoud, 2023</center>
 </footer>
 </div>
 <!-- Default Statcounter code for MoI
@@ -669,14 +1114,8 @@ var sc_project=12471818;
 var sc_invisible=1; 
 var sc_security="62b9c6a1"; 
 </script>
-<script type="text/javascript"
-src="https://www.statcounter.com/counter/counter.js"
-async></script>
-<noscript><div class="statcounter"><a title="Web Analytics"
-href="https://statcounter.com/" target="_blank"><img
-class="statcounter"
-src="https://c.statcounter.com/12471818/0/62b9c6a1/1/"
-alt="Web Analytics"></a></div></noscript>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
+<noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/12471818/0/62b9c6a1/1/" alt="Web Analytics"></a></div></noscript>
 <!-- End of Statcounter Code -->
 </body>
 </html>

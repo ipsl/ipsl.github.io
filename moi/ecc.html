@@ -9,19 +9,30 @@
   
   <!-- for mathjax support -->
   
-  <script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    TeX: { equationNumbers: { autoNumber: "AMS" } },
-    //tex2jax: {inlineMath: [['$', '$'], ['\\(', '\\)']]}
-    //tex2jax: {inlineMath: [['\(', '\)'], ['\\(', '\\)']]}
-    tex2jax: {inlineMath: [['$', '$'], ['\\(', '\\)']]}
-    //tex2jax: {inlineMath: [['$', '$'], ['\(', '\)'], ['\\(', '\\)']]}
-  });
-  </script>
-  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <script>
+    window.MathJax = {
+      tex: {
+        tags: "ams",
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        autoload: {
+          color: [],
+          colorv2: ['color']
+        },
+        packages: {'[+]': ['noerrors']}
+      },
+      options: {
+        ignoreHtmlClass: 'tex2jax_ignore',
+        processHtmlClass: 'tex2jax_process'
+      },
+      loader: {
+        load: ['[tex]/noerrors']
+      }
+    };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script"></script>
   
   
-    <script type="text/javascript"  src="//cdnjs.cloudflare.com/ajax/libs/jsxgraph/1.1.0/jsxgraphcore.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jsxgraph/1.1.0/jsxgraphcore.js"></script>
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/jsxgraph/1.1.0/jsxgraph.css" />
   
   <script src="assets/js/coding.js"></script>
@@ -35,7 +46,6 @@
   <div class="topnav">
   <a style="float:left;" href="index.html"><strong>Mathematics of Information</strong></a>
   <a id="teaching" href="../teaching.html">Teaching</a>
-  <a id="group" href="../ips.html">Group</a>
   <a id="pubs" href="../publications.html">Publications</a>
   <a id="home" href="../index.html">Home</a> 
   </div>
@@ -47,14 +57,10 @@
      
      
      
-     <a href="index.html"><strong>Home</strong></a>
-     
-     
-     
     
      
      
-     <a href="index.html"><strong>0. Introduction</strong></a>
+     <a href="/~ffh8x/moi/"><strong>0. Introduction</strong></a>
      
      
      
@@ -66,37 +72,37 @@
       
       
       
-      <li><a href="sets.html">Sets and set theory</a></li>
+      <li><a href="/~ffh8x/moi/sets.html">Sets and set theory</a></li>
       
       
       
       
       
-      <li><a href="numbers.html">Natural numbers, rationals</a></li>
+      <li><a href="/~ffh8x/moi/numbers.html">Natural numbers, rationals</a></li>
       
       
       
       
       
-      <li><a href="fields.html">Fields</a></li>
+      <li><a href="/~ffh8x/moi/fields.html">Fields</a></li>
       
       
       
       
       
-      <li><a href="reals.html">Real numbers</a></li>
+      <li><a href="/~ffh8x/moi/reals.html">Real numbers</a></li>
       
       
       
       
       
-      <li><a href="cardinality.html">Counting and cardinality</a></li>
+      <li><a href="/~ffh8x/moi/counting.html">Counting and cardinality</a></li>
       
       
       
       
       
-      <li><a href="representation.html">Representing information</a></li>
+      <li><a href="/~ffh8x/moi/representation.html">Representing information</a></li>
       
       
       
@@ -110,55 +116,55 @@
       
       
       
-      <li><a href="defining_information.html">Defining information</a></li>
+      <li><a href="/~ffh8x/moi/defining_information.html">Defining information</a></li>
       
       
       
       
       
-      <li><a href="probability_basics.html">Basics of probability</a></li>
+      <li><a href="/~ffh8x/moi/probability_basics.html">Basics of probability</a></li>
       
       
       
       
       
-      <li><a href="distributions.html">Random variables, <br> distributions, independence</a></li>
+      <li><a href="/~ffh8x/moi/distributions.html">Random variables, <br> distributions, independence</a></li>
       
       
       
       
       
-      <li><a href="expectation.html">Expectation and Variance</a></li>
+      <li><a href="/~ffh8x/moi/expectation.html">Expectation and Variance</a></li>
       
       
       
       
       
-      <li><a href="conditional.html">Conditional probability</a></li>
+      <li><a href="/~ffh8x/moi/conditional.html">Conditional probability</a></li>
       
       
       
       
       
-      <li><a href="markov.html">Random sequences and <br> Markov chains</a></li>
+      <li><a href="/~ffh8x/moi/markov.html">Random sequences and <br> Markov chains</a></li>
       
       
       
       
       
-      <li><a href="information_theory.html">Quantifying Information</a></li>
+      <li><a href="/~ffh8x/moi/information_theory.html">Quantifying Information</a></li>
       
       
       
       
       
-      <li><a href="compression.html">Data compression</a></li>
+      <li><a href="/~ffh8x/moi/compression.html">Data compression</a></li>
       
       
       
       
       
-      <li><a href="communications.html">Mathematics of communications</a></li>
+      <li><a href="/~ffh8x/moi/communications.html">Mathematics of communications</a></li>
       
       
       
@@ -172,25 +178,25 @@
       
       
       
-      <li><a href="codes_graphs_algebra.html">Codes, graphs, and algebra</a></li>
+      <li><a href="/~ffh8x/moi/codes_graphs_algebra.html">Codes, graphs, and algebra</a></li>
       
       
       
       
       
-      <li><a href="vectors.html">Vectors and spaces</a></li>
+      <li><a href="/~ffh8x/moi/vectors.html">Vectors and spaces</a></li>
       
       
       
       
       
-      <li><a href="fundamental_spaces.html">Fundamental spaces</a></li>
+      <li><a href="/~ffh8x/moi/fundamental_spaces.html">Fundamental spaces</a></li>
       
       
       
       
       
-      <li><a class="active" style="color:#76bdd5" href="/~ffh8x/moi/ecc.html"><img class="emoji" title=":point_right:" alt=":point_right:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f449.png" height="20" width="20"> Linear codes</a></li>
+      <li><a class="active" style="color:#76bdd59c" href="/~ffh8x/moi/ecc.html"><img class="emoji" title=":point_right:" alt=":point_right:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f449.png" height="20" width="20"> Linear codes</a></li>
       
       
       
@@ -203,27 +209,39 @@
      <ul>
       
       
-      <li><a href="complex.html">Complex numbers</a></li>
+      
+      <li><a href="/~ffh8x/moi/complex.html">Complex numbers</a></li>
       
       
       
-      <li><a href="fourier.html">Frequency and spectrum</a></li>
+      
+      
+      <li><a href="/~ffh8x/moi/fourier.html">Frequency and spectrum</a></li>
       
       
       
-      <li><a href="sampling.html">Filteration and sampling</a></li>
+      
+      
+      <li><a href="/~ffh8x/moi/sampling.html">Filteration and sampling</a></li>
       
       
       
-      <li><a href="linsys.html">Linear systems</a></li>
+      
+      
+      <li><a href="/~ffh8x/moi/linsys.html">Linear systems</a></li>
       
       
       
-      <li><a href="freqresponse.html">Frequency response</a></li>
+      
+      
+      <li><a href="/~ffh8x/moi/freqresponse.html">Frequency response</a></li>
       
       
       
-      <li><a href="modulation.html">Modulation</a></li>
+      
+      
+      <li><a href="/~ffh8x/moi/modulation.html">Modulation</a></li>
+      
       
       
       
@@ -288,19 +306,19 @@
       
       
       
-      <li><a href="axiomatic.html">Axiomatic systems</a></li>
+      <li><a href="/~ffh8x/moi/axiomatic.html">Axiomatic systems</a></li>
       
       
       
       
       
-      <li><a href="index.html"><br></a></li>
+      <li><a href="/~ffh8x/moi/index.html"><br></a></li>
       
       
       
       
       
-      <li><a href="index.html"><br></a></li>
+      <li><a href="/~ffh8x/moi/index.html"><br></a></li>
       
       
       
@@ -676,18 +694,25 @@ x_{3} \\
 </div>
 <h3 id="from-linear-equations-to-the-parity-check-matrix">From linear equations to the parity-check matrix</h3>
 
-<p>Recall the <em>binary</em> code constructed as follows:</p>
+<p>Recall the binary code constructed as follows:</p>
 
 <ul>
   <li>Codeword: $\color{green}{x_{1}x_{2}x_{3}}\color{blue}{x_{4}x_{5}x_{6}}$</li>
   <li>Information bits: $\color{green}{x_{1}x_{2}x_{3}}$</li>
-  <li>Parity bits: 
-\(\begin{cases}
+  <li>Parity bits:</li>
+</ul>
+
+<div>
+\begin{equation}\label{eq:code1}
+\begin{cases}
 \color{blue}{x_{4}} = \color{green}{x_{1}} \oplus \color{green}{x_{2}} \\
 \color{blue}{x_{5}} = \color{green}{x_{1}} \oplus \color{green}{x_{3}} \\
 \color{blue}{x_{6}} = \color{green}{x_{2}} \oplus \color{green}{x_{3}} \\
-\end{cases}\)</li>
-</ul>
+\end{cases}
+\end{equation}
+</div>
+
+<p>The encoding table for this code is given on the right.</p>
 
 <p>At the receiver, we check these three equations defining the parity bits. If they all hold, we declare that no error has occurred. But if at least one of these is not satisfied, we know an error has occurred. For example, suppose 101110 is received. Then</p>
 
@@ -732,11 +757,15 @@ $0 \neq 0\oplus 1$ ❌</p>
 
 <p>We can thus define this code as the set of vectors $x$ such that $Hx = 0$, where</p>
 
-\[H = \begin{pmatrix}
+<div>
+\begin{equation}\label{eq:code1H}
+H = \begin{pmatrix}
 \color{green}{1} &amp; \color{green}{1} &amp; 0 &amp; \color{blue}{1} &amp; 0 &amp; 0 \\
 \color{green}{1} &amp; 0 &amp; \color{green}{1} &amp; 0 &amp; \color{blue}{1} &amp; 0 \\
 0 &amp; \color{green}{1} &amp; \color{green}{1} &amp; 0 &amp; 0 &amp; \color{blue}{1} \\
-\end{pmatrix}\]
+\end{pmatrix}
+\end{equation}
+</div>
 
 <p>$H$ is called a parity check matrix. The code defined by $H$ is the vectors in its <strong>null space</strong>.</p>
 
@@ -768,32 +797,67 @@ is a linear code.
   </li>
 </ul>
 
-<p><br></p>
+<p>For example, the codewords of the code defined by \eqref{eq:code1} is</p>
 
-<p>The parity check matrix for the code is of the form
-$H = \left( \color{green}{A} \vert \color{blue}{I} \right)$ where</p>
+\[C=\{000000,100110,010101,001011,110011,101101,011110,111000\}\]
 
-\[\color{green}{A} = \begin{pmatrix}
-\color{green}{1} &amp; \color{green}{1} &amp; 0 \\
-\color{green}{1} &amp; 0 &amp; \color{green}{1} \\
-0 &amp; \color{green}{1} &amp; \color{green}{ 1}\\
+<p>The sum of the the codewords, $010101$ and $001011$ is $011110$, which is another codeword.</p>
+
+<h4 id="non-binary-example">Non-binary example:</h4>
+<p>Assuming \(x_i\in \mathbb F_3\), consider the code defined as</p>
+<ul>
+  <li>Codeword: $\color{green}{x_{1}x_{2}}\color{blue}{x_3x_{4}}$</li>
+  <li>Information bits: $\color{green}{x_{1}x_{2}}$</li>
+  <li>Parity bits: \(\begin{cases}
+\color{blue}{x_{3}} = \color{green}{x_{1}} \oplus \color{green}{x_{2}} \\
+\color{blue}{x_{4}} = \color{green}{x_{1}} \oplus 2\color{green}{x_{2}}
+\end{cases}\)</li>
+</ul>
+
+<p>The parity check matrix is then</p>
+
+<div>
+\begin{equation}\label{eq:code2H}
+H = \begin{pmatrix}
+\color{green}{2} &amp; \color{green}{2} &amp; \color{blue}{1} &amp; 0  \\
+\color{green}{2} &amp; \color{green}{1} &amp; 0 &amp; \color{blue}{1} \\
+\end{pmatrix}
+\end{equation}
+</div>
+
+<p>The parity check matrices given in \eqref{eq:code1H} and \eqref{eq:code2H} are of the form</p>
+
+<!--
+
+$H = \left( \color{green}{A} \vert \color{blue}{I} \right)$ where
+
+$$\color{green}{A} = \begin{pmatrix}
+\color{green}{1} & \color{green}{1} & 0 \\
+\color{green}{1} & 0 & \color{green}{1} \\
+0 & \color{green}{1} & \color{green}{ 1}\\
 \end{pmatrix} \text{ and } \color{blue}{I} = \begin{pmatrix}
-\color{blue}{1} &amp; 0 &amp; 0 \\
-0 &amp; \color{blue}{1} &amp; 0 \\
-0 &amp; 0 &amp; \color{blue}{1} \\
-\end{pmatrix}\]
+\color{blue}{1} & 0 & 0 \\
+0 & \color{blue}{1} & 0 \\
+0 & 0 & \color{blue}{1} \\
+\end{pmatrix}$$
 
-<p>In general this form makes finding the parity equations easy:</p>
+In general this form makes finding the parity equations easy:
+
+-->
 
 \[H = \left( {\color{green}{A}}_{\left( {\color{green}{n}} - {\color{green}{k}} \right) \times {\color{green}{k}}} \middle| 
-{\color{blue}{I}}_{\left( {\color{blue}{n}} - {\color{blue}{k}} \right) \times \left( {\color{blue}{n}} - {\color{blue}{k}} \right)} \right)\]
+{\color{blue}{I}}_{\left( {\color{blue}{n}} - {\color{blue}{k}} \right) \times \left( {\color{blue}{n}} - {\color{blue}{k}} \right)} \right),\]
+
+<p>which is called the <em>systematic</em> form, where</p>
 
 <ul>
   <li>$A$ is arbitrary and $I$ is the identity matrix</li>
-  <li>$n$ is the length of the code (6 above)</li>
-  <li>$k$ is the number of message bits (3 above)</li>
-  <li>$n - k$ is the number of parity bits (3 above)</li>
+  <li>$n$ is the length of the code</li>
+  <li>$k$ is the number of message bits</li>
+  <li>$n - k$ is the number of parity bits</li>
 </ul>
+
+<p>As we will see in an example below, we can also define codes using parity check matrices that are not systematic. But the systematic form simplifies the encoding.</p>
 
 <p>Unless otherwise stated, we assume the codes are binary and we work in $\mathbb F_2$.</p>
 
@@ -1172,7 +1236,7 @@ and encoding can be performed by
 $$\begin{pmatrix}\color{green}{x_1\\\vdots\\x_k}\\\color{blue}{x_{k+1}\\\vdots\\ x_n}\end{pmatrix} = G \begin{pmatrix}\color{green}{x_1\\ \vdots \\ x_k}\end{pmatrix}.$$</li>
 <li> Linear codes can be defined over any finite field (not limited to
 $\mathbb{F}_{2}$)</li>
-<li> Linearity: if $x$ and $y$ are codewords, then $ax$, $x + y$, and $x - y$ are also codewords</li>
+<li> Linearity: if $x$ and $y$ are codewords, then $ax$, $x \oplus y$, and $x \ominus y$ are also codewords</li>
 </ol>
 </div>
 
@@ -1180,9 +1244,7 @@ $\mathbb{F}_{2}$)</li>
 linearly independent rows, then there are $k$ message bits and
 $n - k$ parity bits, each resulting from one row of $H$.</p>
 
-<h2 id="error-correction-and-decoding-of-linear-codes">Error-correction and decoding of linear codes</h2>
-
-<h3 id="hamming-distance-and-hamming-weight">Hamming distance and Hamming weight</h3>
+<h2 id="minimum-distance-of-linear-codes">Minimum distance of linear codes</h2>
 
 <p>Recall: <em>Hamming distance</em> is the number of positions in which two
 codewords are different \(d_{H}\left( \mathbf{1}0\mathbf{0}11,\mathbf{0}0\mathbf{1}11 \right) = 2\).</p>
@@ -1190,31 +1252,26 @@ codewords are different \(d_{H}\left( \mathbf{1}0\mathbf{0}11,\mathbf{0}0\mathbf
 <p>Definition: <em>Hamming weight</em> of a codeword is the number of its nonzero
 elements \(w_{H}\left( 10011 \right) = 3\).</p>
 
-<p>What is the relationship between the two? $d_{H}\left( x, y \right) = w_{H}\left( x - y \right)$. Note that for binary $x - y = x \oplus y$.</p>
+<p>What is the relationship between the two? $d_{H}\left( x, y \right) = w_{H}\left( x \ominus y \right)$. Note that for binary $x \ominus y = x \oplus y$.</p>
 
 <div class="exercise">
 <button onclick="showSolution(this,'hamd')" style="float:right;">Show Solution</button>
 Find $d_{H}\left( 10011,00111 \right)$.
 <div id="hamd" style="display:none;" class="solution">
-$$d_{H}\left( 10011,00111 \right) = w_{H}\left( x - y \right) = w_{H}\left( x \oplus y \right) = w_{H}\left( 10100 \right) = 2$$
+$$d_{H}\left( 10011,00111 \right) = w_{H}\left( x \ominus y \right) = w_{H}\left( x \oplus y \right) = w_{H}\left( 10100 \right) = 2$$
 </div>
 </div>
-
-<h3 id="minimum-distance-of-linear-codes">Minimum distance of linear codes</h3>
 
 <p>Recall: The minimum distance of a code is the smallest distance between
 two codewords</p>
 
 <p>Do we need to compute the distance between every pair of codewords? No!</p>
 
-<p>Claim: The minimum distance of a linear code is the smallest weight of a
-codeword</p>
+<div class="highlight">
+The minimum distance of a linear code is the smallest weight of any nonzero codeword.
+</div>
 
-<ul>
-  <li>Suppose $x,y$ have the smallest distance</li>
-  <li>$d_{H}\left( x,y \right) = w_{H}(x - y)$</li>
-  <li>But $z = x - y$ is a codeword</li>
-</ul>
+<p>Proof: Suppose $x,y$ have the smallest distance. Then, $d_{H}\left( x,y \right) = w_{H}(x \ominus y)$. But $x \ominus y$ is a codeword. So there is a codeword whose weight is the minimum distance. On the other hand, no codeword can have a weight less than the minimum distance because the weight of each codeword is equal to its distance from the codeword 00…0.</p>
 
 <div class="exercise">
 	<button onclick="showSolution(this,'minDist')" style="float:right;">Show Solution</button>
@@ -1241,29 +1298,150 @@ codeword</p>
 <p><br></p>
 
 <div class="exercise">
-  <p>What is the minimum distance of the <a href="#alincode">code discussed before</a> with $H$ as shown below?</p>
+What is the minimum distance of the <a href="#alincode">code discussed before</a> with $H$ as shown below?
+<button onclick="showSolution(this,'minDist2')" style="float:right;">Show Solution</button>
 
-\[H = \begin{pmatrix}
+$$H = \begin{pmatrix}
 1 &amp; 1 &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\
 1 &amp; 0 &amp; 1 &amp; 0 &amp; 1 &amp; 0 \\
 0 &amp; 1 &amp; 1 &amp; 0 &amp; 0 &amp; 1 \\
-\end{pmatrix}\]
+\end{pmatrix}$$
 
+<div id="minDist2" style="display:none;" class="solution">
+This code has 3 information bits and 3 parity bits and the generator is
+\begin{align*}
+G &amp; =\left(\begin{array}{ccc}
+1 &amp; 0 &amp; 0\\
+0 &amp; 1 &amp; 0\\
+0 &amp; 0 &amp; 1\\
+1 &amp; 1 &amp; 0\\
+1 &amp; 0 &amp; 1\\
+0 &amp; 1 &amp; 1
+\end{array}\right).
+\end{align*}
+Since there are 3 information bits, there are $2^3$ codewords, which we can find using $G$:
+\begin{align*}
+\left(\begin{array}{c}
+0\\
+0\\
+0\\
+0\\
+0\\
+0
+\end{array}\right) &amp; =G\left(\begin{array}{c}
+0\\
+0\\
+0
+\end{array}\right),\quad\left(\begin{array}{c}
+1\\
+0\\
+0\\
+1\\
+1\\
+0
+\end{array}\right)=G\left(\begin{array}{c}
+1\\
+0\\
+0
+\end{array}\right),\quad\left(\begin{array}{c}
+0\\
+1\\
+0\\
+1\\
+0\\
+1
+\end{array}\right)=G\left(\begin{array}{c}
+0\\
+1\\
+0
+\end{array}\right),\quad\left(\begin{array}{c}
+0\\
+0\\
+1\\
+0\\
+1\\
+1
+\end{array}\right)=G\left(\begin{array}{c}
+0\\
+0\\
+1
+\end{array}\right)\\
+\left(\begin{array}{c}
+1\\
+1\\
+0\\
+0\\
+1\\
+1
+\end{array}\right) &amp; =G\left(\begin{array}{c}
+1\\
+1\\
+0
+\end{array}\right),\quad\left(\begin{array}{c}
+1\\
+0\\
+1\\
+1\\
+0\\
+1
+\end{array}\right)=G\left(\begin{array}{c}
+1\\
+0\\
+1
+\end{array}\right),\quad\left(\begin{array}{c}
+0\\
+1\\
+1\\
+1\\
+1\\
+0
+\end{array}\right)=G\left(\begin{array}{c}
+0\\
+1\\
+1
+\end{array}\right),\quad\left(\begin{array}{c}
+1\\
+1\\
+1\\
+0\\
+0\\
+0
+\end{array}\right)=G\left(\begin{array}{c}
+0\\
+0\\
+1
+\end{array}\right)
+\end{align*}
+The smallest weight among nonzero codewords is 3. So the minimum Hamming distance is 3.
+</div>
 </div>
 
-<p>What does our previous claim mean in terms of the parity check matrix $H$? The smallest weight of a codeword is the smallest number $d$ such that there are $d$ columns in $H$ whose linear combination is 0.</p>
+<p>We can also find the minimum distance directly from $H$, based on the following observation: If there is a codeword of weight $d$, then there are $d$ columns whose linear combination can produce $\mathbf 0$. So the minimum distance is the smallest number $d$ such that there are $d$ columns in $H$ whose linear combination can produce $\mathbf 0$.</p>
+
+<ul>
+  <li>The only way that $d=1$ can occur is to have an all-0 column in $H$.</li>
+  <li>Assuming $d&gt;1$, for $d=2$, we need one column to be a mulitple of another column.
+    <ul>
+      <li>In binary, we need two equal columns. So if all columns are distinct, then $d&gt;2$.</li>
+    </ul>
+  </li>
+  <li>Assuming $d&gt;2$, for $d=3$, we need three columns that are linearly dependant.
+    <ul>
+      <li>In binary, the sum of two columns must be equal to a third column.</li>
+    </ul>
+  </li>
+</ul>
 
 <p>For the matrix $H$ of the previous exercise:</p>
 <ul>
-  <li>No column is 0 $\Rightarrow d &gt; 1$</li>
-  <li>No two column add to $0 \Rightarrow d &gt; 2$</li>
+  <li>No column is all-0 $\Rightarrow d &gt; 1$</li>
+  <li>No two columns are equal $\Rightarrow d &gt; 2$</li>
   <li>Adding columns 1, 2, and 3 gives 0 $\Rightarrow d = 3$.</li>
-  <li>There are 3 linearly dependant columns.</li>
 </ul>
 
 <p>What is the relationship between minimum distance and rank of $H$?</p>
 <ul>
-  <li>If the rank is $r$, there are $r$ linearly independent columns</li>
+  <li>If the rank is $r$, then there are $r$ linearly independent columns</li>
   <li>If the minimum distance is $d$, every $d - 1$ columns are linearly
 independent</li>
   <li>Hence, $r \geq d - 1$ and so $d\le r+1$.</li>
@@ -1274,7 +1452,7 @@ independent</li>
 <p>If the parity check matrix has dimensions $(n-k)\times n$, i.e., there are $n-k$ parity bits, then its rank is at most $n-k$ (why?). Hence, we find the following bound on the minimum distance of code:</p>
 
 <div class="highlight">
-	<strong>The Singleton bound</strong>: The minimum distance of linear code satisfies $d\le n-k+1$.
+	<strong>The Singleton bound</strong>: The minimum distance of a linear code satisfies $d\le n-k+1$.
 </div>
 
 <p><br></p>
@@ -1284,7 +1462,52 @@ Verify that for the matrix of the previous exercise, the Singleton bound is sati
 </div>
 <p><br></p>
 
-<h3 id="decoding-and-error-correction">Decoding and error correction</h3>
+<h2 id="correcting-erasure-errors-solving-equations">Correcting erasure errors: solving equations</h2>
+<p>If the minimum distance of a code is $d$, then it can correct up to $d-1$ erasure errors. We can find the erased values by solving the equation $Hx=\mathbf 0$.</p>
+
+<p>As an example consider the code given by the parity check matrix</p>
+
+\[H = \begin{pmatrix}
+1 &amp; 1 &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\
+1 &amp; 0 &amp; 1 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 1 &amp; 1 &amp; 0 &amp; 0 &amp; 1
+\end{pmatrix}.\]
+
+<p>This code has minimum distance 3. So we can correct up to 2 erasures. Suppose that $x=100110$ is transmitted. We will look at some cases in which some of the bits are erased during transmission:</p>
+
+<ul>
+<li> Suppose that the second bit is erased, i.e., $1?0110$ is received. To find it, we can solve the equation:
+
+$$H\begin{pmatrix}1\\x_2\\0\\1\\1\\0\end{pmatrix}=\mathbf 0\Rightarrow 
+\begin{pmatrix}1\\1\\0\end{pmatrix}\oplus x_2\begin{pmatrix}1\\0\\1\end{pmatrix} \oplus \begin{pmatrix}1\\0\\0\end{pmatrix} \oplus \begin{pmatrix}0\\1\\0\end{pmatrix}=\mathbf 0 \Rightarrow
+x_2\begin{pmatrix}1\\0\\1\end{pmatrix} =\mathbf 0 \Rightarrow x_2 = 0.$$
+
+We had three eqeuations and one unknown, which we could solve.</li>
+
+<li> Suppose that the first and second bits are erased, i.e., $??0110$ is received. To find them, we can solve the equation:
+
+$$H\begin{pmatrix}x_1\\x_2\\0\\1\\1\\0\end{pmatrix}=\mathbf 0\Rightarrow 
+x_1\begin{pmatrix}1\\1\\0\end{pmatrix}\oplus x_2\begin{pmatrix}1\\0\\1\end{pmatrix} \oplus \begin{pmatrix}1\\0\\0\end{pmatrix} \oplus \begin{pmatrix}0\\1\\0\end{pmatrix}=\mathbf 0 \Rightarrow
+x_1\begin{pmatrix}1\\1\\0\end{pmatrix}\oplus x_2\begin{pmatrix}1\\0\\1\end{pmatrix} = \begin{pmatrix}1\\1\\0\end{pmatrix}  \Rightarrow
+\begin{cases}x_1\oplus x_2 = 1\\
+x_1=1\\
+x_2 = 0\end{cases}$$
+</li>
+
+<li> Suppose that the first, second, and third bits are erased, i.e., $???110$ is received. To find them, we can solve the equation:
+
+$$H\begin{pmatrix}x_1\\x_2\\x_3\\1\\1\\0\end{pmatrix}=\mathbf 0\Rightarrow 
+x_1\begin{pmatrix}1\\1\\0\end{pmatrix}\oplus x_2\begin{pmatrix}1\\0\\1\end{pmatrix}\oplus x_3\begin{pmatrix}0\\1\\1\end{pmatrix} \oplus \begin{pmatrix}1\\0\\0\end{pmatrix} \oplus \begin{pmatrix}0\\1\\0\end{pmatrix}=\mathbf 0 \Rightarrow
+x_1\begin{pmatrix}1\\1\\0\end{pmatrix}\oplus x_2\begin{pmatrix}1\\0\\1\end{pmatrix}\oplus x_3\begin{pmatrix}0\\1\\1\end{pmatrix} =\begin{pmatrix}1\\1\\0\end{pmatrix} \Rightarrow
+\begin{cases}x_1\oplus x_2 = 1\\
+x_1\oplus x_3=1\\
+x_2\oplus x_3 = 0\end{cases}$$
+
+While we have three equations and three unknowns, the third equation is the sum of the other two. So we have in fact two equations, which is not sufficient to determine the codeword reliably. There are two possibilities: 100110, 011110.
+</li>
+</ul>
+
+<h2 id="correcting-substitution-errors-syndrome-decoding">Correcting substitution errors: syndrome decoding</h2>
 
 <p>Suppose we receive a word $y$ at the receiver (or read it from a flash
 drive). We know that there may have been errors. Assuming that the
@@ -1688,11 +1911,11 @@ $$H = \begin{pmatrix}
 
 <h2 id="correcting-1-error-hamming-codes">Correcting 1 error: Hamming Codes</h2>
 
-<p>Suppose our goal is to correct 1 error. What property should the parity check matrix have? We require minimum distance of 3, which means no two vectors should be linearly dependent. For binary, there is an easier way to express this condition. Note that we must always be able to solve the equation</p>
+<p>Suppose our goal is to correct 1 error. What property should the parity check matrix have? We require minimum distance of at least 3, which means no two vectors should be linearly dependent. <em>For binary, it suffices to not have the all-0 column and also for all columns to be distinct.</em> Another way to arrive at the same conclusion is to note that we must always be able to solve the equation</p>
 
 \[s=He\]
 
-<p>as long as $e$ has at most a single 1. Remember that if only the $j$th position in $e$ is 1, then $He$ is equal to the $j$th column of $H$. To be able to find $j$, <em>the columns of</em> $H$ <em>must be distinct (and nonzero)</em>. The columns must be non-zero to be able to distinguish no error from 1 error.</p>
+<p>as long as $e$ has at most a single 1. Remember that if only the $j$th position in $e$ is 1, then $He$ is equal to the $j$th column of $H$. To be able to find $j$, the columns of $H$ must be distinct. Also, the columns must be non-zero to be able to distinguish no error from 1 error.</p>
 
 <p>Let’s construct such a parity check matrix when there are three parity bits ($H$ has three rows). There are 7 columns with 3 bits in them. So $H$ must have these 7 columns. We arrange them in the systematic form.</p>
 
@@ -1704,8 +1927,8 @@ $$H = \begin{pmatrix}
 
 <p>What is the minimum distance?</p>
 <ul>
-  <li>$d \geq 3$, since it can correct any single error</li>
-  <li>$d \leq 3$, since $x = 1110000$ is a Codeword</li>
+  <li>$d \geq 3$, since all columns are distinct and nonzero.</li>
+  <li>$d \leq 3$, since $x = 1110000$ is a codeword</li>
   <li>Hence, $d = 3$</li>
 </ul>
 
@@ -1716,7 +1939,7 @@ x_6 &amp;= x_1\oplus x_3 \oplus x_4 \\
 x_7 &amp;= x_2\oplus x_3 \oplus x_4.
   \end{align*}</div>
 
-<p>This is the [7,4,3]-Hamming code ( )it has length $n = 7$, it has $k = 4$ message bits, and its minimum distance is $d = 3$). There are other Hamming codes based on the same idea as we will see. We sometimes drop the minimum distance from this notation.</p>
+<p>This is the [7,4,3]-Hamming code: it has length $n = 7$, it has $k = 4$ message bits, and its minimum distance is $d = 3$. There are other Hamming codes based on the same idea as we will see. We sometimes drop the minimum distance from this notation.</p>
 
 <p>Possible codewords of the [7,4]-Hamming code are:</p>
 
@@ -1846,7 +2069,7 @@ document.getElementById("HammingCode").innerHTML = myTable;
 
 <p>Let’s consider which code is better, the $[7,4]$-Hamming code or the $[15,11]$-Hamming code? The two main properties of codes are the code rate and the error-correction capability.</p>
 
-<p><em>Code rate</em>: The code rates for these codes are \(\frac47=0.57$ and $\frac{11}{15}=0.73.\) So the $[15,11]$-Hamming code has a higher rate (less overhead), which is better.</p>
+<p><em>Code rate</em>: The code rates for these codes are $\frac47=0.57$ and $\frac{11}{15}=0.73.$ So the $[15,11]$-Hamming code has a higher rate (less overhead), which is better.</p>
 
 <p><em>Error-correction</em>: They are both guaranteed to correct up to 1 error. So it may seem that overall the $[15,11]$-code is better. But this code is also longer, increasing the probability of more than 1 error. To see this, suppose the probability of a single bit flip is $q=10^{-6}$. What is the probability of at least 2 errors in a codeword for each of the codes? For the $[7,4]$ code, the probability of at least 2 errors is</p>
 
@@ -1957,7 +2180,7 @@ Image credit: Colin M. L. Burnett/Wikipedia -->
   <br><br>
   <center>
     <hr>
-  © Farzad Farnoud, 2020</center>
+  © Farzad Farnoud, 2023</center>
 </footer>
 </div>
 <!-- Default Statcounter code for MoI
