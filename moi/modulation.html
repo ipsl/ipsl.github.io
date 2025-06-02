@@ -9,30 +9,19 @@
   
   <!-- for mathjax support -->
   
-  <script>
-    window.MathJax = {
-      tex: {
-        tags: "ams",
-        inlineMath: [['$', '$'], ['\\(', '\\)']],
-        autoload: {
-          color: [],
-          colorv2: ['color']
-        },
-        packages: {'[+]': ['noerrors']}
-      },
-      options: {
-        ignoreHtmlClass: 'tex2jax_ignore',
-        processHtmlClass: 'tex2jax_process'
-      },
-      loader: {
-        load: ['[tex]/noerrors']
-      }
-    };
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script"></script>
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: { equationNumbers: { autoNumber: "AMS" } },
+    //tex2jax: {inlineMath: [['$', '$'], ['\\(', '\\)']]}
+    //tex2jax: {inlineMath: [['\(', '\)'], ['\\(', '\\)']]}
+    tex2jax: {inlineMath: [['$', '$'], ['\\(', '\\)']]}
+    //tex2jax: {inlineMath: [['$', '$'], ['\(', '\)'], ['\\(', '\\)']]}
+  });
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
   
   
-    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jsxgraph/1.1.0/jsxgraphcore.js"></script>
+    <script type="text/javascript"  src="//cdnjs.cloudflare.com/ajax/libs/jsxgraph/1.1.0/jsxgraphcore.js"></script>
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/jsxgraph/1.1.0/jsxgraph.css" />
   
   <script src="assets/js/coding.js"></script>
@@ -46,6 +35,7 @@
   <div class="topnav">
   <a style="float:left;" href="index.html"><strong>Mathematics of Information</strong></a>
   <a id="teaching" href="../teaching.html">Teaching</a>
+  <a id="group" href="../ips.html">Group</a>
   <a id="pubs" href="../publications.html">Publications</a>
   <a id="home" href="../index.html">Home</a> 
   </div>
@@ -57,52 +47,56 @@
      
      
      
-    
-     
-     
-     <a href="/~ffh8x/moi/"><strong>0. Introduction</strong></a>
+     <a href="index.html"><strong>Home</strong></a>
      
      
      
     
      
      
-     <span class="chapnav"><strong>1. Numbers, fields, and <br>representing information</strong></span>
+     <a href="index.html"><strong>0. Introduction</strong></a>
+     
+     
+     
+    
+     
+     
+     <span class="chapnav"><strong>1. Numbers, fields, and <br/>representing information</strong></span>
      <ul>
       
       
       
-      <li><a href="/~ffh8x/moi/sets.html">Sets and set theory</a></li>
+      <li><a href="sets.html">Sets and set theory</a></li>
       
       
       
       
       
-      <li><a href="/~ffh8x/moi/numbers.html">Natural numbers, rationals</a></li>
+      <li><a href="numbers.html">Natural numbers, rationals</a></li>
       
       
       
       
       
-      <li><a href="/~ffh8x/moi/fields.html">Fields</a></li>
+      <li><a href="fields.html">Fields</a></li>
       
       
       
       
       
-      <li><a href="/~ffh8x/moi/reals.html">Real numbers</a></li>
+      <li><a href="reals.html">Real numbers</a></li>
       
       
       
       
       
-      <li><a href="/~ffh8x/moi/counting.html">Counting and cardinality</a></li>
+      <li><a href="cardinality.html">Counting and cardinality</a></li>
       
       
       
       
       
-      <li><a href="/~ffh8x/moi/representation.html">Representing information</a></li>
+      <li><a href="representation.html">Representing information</a></li>
       
       
       
@@ -111,60 +105,60 @@
     
      
      
-     <span class="chapnav"><strong>2. Probability &amp; information</strong></span>
+     <span class="chapnav"><strong>2. Probability & information</strong></span>
      <ul>
       
       
       
-      <li><a href="/~ffh8x/moi/defining_information.html">Defining information</a></li>
+      <li><a href="defining_information.html">Defining information</a></li>
       
       
       
       
       
-      <li><a href="/~ffh8x/moi/probability_basics.html">Basics of probability</a></li>
+      <li><a href="probability_basics.html">Basics of probability</a></li>
       
       
       
       
       
-      <li><a href="/~ffh8x/moi/distributions.html">Random variables, <br> distributions, independence</a></li>
+      <li><a href="distributions.html">Random variables, <br/> distributions, independence</a></li>
       
       
       
       
       
-      <li><a href="/~ffh8x/moi/expectation.html">Expectation and Variance</a></li>
+      <li><a href="expectation.html">Expectation and Variance</a></li>
       
       
       
       
       
-      <li><a href="/~ffh8x/moi/conditional.html">Conditional probability</a></li>
+      <li><a href="conditional.html">Conditional probability</a></li>
       
       
       
       
       
-      <li><a href="/~ffh8x/moi/markov.html">Random sequences and <br> Markov chains</a></li>
+      <li><a href="markov.html">Random sequences and <br/> Markov chains</a></li>
       
       
       
       
       
-      <li><a href="/~ffh8x/moi/information_theory.html">Quantifying Information</a></li>
+      <li><a href="information_theory.html">Quantifying Information</a></li>
       
       
       
       
       
-      <li><a href="/~ffh8x/moi/compression.html">Data compression</a></li>
+      <li><a href="compression.html">Data compression</a></li>
       
       
       
       
       
-      <li><a href="/~ffh8x/moi/communications.html">Mathematics of communications</a></li>
+      <li><a href="communications.html">Mathematics of communications</a></li>
       
       
       
@@ -173,30 +167,30 @@
     
      
      
-     <span class="chapnav"><strong>3. Linear algebra, finite fields, <br>and error correction</strong></span>
+     <span class="chapnav"><strong>3. Linear algebra, finite fields, <br/>and error correction</strong></span>
      <ul>
       
       
       
-      <li><a href="/~ffh8x/moi/codes_graphs_algebra.html">Codes, graphs, and algebra</a></li>
+      <li><a href="codes_graphs_algebra.html">Codes, graphs, and algebra</a></li>
       
       
       
       
       
-      <li><a href="/~ffh8x/moi/vectors.html">Vectors and spaces</a></li>
+      <li><a href="vectors.html">Vectors and spaces</a></li>
       
       
       
       
       
-      <li><a href="/~ffh8x/moi/fundamental_spaces.html">Fundamental spaces</a></li>
+      <li><a href="fundamental_spaces.html">Fundamental spaces</a></li>
       
       
       
       
       
-      <li><a href="/~ffh8x/moi/ecc.html">Linear codes</a></li>
+      <li><a href="ecc.html">Linear codes</a></li>
       
       
       
@@ -205,43 +199,31 @@
     
      
      
-     <span class="chapnav"><strong>4. The frequency domain and <br>transmission of information</strong></span>
+     <span class="chapnav"><strong>4. The frequency domain and <br/>transmission of information</strong></span>
      <ul>
       
       
-      
-      <li><a href="/~ffh8x/moi/complex.html">Complex numbers</a></li>
-      
+      <li><a href="complex.html">Complex numbers</a></li>
       
       
       
-      
-      <li><a href="/~ffh8x/moi/fourier.html">Frequency and spectrum</a></li>
-      
+      <li><a href="fourier.html">Frequency and spectrum</a></li>
       
       
       
-      
-      <li><a href="/~ffh8x/moi/sampling.html">Filteration and sampling</a></li>
-      
+      <li><a href="sampling.html">Filteration and sampling</a></li>
       
       
       
-      
-      <li><a href="/~ffh8x/moi/linsys.html">Linear systems</a></li>
-      
+      <li><a href="linsys.html">Linear systems</a></li>
       
       
       
-      
-      <li><a href="/~ffh8x/moi/freqresponse.html">Frequency response</a></li>
-      
+      <li><a href="freqresponse.html">Frequency response</a></li>
       
       
       
-      
-      <li><a class="active" style="color:#76bdd59c" href="/~ffh8x/moi/modulation.html"><img class="emoji" title=":point_right:" alt=":point_right:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f449.png" height="20" width="20"> Modulation</a></li>
-      
+      <li><a href="modulation.html"><img class="emoji" title=":point_right:" alt=":point_right:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f449.png" height="20" width="20">Modulation</a></li>
       
       
       
@@ -257,7 +239,7 @@
     
      
      
-     <span class="chapnav"><strong>5. Number theory and <br>information privacy</strong></span>
+     <span class="chapnav"><strong>5. Number theory and <br/>information privacy</strong></span>
      <ul>
       
       
@@ -277,7 +259,7 @@
     
      
      
-     <span class="chapnav"><strong>6. Boolean algebra and <br>computation</strong></span>
+     <span class="chapnav"><strong>6. Boolean algebra and <br/ >computation</strong></span>
      <ul>
       
       
@@ -293,7 +275,7 @@
       
       
       
-      <li class="chapnav">
+      <li class="chapnav"></li>
       
       
     </ul>
@@ -306,19 +288,19 @@
       
       
       
-      <li><a href="/~ffh8x/moi/axiomatic.html">Axiomatic systems</a></li>
+      <li><a href="axiomatic.html">Axiomatic systems</a></li>
       
       
       
       
       
-      <li><a href="/~ffh8x/moi/index.html"><br></a></li>
+      <li><a href="index.html"><br/></a></li>
       
       
       
       
       
-      <li><a href="/~ffh8x/moi/index.html"><br></a></li>
+      <li><a href="index.html"><br/></a></li>
       
       
       
@@ -361,21 +343,21 @@
 $x_{2}\left( t \right) = \cos\left( 2\pi 3520t \right) = A$ octave up</p>
 
 <p>Listen to them (sampled at 44100 hertz)</p>
-<div style="float;"><img src=".//media/image25.png" width="250px"></div>
+<div style="float;"><img src=".//media/image25.png" width="250px" /></div>
 <!-- add audio file -->
 
 <p>If we add them 
 $x_{sum}\left( t \right) = x_{1}\left( t \right) + x_{2}(t) = \cos{\left( 2\pi 2093t \right) +}\cos\left( 2\pi 3520t \right)$</p>
-<div style="float;"><img src=".//media/image26.png" width="250px"></div>
-<div style="float;"><img src=".//media/image27.png" width="250px"></div>
+<div style="float;"><img src=".//media/image26.png" width="250px" /></div>
+<div style="float;"><img src=".//media/image27.png" width="250px" /></div>
 
 <p>The spectrum is just the sum of the spectra: Superposition.</p>
 
 <p>If we multiply them
 $x_{product}\left( t \right) = x_{1}\left( t \right)x_{2}(t) = \cos\left( 2\pi 2093t \right)\cos\left( 2\pi 3520t \right)$</p>
 
-<div style="float;"><img src=".//media/image28.png" width="250px"></div>
-<div style="float;"><img src=".//media/image29.png" width="250px"></div>
+<div style="float;"><img src=".//media/image28.png" width="250px" /></div>
+<div style="float;"><img src=".//media/image29.png" width="250px" /></div>
 
 <p>How did we get frequencies that did not exist in either of the signals?</p>
 
@@ -389,9 +371,9 @@ $x_{product}\left( t \right) = x_{1}\left( t \right)x_{2}(t) = \cos\left( 2\pi 2
 
 <p>We get two frequencies, $f + f_{1}$ and $f - f_{1}$
 Visually</p>
-<div style="float;"><img src=".//media/image30.png" width="250px"></div>
+<div style="float;"><img src=".//media/image30.png" width="250px" /></div>
 
-<div style="float;"><img src=".//media/image31.png" width="250px"></div>
+<div style="float;"><img src=".//media/image31.png" width="250px" /></div>
 
 <p>We can also see what happens when we multiply two cosines with trig identities, although this doesn’t tell us how a general signal is affected by the multiplication</p>
 
@@ -414,10 +396,10 @@ $f_{1} - f_{2} = 1427Hz$</p>
 <p>Why modulation?</p>
 
 <p>Commonly, the signal frequency range (signal bandwidth) does not line up with the frequency range the channel can carry (channel bandwidth or channel passband). For instance, consider the spectrum of an audio signal generated by recording a mandolin:</p>
-<div style="float;"><img src=".//media/image32.png" width="250px"></div>
+<div style="float;"><img src=".//media/image32.png" width="250px" /></div>
 
 <p>Zooming in, this signal appears to have a 20 kHz bandwidth. We have two options:</p>
-<div style="float;"><img src=".//media/image33.png" width="250px"></div>
+<div style="float;"><img src=".//media/image33.png" width="250px" /></div>
 
 <ol>
   <li>We could transmit that signal as is (<em>baseband transmission</em>).</li>
@@ -444,7 +426,7 @@ Other frequency ranges may have better signal-to-noise ratio or less attenuation
 <p>Make use of all available spectrum by spreading different signals throughout.</p>
 
 <p>Modulation is important for digital signals because unmodulated digital signals have sharp changes resulting in high bandwidth requirement if transmitted in baseband</p>
-<div style="float;"><img src=".//media/image34.png" width="250px"></div>
+<div style="float;"><img src=".//media/image34.png" width="250px" /></div>
 
 <h2 id="diving-into-modulation">Diving into Modulation</h2>
 <p>Modulation typically involves two signals: Carrier: a waveform chosen to fit the channel well
@@ -461,19 +443,19 @@ Message signal or modulation signal: the signal representing information to be t
 
 <p>Consider a <em>carrier</em> signal $x_{c}(t)$ and a message signal, $x_{m}\left( t \right)$</p>
 
-<div style="float;"><img src=".//media/image36.png" width="250px"></div>
+<div style="float;"><img src=".//media/image36.png" width="250px" /></div>
 <p>x</p>
-<div style="float;"><img src=".//media/image35.png" width="250px"></div>
+<div style="float;"><img src=".//media/image35.png" width="250px" /></div>
 <p>=</p>
-<div style="float;"><img src=".//media/image37.png" width="250px"></div>
+<div style="float;"><img src=".//media/image37.png" width="250px" /></div>
 
 <p>Amplitude Modulation:the frequency domain</p>
 
-<div style="float;"><img src=".//media/image38.png" width="250px"></div>
+<div style="float;"><img src=".//media/image38.png" width="250px" /></div>
 <p>x</p>
-<div style="float;"><img src=".//media/image39.png" width="250px"></div>
+<div style="float;"><img src=".//media/image39.png" width="250px" /></div>
 <p>=</p>
-<div style="float;"><img src=".//media/image40.png" width="250px"></div>
+<div style="float;"><img src=".//media/image40.png" width="250px" /></div>
 
 <p>An advantage of modulation is that it allows us to send multiple signals over the same medium at different frequencies. At the receiver, these signals can be separated by using a frequency-selective filter at a given frequency and with an appropriate bandwidth.</p>
 
@@ -496,14 +478,14 @@ The modulation is slightly different, and demodulation is performed via a <stron
 <p>Synchronous</p>
 
 <p>demodulation This is close, but not exactly the message signal:</p>
-<div style="float;"><img src=".//media/image41.png" width="250px"></div>
-<div style="float;"><img src=".//media/image42.png" width="250px"></div>
-<div style="float;"><img src=".//media/image43.png" width="250px"></div>
-<div style="float;"><img src=".//media/image41.png" width="250px"></div>
-<div style="float;"><img src=".//media/image44.png" width="250px"></div>
-<div style="float;"><img src=".//media/image45.png" width="250px"></div>
-<div style="float;"><img src=".//media/image46.png" width="250px"></div>
-<div style="float;"><img src=".//media/image47.png" width="250px"></div>
+<div style="float;"><img src=".//media/image41.png" width="250px" /></div>
+<div style="float;"><img src=".//media/image42.png" width="250px" /></div>
+<div style="float;"><img src=".//media/image43.png" width="250px" /></div>
+<div style="float;"><img src=".//media/image41.png" width="250px" /></div>
+<div style="float;"><img src=".//media/image44.png" width="250px" /></div>
+<div style="float;"><img src=".//media/image45.png" width="250px" /></div>
+<div style="float;"><img src=".//media/image46.png" width="250px" /></div>
+<div style="float;"><img src=".//media/image47.png" width="250px" /></div>
 
 <p>We see that there are high frequency components that cause the high frequency oscillation. To get rid of these, we can simply pass the signal through a low pass filter.</p>
 
@@ -533,9 +515,9 @@ $\cos\left( 2\pi f_{c}t \right)^{2}.$</p>
 
 <p>Let’s compare the message and the AM signals:</p>
 
-<div style="float;"><img src=".//media/image48.png" width="250px"></div>
-<div style="float;"><img src=".//media/image42.png" width="250px"></div>
-<div style="float;"><img src=".//media/image49.png" width="250px"></div>
+<div style="float;"><img src=".//media/image48.png" width="250px" /></div>
+<div style="float;"><img src=".//media/image42.png" width="250px" /></div>
+<div style="float;"><img src=".//media/image49.png" width="250px" /></div>
 
 <p>When the message is positive, message signal matches the envelop.</p>
 
@@ -555,7 +537,7 @@ $\cos\left( 2\pi f_{c}t \right)^{2}.$</p>
 
 <p>What happens as m increases from 0 to 1?</p>
 
-<div style="float;"><img src=".//media/image50.png" width="250px"></div>
+<div style="float;"><img src=".//media/image50.png" width="250px" /></div>
 
 <p>What happens in the frequency domain?</p>
 
@@ -564,7 +546,7 @@ $\cos\left( 2\pi f_{c}t \right)^{2}.$</p>
 <p>The Fourier transform of $x_{AM}\left( t \right)$, i.e., $X_{AM}(f)$ consist of the Fourier transform of $\cos\left( 2\pi f_{c}t \right)$ plus shifted versions of the Fourier transform of
 $x_{m}\left( t \right).$</p>
 
-<div style="float;"><img src=".//media/image51.png" width="250px"></div>
+<div style="float;"><img src=".//media/image51.png" width="250px" /></div>
 
 <p>Example: AM modulation of a tone</p>
 
@@ -576,13 +558,13 @@ $x_{m}\left( t \right).$</p>
 
 <p>Significance: the information in $x_{m}(t)$ has been shifted in frequency from f~m~ to f~C~+f~m~ and f~C~-f~m~.</p>
 
-<div style="float;"><img src=".//media/image52.png" width="250px"></div>
+<div style="float;"><img src=".//media/image52.png" width="250px" /></div>
 
 <p>AM modulation of a tone: spectrum</p>
 
 <p>So, given a suitable carrier frequency (f~C~ &gt; f~m~), the positive spectrum of xAM(t) looks like this:</p>
 
-<div style="float;"><img src=".//media/image53.png" width="250px"></div>
+<div style="float;"><img src=".//media/image53.png" width="250px" /></div>
 
 <p>The version of AM where
 $x_{AM}\left( t \right) = \cos{(2\pi f_{c}t)(1 + mx_{m}\left( t \right))}$ is usually simply referred to as AM.</p>
@@ -607,7 +589,7 @@ $x_{AM}\left( t \right) = \cos{(2\pi f_{c}t)}x_{m}\left( t \right)$ is referred 
 
 <p>This is called amplitude shift keying (ASK). Note how it compares to AM of a binary signal:</p>
 
-<div style="float;"><img src=".//media/image54.png" width="250px"></div>
+<div style="float;"><img src=".//media/image54.png" width="250px" /></div>
 
 <p>Limitations of AM</p>
 
@@ -635,7 +617,7 @@ $x_{AM}\left( t \right) = \cos{(2\pi f_{c}t)}x_{m}\left( t \right)$ is referred 
 
 <p>What happens with noise or interference in the frequency domain?</p>
 
-<div style="float;"><img src=".//media/image55.png" width="250px"></div>
+<div style="float;"><img src=".//media/image55.png" width="250px" /></div>
 
 <p>Revisiting the carrier signal</p>
 
@@ -685,8 +667,8 @@ $x_{AM}\left( t \right) = \cos{(2\pi f_{c}t)}x_{m}\left( t \right)$ is referred 
 
 <p>Analog frequency modulation (FM) digital frequency shift keying (FSK)</p>
 
-<div style="float;"><img src=".//media/image56.png" width="250px"></div>
-<div style="float;"><img src=".//media/image57.png" width="250px"></div>
+<div style="float;"><img src=".//media/image56.png" width="250px" /></div>
+<div style="float;"><img src=".//media/image57.png" width="250px" /></div>
 
 <p>Two fixed frequencies: f~0~ for “0”, f~1~ for “1”</p>
 
@@ -710,8 +692,8 @@ $x_{AM}\left( t \right) = \cos{(2\pi f_{c}t)}x_{m}\left( t \right)$ is referred 
 
 <p>Analog phase modulation digital phase shift keying (PSK)</p>
 
-<div style="float;"><img src=".//media/image58.png" width="250px"></div>
-<div style="float;"><img src=".//media/image59.png" width="250px"></div>
+<div style="float;"><img src=".//media/image58.png" width="250px" /></div>
+<div style="float;"><img src=".//media/image59.png" width="250px" /></div>
 
 <p>Replace analog xm(t) with binary “0” and “1”, so phase jumps between
 φ~0~ (usually 0) and φ~1~ (usually 180 degrees). Unlike FSK the signal is not differentiable.</p>
@@ -721,16 +703,16 @@ $0 \rightarrow phase = 0,1 \rightarrow phase = 180$</p>
 
 <p>Quadratic phase shift keying</p>
 
-<div style="float;"><img src=".//media/image60.png" width="250px"></div>
-<div style="float;"><img src=".//media/image61.png" width="250px"></div>
+<div style="float;"><img src=".//media/image60.png" width="250px" /></div>
+<div style="float;"><img src=".//media/image61.png" width="250px" /></div>
 
 <p>Can we send more than 1 bit in each interval?</p>
 
 <p>Yes: $\left{ \begin{matrix}
-00:phase = 0 <br>
-01:phase = 90 <br>
-10:phase = 180 <br>
-11:phase = 270 <br>
+00:phase = 0 <br />
+01:phase = 90 <br />
+10:phase = 180 <br />
+11:phase = 270 <br />
 \end{matrix} \right.\ $</p>
 
 <p>Differential phase shift keying (DPSK)</p>
@@ -744,7 +726,7 @@ $0 \rightarrow phasestaysthesame,1 \rightarrow phasejumpsby180$</p>
 
 <p>Amplitude shift keying: track amplitude zero/one</p>
 
-<div style="float;"><img src=".//media/image59.png" width="250px"></div>
+<div style="float;"><img src=".//media/image59.png" width="250px" /></div>
 
 <p>Frequency shift keying: track zero-crossing rate</p>
 
@@ -759,7 +741,7 @@ $0 \rightarrow phasestaysthesame,1 \rightarrow phasejumpsby180$</p>
 <p>Susceptible to noise
 (especially when transmitting small/zero values)</p>
 
-<div style="float;"><img src=".//media/image62.png" width="250px"></div>
+<div style="float;"><img src=".//media/image62.png" width="250px" /></div>
 
 <p>Frequency modulation (FM/FSK):</p>
 
@@ -791,7 +773,7 @@ FSK and PSK)</p>
 <p>5G modem will require its own chip for now; current 4G LTE use integrated “system-on-chip” solutions</p>
 
 <p>Phase shift keying: decoding</p>
-<div style="float;"><img src=".//media/image63.png" width="250px"></div>
+<div style="float;"><img src=".//media/image63.png" width="250px" /></div>
 
 <p>180 degree phase shift (a “1”) introduces a jump discontinuity in the carrier:</p>
 
@@ -814,8 +796,8 @@ FSK and PSK)</p>
 <p>180 degree jumps are big, easy to detect</p>
 
 <p>90 degree jumps go between ±1 and 0, also relatively easy to detect</p>
-<div style="float;"><img src=".//media/image64.png" width="250px"></div>
-<div style="float;"><img src=".//media/image65.png" width="250px"></div>
+<div style="float;"><img src=".//media/image64.png" width="250px" /></div>
+<div style="float;"><img src=".//media/image65.png" width="250px" /></div>
 
 <p>Let’s allow 90, 180, 270 degree jumps: quadrature phase shift keying (QPSK)</p>
 
@@ -825,7 +807,7 @@ FSK and PSK)</p>
 
 <p>These dibit assignments to each phase jump are arbitrary…</p>
 
-<div style="float;"><img src=".//media/image66.png" width="250px"></div>
+<div style="float;"><img src=".//media/image66.png" width="250px" /></div>
 
 <p>A little more complicated, but twice the information transfer!</p>
 
@@ -833,7 +815,7 @@ FSK and PSK)</p>
 
 <p>= (2 bits) / (0.01 seconds) = 200 bits/sec</p>
 
-<div style="float;"><img src=".//media/image67.png" width="250px"></div>
+<div style="float;"><img src=".//media/image67.png" width="250px" /></div>
 
 <p>Regular encoding:</p>
 
@@ -847,13 +829,13 @@ FSK and PSK)</p>
 
 <p>Sketch carrier modulated using QPSK for binary signal “10010011” using regular (not differential) encoding, assuming each dibit is modulated over a full period of x~C~(t)</p>
 
-<div style="float;"><img src=".//media/image68.png" width="250px"></div>
+<div style="float;"><img src=".//media/image68.png" width="250px" /></div>
 
 <footer>
-  <br><br>
+  <br/><br/>
   <center>
-    <hr>
-  © Farzad Farnoud, 2023</center>
+    <hr/>
+  &copy; Farzad Farnoud, 2020</center>
 </footer>
 </div>
 <!-- Default Statcounter code for MoI
@@ -863,8 +845,14 @@ var sc_project=12471818;
 var sc_invisible=1; 
 var sc_security="62b9c6a1"; 
 </script>
-<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
-<noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/12471818/0/62b9c6a1/1/" alt="Web Analytics"></a></div></noscript>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js"
+async></script>
+<noscript><div class="statcounter"><a title="Web Analytics"
+href="https://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="https://c.statcounter.com/12471818/0/62b9c6a1/1/"
+alt="Web Analytics"></a></div></noscript>
 <!-- End of Statcounter Code -->
 </body>
 </html>
