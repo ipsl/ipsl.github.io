@@ -50,11 +50,132 @@
   color: white;
 }
 
-.pubitem {
-  margin: 5px 0;
+/* Remove bullets from all publication lists */
+.pub-list,
+.journal-list,
+.sel-list,
+.conf-list,
+.theses-list {
+  list-style: none;
+  padding-left: 0;
 }
+
+/* Reset each counter to (total + 1) on its own <ul> */
+.journal-list {
+  counter-reset: journal-counter 30; /* 29 items ⇒ start from 29+1 = 30 */
+}
+
+.sel-list {
+  counter-reset: sel-counter 9;      /* 8 items ⇒ start from 8+1 = 9 */
+}
+
+.conf-list {
+  counter-reset: conf-counter 57;    /* 29 items ⇒ start from 29+1 = 30 */
+}
+
+.theses-list {
+  counter-reset: theses-counter 3;    /* 29 items ⇒ start from 29+1 = 30 */
+}
+
+/* Base styling for every publication item */
+.pubitem {
+  margin-bottom: 15px;
+  padding: 15px;
+  border-left: 3px solid #232D4B;
+  background-color: #f8f9fa;
+  border-radius: 3px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  position: relative;
+}
+
+/* If a .pubitem is inside .journal-list, decrement journal-counter */
+.journal-list .pubitem::before {
+  counter-increment: journal-counter -1;
+  content: counter(journal-counter) ". ";
+  font-weight: bold;
+  text-align: center;
+}
+
+/* If a .pubitem is inside .sel-list, decrement sel-counter */
+.sel-list .pubitem::before {
+  counter-increment: sel-counter -1;
+  content: counter(sel-counter) ". ";
+  font-weight: bold;
+  text-align: center;
+}
+
+/* If a .pubitem is inside .conf-list, decrement conf-counter */
+.conf-list .pubitem::before {
+  counter-increment: conf-counter -1;
+  content: counter(conf-counter) ". ";
+  font-weight: bold;
+  text-align: center;
+}
+
+
+/* If a .pubitem is inside .theses-list, decrement conf-counter */
+.theses-list .pubitem::before {
+  counter-increment: theses-counter -1;
+  content: counter(theses-counter) ". ";
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Link styling inside each pubitem */
+.pubitem a {
+  color: #232D4B;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.pubitem a:hover {
+  text-decoration: underline;
+  color: #1a2238;
+}
+
 
 .coauthorlink {
   text-decoration: none;
   color: black;
 }
+
+.course-item {
+    margin-bottom: 15px;
+    padding: 15px;
+    border-left: 3px solid #232D4B;
+    background-color: #f8f9fa;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.course-item .course-title {
+    font-weight: bold;
+    color: #232D4B;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.course-item a.course-title:hover {
+    text-decoration: underline;
+    color: #1a2238;
+}
+
+.course-item .course-code {
+    color: #666;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9em;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.course-item .course-terms {
+    color: #666;
+    font-style: italic;
+    margin-top: 5px;
+}
+
+.course-item.guest-lecture {
+    background-color: #fff8e1;
+    border-left-color: #ff8f00;
+}
+

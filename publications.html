@@ -40,12 +40,34 @@
     <div class="content">
 <h1>Publications</h1>
 <h3><a name="manuscripts">Journals</a></h3>
-<ol reversed="">
+<ul class="journal-list">
 
-<li class="pubitem" id="wang-tit-2023"> <a href="https://doi.org/10.48550/arXiv.2210.11818" target="_blank">Non-binary Codes for Correcting a Burst of at Most t Deletions</a></br> S. Wang, Y. Tang, J. Sima, R. Gabrys, and F. Farnoud, <em>IEEE Trans. Information Theory</em>, Submitted.</li>
+	<li class="pubitem" id="li-tit-2025">
+  <a href="https://doi.org/10.1109/TIT.2025.3562730" target="_blank">
+    Optimal Codes Correcting a Substring Edit
+  </a><br/>
+  Y. Li, Y. Tang, H. Lou, R. Gabrys, and F. Farnoud,
+  <em>IEEE Trans. Information Theory</em>, Apr. 2025.
+</li>
+
+<li class="pubitem" id="wang-tcom-2025">
+  <a href="https://doi.org/10.1109/TCOMM.2024.3420721" target="_blank">
+    Correcting a Substring Edit Error of Bounded Length
+  </a><br/>
+  S. Wang, Y. Tang, S. Motamen, H. Lou, K. Whritenour, R. Gabrys, and F. Farnoud,
+  <em>IEEE Trans. Communications</em>, Jan. 2025.
+</li>
+
+<li class="pubitem" id="wang-tit-2024">
+  <a href="https://doi.org/10.1109/TIT.2023.3340246" target="_blank">
+    Non-binary Codes for Correcting a Burst of at Most t Deletions
+  </a><br/>
+  S. Wang, Y. Tang, J. Sima, R. Gabrys, and F. Farnoud,
+  <em>IEEE Trans. Information Theory</em>, Feb. 2024.
+
 
 <li class="pubitem" id="tang-tit-2022e"> <a href="https://doi.org/10.48550/arXiv.2208.02330" target="_blank"> Low-Redundancy Codes for Correcting Multiple Short-Duplication and Edit Errors</a> [<a href="https://doi.org/10.1109/TIT.2022.3233733" target="_blank">IEEE</a>]<br/>
-Y. Tang, S. Wang, H. Lou, R. Gabrys, and F. Farnoud, <em>IEEE Trans. Information Theory</em>, Jan. 2023 (early access).
+Y. Tang, S. Wang, H. Lou, R. Gabrys, and F. Farnoud, <em>IEEE Trans. Information Theory</em>, May 2023.
 
 <li class="pubitem" id="hao-tit-2022"><a href="https://arxiv.org/pdf/2107.00490.pdf" target="_blank"> Data Deduplication with Random Substitutions</a> [<a href="https://doi.org/10.1109/TIT.2022.3176778" target="_blank">IEEE</a>]<br/>  
 H. Lou and F. Farnoud, <em>IEEE Trans. Information Theory</em>, May 2022.</li>
@@ -71,8 +93,8 @@ Y. Tang, Y. Yehezkeally, M. Schwartz, and F. Farnoud<em>, “IEEE Trans. Informa
 <li class="pubitem"><a href="https://doi.org/10.1109/TCOMM.2019.2910578" target="_blank">Reconciling Similar Sets of Data<br />
 </a>R. Gabrys, F. Farnoud, <em>IEEE Trans. Communications</em>, vol 67, Aug. 2019.</li>
 
-<li class="pubitem"><a href="https://doi.org/10.1186/s12859-019-2603-1" target="_blank" name="estmutrates">Estimation of Duplication History under a Stochastic Model for Tandem Repeats<br />
-</a>F. Farnoud, M. Schwartz, and J. Bruck, <em>BMC Bioinformatics</em>, Feb. 2019.</li>
+<li class="pubitem"><a href="https://doi.org/10.1186/s12859-019-2603-1" target="_blank" name="estmutrates">Estimation of Duplication History under a Stochastic Model for Tandem Repeats</a> [<a href="docs/smtr.zip">Code</a>] <br />
+F. Farnoud, M. Schwartz, and J. Bruck, <em>BMC Bioinformatics</em>, Feb. 2019.</li>
 
 <li class="pubitem"><a href="https://doi.org/10.1109/TIT.2017.2730864" target="_blank" name="dupdist17j">Duplication Distance to the Root for Binary Sequences</a> [<a href="http://ieeexplore.ieee.org/abstract/document/7993073/" target="_blank">IEEE</a>]<br />
 <a class="coauthorlink" href="http://www.tau.ac.il/~nogaa/" target="_blank">N. Alon</a>, J. Bruck, F. Farnoud, and <a class="coauthorlink" href="http://paradise.caltech.edu/~sidjain/" target="_blank">S. Jain</a>, <em>IEEE Trans. Information Theory</em>, vol. 63, Dec. 2017.</li>
@@ -121,25 +143,108 @@ S.M.S.T. Yazdi, <a class="coauthorlink" href="https://engineering.tamu.edu/elec
 
 <li class="pubitem"><a href="docs/papers/04346477.pdf" target="_blank">A Packet-Based Photonic Label Switching Router for a Multirate All-Optical CDMA-Based GMPLS Switch</a> [<a href="http://ieeexplore.ieee.org/document/4346477/" target="_blank">IEEE</a>]<br />
 F. Farnoud, M. Ibrahimi, and <a class="coauthorlink" href="http://sharif.edu/~jasalehi/" target="_blank">J. Salehi</a>,<em> </em><em>IEEE J. Sel. Topics Quantum Electron</em><em>.</em>, vol. 13, May 2007.</li>
-</ol>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <h3 id="conferences">Selected Conference Publications</h3>
-<ol reversed="">
-	<li class="pubitem" id="hao-nips-2022">
+<ul class="sel-list">
+	<li class="pubitem" id="jin-icml-2025">
+ Ranking with Multiple Oracles: From Weak to Strong Stochastic Transitivity<br />
+  T. Jin, Y. Wu, Q. Gu, F. Farnoud, <em>International Conference on Machine Learning (ICML)</em>, July 2025, <strong>Acc. rate: 26.9%</strong>.
+</li>
+
+<li class="pubitem" id="wu-icml-2024">
+  <a href="https://openreview.net/forum?id=3Tzdpjc59k" target="_blank">Borda Regret Minimization for Generalized Linear Dueling Bandits</a><br />
+  Y. Wu, T. Jin, Q. Di, H. Lou, F. Farnoud, Q. Gu, <em>International Conference on Machine Learning (ICML)</em>, July 2024, <strong>Acc. rate: 27.5%</strong>.
+</li>
+
+<li class="pubitem" id="di-iclr-2024">
+  <a href="https://openreview.net/pdf?id=rDH7dIFn20" target="_blank">Variance-aware Regret Bounds for Stochastic Contextual Dueling Bandits</a><br />
+  Q. Di, T. Jin, Y. Wu, H. Zhao, F. Farnoud, Q. Gu, <em>International Conference on Learning Representations (ICLR)</em>, May 2024, <strong>Acc. rate: 31%</strong>.
+</li>
+
+<li class="pubitem" id="hao-nips-2022">
 	<a href="https://openreview.net/pdf?id=Vhd-jh9B8Hc" target="_blank"> Active Ranking without Strong Stochastic Transitivity</a><br />
 	H. Lou, T. Jin, Y. Wu, P. Xu, Q. Gu, F. Farnoud, <em>Conference on Neural Information Processing Systems (NeurIPS)</em>, New Orleans, Louisiana, Nov. 2022, <strong>Acc. rate: 25.6%</strong>.</li>
 
 	<li class="pubitem" id="aistats22"><a href="https://proceedings.mlr.press/v151/wu22f/wu22f.pdf" target="_blank">Adaptive Sampling for Heterogeneous Rank Aggregation from Noisy Pairwise Comparisons</a><br />
 Y. Wu, T. Jin, H. Lou, P. Xu, F. Farnoud, Q. Gu, <em>Artificial Intelligence and Statistics (AISTATS)</em>, Virtual, Mar. 2022, <strong>Acc. rate: 29.2%</strong>.</li>
-<li class="pubitem"><a href="https://arxiv.org/abs/1912.01211" target="_blank">Rank Aggregation via Heterogeneous Thurstone Preference Models</a><br />
+
+<li class="pubitem" id="bibe20"> <a href="https://www.computer.org/csdl/proceedings-article/bibe/2020/957400a089/1pBMr8kqJBC">Efficient Search of Circular Repeats and MicroDNA Reintegration in DNA Sequences</a> <br>
+	Y. Wang, H. Lou, P. Kumar, A. Dutta and F. Farnoud, <em>IEEE 20th Int. Conf. Bioinformatics and Bioengineering (BIBE)</em>, Oct. 2020, <strong>Acc. rate: 32%</strong>.</li>
+
+	<li class="pubitem"><a href="https://arxiv.org/abs/1912.01211" target="_blank">Rank Aggregation via Heterogeneous Thurstone Preference Models</a><br />
 T. Jin, P. Xu, Q. Gu, F. Farnoud, <em>AAAI Conference on Artificial Intelligence</em>, New York, NY, Feb. 2020, <strong>Acc. rate: 20.6%, Oral 4.5%</strong>.</li>
 
 <li class="pubitem"><a href="http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=5061925" target="_blank">Reliable Broadcast of Safety Messages in Vehicular Ad Hoc Networks</a><br />
 F. Farnoud and <a class="coauthorlink" href="http://www.comm.utoronto.ca/~valaee/" target="_blank">S. Valaee</a>, In<em> Proc. IEEE INFOCOM</em>, Rio de Janeiro, Brazil, Apr. 2009, <strong>Acc. rate: 19.7%</strong>.</li>
 
-</ol>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <h3 id="conferences">Complete List of Peer-Reviewed Conference Publications</h3>
-<ol reversed="">
+<ul class="conf-list">
+
+	<li class="pubitem" id="luo-itw-2025">
+	<strong>(*) Improving Smoothness in Huffman Coding: Canonical and Pre-allocated Variations</strong><br />
+	H. Luo, F. Farnoud, Submittted to <em>IEEE Information Theory Workshop</em>, 2025.
+</li>
+	<li class="pubitem" id="jin-icml-2025">
+ <strong>Ranking with Multiple Oracles: From Weak to Strong Stochastic Transitivity</strong><br />
+  T. Jin, Y. Wu, Q. Gu, F. Farnoud, <em>International Conference on Machine Learning (ICML)</em>, July 2025, <strong>Acc. rate: 26.9%</strong>.
+</li>
+
+<li class="pubitem" id="wu-icml-2024">
+  <a href="https://openreview.net/forum?id=3Tzdpjc59k" target="_blank">Borda Regret Minimization for Generalized Linear Dueling Bandits</a><br />
+  Y. Wu, T. Jin, Q. Di, H. Lou, F. Farnoud, Q. Gu, <em>International Conference on Machine Learning (ICML)</em>, July 2024, <strong>Acc. rate: 27.5%</strong>.
+</li>
+
+
+
+<li class="pubitem" id="li-isit-2024">
+	<a href="https://doi.org/10.1109/ISIT57864.2024.10619199" target="_blank">Asymptotically Optimal Codes Correcting One Substring Edit</a><br />
+	Y. Li, Y. Tang, H. Lou, R. Gabrys, F. Farnoud, <em>IEEE Int. Symp. Information Theory (ISIT)</em>, Athens, Greece, July 2024.
+</li>
+
+<li class="pubitem" id="di-iclr-2024">
+	<a href="https://openreview.net/pdf?id=rDH7dIFn20" target="_blank">Variance-aware Regret Bounds for Stochastic Contextual Dueling Bandits</a><br />
+	Q. Di, T. Jin, Y. Wu, H. Zhao, F. Farnoud, Q. Gu, <em>Int. Conf. Learning Representations (ICLR)</em>, Vienna, Austria, May 2024, <strong>Acc. rate: 31%</strong>.
+</li>
+
+<li class="pubitem" id="tang-isit-2023">
+	<strong>Correcting a Substring Edit Error of Bounded Length</strong><br />
+	Y. Tang, S. Motamen, H. Lou, K. Whritenour, S. Wang, R. Gabrys, F. Farnoud, <em>IEEE Int. Symp. Information Theory (ISIT)</em>, Taipei, Taiwan, June 2023.
+</li>
+
+<li class="pubitem" id="li-isit-2023">
+	<strong>Linial's Algorithm and Systematic Deletion-Correcting Codes</strong><br />
+	Y. Li, F. Farnoud, <em>IEEE Int. Symp. Information Theory (ISIT)</em>, Taipei, Taiwan, June 2023.
+</li>
 
 <li class="pubitem" id="hao-nips-2022">
 	<a href="https://openreview.net/pdf?id=Vhd-jh9B8Hc" target="_blank"> Active Ranking without Strong Stochastic Transitivity</a><br />
@@ -297,16 +402,27 @@ F. Farnoud, B. Hassanabadi, and S. Valaee, <em>1st ACM Int. Workshop on Wireles
 
 <li class="pubitem">A Multimessage Capacity Region for Undirected Ring Networks<br />
 S. Yazdi, S. Savari, F. Farnoud, and G. Kramer, <em>IEEE Int. Symp. Information Theory (ISIT)</em>, Nice, France, June 2007.</li>
-</ol>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
 <h2 id="theses">Theses</h2>
-<ol reversed="">
+<ul class="theses-list">
 
 <li class="pubitem"><a href="https://www.ideals.illinois.edu/items/44241/" target="_blank">Distances on Rankings: from Social Choice to Flash Memories</a><br />
 Ph.D. Thesis, University of Illinois at Urbana-Champaign, Urbana, IL, May 2013</li>
 
 <li class="pubitem"><a href="https://tspace.library.utoronto.ca/bitstream/1807/17176/1/Hassanzadeh_Farzad_200811_MASC_thesis.pdf" target="_blank">Reliable Broadcast of Safety Messages in Vehicular Ad hoc Networks</a><br />
 M.Sc. Thesis, University of Toronto, Toronto, ON, August 2008</li>
-</ol>
+</ul>
 </div>
 </body></html>
 
