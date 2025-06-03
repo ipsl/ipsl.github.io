@@ -1,2 +1,9 @@
-.DS_Store
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+*.sublime-workspace
+
+Gemfile.lock
+
 .DS_Store
